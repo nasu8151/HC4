@@ -22,9 +22,10 @@ All of instructions are 8-bit wide.
 ### How to read these tables
 
 As noted earlier, instruction of this CPU is 8-bit wide.   
-"rrrr" means a 4-bit wide register. In the program, it is represented by ```r0``` to ```r15```.    
-"iiii" means a 4-bit wide immediate data.    
+"r" means a 4-bit wide register. In the program, it is represented by ```r0``` to ```r15```.    
+"i" means a 4-bit wide immediate data.    
 "cond." means jump conditions.
+"AB" means indirect addressing of stack level A and B.
 
 ### Logical and alithmetic instructions
 
