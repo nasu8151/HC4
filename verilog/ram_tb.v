@@ -5,7 +5,6 @@ module tb_memory_4bit_256nibble;
     wire [3:0] data_bus;
     reg [3:0] data_in;
     reg write_enable;
-    reg read_enable;
     reg data_bus_drive;
     reg [3:0] bus_out;
 
@@ -17,8 +16,7 @@ module tb_memory_4bit_256nibble;
         .clk(clk),
         .address(address),
         .data_bus(data_bus),
-        .write_enable(write_enable),
-        .read_enable(read_enable)
+        .write_enable(write_enable)
     );
 
     // クロック生成
@@ -32,7 +30,6 @@ module tb_memory_4bit_256nibble;
     initial begin
         // 初期化
         write_enable = 0;
-        read_enable = 0;
         data_bus_drive = 0;
         address = 0;
         data_in = 0;
@@ -50,9 +47,6 @@ module tb_memory_4bit_256nibble;
         // 読み出しテスト
         #10;
         address = 8'h0A;    // アドレス10
-        read_enable = 1;    // 読み出し有効
-        #10;
-        read_enable = 0;
 
         // 波形確認用
         #10;

@@ -2,8 +2,7 @@ module memory_4bit_256nibble (
     input wire clk,                 // クロック信号
     input wire [7:0] address,       // アドレス (8ビットで256ニブル指定)
     inout wire [3:0] data_bus,      // 共通バス (4ビット幅)
-    input wire write_enable,        // 書き込み有効信号
-    input wire read_enable          // 読み出し有効信号
+    input wire write_enable         // 書き込み有効信号
 );
 
     // 4ビット幅、256個のメモリ配列

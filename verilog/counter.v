@@ -2,7 +2,7 @@
 `define __counter
 
 module counter #(
-    parameter WIDTH = 8
+    parameter WIDTH = 12
 ) (
     input wire [WIDTH-1:0] in,
     input wire clk,
@@ -14,7 +14,7 @@ module counter #(
 
     always @(posedge clk or negedge nReset) begin
         if (!nReset) begin
-            out <= 8'b0;
+            out <= 12'b0;
         end else if (!nLoadEnable) begin
             out <= in;
         end else if (countEnable) begin

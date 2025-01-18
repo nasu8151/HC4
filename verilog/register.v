@@ -2,7 +2,7 @@
 `define __register
 
 module register #(
-    parameter WIDTH = 8
+    parameter WIDTH = 4
 )(
     input wire [WIDTH-1:0] in,
     input wire clk,
@@ -12,7 +12,7 @@ module register #(
 );
     always @(posedge clk or negedge nReset) begin
         if (!nReset) begin
-            out <= 8'b0;
+            out <= 4'b0;
         end else if (!nEnable) begin
             out <= in;
         end
