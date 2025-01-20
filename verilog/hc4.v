@@ -12,6 +12,8 @@ module hc4 (
     reg [3:0] level_C; //stack level C
     reg [11:0] pc;
 
+    assign pc_out = pc;
+
     reg [3:0] ram [0:255];
     reg [7:0] rom [0:4095];
 
@@ -24,7 +26,7 @@ module hc4 (
     assign instruction_out = instruction;
 
     wire sub;
-    assign sub = instruction[6:4] == 3'b010 ? 0 : 1; //if opcode is 0010 (1010 is not ALU oplation)
+    assign sub = instruction[6:4] == 3'b010 ? 1 : 0; //if opcode is 0010 (1010 is not ALU oplation)
 
     wire [3:0] alu_result;
     wire carry;

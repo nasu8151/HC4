@@ -52,8 +52,8 @@ As noted earlier, instruction of this CPU is 8-bit wide.
 | ```SC *[AB]``` | 0000 | 0000 | Z            | Store C in [AB] |
 | ```SC r```     | 0001 | r    | Z            | Store C in r    |
 | ```SA r```     | 0111 | r    | Z            | Store A in r    |
-| ```LD r```     | 1000 | r    |              | LoaD from r     |
-| ```LD *[AB]``` | 1001 | 0000 |              | LoaD form [AB]  |
+| ```LD *[AB]``` | 1000 | 0000 |              | LoaD from r     |
+| ```LD r```     | 1001 | r    |              | LoaD form [AB]  |
 | ```LD i```     | 1010 | i    |              | LoaD immediate  |
 
 Note:    
