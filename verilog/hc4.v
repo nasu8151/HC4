@@ -58,10 +58,14 @@ module hc4 (
     function [11:0] NEXT_PC(input [7:0] instruction, input [11:0] pc, input [3:0] level_A, input [3:0] level_B, input [3:0] level_C, input C_flag, input Z_flag);
         if (instruction[7:5] == 3'b111) begin // if current instruction is Jump
             case (instruction[2:1])
-                2'b00: begin                  // JP
-                    NEXT_PC[11:8] = level_C;
-                    NEXT_PC[7:4]  = level_B;
-                    NEXT_PC[3:0]  = level_A;
+                2'b00: begin                  
+                    if (instruction[1] == 0) begin // JP
+                        NEXT_PC[11:8] = level_C;
+                        NEXT_PC[7:4]  = level_B;
+                        NEXT_PC[3:0]  = level_A;
+                    end else begin                 // NP
+                        NEXT_PC = pc + 1;
+                    end
                 end
                 2'b01: begin                  // JC
                     if (C_flag == 1) begin

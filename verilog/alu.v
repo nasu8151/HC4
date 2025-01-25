@@ -25,7 +25,7 @@ module alu (
                 internal_B = in_B;
             end
             3'b100: begin
-                internal_A = in_A & in_B;
+                internal_A = in_A ^ in_B;
                 internal_B = 8'b0;
             end
             3'b101: begin
@@ -33,7 +33,7 @@ module alu (
                 internal_B = 8'b0;
             end
             3'b110: begin
-                internal_A = in_A ^ in_B;
+                internal_A = in_A & in_B;
                 internal_B = 8'b0;
             end
             3'b111: begin
