@@ -59,7 +59,7 @@ module hc4 (
         if (instruction[7:5] == 3'b111) begin // if current instruction is Jump
             case (instruction[2:1])
                 2'b00: begin                  
-                    if (instruction[1] == 0) begin // JP
+                    if (instruction[0] == 0) begin // JP
                         NEXT_PC[11:8] = level_C;
                         NEXT_PC[7:4]  = level_B;
                         NEXT_PC[3:0]  = level_A;
