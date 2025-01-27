@@ -85,13 +85,16 @@ module hc4 (
         NEXT_PC = nJMP == 0 ? {level_C, level_B, level_A} : pc + 1;
     endfunction
 
-    function [3:0] BUS_CTRL (input [7:0] instruction, input [3:0] alu_result, input [3:0] ram_out);
-        if (instruction[7] == 0)             BUS_CTRL = alu_result;
-        else if (instruction[7:5] == 3'b100) BUS_CTRL = ram_out;
-        else if (instruction[7:5] == 3'b101) BUS_CTRL = instruction[3:0];
-        else                                 BUS_CTRL = 4'bx;
+    function [3:0] BUS_CTRL (input [7:0] instruction, input [3:0] alu_result, input [3:0] ram_out, input [3:0] level_C);
+        casez (instruction[7:5])
+            3'b000:  BUS_CTRL = level_C;          //SC
+            3'b0??:  BUS_CTRL = alu_result;       //ALU instructions (include SA)
+            3'b100:  BUS_CTRL = ram_out;          //LD [AB]
+            3'b101:  BUS_CTRL = instruction[3:0]; //LD i
+            default: BUS_CTRL = 4'bx;             //jp doesnt care data bus ;-)
+        endcase
     endfunction
-    assign data_bus = BUS_CTRL(instruction, alu_out, ram[address_bus]);
+    assign data_bus = BUS_CTRL(instruction, alu_result, ram[address_bus], level_C);
 
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
