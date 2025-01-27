@@ -98,7 +98,7 @@ module hc4 (
             default: BUS_CTRL = 4'bx;             //jp doesnt care data bus ;-)
         endcase
     endfunction
-    assign data_bus = BUS_CTRL(instruction, alu_result, ram[address_bus]);
+    assign data_bus = BUS_CTRL(instruction, alu_result, ram[address_bus], level_C);
 
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
