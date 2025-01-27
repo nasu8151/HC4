@@ -20,7 +20,7 @@ module hc4 (
     wire [7:0] address_bus;
     wire [3:0] data_bus;
 
-    initial $readmemh("./test.hex", rom);
+    initial $readmemh("./jmptest.hex", rom);
 
     reg [7:0] instruction;
     assign instruction_out = instruction;
@@ -56,41 +56,33 @@ module hc4 (
     assign address_bus = ADDRESS_MUX(instruction[7:0], level_A, level_B);
     
     function [11:0] NEXT_PC(input [7:0] instruction, input [11:0] pc, input [3:0] level_A, input [3:0] level_B, input [3:0] level_C, input C_flag, input Z_flag);
+        reg nJMP;
         if (instruction[7:5] == 3'b111) begin // if current instruction is Jump
-            case (instruction[2:1])
-                2'b00: begin                  
-                    if (instruction[0] == 0) begin // JP
-                        NEXT_PC[11:8] = level_C;
-                        NEXT_PC[7:4]  = level_B;
-                        NEXT_PC[3:0]  = level_A;
-                    end else begin                 // NP
-                        NEXT_PC = pc + 1;
-                    end
+            case (instruction[2:0])
+                3'b000: nJMP = 0;              // JP
+                3'b001: nJMP = 1;              // NP
+                3'b010: begin                  // JC
+                    if (C_flag == 1)  nJMP = 0;
+                    else              nJMP = 1;
                 end
-                2'b01: begin                  // JC
-                    if (C_flag == 1) begin
-                        NEXT_PC[11:8] = level_C;
-                        NEXT_PC[7:4]  = level_B;
-                        NEXT_PC[3:0]  = level_A;
-                    end else begin
-                        NEXT_PC = pc + 1;
-                    end
+                3'b011: begin                  // JNC
+                    if (C_flag == 0)  nJMP = 0;
+                    else              nJMP = 1;
                 end
-                2'b10: begin                  // JZ
-                    if (Z_flag == 1) begin
-                        NEXT_PC[11:8] = level_C;
-                        NEXT_PC[7:4]  = level_B;
-                        NEXT_PC[3:0]  = level_A;
-                    end else begin
-                        NEXT_PC = pc + 1;
-                    end
+                3'b100: begin                  // JZ
+                    if (Z_flag == 1)  nJMP = 0;
+                    else              nJMP = 1;
                 end
-                default: NEXT_PC = 12'bx;
+                3'b101: begin                  // JNZ
+                    if (Z_flag == 0)  nJMP = 0;
+                    else              nJMP = 1;
+                end
+                default:  nJMP = 1;
             endcase
         end else begin
-            NEXT_PC = pc + 1;
+            nJMP = 1;
         end
-        
+        NEXT_PC = nJMP == 0 ? {level_C, level_B, level_A} : pc + 1;
     endfunction
 
     function [3:0] BUS_CTRL (input [7:0] instruction, input [3:0] alu_result, input [3:0] ram_out);
@@ -103,9 +95,12 @@ module hc4 (
 
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
-            pc = 12'b0;
+            pc <= 12'b0;
+            carry_flg <= 1'b0;
+            zero_flg <= 1'b0;
+            instruction <= 8'b0;
         end else begin
-            pc = NEXT_PC(instruction, pc, level_A, level_B, level_C, carry_flg, zero_flg);
+            pc <= NEXT_PC(instruction, pc, level_A, level_B, level_C, carry_flg, zero_flg);
         end
     end
 

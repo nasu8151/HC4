@@ -37,13 +37,13 @@ As noted earlier, instruction of this CPU is 8-bit wide.
 
 ### Logical and alithmetic instructions
 
-| Name       | Opc  | Opr | Flag changes |                            |
-| ---------- | ---- | --- | ------------ | -------------------------- |
-| ```SU r``` | 0010 | r   | C, Z         | SUbtract and store in r    |
-| ```AD r``` | 0011 | r   | C, Z         | ADd and store in r         |
-| ```XR r``` | 0100 | r   | Z            | bitwise XoR and store in r |
-| ```OR r``` | 0101 | r   | Z            | bitwise OR and store in r  |
-| ```AN r``` | 0110 | r   | Z            | bitwise ANd and store in r |
+| Name       | Opc  | Opr | Flag changes | Function|                            |
+| ---------- | ---- | --- | ------------ | ------- | -------------------------- |
+| ```SU r``` | 0010 | r   | C, Z         | A-B->r  | SUbtract and store in r    |
+| ```AD r``` | 0011 | r   | C, Z         | A+B->r  | ADd and store in r         |
+| ```XR r``` | 0100 | r   | Z            | A^B->r  | bitwise XoR and store in r |
+| ```OR r``` | 0101 | r   | Z            | A\|B->r | bitwise OR and store in r  |
+| ```AN r``` | 0110 | r   | Z            | A&B->r  | bitwise ANd and store in r |
 
 ### Register and memory access instructions
 
@@ -61,12 +61,15 @@ Note:
 
 ### System control instructions
 
-| Name            | Opc  | Opr  |                           |
-| --------------- | ---- | ---- | ------------------------- |
-| ```JP *[ABC]``` | 1110 | 0000 | JumP [ABC]                |
-| ```JC *[ABC]``` | 1110 | 0010 | Jump if Carry flag is set |
-| ```JZ *[ABC]``` | 1110 | 0100 | Jump if Zero flag is set  |
-| ```NP```        | 1110 | 0001 | No oPlation               |
+| Name             | Opc  | Opr  |                               |
+| ---------------- | ---- | ---- | ----------------------------- |
+| ```JP *[ABC]```  | 1110 | 0000 | JumP [ABC]                    |
+| ```JC *[ABC]```  | 1110 | 0010 | Jump if Carry flag is set     |
+| ```JNC *[ABC]``` | 1110 | 0011 | Jump if Carry flag is Not set |
+| ```JZ *[ABC]```  | 1110 | 0100 | Jump if Zero flag is set      |
+| ```JNZ *[ABC]``` | 1110 | 0101 | Jump if Zero flag is Not set  |
+| ```NP```         | 1110 | 0001 | No oPlation                   |
+
 Note:    
 \* Can be omitted addressing.
 

@@ -16,32 +16,32 @@ module alu (
 
     always @(*) begin
         case(sel_in)
-            3'b010: begin
+            3'b010: begin            //Subtract
                 internal_A = in_A;
                 internal_B = ~in_B;
             end
-            3'b011: begin
+            3'b011: begin            //Add
                 internal_A = in_A;
                 internal_B = in_B;
             end
-            3'b100: begin
+            3'b100: begin            //Bitwise xor
                 internal_A = in_A ^ in_B;
                 internal_B = 8'b0;
             end
-            3'b101: begin
+            3'b101: begin            //Bitwise or
                 internal_A = in_A | in_B;
                 internal_B = 8'b0;
             end
-            3'b110: begin
+            3'b110: begin            //Bitwise and
                 internal_A = in_A & in_B;
                 internal_B = 8'b0;
             end
-            3'b111: begin
+            3'b111: begin            //thru A
                 internal_A = in_A;
                 internal_B = 8'b0;
             end
             default: begin
-                internal_A = 8'bx; //don't care
+                internal_A = 8'bx;   //don't care (Not a ALU instruction)
                 internal_B = 8'bx;
             end
         endcase

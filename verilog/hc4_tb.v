@@ -35,7 +35,7 @@ module hc4_tb;
         #10 nReset = 1;
 
         // シミュレーション実行時間
-        #200 $finish;
+        #800 $finish;
     end
 
     // テスト結果表示
