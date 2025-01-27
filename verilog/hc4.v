@@ -3,16 +3,17 @@
 module hc4 (
     input wire clk,
     input wire nReset,
-    output wire [11:0] pc_out,
-    output wire [7:0] instruction_out,
-    output wire [3:0] alu_out
+    output wire [11:0]      pc_out,
+    output wire [3:0]       stackA_out,
+    output wire [3:0]       stackB_out,
+    output wire [3:0]       stackC_out
+
 );
     reg [3:0] level_A; //stack level A
     reg [3:0] level_B; //stack level B
     reg [3:0] level_C; //stack level C
     reg [11:0] pc;
 
-    assign pc_out = pc;
 
     reg [3:0] ram [0:255];
     reg [7:0] rom [0:4095];
@@ -20,10 +21,9 @@ module hc4 (
     wire [7:0] address_bus;
     wire [3:0] data_bus;
 
-    initial $readmemh("./jmptest.hex", rom);
+    initial $readmemh("./test.hex", rom);
 
     reg [7:0] instruction;
-    assign instruction_out = instruction;
 
     wire sub;
     assign sub = instruction[6:4] == 3'b010 ? 1 : 0; //if opcode is 0010 (1010 is not ALU oplation)
@@ -32,6 +32,11 @@ module hc4 (
     wire carry;
     reg  carry_flg;
     reg  zero_flg;
+
+    assign pc_out = pc;
+    assign stackA_out = level_A;
+    assign stackB_out = level_B;
+    assign stackC_out = level_C;
 
     alu ALU (
         .in_A (level_A),
@@ -42,7 +47,6 @@ module hc4 (
         .carry_out (carry)
     );
 
-    assign alu_out = alu_result;
 
     function [7:0] ADDRESS_MUX(input [7:0] instruction, input [3:0] level_A, input [3:0] level_B);
         if (instruction[6:4] == 3'b000) begin  //if addressing mode is [AB]
@@ -91,14 +95,14 @@ module hc4 (
         else if (instruction[7:5] == 3'b101) BUS_CTRL = instruction[3:0];
         else                                 BUS_CTRL = 4'bx;
     endfunction
-    assign data_bus = BUS_CTRL(instruction, alu_out, ram[address_bus]);
+    assign data_bus = BUS_CTRL(instruction, alu_result, ram[address_bus]);
 
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
             pc <= 12'b0;
-            carry_flg <= 1'b0;
-            zero_flg <= 1'b0;
-            instruction <= 8'b0;
+            //carry_flg <= 1'b0;
+            //zero_flg <= 1'b0;
+            //instruction <= 8'b0;
         end else begin
             pc <= NEXT_PC(instruction, pc, level_A, level_B, level_C, carry_flg, zero_flg);
         end
