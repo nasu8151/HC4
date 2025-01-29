@@ -47,14 +47,14 @@ As noted earlier, instruction of this CPU is 8-bit wide.
 
 ### Register and memory access instructions
 
-| Name           | Opc  | Opr  | Flag changes |                 |
+| Name            | Opc  | Opr  | Flag changes |                 |
 | -------------- | ---- | ---- | ------------ | --------------- |
 | ```SC *[AB]``` | 0000 | 0000 | Z            | Store C in [AB] |
 | ```SC r```     | 0001 | r    | Z            | Store C in r    |
 | ```SA r```     | 0111 | r    | Z            | Store A in r    |
 | ```LD *[AB]``` | 1000 | 0000 |              | LoaD from r     |
 | ```LD r```     | 1001 | r    |              | LoaD form [AB]  |
-| ```LD i```     | 1010 | i    |              | LoaD immediate  |
+| ```LD #i```    | 1010 | i    |              | LoaD immediate  |
 
 Note:    
 \* Can be omitted addressing.
