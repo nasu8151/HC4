@@ -21,7 +21,7 @@ module hc4 (
     wire [7:0] address_bus;
     wire [3:0] data_bus;
 
-    initial $readmemh("./test.hex", rom);
+    initial $readmemh("./jmptest.hex", rom);
 
     reg [7:0] instruction;
 
@@ -103,30 +103,33 @@ module hc4 (
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
             pc <= 12'b0;
-            //carry_flg <= 1'b0;
-            //zero_flg <= 1'b0;
-            //instruction <= 8'b0;
         end else begin
             pc <= NEXT_PC(instruction, pc, level_A, level_B, level_C, carry_flg, zero_flg);
         end
     end
 
-    always @(negedge clk ) begin
-        casez (instruction[7:6])
-            2'b0?: begin // if current instruction is an instruction which stores in the memory or registers
-                ram[address_bus] <= data_bus;
-                zero_flg  <= data_bus == 4'b0 ? 1 : 0;
-                carry_flg <= instruction[7:5] == 3'b001 ? carry : carry_flg;
-            end 
-            2'b10: begin
-                level_A <= data_bus;
-                level_B <= level_A;
-                level_C <= level_B;
-            end
-            2'b11: begin
-                //nothing to write here
-            end
-        endcase
-        instruction <= rom[pc];
+    always @(negedge clk or negedge nReset) begin
+        if (nReset == 0) begin
+            instruction <= 8'b0;
+            carry_flg <= 1'b0;
+            level_A <= 4'b0;
+        end else begin
+            casez (instruction[7:6])
+                2'b0?: begin // if current instruction is an instruction which stores in the memory or registers
+                    ram[address_bus] <= data_bus;
+                    zero_flg  <= data_bus == 4'b0 ? 1 : 0;
+                    carry_flg <= instruction[7:5] == 3'b001 ? carry : carry_flg;
+                end 
+                2'b10: begin
+                    level_A <= data_bus;
+                    level_B <= level_A;
+                    level_C <= level_B;
+                end
+                2'b11: begin
+                    //nothing to write here
+                end
+            endcase
+            instruction <= rom[pc];
+        end
     end
 endmodule

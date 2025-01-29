@@ -6,16 +6,18 @@ module hc4_tb;
     reg clk;
     reg nReset;
     wire [11:0] pc_out;
-    wire [7:0] instruction_out;
-    wire [3:0] alu_out;
+    wire [3:0] level_A;
+    wire [3:0] level_B;
+    wire [3:0] level_C;
 
     // テスト対象モジュールのインスタンス化
     hc4 uut (
         .clk(clk),
         .nReset(nReset),
         .pc_out(pc_out),
-        .instruction_out(instruction_out),
-        .alu_out(alu_out)
+        .stackA_out(level_A),
+        .stackB_out(level_B),
+        .stackC_out(level_C)
     );
 
     // クロック生成
@@ -40,7 +42,7 @@ module hc4_tb;
 
     // テスト結果表示
     always @(negedge clk) begin
-        $display("Time=%0t | PC=%b | Instruction=%b | ALU_OUT=%b", $time, pc_out, instruction_out, alu_out);
+        $display("Time=%0t | PC=%d | levelA=%b | levelB=%b | levelC=%b", $time, pc_out, level_A, level_B, level_C);
     end
 
 endmodule
