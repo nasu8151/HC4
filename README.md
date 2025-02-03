@@ -15,6 +15,7 @@
     - [Logical and alithmetic instructions](#logical-and-alithmetic-instructions-1)
     - [Register and memory access instructions](#register-and-memory-access-instructions-1)
     - [System control instructions](#system-control-instructions-1)
+- [Software](#software)
 
 # Descriptions
 A 4-bit CPU made with 74-series logic ICs.
@@ -47,7 +48,7 @@ As noted earlier, instruction of this CPU is 8-bit wide.
 
 ### Register and memory access instructions
 
-| Name            | Opc  | Opr  | Flag changes |                 |
+|      Name      | Opc  | Opr  | Flag changes |                 |
 | -------------- | ---- | ---- | ------------ | --------------- |
 | ```SC *[AB]``` | 0000 | 0000 | Z            | Store C in [AB] |
 | ```SC r```     | 0001 | r    | Z            | Store C in r    |
@@ -61,7 +62,7 @@ Note:
 
 ### System control instructions
 
-| Name               | Opc  | Opr  |                               |
+|        Name        | Opc  | Opr  |                               |
 | ------------------ | ---- | ---- | ----------------------------- |
 | ```JP *[ABC]```    | 1110 | 0000 | JumP [ABC]                    |
 | ```JP C *[ABC]```  | 1110 | 0010 | Jump if Carry flag is set     |
@@ -84,3 +85,8 @@ Store instructions store value of stack level A or C in registers or memory area
 Load instructions, ```LD```,  load stack level A from register or memory area. When a value is loaded into stack level A, the previous value of level A moves to level B and value of level B moves to level C. ```LD r``` refers register ```r```, ```LD i``` loads immediate data and ```LD [AB]``` refers memory address specified level A and B.
 
 ### System control instructions
+
+```NP``` does nothing.
+
+# Software
+WIP...

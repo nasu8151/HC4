@@ -1,4 +1,4 @@
-module memory_4bit_256nibble (
+module ram (
     input wire clk,                 // クロック信号
     input wire [7:0] address,       // アドレス (8ビットで256ニブル指定)
     inout wire [3:0] data_bus,      // 共通バス (4ビット幅)

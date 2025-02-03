@@ -9,7 +9,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -530,7 +530,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 40.64 0)
 			(effects
 				(font
@@ -1645,7 +1645,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 17.78 1.27 0)
 			(effects
 				(font
@@ -2399,7 +2399,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -2926,7 +2926,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -3297,7 +3297,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -3671,7 +3671,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -4252,7 +4252,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -8.89 12.7 0)
 			(effects
 				(font
@@ -4660,7 +4660,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 1.905 -13.97 0)
 			(effects
 				(font
@@ -4995,7 +4995,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -5366,7 +5366,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -5737,7 +5737,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -6201,7 +6201,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.874 16.51 0)
 			(effects
 				(font
@@ -6636,7 +6636,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -7089,7 +7089,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -6.35 11.43 0)
 			(effects
 				(font
@@ -7422,7 +7422,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -5.08 11.43 0)
 			(effects
 				(font
@@ -7791,7 +7791,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -8.382 19.05 0)
 			(effects
 				(font
@@ -7799,8 +7799,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 -1.27 0)
+		(property "Value" "74HC4053"
+			(at 11.176 -19.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8142,7 +8142,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 15.24 0)
 			(effects
 				(font
@@ -8577,7 +8577,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -8946,7 +8946,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -9315,7 +9315,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -9684,7 +9684,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -10254,7 +10254,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -10682,7 +10682,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -11650,7 +11650,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -12618,7 +12618,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -13586,7 +13586,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -14551,7 +14551,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -14979,7 +14979,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -15407,7 +15407,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -16375,7 +16375,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -17343,7 +17343,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -18209,7 +18209,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -18583,7 +18583,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -18993,7 +18993,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -19859,7 +19859,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -20269,7 +20269,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -20643,7 +20643,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -21017,7 +21017,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -21883,7 +21883,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -22155,7 +22155,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -22463,7 +22463,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -22873,7 +22873,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -23273,7 +23273,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -23673,7 +23673,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -24365,7 +24365,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -25533,7 +25533,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -26303,7 +26303,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -27103,7 +27103,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -27483,7 +27483,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -27863,7 +27863,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -28273,7 +28273,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -28653,7 +28653,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -29015,7 +29015,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -29395,7 +29395,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -30261,7 +30261,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -30641,7 +30641,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 21.59 0)
 			(effects
 				(font
@@ -31021,7 +31021,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 21.59 0)
 			(effects
 				(font
@@ -31545,7 +31545,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -31925,7 +31925,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -32305,7 +32305,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -32685,7 +32685,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -33062,7 +33062,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -33434,7 +33434,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 21.59 0)
 			(effects
 				(font
@@ -33814,7 +33814,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -34194,7 +34194,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -34574,7 +34574,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -34954,7 +34954,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -35334,7 +35334,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -35714,7 +35714,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 21.59 0)
 			(effects
 				(font
@@ -36367,7 +36367,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -36747,7 +36747,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -37124,7 +37124,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -37496,7 +37496,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -37876,7 +37876,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -38256,7 +38256,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -38600,7 +38600,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -39292,7 +39292,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -39984,7 +39984,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -40394,7 +40394,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -40859,7 +40859,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -41631,7 +41631,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -42096,7 +42096,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -42868,7 +42868,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -43176,7 +43176,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -43484,7 +43484,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -43949,7 +43949,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -44721,7 +44721,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -45197,7 +45197,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -45577,7 +45577,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -45957,7 +45957,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -46337,7 +46337,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 21.59 0)
 			(effects
 				(font
@@ -46717,7 +46717,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -47089,7 +47089,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -47469,7 +47469,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -47849,7 +47849,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -48229,7 +48229,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -49197,7 +49197,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -50060,7 +50060,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -50504,7 +50504,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -50848,7 +50848,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -51228,7 +51228,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -51536,7 +51536,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -51880,7 +51880,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -52260,7 +52260,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -52712,7 +52712,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -53302,7 +53302,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -54270,7 +54270,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -54722,7 +54722,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -55174,7 +55174,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -56142,7 +56142,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -56522,7 +56522,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 21.59 0)
 			(effects
 				(font
@@ -56902,7 +56902,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 21.59 0)
 			(effects
 				(font
@@ -57282,7 +57282,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -57662,7 +57662,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -58042,7 +58042,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -58422,7 +58422,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -58799,7 +58799,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -59240,7 +59240,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -59684,7 +59684,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -60064,7 +60064,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -60516,7 +60516,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -60896,7 +60896,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -61276,7 +61276,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -61728,7 +61728,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -62528,7 +62528,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -62938,7 +62938,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -63312,7 +63312,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -63692,7 +63692,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -64144,7 +64144,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -64524,7 +64524,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -64904,7 +64904,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -65284,7 +65284,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -65664,7 +65664,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -66008,7 +66008,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 10.16 0)
 			(effects
 				(font
@@ -66612,7 +66612,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 10.16 0)
 			(effects
 				(font
@@ -67136,7 +67136,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -67635,7 +67635,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -68123,7 +68123,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 10.16 0)
 			(effects
 				(font
@@ -68553,7 +68553,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -69005,7 +69005,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -69457,7 +69457,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -69864,7 +69864,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 26.67 0)
 			(effects
 				(font
@@ -70308,7 +70308,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -70682,7 +70682,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -71056,7 +71056,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -71436,7 +71436,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -71846,7 +71846,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -72154,7 +72154,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -72564,7 +72564,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -72944,7 +72944,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -73324,7 +73324,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -74124,7 +74124,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -74432,7 +74432,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 6.35 0)
 			(effects
 				(font
@@ -74650,7 +74650,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -74922,7 +74922,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -75194,7 +75194,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -75538,7 +75538,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -75963,7 +75963,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -6.35 16.51 0)
 			(effects
 				(font
@@ -76404,7 +76404,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 5.08 16.51 0)
 			(effects
 				(font
@@ -76771,7 +76771,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -8.89 22.86 0)
 			(effects
 				(font
@@ -77287,7 +77287,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -8.89 22.86 0)
 			(effects
 				(font
@@ -77803,7 +77803,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -10.16 29.21 0)
 			(effects
 				(font
@@ -78754,7 +78754,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -79203,7 +79203,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -6.35 34.29 0)
 			(effects
 				(font
@@ -80292,7 +80292,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 22.86 0)
 			(effects
 				(font
@@ -80803,7 +80803,7 @@
 	)
 	(symbol "7400"
 		(extends "74LS00")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -80867,7 +80867,7 @@
 	)
 	(symbol "7402"
 		(extends "74LS02")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -80931,7 +80931,7 @@
 	)
 	(symbol "74AHC04"
 		(extends "74LS04")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -80995,7 +80995,7 @@
 	)
 	(symbol "74AHC240"
 		(extends "74HC240")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81059,7 +81059,7 @@
 	)
 	(symbol "74AHC244"
 		(extends "74HC244")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81123,7 +81123,7 @@
 	)
 	(symbol "74AHC273"
 		(extends "74LS273")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81187,7 +81187,7 @@
 	)
 	(symbol "74AHC373"
 		(extends "74LS373")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81251,7 +81251,7 @@
 	)
 	(symbol "74AHC374"
 		(extends "74LS374")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81315,7 +81315,7 @@
 	)
 	(symbol "74AHC595"
 		(extends "74HC595")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -81379,7 +81379,7 @@
 	)
 	(symbol "74AHCT04"
 		(extends "74LS04")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -81443,7 +81443,7 @@
 	)
 	(symbol "74AHCT123"
 		(extends "74LS123")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -81507,7 +81507,7 @@
 	)
 	(symbol "74AHCT240"
 		(extends "74HC240")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81571,7 +81571,7 @@
 	)
 	(symbol "74AHCT244"
 		(extends "74HC244")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81635,7 +81635,7 @@
 	)
 	(symbol "74AHCT273"
 		(extends "74LS273")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81699,7 +81699,7 @@
 	)
 	(symbol "74AHCT373"
 		(extends "74LS373")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81763,7 +81763,7 @@
 	)
 	(symbol "74AHCT374"
 		(extends "74LS374")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -81827,7 +81827,7 @@
 	)
 	(symbol "74AHCT595"
 		(extends "74HC595")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -81891,7 +81891,7 @@
 	)
 	(symbol "74CBT3257"
 		(extends "74CBTLV3257")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 17.78 1.27 0)
 			(effects
 				(font
@@ -81955,7 +81955,7 @@
 	)
 	(symbol "74HC00"
 		(extends "74LS00")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -82055,7 +82055,7 @@
 	)
 	(symbol "74HC02"
 		(extends "74LS02")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -82119,7 +82119,7 @@
 	)
 	(symbol "74HC04"
 		(extends "74LS04")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -82183,7 +82183,7 @@
 	)
 	(symbol "74HC08"
 		(extends "74LS08")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -82247,7 +82247,7 @@
 	)
 	(symbol "74HC10"
 		(extends "74LS10")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -82311,7 +82311,7 @@
 	)
 	(symbol "74HC112"
 		(extends "74LS112")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -82375,7 +82375,7 @@
 	)
 	(symbol "74HC123"
 		(extends "74LS123")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -82439,7 +82439,7 @@
 	)
 	(symbol "74HC151"
 		(extends "74LS151")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -82503,7 +82503,7 @@
 	)
 	(symbol "74HC153"
 		(extends "74LS153")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 21.59 0)
 			(effects
 				(font
@@ -82567,7 +82567,7 @@
 	)
 	(symbol "74HC157"
 		(extends "74LS157")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -82667,7 +82667,7 @@
 	)
 	(symbol "74HC165"
 		(extends "74LS165")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -82731,7 +82731,7 @@
 	)
 	(symbol "74HC244_Split"
 		(extends "74LS244_Split")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -82795,7 +82795,7 @@
 	)
 	(symbol "74HC245"
 		(extends "74LS245")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -82857,9 +82857,73 @@
 			)
 		)
 	)
+	(symbol "74HC257"
+		(extends "74LS257")
+		(property "Reference" "IC"
+			(at -7.62 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC257"
+			(at -7.62 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad 2 to 1 Multiplexer"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "CMOS MUX MUX2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "DIP?16*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(symbol "74HC273"
 		(extends "74LS273")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -82923,7 +82987,7 @@
 	)
 	(symbol "74HC283"
 		(extends "74LS283")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -82987,7 +83051,7 @@
 	)
 	(symbol "74HC30"
 		(extends "74LS30")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -83089,7 +83153,7 @@
 	)
 	(symbol "74HC32"
 		(extends "74LS32")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -83153,7 +83217,7 @@
 	)
 	(symbol "74HC373"
 		(extends "74LS373")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -83217,7 +83281,7 @@
 	)
 	(symbol "74HC374"
 		(extends "74LS374")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -83281,7 +83345,7 @@
 	)
 	(symbol "74HC377"
 		(extends "74LS377")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -83289,7 +83353,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS377"
+		(property "Value" "74HC377"
 			(at -7.62 -16.51 0)
 			(effects
 				(font
@@ -83345,7 +83409,7 @@
 	)
 	(symbol "74HC590A"
 		(extends "74HC590")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -83409,7 +83473,7 @@
 	)
 	(symbol "74HC688"
 		(extends "74LS688")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 26.67 0)
 			(effects
 				(font
@@ -83473,7 +83537,7 @@
 	)
 	(symbol "74HC74"
 		(extends "74LS74")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -83537,7 +83601,7 @@
 	)
 	(symbol "74HC86"
 		(extends "74LS86")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -83638,7 +83702,7 @@
 	)
 	(symbol "74HCT00"
 		(extends "74LS00")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -83702,7 +83766,7 @@
 	)
 	(symbol "74HCT02"
 		(extends "74LS02")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -83766,7 +83830,7 @@
 	)
 	(symbol "74HCT04"
 		(extends "74LS04")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -83830,7 +83894,7 @@
 	)
 	(symbol "74HCT123"
 		(extends "74LS123")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 8.89 0)
 			(effects
 				(font
@@ -83894,7 +83958,7 @@
 	)
 	(symbol "74HCT137"
 		(extends "74HC137")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -83960,7 +84024,7 @@
 	)
 	(symbol "74HCT138"
 		(extends "74HC138")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -84026,7 +84090,7 @@
 	)
 	(symbol "74HCT164"
 		(extends "74HC164")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 1.905 -13.97 0)
 			(effects
 				(font
@@ -84092,7 +84156,7 @@
 	)
 	(symbol "74HCT237"
 		(extends "74HC237")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -84158,7 +84222,7 @@
 	)
 	(symbol "74HCT238"
 		(extends "74HC238")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -84224,7 +84288,7 @@
 	)
 	(symbol "74HCT240"
 		(extends "74HC240")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -84288,7 +84352,7 @@
 	)
 	(symbol "74HCT244"
 		(extends "74HC244")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -84352,7 +84416,7 @@
 	)
 	(symbol "74HCT273"
 		(extends "74LS273")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -84416,7 +84480,7 @@
 	)
 	(symbol "74HCT373"
 		(extends "74LS373")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -84480,7 +84544,7 @@
 	)
 	(symbol "74HCT374"
 		(extends "74LS374")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -84544,7 +84608,7 @@
 	)
 	(symbol "74HCT4051"
 		(extends "74HC4051")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -5.08 11.43 0)
 			(effects
 				(font
@@ -84608,7 +84672,7 @@
 	)
 	(symbol "74HCT541"
 		(extends "74LS541")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -84672,7 +84736,7 @@
 	)
 	(symbol "74HCT574"
 		(extends "74LS574")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -84736,7 +84800,7 @@
 	)
 	(symbol "74HCT595"
 		(extends "74HC595")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -84800,7 +84864,7 @@
 	)
 	(symbol "74HCT596"
 		(extends "74HC596")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -84864,7 +84928,7 @@
 	)
 	(symbol "74HCT688"
 		(extends "74LS688")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 26.67 0)
 			(effects
 				(font
@@ -84928,7 +84992,7 @@
 	)
 	(symbol "74LS06"
 		(extends "74LS05")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -84992,7 +85056,7 @@
 	)
 	(symbol "74LS06N"
 		(extends "74LS05")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -85056,7 +85120,7 @@
 	)
 	(symbol "74LS07"
 		(extends "74LCX07")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -85120,7 +85184,7 @@
 	)
 	(symbol "74LS14"
 		(extends "74HC14")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -85184,7 +85248,7 @@
 	)
 	(symbol "74LS156"
 		(extends "74LS155")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -85248,7 +85312,7 @@
 	)
 	(symbol "74LS160"
 		(extends "74LS161")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -85312,7 +85376,7 @@
 	)
 	(symbol "74LS162"
 		(extends "74LS161")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -85376,7 +85440,7 @@
 	)
 	(symbol "74LS163"
 		(extends "74LS161")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -85440,7 +85504,7 @@
 	)
 	(symbol "74LS169"
 		(extends "74LS168")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 19.05 0)
 			(effects
 				(font
@@ -85504,7 +85568,7 @@
 	)
 	(symbol "74LS191"
 		(extends "74LS190")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -85568,7 +85632,7 @@
 	)
 	(symbol "74LS193"
 		(extends "74LS192")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -85632,7 +85696,7 @@
 	)
 	(symbol "74LS197"
 		(extends "74LS196")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -85696,7 +85760,7 @@
 	)
 	(symbol "74LS22"
 		(extends "74LS20")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -85760,7 +85824,7 @@
 	)
 	(symbol "74LS246"
 		(extends "74LS247")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -85824,7 +85888,7 @@
 	)
 	(symbol "74LS249"
 		(extends "74LS248")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -85888,7 +85952,7 @@
 	)
 	(symbol "74LS28"
 		(extends "74LS02")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -85952,7 +86016,7 @@
 	)
 	(symbol "74LS293"
 		(extends "74LS290")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -86016,7 +86080,7 @@
 	)
 	(symbol "74LS37"
 		(extends "74LS00")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -86080,7 +86144,7 @@
 	)
 	(symbol "74LS38"
 		(extends "74LS26")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -86144,7 +86208,7 @@
 	)
 	(symbol "74LS40"
 		(extends "74LS20")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -86208,7 +86272,7 @@
 	)
 	(symbol "74LS46"
 		(extends "74LS47")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 11.43 0)
 			(effects
 				(font
@@ -86272,7 +86336,7 @@
 	)
 	(symbol "74LS590"
 		(extends "74HC590")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -86336,7 +86400,7 @@
 	)
 	(symbol "74LS595"
 		(extends "74HC595")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -86400,7 +86464,7 @@
 	)
 	(symbol "74LS596"
 		(extends "74HC596")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -86464,7 +86528,7 @@
 	)
 	(symbol "74LS670"
 		(extends "74LS170")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 16.51 0)
 			(effects
 				(font
@@ -86528,7 +86592,7 @@
 	)
 	(symbol "74LVC125"
 		(extends "74LS125")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -86592,7 +86656,7 @@
 	)
 	(symbol "CD74AC238"
 		(extends "74HC238")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 13.97 0)
 			(effects
 				(font
@@ -86658,7 +86722,7 @@
 	)
 	(symbol "SN74CB3Q3384APW"
 		(extends "SN74CB3Q3384ADBQ")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at -7.62 22.86 0)
 			(effects
 				(font
@@ -86722,7 +86786,7 @@
 	)
 	(symbol "SN74LS07"
 		(extends "74LCX07")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -86786,7 +86850,7 @@
 	)
 	(symbol "SN74LS07N"
 		(extends "74LCX07")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font
@@ -86850,7 +86914,7 @@
 	)
 	(symbol "SN74LV4T125"
 		(extends "74LS125")
-		(property "Reference" "U"
+		(property "Reference" "IC"
 			(at 0 1.27 0)
 			(effects
 				(font

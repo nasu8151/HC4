@@ -1,21 +1,16 @@
-`ifndef __rom
-`define __rom
-
 module rom (
-    input wire [11:0] address,
-    output reg [7:0] data
+    input wire [11:0] address,       // アドレス (8ビットで256ニブル指定)
+    output reg [7:0] data      // 共通バス (4ビット幅)
 );
-    always @(*) begin
-        case (address)
-            12'h000: data = 8'hDE;
-            12'h001: data = 8'hAD;
-            12'h002: data = 8'hBE;
-            12'h003: data = 8'hEF;
-            12'h004: data = 8'h19;
-            12'h005: data = 8'h19;
-            default: data = 8'hFF;
-        endcase
-    end
-endmodule
 
-`endif
+    // 4ビット幅、256個のメモリ配列
+    reg [7:0] memory [0:4095];
+
+    initial $readmemh("./jmptest.hex", memory);
+
+    always @(*) begin
+        // 読み出し動作
+        data <= memory[address];
+    end
+
+endmodule

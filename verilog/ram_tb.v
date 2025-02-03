@@ -12,7 +12,7 @@ module tb_memory_4bit_256nibble;
     assign data_bus = data_bus_drive ? data_in : 4'bz; // 入力時にドライブ
     always @(*) bus_out = data_bus; // 読み出しデータをキャプチャ
 
-    memory_4bit_256nibble uut (
+    ram uut (
         .clk(clk),
         .address(address),
         .data_bus(data_bus),
