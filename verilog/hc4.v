@@ -23,20 +23,22 @@ module hc4 (
 
     initial $readmemh("./jmptest.hex", rom);
 
-    reg [7:0] instruction;
+    wire [7:0] instruction;
 
     wire sub;
-    assign sub = instruction[6:4] == 3'b010 ? 1 : 0; //if opcode is 0010 (1010 is not ALU oplation)
 
     wire [3:0] alu_result;
     wire carry;
     reg  carry_flg;
     reg  zero_flg;
 
+    assign instruction = rom[pc];
     assign pc_out = pc;
     assign stackA_out = level_A;
     assign stackB_out = level_B;
     assign stackC_out = level_C;
+    assign sub = instruction[6:4] == 3'b010 ? 1 : 0; //if opcode is 0010 (1010 is not ALU oplation)
+
 
     alu ALU (
         .in_A (level_A),
@@ -103,15 +105,8 @@ module hc4 (
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
             pc <= 12'b0;
-        end else begin
-            pc <= NEXT_PC(instruction, pc, level_A, level_B, level_C, carry_flg, zero_flg);
-        end
-    end
-
-    always @(negedge clk or negedge nReset) begin
-        if (nReset == 0) begin
-            instruction <= 8'b0;
             carry_flg <= 1'b0;
+            zero_flg <= 1'b0;
             level_A <= 4'b0;
         end else begin
             casez (instruction[7:6])
@@ -129,7 +124,6 @@ module hc4 (
                     //nothing to write here
                 end
             endcase
-            instruction <= rom[pc];
-        end
+            pc <= NEXT_PC(instruction, pc, level_A, level_B, level_C, carry_flg, zero_flg);        end
     end
 endmodule

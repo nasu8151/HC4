@@ -32,7 +32,7 @@ All of instructions are 8-bit wide.
 
 As noted earlier, instruction of this CPU is 8-bit wide.   
 ```r``` means a 4-bit wide register. In the program, it is represented by ```r0``` to ```r15``` in program.    
-```i``` means a 4-bit wide immediate data.    
+```#i``` means a 4-bit wide immediate data.    
 ```[AB]``` means indirect addressing of stack level A and B. MSB is level B.
 ```[ABC]``` means indirect addressing of stack level A, B and C. MSB is level C.
 
