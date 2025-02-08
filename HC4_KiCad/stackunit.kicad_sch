@@ -2278,7 +2278,7 @@
 			)
 		)
 	)
-	(global_label "~{CLK}"
+	(global_label "CLK"
 		(shape input)
 		(at 153.67 111.76 180)
 		(fields_autoplaced yes)
@@ -2300,7 +2300,7 @@
 			)
 		)
 	)
-	(global_label "~{CLK}"
+	(global_label "CLK"
 		(shape input)
 		(at 77.47 99.06 180)
 		(fields_autoplaced yes)
@@ -2398,7 +2398,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "272bb0bb-e391-47d3-8b71-4f20bb7bce95")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR029"
 			(at 167.64 81.28 0)
 			(effects
 				(font
@@ -2448,7 +2448,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR021")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -2588,7 +2588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5789fc3-1adf-46da-b778-49c88efc9d4d")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR030"
 			(at 167.64 129.54 0)
 			(effects
 				(font
@@ -2638,7 +2638,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR022")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -2799,7 +2799,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c79703fa-1177-4d24-a4e7-b9684cccbdc9")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR027"
 			(at 92.71 85.09 0)
 			(effects
 				(font
@@ -2849,7 +2849,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR019")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -2865,7 +2865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f78beed7-37b5-4613-be99-9735693ef6c1")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR028"
 			(at 92.71 123.19 0)
 			(effects
 				(font
@@ -2915,7 +2915,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR020")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)

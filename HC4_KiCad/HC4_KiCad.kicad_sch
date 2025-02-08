@@ -2655,6 +2655,12 @@
 		(uuid "a7d2a139-57d5-4586-805b-bdb9d1d0d876")
 	)
 	(junction
+		(at 254 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b64f496e-a055-4899-801b-fc18e1dc6366")
+	)
+	(junction
 		(at 36.83 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2944,6 +2950,16 @@
 		)
 		(uuid "07704158-4942-492d-af94-b9f5909c705b")
 	)
+	(bus
+		(pts
+			(xy 254 71.12) (xy 254 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "089e03a3-7465-4aa1-8801-901c1d1d839d")
+	)
 	(wire
 		(pts
 			(xy 64.77 166.37) (xy 64.77 167.64)
@@ -3066,7 +3082,7 @@
 	)
 	(bus
 		(pts
-			(xy 254 71.12) (xy 254 93.98)
+			(xy 254 39.37) (xy 254 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6275,16 +6291,6 @@
 			)
 			(uuid "50d15c3a-8160-4d45-a8e7-a72914204ccb")
 		)
-		(pin "Immediate[0..3]" input
-			(at 232.41 39.37 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d63448dc-a8b6-4771-8801-f27211287567")
-		)
 		(pin "Stack[0..3]" output
 			(at 105.41 39.37 270)
 			(effects
@@ -6325,10 +6331,58 @@
 			)
 			(uuid "7999824f-8bd7-4b53-a44a-1563eb96bd9d")
 		)
+		(pin "Instruction_[0..7]" input
+			(at 254 39.37 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c62897a8-1872-4e9c-92f7-e9726712184c")
+		)
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 248.92 148.59)
+		(size 25.4 11.43)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3d67359d-c55c-4207-8a6b-ff7c83e276f6")
+		(property "Sheetname" "Clock and Reset"
+			(at 248.92 147.8784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "clockandreset.kicad_sch"
+			(at 248.92 160.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
+					(page "8")
 				)
 			)
 		)
@@ -6422,16 +6476,6 @@
 			)
 			(uuid "2b2ce549-7bc9-47d5-a488-6d6f48b9bc87")
 		)
-		(pin "Sub" input
-			(at 143.51 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "c94eb595-d8ae-4695-8647-a12708b6b1d9")
-		)
 		(pin "I1a" input
 			(at 143.51 100.33 0)
 			(effects
@@ -6462,15 +6506,15 @@
 			)
 			(uuid "ec4d9fe4-aed6-4950-a954-45c0fd8ccbd5")
 		)
-		(pin "~{Sub}" input
-			(at 143.51 96.52 0)
+		(pin "I0a" input
+			(at 143.51 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6c5fae56-27aa-4b9f-9f09-ad5ca4bd5a7a")
+			(uuid "68319eba-46b0-41d0-a1a8-17bceda35f63")
 		)
 		(instances
 			(project "HC4_KiCad"

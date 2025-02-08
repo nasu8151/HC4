@@ -625,7 +625,7 @@
         },
         {
           "group_by": false,
-          "label": "説明",
+          "label": "Description",
           "name": "Description",
           "show": false
         },
@@ -727,6 +727,10 @@
     [
       "164b1f41-83dc-48ee-8dfe-457b556a7022",
       "Instruction Decoder"
+    ],
+    [
+      "3d67359d-c55c-4207-8a6b-ff7c83e276f6",
+      "Clock and Reset"
     ]
   ],
   "text_variables": {}

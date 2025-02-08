@@ -124,6 +124,7 @@ module hc4 (
                     //nothing to write here
                 end
             endcase
-            pc <= NEXT_PC(instruction, pc, level_A, level_B, level_C, carry_flg, zero_flg);        end
+            pc <= NEXT_PC(instruction, pc, level_A, level_B, level_C, carry_flg, zero_flg);
+        end
     end
 endmodule
