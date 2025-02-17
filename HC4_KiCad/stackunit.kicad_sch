@@ -2211,7 +2211,6 @@
 	)
 	(label "Level_B3"
 		(at 189.23 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2222,7 +2221,6 @@
 	)
 	(label "Stack_IN0"
 		(at 69.85 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2233,7 +2231,6 @@
 	)
 	(label "Level_B2"
 		(at 146.05 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2244,7 +2241,6 @@
 	)
 	(label "Level_A0"
 		(at 146.05 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2255,7 +2251,6 @@
 	)
 	(label "Level_A2"
 		(at 111.76 107.95 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2266,7 +2261,6 @@
 	)
 	(label "Level_A1"
 		(at 146.05 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2277,7 +2271,6 @@
 	)
 	(label "Level_B2"
 		(at 189.23 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2288,7 +2281,6 @@
 	)
 	(label "Stack_IN3"
 		(at 69.85 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2299,7 +2291,6 @@
 	)
 	(label "Level_C3"
 		(at 189.23 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2310,7 +2301,6 @@
 	)
 	(label "Level_A3"
 		(at 146.05 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2321,7 +2311,6 @@
 	)
 	(label "Level_A1"
 		(at 111.76 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2332,7 +2321,6 @@
 	)
 	(label "Level_C0"
 		(at 189.23 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2343,7 +2331,6 @@
 	)
 	(label "Level_B3"
 		(at 146.05 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2354,7 +2341,6 @@
 	)
 	(label "Level_B1"
 		(at 189.23 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2365,7 +2351,6 @@
 	)
 	(label "Level_B1"
 		(at 146.05 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2376,7 +2361,6 @@
 	)
 	(label "Level_A3"
 		(at 111.76 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2387,7 +2371,6 @@
 	)
 	(label "Level_B0"
 		(at 189.23 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2398,7 +2381,6 @@
 	)
 	(label "Level_C2"
 		(at 189.23 104.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2409,7 +2391,6 @@
 	)
 	(label "Level_A0"
 		(at 111.76 102.87 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2420,7 +2401,6 @@
 	)
 	(label "Level_B0"
 		(at 146.05 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2431,7 +2411,6 @@
 	)
 	(label "Stack_IN2"
 		(at 69.85 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2442,7 +2421,6 @@
 	)
 	(label "Stack_IN1"
 		(at 69.85 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2453,7 +2431,6 @@
 	)
 	(label "Level_C1"
 		(at 189.23 101.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2464,7 +2441,6 @@
 	)
 	(label "Level_A2"
 		(at 146.05 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2542,7 +2518,6 @@
 	(hierarchical_label "Level_A[0..3]"
 		(shape output)
 		(at 118.11 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2554,7 +2529,6 @@
 	(hierarchical_label "Level_C[0..3]"
 		(shape output)
 		(at 194.31 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2566,7 +2540,6 @@
 	(hierarchical_label "Level_B[0..3]"
 		(shape output)
 		(at 194.31 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2578,7 +2551,6 @@
 	(hierarchical_label "~{STACK_LE}"
 		(shape input)
 		(at 152.4 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2590,7 +2562,6 @@
 	(hierarchical_label "~{STACK_LE}"
 		(shape input)
 		(at 80.01 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2602,7 +2573,6 @@
 	(hierarchical_label "Stack_IN[0..3]"
 		(shape input)
 		(at 66.04 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2941,7 +2911,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "890cd8f0-7950-4ff2-bb9c-85ff380306dc")
-		(property "Reference" "CP8"
+		(property "Reference" "CP10"
 			(at 95.758 160.782 0)
 			(effects
 				(font
@@ -2995,7 +2965,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "CP8")
+					(reference "CP10")
 					(unit 1)
 				)
 			)
@@ -3010,7 +2980,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f67567e-de06-4070-a803-2a6a3dba9278")
-		(property "Reference" "CP9"
+		(property "Reference" "CP11"
 			(at 102.108 160.782 0)
 			(effects
 				(font
@@ -3064,7 +3034,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "CP9")
+					(reference "CP11")
 					(unit 1)
 				)
 			)

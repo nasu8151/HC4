@@ -3176,7 +3176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c91248f-712b-451a-aa8c-837d89d92471")
-		(property "Reference" "CP22"
+		(property "Reference" "CP24"
 			(at 144.78 175.2599 0)
 			(effects
 				(font
@@ -3230,7 +3230,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/3d67359d-c55c-4207-8a6b-ff7c83e276f6"
-					(reference "CP22")
+					(reference "CP24")
 					(unit 1)
 				)
 			)
