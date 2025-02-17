@@ -279,7 +279,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "007d9f68-31d2-46ab-8a31-078249a05c4a")
-		(at 148.3 167)
+		(at 33.99 155.445)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD14"
@@ -553,7 +553,7 @@
 	(footprint "Package_DIP:DIP-28_W15.24mm"
 		(layer "F.Cu")
 		(uuid "01d04875-8b28-4df1-947f-c89b8099a56c")
-		(at 101.455 53.4)
+		(at -31.895 210.88)
 		(descr "28-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil")
 		(property "Reference" "IC2"
@@ -1107,7 +1107,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "03dea7a5-5285-4e59-a661-75b7aece6ef4")
-		(at 148.315484 72.240968)
+		(at 340.565484 66.102339)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D38"
@@ -1354,7 +1354,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "043c4d0f-660f-404f-ad61-c53c2111bacf")
-		(at 142.314113 68.468226)
+		(at 334.564113 62.329597)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D28"
@@ -1601,7 +1601,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "06975d0b-d489-4407-9609-10a1e58dfb10")
-		(at 130.311371 60.922742)
+		(at 322.561371 54.784113)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D8"
@@ -1848,7 +1848,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "06d84f94-2ed7-45ff-a274-0a3fda724eb7")
-		(at 136.69 35.338629)
+		(at 328.94 29.2)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC23"
@@ -2350,7 +2350,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "06ec7ba2-e6f2-433d-bf80-256bc53ffc93")
-		(at 141.6 170.75)
+		(at 27.29 159.195)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD11"
@@ -2624,7 +2624,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "09ee84e4-e4a7-4b39-9938-7512bac1878d")
-		(at 130.311371 79.786452)
+		(at 322.561371 73.647823)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D13"
@@ -2871,7 +2871,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "0b1b4879-3b61-4428-a2ab-3e859cbdb137")
-		(at 126.91 86.545)
+		(at -6.44 244.025)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD2"
@@ -3145,7 +3145,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "0df616e4-9ed4-4860-ac35-3d9d118cf41b")
-		(at 125.231371 72.240968)
+		(at 317.481371 66.102339)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D2"
@@ -3392,7 +3392,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "0fa1c0d6-780a-4e7c-93f2-2c1cdf3a2c41")
-		(at 122.51 96.695)
+		(at -10.84 254.175)
 		(descr "Through hole straight socket strip, 1x01, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 1x01 2.54mm single row")
 		(property "Reference" "J2"
@@ -3638,7 +3638,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "11292b43-7f93-4f47-b4e1-ff86dcaf9c3d")
-		(at 215.9 48.26 -90)
+		(at 182.88 49.53 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP5"
@@ -3853,7 +3853,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "13f29457-0ebe-41e0-b982-09f4a274cb0c")
-		(at 141.6 163.25)
+		(at 27.29 151.695)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD9"
@@ -4127,7 +4127,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "148b5995-9853-457c-a80b-afb7e20a2805")
-		(at 148.315484 79.786452)
+		(at 340.565484 73.647823)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D40"
@@ -4374,7 +4374,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "14b463ca-17b6-4f98-8e1c-852005d438b5")
-		(at 189.23 137.16 -90)
+		(at 129.54 92.67 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP6"
@@ -4589,7 +4589,7 @@
 	(footprint "Button_Switch_THT:SW_PUSH_6mm"
 		(layer "F.Cu")
 		(uuid "192baf77-da53-4bea-9288-2a09d12cbaba")
-		(at 107.605 157.555 90)
+		(at 129.305 214.09 90)
 		(descr "Generic 6mm SW tactile push button")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW4"
@@ -4948,7 +4948,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "1bbe080b-96a4-441b-843d-60af94059b80")
-		(at 198.12 152.4 90)
+		(at 138.43 107.91 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD6"
@@ -5222,7 +5222,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "1d9749b6-4c52-42d5-9ba9-ae7d08244142")
-		(at 187.96 38.1 90)
+		(at 158.75 39.37 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC5"
@@ -5724,7 +5724,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "24b1d8d6-1cb8-4123-b926-bb7452121b06")
-		(at 148.315484 57.15)
+		(at 340.565484 51.011371)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D34"
@@ -5971,7 +5971,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "2509f146-e573-4cc8-b2e8-59494de24496")
-		(at 126.949775 95.445)
+		(at -6.400225 252.925)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=5mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 5mm Electrolytic Capacitor")
 		(property "Reference" "C1"
@@ -7339,7 +7339,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "2529f630-b52d-4e02-90c7-299c70cd1bc6")
-		(at 148.315484 68.468226)
+		(at 340.565484 62.329597)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D37"
@@ -7586,7 +7586,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "2755b56e-c8af-4ce4-9e6d-d1916f9d6ed6")
-		(at 142.314113 83.559194)
+		(at 334.564113 77.420565)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D32"
@@ -7833,7 +7833,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "275717df-c061-4a0a-adbf-f5986ef99c48")
-		(at 122.51 86.995)
+		(at -10.84 244.475)
 		(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x03 2.54mm single row")
 		(property "Reference" "JP1"
@@ -8111,7 +8111,7 @@
 	(footprint "Connector_BarrelJack:BarrelJack_GCT_DCJ200-10-A_Horizontal"
 		(layer "F.Cu")
 		(uuid "2a4784a1-eab8-43bb-82c8-20a24f2f9c97")
-		(at 125.71 57.795)
+		(at -7.64 215.275)
 		(descr "Barrel jack connector (5.5 mm outer diameter, 2.05 inner diameter ), https://gct.co/files/drawings/dcj200-10.pdf")
 		(tags "connector barrel jack")
 		(property "Reference" "J1"
@@ -8444,7 +8444,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "2a78498e-1bf4-427f-960d-0fbcd871e6ee")
-		(at 124.94 35.338629)
+		(at 317.19 29.2)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC21"
@@ -8945,7 +8945,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "2ce70dbd-e590-43d7-a1b9-2edd41813184")
-		(at 148.44 35.338629)
+		(at 340.69 29.2)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC19"
@@ -9413,7 +9413,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "32a5c115-0a7a-49ba-a7d1-47e388bec844")
-		(at 148.315484 60.922742)
+		(at 340.565484 54.784113)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D35"
@@ -9660,7 +9660,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "3500201e-c3b0-4dd5-966d-089714f4e198")
-		(at 130.311371 64.695484)
+		(at 322.561371 58.556855)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D9"
@@ -9907,7 +9907,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "3a245ae5-93a2-4a5b-b4df-ae85b70bfd7c")
-		(at 155 163.25)
+		(at 40.69 151.695)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD17"
@@ -10181,7 +10181,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "3bf3b0d3-93e2-4d51-af3b-770030c624fb")
-		(at 195.58 97.75 90)
+		(at 110.49 52.03 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD23"
@@ -10455,7 +10455,7 @@
 	(footprint "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
 		(layer "F.Cu")
 		(uuid "3c8988c1-be70-4e6a-9c61-bdeeb3d80b7c")
-		(at 102.87 168.91 90)
+		(at 124.57 225.445 90)
 		(descr "Wuerth, WS-SLTV, 450301014042, https://www.we-online.com/components/products/datasheet/450301014042.pdf")
 		(tags "switch single-pole opposite-side-connection double-throw SPDT würth wurth")
 		(property "Reference" "SW5"
@@ -10615,7 +10615,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "3c90295f-acef-4021-aaba-af6effbeb6f6")
-		(at 136.312742 60.922742)
+		(at 328.562742 54.784113)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D17"
@@ -10862,7 +10862,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "4472e605-0763-42e5-ad32-9b3962b56e2c")
-		(at 82.319775 151.005)
+		(at 104.019775 207.54)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=5mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 5mm Electrolytic Capacitor")
 		(property "Reference" "C2"
@@ -12230,11 +12230,11 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "44fbf9cb-984b-449a-a91d-ad2d8b360cb2")
-		(at 181.61 125.73 180)
+		(at 148.59 74.93 -90)
 		(descr "Through hole straight pin header, 2x20, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x20 2.54mm double row")
 		(property "Reference" "J3"
-			(at 1.27 -2.33 360)
+			(at 1.27 -2.33 90)
 			(layer "F.SilkS")
 			(uuid "91a189f6-3e07-440b-9aea-2e481bdf83a1")
 			(effects
@@ -12245,7 +12245,7 @@
 			)
 		)
 		(property "Value" "Expantion_Connector"
-			(at 1.27 50.59 360)
+			(at 1.27 50.59 90)
 			(layer "F.Fab")
 			(uuid "737e98cf-9fa0-4ae4-b600-da762fb0fbd1")
 			(effects
@@ -12256,7 +12256,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical"
-			(at 0 0 180)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12269,7 +12269,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 180)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12282,7 +12282,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 180)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12300,36 +12300,6 @@
 		(sheetfile "databus.kicad_sch")
 		(attr through_hole)
 		(fp_line
-			(start 3.87 -1.33)
-			(end 3.87 49.59)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c7d28748-854c-41fb-b297-9d86832085e8")
-		)
-		(fp_line
-			(start 1.27 1.27)
-			(end 1.27 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "19a1b247-3107-453e-b01f-c1f16fabdd4b")
-		)
-		(fp_line
-			(start 1.27 -1.33)
-			(end 3.87 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a9d30e00-37c9-415d-92ce-7fe956ab80ea")
-		)
-		(fp_line
 			(start -1.33 49.59)
 			(end 3.87 49.59)
 			(stroke
@@ -12338,6 +12308,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "85ddeaa8-d86b-4c8b-ada1-db270765af52")
+		)
+		(fp_line
+			(start -1.33 1.27)
+			(end -1.33 49.59)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e9004f0c-bfff-4816-b645-b249fac0fe24")
 		)
 		(fp_line
 			(start -1.33 1.27)
@@ -12350,14 +12330,14 @@
 			(uuid "39b5f13d-4708-492c-bc3e-23986e8e5573")
 		)
 		(fp_line
-			(start -1.33 1.27)
-			(end -1.33 49.59)
+			(start 1.27 1.27)
+			(end 1.27 -1.33)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "e9004f0c-bfff-4816-b645-b249fac0fe24")
+			(uuid "19a1b247-3107-453e-b01f-c1f16fabdd4b")
 		)
 		(fp_line
 			(start -1.33 0)
@@ -12380,24 +12360,24 @@
 			(uuid "3092f2f3-ac2e-4997-94be-f2c15b02264d")
 		)
 		(fp_line
-			(start 4.35 50.05)
-			(end 4.35 -1.8)
+			(start 1.27 -1.33)
+			(end 3.87 -1.33)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "90f28fdd-10ee-4af1-93d7-f2dedfa3b4ad")
+			(layer "F.SilkS")
+			(uuid "a9d30e00-37c9-415d-92ce-7fe956ab80ea")
 		)
 		(fp_line
-			(start 4.35 -1.8)
-			(end -1.8 -1.8)
+			(start 3.87 -1.33)
+			(end 3.87 49.59)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "ea5a6dcf-1342-4ec7-b79c-db2828cdfda4")
+			(layer "F.SilkS")
+			(uuid "c7d28748-854c-41fb-b297-9d86832085e8")
 		)
 		(fp_line
 			(start -1.8 50.05)
@@ -12410,6 +12390,16 @@
 			(uuid "891886af-e813-453c-a594-3f3fabac3f95")
 		)
 		(fp_line
+			(start 4.35 50.05)
+			(end 4.35 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "90f28fdd-10ee-4af1-93d7-f2dedfa3b4ad")
+		)
+		(fp_line
 			(start -1.8 -1.8)
 			(end -1.8 50.05)
 			(stroke
@@ -12420,34 +12410,14 @@
 			(uuid "a3d6d705-f4a4-40b9-b11d-137551787ccd")
 		)
 		(fp_line
-			(start 3.81 49.53)
-			(end -1.27 49.53)
+			(start 4.35 -1.8)
+			(end -1.8 -1.8)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "ea587aed-7fe6-4c93-8d40-de2827be3256")
-		)
-		(fp_line
-			(start 3.81 -1.27)
-			(end 3.81 49.53)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "cedd34c8-da27-4c60-a110-8679141ae917")
-		)
-		(fp_line
-			(start 0 -1.27)
-			(end 3.81 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "01271e0f-e759-4402-8b45-59f396b92944")
+			(layer "F.CrtYd")
+			(uuid "ea5a6dcf-1342-4ec7-b79c-db2828cdfda4")
 		)
 		(fp_line
 			(start -1.27 49.53)
@@ -12460,6 +12430,16 @@
 			(uuid "68aeb635-1c6d-45e2-93e2-7c46c214c211")
 		)
 		(fp_line
+			(start 3.81 49.53)
+			(end -1.27 49.53)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ea587aed-7fe6-4c93-8d40-de2827be3256")
+		)
+		(fp_line
 			(start -1.27 0)
 			(end 0 -1.27)
 			(stroke
@@ -12469,8 +12449,28 @@
 			(layer "F.Fab")
 			(uuid "a124ef32-bec4-40e5-9ae3-74bb199eb862")
 		)
+		(fp_line
+			(start 0 -1.27)
+			(end 3.81 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "01271e0f-e759-4402-8b45-59f396b92944")
+		)
+		(fp_line
+			(start 3.81 -1.27)
+			(end 3.81 49.53)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cedd34c8-da27-4c60-a110-8679141ae917")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 24.13 90)
+			(at 1.27 24.13 360)
 			(layer "F.Fab")
 			(uuid "e090609a-d239-417b-9fce-cfabf3f0a638")
 			(effects
@@ -12481,7 +12481,7 @@
 			)
 		)
 		(pad "1" thru_hole rect
-			(at 0 0 180)
+			(at 0 0 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12492,7 +12492,7 @@
 			(uuid "8d19f36c-918e-405a-8585-1ea7d304af1a")
 		)
 		(pad "2" thru_hole oval
-			(at 2.54 0 180)
+			(at 2.54 0 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12503,7 +12503,7 @@
 			(uuid "63dfd3d4-d4e5-4d7c-a3e2-332d1c604de5")
 		)
 		(pad "3" thru_hole oval
-			(at 0 2.54 180)
+			(at 0 2.54 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12514,7 +12514,7 @@
 			(uuid "b79f8785-6deb-4ae0-b2db-963b7096015c")
 		)
 		(pad "4" thru_hole oval
-			(at 2.54 2.54 180)
+			(at 2.54 2.54 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12525,7 +12525,7 @@
 			(uuid "25eba1d2-95eb-4d84-99cd-6eb63d1709cc")
 		)
 		(pad "5" thru_hole oval
-			(at 0 5.08 180)
+			(at 0 5.08 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12536,7 +12536,7 @@
 			(uuid "32d95347-9d1d-4ad4-acd6-e84ec866880c")
 		)
 		(pad "6" thru_hole oval
-			(at 2.54 5.08 180)
+			(at 2.54 5.08 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12547,7 +12547,7 @@
 			(uuid "c80a9c7d-1702-4703-a6fb-693835d1643b")
 		)
 		(pad "7" thru_hole oval
-			(at 0 7.62 180)
+			(at 0 7.62 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12558,7 +12558,7 @@
 			(uuid "99510d6b-a4e0-4626-b780-5eb519aa1eb8")
 		)
 		(pad "8" thru_hole oval
-			(at 2.54 7.62 180)
+			(at 2.54 7.62 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12569,7 +12569,7 @@
 			(uuid "0567c126-7278-44a5-887c-ead9553fa075")
 		)
 		(pad "9" thru_hole oval
-			(at 0 10.16 180)
+			(at 0 10.16 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12580,7 +12580,7 @@
 			(uuid "fc1fa1f8-4443-4aeb-965c-f4ad13853a37")
 		)
 		(pad "10" thru_hole oval
-			(at 2.54 10.16 180)
+			(at 2.54 10.16 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12591,7 +12591,7 @@
 			(uuid "406cc618-053e-4723-8f1f-2d74bdb5c853")
 		)
 		(pad "11" thru_hole oval
-			(at 0 12.7 180)
+			(at 0 12.7 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12602,7 +12602,7 @@
 			(uuid "3cbe67c9-7d15-4f09-a8f0-93b8da9e67fc")
 		)
 		(pad "12" thru_hole oval
-			(at 2.54 12.7 180)
+			(at 2.54 12.7 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12613,7 +12613,7 @@
 			(uuid "3235bcaf-7bae-4ba3-9d21-ab4c05006588")
 		)
 		(pad "13" thru_hole oval
-			(at 0 15.24 180)
+			(at 0 15.24 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12624,7 +12624,7 @@
 			(uuid "d387ca78-15ab-4a9b-9f95-c64a6f7f4ed2")
 		)
 		(pad "14" thru_hole oval
-			(at 2.54 15.24 180)
+			(at 2.54 15.24 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12635,7 +12635,7 @@
 			(uuid "312cca54-8441-4c2f-8be0-b8fe1bb2b6f8")
 		)
 		(pad "15" thru_hole oval
-			(at 0 17.78 180)
+			(at 0 17.78 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12646,7 +12646,7 @@
 			(uuid "da8e4d6a-1289-4119-acab-3bf8266b2729")
 		)
 		(pad "16" thru_hole oval
-			(at 2.54 17.78 180)
+			(at 2.54 17.78 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12657,7 +12657,7 @@
 			(uuid "c6a6c3ec-e929-4f02-8548-fe71c479a9b7")
 		)
 		(pad "17" thru_hole oval
-			(at 0 20.32 180)
+			(at 0 20.32 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12668,7 +12668,7 @@
 			(uuid "9e7140e7-c534-4149-8322-c9d9d1160c1b")
 		)
 		(pad "18" thru_hole oval
-			(at 2.54 20.32 180)
+			(at 2.54 20.32 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12679,7 +12679,7 @@
 			(uuid "4d668070-8797-4a32-b370-47347e2d2499")
 		)
 		(pad "19" thru_hole oval
-			(at 0 22.86 180)
+			(at 0 22.86 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12690,7 +12690,7 @@
 			(uuid "8448838e-acd1-4f94-8b94-fa399c2c7779")
 		)
 		(pad "20" thru_hole oval
-			(at 2.54 22.86 180)
+			(at 2.54 22.86 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12701,7 +12701,7 @@
 			(uuid "cb660547-10fb-41ba-b28c-71af7e15b460")
 		)
 		(pad "21" thru_hole oval
-			(at 0 25.4 180)
+			(at 0 25.4 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12712,7 +12712,7 @@
 			(uuid "74ecfcc4-2c83-415e-a4be-73789c27aeed")
 		)
 		(pad "22" thru_hole oval
-			(at 2.54 25.4 180)
+			(at 2.54 25.4 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12723,7 +12723,7 @@
 			(uuid "412e7316-e3bf-4f8b-9591-24ac8668f191")
 		)
 		(pad "23" thru_hole oval
-			(at 0 27.94 180)
+			(at 0 27.94 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12734,7 +12734,7 @@
 			(uuid "9eb57954-7c1a-4a4e-8428-03fcbdfc260f")
 		)
 		(pad "24" thru_hole oval
-			(at 2.54 27.94 180)
+			(at 2.54 27.94 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12745,7 +12745,7 @@
 			(uuid "3d7a3b07-69d8-4650-b6be-f3f39523b4f3")
 		)
 		(pad "25" thru_hole oval
-			(at 0 30.48 180)
+			(at 0 30.48 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12756,7 +12756,7 @@
 			(uuid "c03eb2ff-6889-4b5a-9dc9-b60ab9e19afb")
 		)
 		(pad "26" thru_hole oval
-			(at 2.54 30.48 180)
+			(at 2.54 30.48 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12767,7 +12767,7 @@
 			(uuid "43c3f989-e62e-439a-9592-f47a543d1459")
 		)
 		(pad "27" thru_hole oval
-			(at 0 33.02 180)
+			(at 0 33.02 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12778,7 +12778,7 @@
 			(uuid "0a63b503-8641-4a9a-a334-9a758de35646")
 		)
 		(pad "28" thru_hole oval
-			(at 2.54 33.02 180)
+			(at 2.54 33.02 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12789,7 +12789,7 @@
 			(uuid "9147fac9-1e4b-4722-9783-d2196a4bb23c")
 		)
 		(pad "29" thru_hole oval
-			(at 0 35.56 180)
+			(at 0 35.56 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12800,7 +12800,7 @@
 			(uuid "7a96dc74-8230-470e-896d-2c10effd4233")
 		)
 		(pad "30" thru_hole oval
-			(at 2.54 35.56 180)
+			(at 2.54 35.56 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12811,7 +12811,7 @@
 			(uuid "6c31176a-7ad4-4248-8364-05ea070665ea")
 		)
 		(pad "31" thru_hole oval
-			(at 0 38.1 180)
+			(at 0 38.1 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12822,7 +12822,7 @@
 			(uuid "7e019f2b-d05e-49c2-8fb4-16be30a2b8da")
 		)
 		(pad "32" thru_hole oval
-			(at 2.54 38.1 180)
+			(at 2.54 38.1 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12833,7 +12833,7 @@
 			(uuid "4cf523f8-f96d-40b5-93df-fdbbcbf69438")
 		)
 		(pad "33" thru_hole oval
-			(at 0 40.64 180)
+			(at 0 40.64 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12844,7 +12844,7 @@
 			(uuid "7975340e-a21e-4555-a6e4-56d4b85a9b0a")
 		)
 		(pad "34" thru_hole oval
-			(at 2.54 40.64 180)
+			(at 2.54 40.64 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12855,7 +12855,7 @@
 			(uuid "2fc23e35-8c4b-4d34-84d7-c25885e5db95")
 		)
 		(pad "35" thru_hole oval
-			(at 0 43.18 180)
+			(at 0 43.18 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12866,7 +12866,7 @@
 			(uuid "760dce67-3f3f-42de-896f-cc7ca00aca8e")
 		)
 		(pad "36" thru_hole oval
-			(at 2.54 43.18 180)
+			(at 2.54 43.18 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12877,7 +12877,7 @@
 			(uuid "dc08e738-ee81-4e33-b9a5-b8a94a08ec1c")
 		)
 		(pad "37" thru_hole oval
-			(at 0 45.72 180)
+			(at 0 45.72 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12888,7 +12888,7 @@
 			(uuid "b0a271af-ecd8-44f6-aa4c-6d7d8c195e94")
 		)
 		(pad "38" thru_hole oval
-			(at 2.54 45.72 180)
+			(at 2.54 45.72 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12899,7 +12899,7 @@
 			(uuid "a8e2b5e0-506c-4305-aac8-d3d173af1dff")
 		)
 		(pad "39" thru_hole oval
-			(at 0 48.26 180)
+			(at 0 48.26 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12910,7 +12910,7 @@
 			(uuid "02e1478c-b4e9-4638-9e11-eb6c6f86de4c")
 		)
 		(pad "40" thru_hole oval
-			(at 2.54 48.26 180)
+			(at 2.54 48.26 270)
 			(size 1.7 1.7)
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
@@ -12935,11 +12935,11 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "453ba390-67c6-40b6-bf81-2f1fbd6bf368")
-		(at 145.56 122.43)
+		(at 212.09 49.53 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP9"
-			(at 1.25 -2.05 0)
+			(at -2.54 0.04 90)
 			(layer "F.SilkS")
 			(uuid "dcdbb3c0-8e1b-4e3c-a83a-407dc1e9a1f9")
 			(effects
@@ -12950,7 +12950,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 1.25 2.05 0)
+			(at 5.08 0.04 90)
 			(layer "F.Fab")
 			(uuid "4f9c6d1d-98a2-4b11-8713-cdd708e596c5")
 			(effects
@@ -12961,7 +12961,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12974,7 +12974,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12987,7 +12987,7 @@
 			)
 		)
 		(property "Description" "Bypass Capacitor"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13005,16 +13005,6 @@
 		(sheetfile "stackunit.kicad_sch")
 		(attr through_hole)
 		(fp_line
-			(start 0.621 -0.92)
-			(end 1.879 -0.92)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f7d51d2c-7277-40fc-adab-088b25fd0620")
-		)
-		(fp_line
 			(start 0.621 0.92)
 			(end 1.879 0.92)
 			(stroke
@@ -13025,14 +13015,14 @@
 			(uuid "c05ff7c1-aa71-45bf-be21-942d85f1ddb8")
 		)
 		(fp_line
-			(start -1.05 -1.05)
-			(end -1.05 1.05)
+			(start 0.621 -0.92)
+			(end 1.879 -0.92)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "b9810324-d96e-4058-b7c3-369c2a137783")
+			(layer "F.SilkS")
+			(uuid "f7d51d2c-7277-40fc-adab-088b25fd0620")
 		)
 		(fp_line
 			(start -1.05 1.05)
@@ -13045,16 +13035,6 @@
 			(uuid "0cb15feb-0a89-45cc-9017-415b20536309")
 		)
 		(fp_line
-			(start 3.55 -1.05)
-			(end -1.05 -1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "14bc34f2-547f-45ba-b673-ffbef6ff9f2f")
-		)
-		(fp_line
 			(start 3.55 1.05)
 			(end 3.55 -1.05)
 			(stroke
@@ -13065,14 +13045,24 @@
 			(uuid "35a334ae-5b1d-4d4e-9fdf-620f051e5e9c")
 		)
 		(fp_line
-			(start -0.25 -0.8)
-			(end -0.25 0.8)
+			(start -1.05 -1.05)
+			(end -1.05 1.05)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "c2421322-cd5a-4a06-a75e-f730c225a501")
+			(layer "F.CrtYd")
+			(uuid "b9810324-d96e-4058-b7c3-369c2a137783")
+		)
+		(fp_line
+			(start 3.55 -1.05)
+			(end -1.05 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "14bc34f2-547f-45ba-b673-ffbef6ff9f2f")
 		)
 		(fp_line
 			(start -0.25 0.8)
@@ -13085,16 +13075,6 @@
 			(uuid "a3aa9a13-6c4b-4d89-b537-d396ef931352")
 		)
 		(fp_line
-			(start 2.75 -0.8)
-			(end -0.25 -0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "705f41ca-6189-48cc-b63a-6b62302129a6")
-		)
-		(fp_line
 			(start 2.75 0.8)
 			(end 2.75 -0.8)
 			(stroke
@@ -13104,8 +13084,28 @@
 			(layer "F.Fab")
 			(uuid "c7add4a4-f5d5-487f-96b3-29d4807d4026")
 		)
+		(fp_line
+			(start -0.25 -0.8)
+			(end -0.25 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c2421322-cd5a-4a06-a75e-f730c225a501")
+		)
+		(fp_line
+			(start 2.75 -0.8)
+			(end -0.25 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "705f41ca-6189-48cc-b63a-6b62302129a6")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 0)
+			(at 1.25 0 90)
 			(layer "F.Fab")
 			(uuid "56c77e5f-33f1-4df2-9bdb-5d92f23529d7")
 			(effects
@@ -13116,7 +13116,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -13126,7 +13126,7 @@
 			(uuid "973d55e7-8c45-4c4b-94a4-91fe21d8088c")
 		)
 		(pad "2" thru_hole circle
-			(at 2.5 0)
+			(at 2.5 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -13150,7 +13150,7 @@
 	(footprint "Resistor_THT:R_Array_SIP9"
 		(layer "F.Cu")
 		(uuid "48d0ee7b-83b1-471d-b989-825de0dc8575")
-		(at 141.32 155.75)
+		(at 27.01 144.195)
 		(descr "9-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN4"
@@ -13484,7 +13484,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "49b6ea72-6133-45e8-a5d2-3c309562b43a")
-		(at 125.231371 76.01371)
+		(at 317.481371 69.875081)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D3"
@@ -13731,7 +13731,7 @@
 	(footprint "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
 		(layer "F.Cu")
 		(uuid "4b081525-bb25-4216-b87a-53478d9d45b7")
-		(at 232.41 114.3)
+		(at 144.78 63.5)
 		(descr "Wuerth, WS-SLTV, 450301014042, https://www.we-online.com/components/products/datasheet/450301014042.pdf")
 		(tags "switch single-pole opposite-side-connection double-throw SPDT würth wurth")
 		(property "Reference" "SW2"
@@ -13891,7 +13891,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "4b7c04ca-6f2c-40a0-bd64-9dc06f4a7807")
-		(at 125.231371 57.15)
+		(at 317.481371 51.011371)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D2"
@@ -14137,7 +14137,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "4ba89e83-7bb3-4f3d-8638-e15ae7fed7ed")
-		(at 195.58 152.4 90)
+		(at 135.89 107.91 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD7"
@@ -14411,7 +14411,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "4e8b7cf3-d7c6-4641-862f-4fbf3ab3c56a")
-		(at 141.6 167)
+		(at 27.29 155.445)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD10"
@@ -14685,7 +14685,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "4f7dcb43-7594-4194-9108-c45fc62e32a7")
-		(at 118.11 160.135 90)
+		(at 3.8 148.58 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC13"
@@ -15238,7 +15238,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "4f99fce3-39ef-4f3e-b9fc-bfca1247876b")
-		(at 215.9 63.5 -90)
+		(at 182.88 64.77 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP23"
@@ -15453,7 +15453,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "50b92ac3-9fee-45ba-a969-1d94e916a257")
-		(at 159.69 41.088629)
+		(at 351.94 34.95)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP18"
@@ -15668,7 +15668,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "5681020b-4925-4a17-bd8b-dfa22438921a")
-		(at 218.44 38.1 90)
+		(at 185.42 39.37 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC6"
@@ -16170,7 +16170,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "57c5add8-dced-4c7a-a11b-1eb7e79b34a3")
-		(at 191.77 142.24 90)
+		(at 132.08 97.75 90)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC10"
@@ -16634,7 +16634,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "5815c7af-accc-4c87-9f25-848761abdbb2")
-		(at 136.312742 72.240968)
+		(at 328.562742 66.102339)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D20"
@@ -16881,7 +16881,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "591bdb1f-ee91-4ea9-be17-65673b768cbc")
-		(at 159.69 47.388629)
+		(at 351.94 41.25)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP20"
@@ -17096,7 +17096,7 @@
 	(footprint "Button_Switch_THT:SW_PUSH_6mm"
 		(layer "F.Cu")
 		(uuid "59d27dc2-8639-4ab5-b384-068619dff3cc")
-		(at 111.76 172.87 90)
+		(at 133.46 229.405 90)
 		(descr "Generic 6mm SW tactile push button")
 		(tags "tact sw push 6mm")
 		(property "Reference" "SW3"
@@ -17455,7 +17455,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "59dd8a67-be42-4933-b0fb-926a49837c86")
-		(at 126.91 90.295)
+		(at -6.44 247.775)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD3"
@@ -17729,7 +17729,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "59f7ed28-f0e1-45f9-b7e5-fcf61023775a")
-		(at 148.315484 64.695484)
+		(at 340.565484 58.556855)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D36"
@@ -17976,7 +17976,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "5af7f104-db43-47d9-857e-38398e07344d")
-		(at 159.69 37.938629)
+		(at 351.94 31.8)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP17"
@@ -18191,7 +18191,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "5bf816c0-ffb1-4f68-a63e-eb7140caa8cf")
-		(at 205.74 97.79 90)
+		(at 120.65 52.07 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD27"
@@ -18465,7 +18465,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "5d69aae2-087c-43f1-9161-f29f9fb3d92d")
-		(at 203.2 97.75 90)
+		(at 118.11 52.03 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD26"
@@ -18739,7 +18739,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "5db5d8e0-508d-4e85-bfac-3a6cb56baa40")
-		(at 121.76 82.645)
+		(at -11.59 240.125)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R3"
@@ -19014,7 +19014,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "5e1a7689-fc80-42be-ab67-b872537edd08")
-		(at 187.96 97.795 90)
+		(at 102.87 52.075 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD20"
@@ -19288,7 +19288,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "61cbf038-8933-4204-8fcb-e293f2b5a564")
-		(at 136.312742 64.695484)
+		(at 328.562742 58.556855)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D18"
@@ -19535,7 +19535,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "630796d9-9800-4193-befa-01a651264f71")
-		(at 187.95 79.94 -90)
+		(at 102.86 34.22 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP15"
@@ -19750,7 +19750,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "6341213e-a8d4-4593-83fa-400095a4a1c2")
-		(at 142.314113 60.922742)
+		(at 334.564113 54.784113)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D26"
@@ -19997,7 +19997,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "6383950d-11ee-4deb-a22d-c03723038146")
-		(at 165.1 133.35)
+		(at 50.79 121.795)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC15"
@@ -20550,7 +20550,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "643d30a4-9af4-4a09-aa1e-dc1c9cd862f8")
-		(at 71.01 170.005)
+		(at 92.71 226.54)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R12"
@@ -20825,7 +20825,7 @@
 	(footprint "LED_THT:LED_D5.0mm"
 		(layer "F.Cu")
 		(uuid "6441ad01-d214-4bf8-91cd-e011a9e3e8d3")
-		(at 111.96 96.695)
+		(at -21.39 254.175)
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
 		(property "Reference" "LD1"
@@ -21055,7 +21055,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "64bb1ea6-8fe4-4397-a0ac-1fc8b00a33e7")
-		(at 121.76 74.545)
+		(at -11.59 232.025)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R1"
@@ -21330,7 +21330,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "6534ff97-eabc-405a-a63c-d0afa33ed58b")
-		(at 125.231371 87.331936)
+		(at 317.481371 81.193307)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D6"
@@ -21577,7 +21577,7 @@
 	(footprint "Resistor_THT:R_Array_SIP5"
 		(layer "F.Cu")
 		(uuid "6577ea5a-15c7-437c-a245-671bb4d27be5")
-		(at 85.61 95.095)
+		(at -47.74 252.575)
 		(descr "5-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN1"
@@ -21867,7 +21867,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "66685873-f524-4a00-bbfc-acda1d4a0229")
-		(at 165.34 40.148629)
+		(at 357.59 34.01)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R5"
@@ -22142,7 +22142,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "6b4cfa44-8c9d-4eb3-94b8-2dd61f2c0fe1")
-		(at 198.12 97.75 90)
+		(at 113.03 52.03 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD24"
@@ -22416,7 +22416,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "6c6e447f-9430-4b6b-8be3-abd8e43c4c17")
-		(at 210.82 137.16 -90)
+		(at 151.13 92.67 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP24"
@@ -22631,7 +22631,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "6de0af3d-eca0-4c4f-a7a5-6671552c9388")
-		(at 148.3 159.5)
+		(at 33.99 147.945)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD12"
@@ -22905,7 +22905,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "6f26637e-d5a5-4ae1-adb1-6548ab18fa5c")
-		(at 130.311371 83.559194)
+		(at 322.561371 77.420565)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D14"
@@ -23152,7 +23152,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "7101bff0-2e0d-4964-b339-c26ebffbc835")
-		(at 142.314113 76.01371)
+		(at 334.564113 69.875081)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D30"
@@ -23399,7 +23399,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "71876d1f-d667-4a54-89a4-097f68213abe")
-		(at 159.69 44.238629)
+		(at 351.94 38.1)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP19"
@@ -23614,7 +23614,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "71a7d1d6-3beb-4b52-aa97-1b8bfc8689ab")
-		(at 125.231371 60.922742)
+		(at 317.481371 54.784113)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D3"
@@ -23860,7 +23860,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "71b9a97a-58be-4926-b262-9ba643f5520d")
-		(at 218.26 85.06 90)
+		(at 130.81 39.34 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC16"
@@ -24362,7 +24362,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "7210a7c4-f350-4b60-bc39-03b80299664d")
-		(at 136.312742 83.559194)
+		(at 328.562742 77.420565)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D23"
@@ -24609,7 +24609,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "722504d3-82e4-4bcb-8385-2274f926f9aa")
-		(at 215.84 79.94 -90)
+		(at 128.39 34.22 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP13"
@@ -24824,7 +24824,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "755e66d9-38c3-46b2-a790-07c365a25401")
-		(at 148.315484 76.01371)
+		(at 340.565484 69.875081)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D39"
@@ -25071,7 +25071,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "76ff1c24-6573-4db6-bcc0-83a4df2cf849")
-		(at 187.96 53.34 90)
+		(at 158.75 54.61 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC4"
@@ -25573,7 +25573,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "7dd7553c-66fb-416f-aa14-c70a72af1bd3")
-		(at 166.451371 61.661452)
+		(at 358.701371 55.522823)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC22"
@@ -26041,7 +26041,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "7f2b2cb6-7257-4cf7-985e-9bf7d8b3144b")
-		(at 125.231371 68.468226)
+		(at 317.481371 62.329597)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D5"
@@ -26287,7 +26287,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "83caaede-cea8-47a9-b2a5-7e471721d831")
-		(at 159.69 34.788629)
+		(at 351.94 28.65)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP16"
@@ -26502,7 +26502,7 @@
 	(footprint "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
 		(layer "F.Cu")
 		(uuid "83ff3166-1085-4d36-9d49-a4c80f041711")
-		(at 89.16 99.295)
+		(at -44.19 256.775)
 		(descr "Wuerth, WS-SLTV, 450301014042, https://www.we-online.com/components/products/datasheet/450301014042.pdf")
 		(tags "switch single-pole opposite-side-connection double-throw SPDT würth wurth")
 		(property "Reference" "SW1"
@@ -26662,7 +26662,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "85b6e137-7d06-412d-85d4-b4998101bcbc")
-		(at 142.39 140.3 90)
+		(at 28.08 128.745 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC14"
@@ -27215,7 +27215,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "85d4f8ac-9758-4d7c-b24b-de56b0ea3092")
-		(at 121.76 78.595)
+		(at -11.59 236.075)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R2"
@@ -27490,7 +27490,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "876229a8-963b-45c1-a29e-54a6366eba6a")
-		(at 190.5 97.75 90)
+		(at 105.41 52.03 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD21"
@@ -27764,7 +27764,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "87a6348a-8006-45f3-9e1d-539175021612")
-		(at 71.01 161.905)
+		(at 92.71 218.44)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R10"
@@ -28039,11 +28039,11 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "87b36213-260c-4c71-8892-9a0d5e3d30a2")
-		(at 134.31 97.78)
+		(at 214.63 54.61 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC12"
-			(at 3.81 -2.33 0)
+			(at -2.54 11.43 180)
 			(layer "F.SilkS")
 			(uuid "916b2684-d79a-4870-9c4e-7b04a3c48b7e")
 			(effects
@@ -28054,7 +28054,7 @@
 			)
 		)
 		(property "Value" "74HC377"
-			(at 3.81 25.19 0)
+			(at 3.81 25.19 90)
 			(layer "F.Fab")
 			(uuid "bc352b98-a5c0-4633-a97b-89e5badd897c")
 			(effects
@@ -28065,7 +28065,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_Socket"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -28078,7 +28078,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS377"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -28091,7 +28091,7 @@
 			)
 		)
 		(property "Description" "8-bit Register"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -28109,6 +28109,16 @@
 		(sheetfile "stackunit.kicad_sch")
 		(attr through_hole)
 		(fp_line
+			(start 8.95 -1.39)
+			(end -1.33 -1.39)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e45f91ad-b9a9-49fd-b638-a1ea68030646")
+		)
+		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 24.25)
 			(stroke
@@ -28117,46 +28127,6 @@
 			)
 			(layer "F.SilkS")
 			(uuid "32c95d4f-1422-418a-a1b0-9213b214c903")
-		)
-		(fp_line
-			(start -1.33 24.25)
-			(end 8.95 24.25)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "af401af2-d933-4437-ac69-954182bef9da")
-		)
-		(fp_line
-			(start 1.16 -1.33)
-			(end 1.16 24.19)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "abeafd8c-8395-447f-bcf1-e43439be0ecc")
-		)
-		(fp_line
-			(start 1.16 24.19)
-			(end 6.46 24.19)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e57fb162-9e53-45e7-9f7f-9e17879abf1a")
-		)
-		(fp_line
-			(start 2.81 -1.33)
-			(end 1.16 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9fa5588e-b416-47d4-aeb6-38b03f13f880")
 		)
 		(fp_line
 			(start 6.46 -1.33)
@@ -28169,6 +28139,26 @@
 			(uuid "6d96beda-9604-460b-ada3-860816efcae7")
 		)
 		(fp_line
+			(start 2.81 -1.33)
+			(end 1.16 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9fa5588e-b416-47d4-aeb6-38b03f13f880")
+		)
+		(fp_line
+			(start 1.16 -1.33)
+			(end 1.16 24.19)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "abeafd8c-8395-447f-bcf1-e43439be0ecc")
+		)
+		(fp_line
 			(start 6.46 24.19)
 			(end 6.46 -1.33)
 			(stroke
@@ -28179,14 +28169,14 @@
 			(uuid "6f600c9b-f770-4719-92c0-b1c02039d3a9")
 		)
 		(fp_line
-			(start 8.95 -1.39)
-			(end -1.33 -1.39)
+			(start 1.16 24.19)
+			(end 6.46 24.19)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "e45f91ad-b9a9-49fd-b638-a1ea68030646")
+			(uuid "e57fb162-9e53-45e7-9f7f-9e17879abf1a")
 		)
 		(fp_line
 			(start 8.95 24.25)
@@ -28197,6 +28187,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "a9bee043-b55e-476f-9b8b-d60548906b55")
+		)
+		(fp_line
+			(start -1.33 24.25)
+			(end 8.95 24.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "af401af2-d933-4437-ac69-954182bef9da")
 		)
 		(fp_arc
 			(start 4.81 -1.33)
@@ -28210,26 +28210,6 @@
 			(uuid "816f7c77-f601-410f-ab6a-6fd3cbf7307a")
 		)
 		(fp_line
-			(start -1.55 -1.6)
-			(end -1.55 24.45)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "db6fb829-a385-4fb2-a6c9-14a21af666d7")
-		)
-		(fp_line
-			(start -1.55 24.45)
-			(end 9.15 24.45)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8ef5e0cb-73c9-426c-a572-090def46f2b3")
-		)
-		(fp_line
 			(start 9.15 -1.6)
 			(end -1.55 -1.6)
 			(stroke
@@ -28238,6 +28218,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "957868f4-d530-4647-a2cd-4bb634974e44")
+		)
+		(fp_line
+			(start -1.55 -1.6)
+			(end -1.55 24.45)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "db6fb829-a385-4fb2-a6c9-14a21af666d7")
 		)
 		(fp_line
 			(start 9.15 24.45)
@@ -28250,74 +28240,14 @@
 			(uuid "928aa3ac-d0af-4900-b612-54d954a77cbf")
 		)
 		(fp_line
-			(start -1.27 -1.33)
-			(end -1.27 24.19)
+			(start -1.55 24.45)
+			(end 9.15 24.45)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "ad15c4d2-ed7f-437a-93d3-10b25b2d315a")
-		)
-		(fp_line
-			(start -1.27 24.19)
-			(end 8.89 24.19)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "bd9e19f0-1026-4678-8c3d-1e691e714698")
-		)
-		(fp_line
-			(start 0.635 -0.27)
-			(end 1.635 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "5ee78e88-6725-435f-a93f-89107f1af4f9")
-		)
-		(fp_line
-			(start 0.635 24.13)
-			(end 0.635 -0.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "6a85168b-4231-4370-a009-6e0a61178f8e")
-		)
-		(fp_line
-			(start 1.635 -1.27)
-			(end 6.985 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "3c18ec04-d9bb-410d-af4b-124a0891ca21")
-		)
-		(fp_line
-			(start 6.985 -1.27)
-			(end 6.985 24.13)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "5310ae9d-94b1-46c8-88a6-b866519d9e46")
-		)
-		(fp_line
-			(start 6.985 24.13)
-			(end 0.635 24.13)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "ec74c00f-060c-4cf5-8ca4-d8cbea6ef6e8")
+			(layer "F.CrtYd")
+			(uuid "8ef5e0cb-73c9-426c-a572-090def46f2b3")
 		)
 		(fp_line
 			(start 8.89 -1.33)
@@ -28330,6 +28260,66 @@
 			(uuid "b65b746a-6282-4f52-813a-bf64b1b42bf5")
 		)
 		(fp_line
+			(start -1.27 -1.33)
+			(end -1.27 24.19)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ad15c4d2-ed7f-437a-93d3-10b25b2d315a")
+		)
+		(fp_line
+			(start 6.985 -1.27)
+			(end 6.985 24.13)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5310ae9d-94b1-46c8-88a6-b866519d9e46")
+		)
+		(fp_line
+			(start 1.635 -1.27)
+			(end 6.985 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3c18ec04-d9bb-410d-af4b-124a0891ca21")
+		)
+		(fp_line
+			(start 0.635 -0.27)
+			(end 1.635 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5ee78e88-6725-435f-a93f-89107f1af4f9")
+		)
+		(fp_line
+			(start 6.985 24.13)
+			(end 0.635 24.13)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ec74c00f-060c-4cf5-8ca4-d8cbea6ef6e8")
+		)
+		(fp_line
+			(start 0.635 24.13)
+			(end 0.635 -0.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6a85168b-4231-4370-a009-6e0a61178f8e")
+		)
+		(fp_line
 			(start 8.89 24.19)
 			(end 8.89 -1.33)
 			(stroke
@@ -28339,8 +28329,18 @@
 			(layer "F.Fab")
 			(uuid "14af35c5-f57d-4aa4-a25e-a86c8d2d881e")
 		)
+		(fp_line
+			(start -1.27 24.19)
+			(end 8.89 24.19)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bd9e19f0-1026-4678-8c3d-1e691e714698")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 11.43 0)
+			(at 3.81 11.43 90)
 			(layer "F.Fab")
 			(uuid "456325a7-e8ec-4c3f-8251-035054837265")
 			(effects
@@ -28351,7 +28351,7 @@
 			)
 		)
 		(pad "1" thru_hole rect
-			(at 0 0)
+			(at 0 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28362,7 +28362,7 @@
 			(uuid "a384893f-926f-4338-94c9-770132cc98cf")
 		)
 		(pad "2" thru_hole oval
-			(at 0 2.54)
+			(at 0 2.54 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28373,7 +28373,7 @@
 			(uuid "887011f0-bb1a-4395-810a-e1518ab00b8f")
 		)
 		(pad "3" thru_hole oval
-			(at 0 5.08)
+			(at 0 5.08 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28384,7 +28384,7 @@
 			(uuid "b876c1bf-4eb2-40aa-bec1-25ac2dcf3785")
 		)
 		(pad "4" thru_hole oval
-			(at 0 7.62)
+			(at 0 7.62 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28395,7 +28395,7 @@
 			(uuid "dd537bd1-1869-4b3d-bf7c-9a4bba7fa439")
 		)
 		(pad "5" thru_hole oval
-			(at 0 10.16)
+			(at 0 10.16 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28406,7 +28406,7 @@
 			(uuid "a73449a1-2d3c-4529-bf2d-ef985c00abfb")
 		)
 		(pad "6" thru_hole oval
-			(at 0 12.7)
+			(at 0 12.7 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28417,7 +28417,7 @@
 			(uuid "0b624674-6fe3-41a9-891f-d54f108c67bf")
 		)
 		(pad "7" thru_hole oval
-			(at 0 15.24)
+			(at 0 15.24 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28428,7 +28428,7 @@
 			(uuid "5468c03c-4c47-47d2-aeaf-630bd3a5aa82")
 		)
 		(pad "8" thru_hole oval
-			(at 0 17.78)
+			(at 0 17.78 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28439,7 +28439,7 @@
 			(uuid "49c932a7-e077-4751-943e-639787491dd9")
 		)
 		(pad "9" thru_hole oval
-			(at 0 20.32)
+			(at 0 20.32 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28450,7 +28450,7 @@
 			(uuid "bbf56594-17bc-44ab-9ca7-fad92f9a3ee8")
 		)
 		(pad "10" thru_hole oval
-			(at 0 22.86)
+			(at 0 22.86 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28461,7 +28461,7 @@
 			(uuid "3d6a4cf2-f50f-4044-b520-1d7bfa5d77ea")
 		)
 		(pad "11" thru_hole oval
-			(at 7.62 22.86)
+			(at 7.62 22.86 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28472,7 +28472,7 @@
 			(uuid "de5d4523-d317-482a-891a-4020e42f13d0")
 		)
 		(pad "12" thru_hole oval
-			(at 7.62 20.32)
+			(at 7.62 20.32 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28483,7 +28483,7 @@
 			(uuid "e6f457e8-55b6-4aa8-beeb-327b53c61891")
 		)
 		(pad "13" thru_hole oval
-			(at 7.62 17.78)
+			(at 7.62 17.78 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28494,7 +28494,7 @@
 			(uuid "a422d113-79a8-4fee-b5d8-4bde3596064a")
 		)
 		(pad "14" thru_hole oval
-			(at 7.62 15.24)
+			(at 7.62 15.24 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28505,7 +28505,7 @@
 			(uuid "498a0d74-9d4d-420f-a65c-fe7a8fbb8340")
 		)
 		(pad "15" thru_hole oval
-			(at 7.62 12.7)
+			(at 7.62 12.7 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28516,7 +28516,7 @@
 			(uuid "f6f81a82-79ac-435a-8ffd-123c4910357c")
 		)
 		(pad "16" thru_hole oval
-			(at 7.62 10.16)
+			(at 7.62 10.16 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28527,7 +28527,7 @@
 			(uuid "487076c7-a49c-439b-add7-51c8898b22b7")
 		)
 		(pad "17" thru_hole oval
-			(at 7.62 7.62)
+			(at 7.62 7.62 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28538,7 +28538,7 @@
 			(uuid "7c41da03-f6a9-40e8-9171-8e0de8a247fa")
 		)
 		(pad "18" thru_hole oval
-			(at 7.62 5.08)
+			(at 7.62 5.08 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28549,7 +28549,7 @@
 			(uuid "4f74caa8-5fce-4a8c-af01-d7b4e510d240")
 		)
 		(pad "19" thru_hole oval
-			(at 7.62 2.54)
+			(at 7.62 2.54 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28560,7 +28560,7 @@
 			(uuid "e8c42821-0897-4381-af24-aaac9ab952b8")
 		)
 		(pad "20" thru_hole oval
-			(at 7.62 0)
+			(at 7.62 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28585,7 +28585,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "891a820c-0f39-4d2b-a15d-cc061dca7308")
-		(at 148.3 163.25)
+		(at 33.99 151.695)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD13"
@@ -28859,7 +28859,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "8a51b0a2-2dd3-4bcf-925c-a47c6ead4442")
-		(at 218.44 53.34 90)
+		(at 185.42 54.61 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC7"
@@ -29361,7 +29361,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "8c257a32-54d4-4a70-b41d-82b10bb55dc0")
-		(at 130.311371 68.468226)
+		(at 322.561371 62.329597)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D10"
@@ -29608,7 +29608,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "8e5009ba-9965-4722-b2ac-dd9563b94d1a")
-		(at 125.231371 83.559194)
+		(at 317.481371 77.420565)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D5"
@@ -29855,7 +29855,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "9482865b-7620-4865-bcc3-ce302171f3b9")
-		(at 142.314113 87.331936)
+		(at 334.564113 81.193307)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D33"
@@ -30102,7 +30102,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "9876b655-344e-496f-b004-13ee232d9d1b")
-		(at 215.84 96.73 -90)
+		(at 128.27 49.74 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP14"
@@ -30317,7 +30317,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "992712e2-b874-4ae3-b899-f506d3263e9e")
-		(at 155 159.5)
+		(at 40.69 147.945)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD16"
@@ -30591,7 +30591,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "99d5c1b5-cde3-4d6a-89f4-160ff7baf9e9")
-		(at 215.9 33.02 -90)
+		(at 182.88 34.29 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP4"
@@ -30806,7 +30806,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "9b6d275c-fce8-4979-bb47-ceeed0c70ea9")
-		(at 130.311371 57.15)
+		(at 322.561371 51.011371)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D7"
@@ -31053,7 +31053,7 @@
 	(footprint "Resistor_THT:R_Array_SIP5"
 		(layer "F.Cu")
 		(uuid "9c04bbbf-9b07-4e07-b8b1-0e0e166db802")
-		(at 161.85 159.8)
+		(at 47.54 148.245)
 		(descr "5-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN3"
@@ -31343,7 +31343,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "9c07d788-0013-44b1-ac66-164b1b267888")
-		(at 71.01 153.805)
+		(at 92.71 210.34)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R8"
@@ -31618,7 +31618,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "a3a6bd22-6418-4510-89cf-44b8d05fbe0e")
-		(at 88.91 149.855)
+		(at 110.61 206.39)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC24"
@@ -32086,7 +32086,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "a4dc3199-e97a-44b3-b606-daf0ab790abf")
-		(at 161.2 163.55)
+		(at 46.89 151.995)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP10"
@@ -32301,7 +32301,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "a5734867-8eb2-421b-8658-fcbb03f14b44")
-		(at 136.312742 68.468226)
+		(at 328.562742 62.329597)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D19"
@@ -32548,7 +32548,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "aa87f83f-6d3c-4cee-8691-bdb30c4cad56")
-		(at 71.01 165.955)
+		(at 92.71 222.49)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R11"
@@ -32823,7 +32823,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "aab61baa-e82f-49da-bd92-09d459e57fca")
-		(at 190.5 84.94 90)
+		(at 105.41 39.22 90)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC18"
@@ -33343,7 +33343,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "ac80c2c5-3e45-44d9-8519-457e1943af35")
-		(at 148.3 170.75)
+		(at 33.99 159.195)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD15"
@@ -33617,7 +33617,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "ae290445-0f41-46ee-9cc5-023a4cc215aa")
-		(at 200.66 152.4 90)
+		(at 140.97 107.91 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD5"
@@ -33891,7 +33891,7 @@
 	(footprint "Resistor_THT:R_Array_SIP9"
 		(layer "F.Cu")
 		(uuid "ae64efd2-4887-4863-8649-b59cb6ea086f")
-		(at 187.96 109.22)
+		(at 100.33 63.5)
 		(descr "9-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN5"
@@ -34225,7 +34225,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "af0c878c-5009-4d53-b2ef-4008a2d7684e")
-		(at 125.231371 79.786452)
+		(at 317.481371 73.647823)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D4"
@@ -34472,7 +34472,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "af8c67ca-d2ac-4aaa-91a0-8d262bfc742b")
-		(at 136.312742 76.01371)
+		(at 328.562742 69.875081)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D21"
@@ -34719,7 +34719,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "afbad6a4-ed76-4029-ba54-6be8558d2a94")
-		(at 165.34 36.338629)
+		(at 357.59 30.2)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R3"
@@ -34993,11 +34993,11 @@
 	(footprint "Package_DIP:DIP-28_W15.24mm"
 		(layer "F.Cu")
 		(uuid "b07f07e8-d816-41c6-ae8c-2366b48561e0")
-		(at 82.545 53.35)
+		(at 99.06 90.17)
 		(descr "28-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil")
 		(property "Reference" "IC1"
-			(at 7.62 -2.33 0)
+			(at 7.62 -2.33 360)
 			(layer "F.SilkS")
 			(uuid "d61ec743-71da-4bf4-89dd-efc0cf4605a6")
 			(effects
@@ -35008,7 +35008,7 @@
 			)
 		)
 		(property "Value" "RAM"
-			(at 7.62 35.35 0)
+			(at 7.62 35.35 360)
 			(layer "F.Fab")
 			(uuid "7f59c5d2-236e-4f0d-8c52-6711da76504b")
 			(effects
@@ -35214,7 +35214,7 @@
 			(uuid "72f54a89-2dc5-4db2-b52b-0ea69da464a9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 7.62 16.51 0)
+			(at 7.62 16.51 360)
 			(layer "F.Fab")
 			(uuid "3eb8ff73-0cd3-426c-bf8c-4d6b3af6a053")
 			(effects
@@ -35547,7 +35547,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "b1dc81eb-8149-46aa-bff6-89ad1b0782e0")
-		(at 142.314113 79.786452)
+		(at 334.564113 73.647823)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D31"
@@ -35794,7 +35794,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "b1f6aa88-e4d1-45d6-b04c-f76e034d109a")
-		(at 136.312742 79.786452)
+		(at 328.562742 73.647823)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D22"
@@ -36041,7 +36041,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "b20c2220-570f-4955-ac55-fd8cf11f9eea")
-		(at 142.314113 64.695484)
+		(at 334.564113 58.556855)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D27"
@@ -36288,7 +36288,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "b35b2dd8-01d7-4d85-a709-52fea58cf026")
-		(at 155 167)
+		(at 40.69 155.445)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD18"
@@ -36562,7 +36562,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "b4263721-630e-4215-8315-c064938dc174")
-		(at 71.01 149.755)
+		(at 92.71 206.29)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R7"
@@ -36837,7 +36837,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "b4693939-358c-4135-bd41-80704222acf2")
-		(at 148.315484 83.559194)
+		(at 340.565484 77.420565)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D41"
@@ -37084,7 +37084,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "b4de4921-1edc-4a81-8abb-075b328c52a8")
-		(at 185.42 63.5 -90)
+		(at 156.21 64.77 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP1"
@@ -37299,7 +37299,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "b5f48dad-f8bf-40c3-9f88-c703e74e7c41")
-		(at 203.2 152.4 90)
+		(at 143.51 107.91 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD4"
@@ -37573,7 +37573,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "b9750534-8ceb-42af-970b-2accff79a688")
-		(at 71.01 174.055)
+		(at 92.71 230.59)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R13"
@@ -37848,7 +37848,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "ba405eb5-8342-4947-8c65-75a1381d552b")
-		(at 136.312742 87.331936)
+		(at 328.562742 81.193307)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D24"
@@ -38095,7 +38095,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "be4d3b13-6a7b-46ed-8448-26163efcdbe8")
-		(at 187.96 68.58 90)
+		(at 158.75 69.85 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC3"
@@ -38597,7 +38597,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "bee98b8c-f462-49eb-8388-f6d6d07fcd50")
-		(at 130.311371 72.240968)
+		(at 322.561371 66.102339)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D11"
@@ -38844,7 +38844,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "c38842d0-b3f9-4018-8be0-0c140b0da4b9")
-		(at 210.82 153.71 -90)
+		(at 151.13 109.22 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP7"
@@ -39059,7 +39059,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "c53bb4f9-9545-4e90-a01e-4622ea55a06c")
-		(at 141.6 159.5)
+		(at 27.29 147.945)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD8"
@@ -39333,7 +39333,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "c6b31d34-a7a8-462b-9f03-7af61c8cc7c2")
-		(at 161.2 166.7)
+		(at 46.89 155.145)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP11"
@@ -39548,7 +39548,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "c80c7ff8-54cf-46df-a31c-7f96630f9eb4")
-		(at 130.311371 76.01371)
+		(at 322.561371 69.875081)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D12"
@@ -39795,7 +39795,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "c8a3946b-6b98-44eb-8f3c-39f03cc92668")
-		(at 159.69 50.538629)
+		(at 351.94 44.4)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP21"
@@ -40010,7 +40010,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "c9c3dc3d-81c4-4e73-8361-5e5693c926e1")
-		(at 213.36 142.24 90)
+		(at 153.67 97.75 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC8"
@@ -40555,7 +40555,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "c9c4c5e4-9dbd-4cf0-8dd6-8422c4d880b2")
-		(at 213.36 158.79 90)
+		(at 153.67 114.3 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC9"
@@ -41101,7 +41101,7 @@
 	(footprint "Resistor_THT:R_Array_SIP9"
 		(layer "F.Cu")
 		(uuid "ca148e0c-475c-4ea7-86c8-237d2b06bf53")
-		(at 155.09 57.438629)
+		(at 347.34 51.3)
 		(descr "9-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN6"
@@ -41435,7 +41435,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "cac0cdde-bbab-4088-a658-ec4d8b4c7554")
-		(at 71.01 157.855)
+		(at 92.71 214.39)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R9"
@@ -41710,7 +41710,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "cbefa94b-489f-4c45-a1d0-7318f93b1856")
-		(at 223.52 114.3 180)
+		(at 135.89 63.5 180)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R4"
@@ -41985,7 +41985,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "cdf82732-4777-49c7-8be6-fdc505c74594")
-		(at 154.94 61.738629)
+		(at 347.19 55.6)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC20"
@@ -42465,7 +42465,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "d4fd3d37-3b03-4f02-a9cb-2169874ce330")
-		(at 130.311371 87.331936)
+		(at 322.561371 81.193307)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D15"
@@ -42712,7 +42712,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "d5adc441-9272-4f16-8018-6eac3ef7a695")
-		(at 200.66 97.75 90)
+		(at 115.57 52.03 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD25"
@@ -42986,7 +42986,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "d6297cc3-5614-4568-8397-49eff092bae6")
-		(at 125.231371 64.695484)
+		(at 317.481371 58.556855)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D4"
@@ -43232,7 +43232,7 @@
 	(footprint "Fuse:Fuse_Bourns_MF-RG400"
 		(layer "F.Cu")
 		(uuid "db6161a2-3595-48c4-977e-c119424075fe")
-		(at 101.21 94.595)
+		(at -32.14 252.075)
 		(descr "PTC Resettable Fuse, Ihold = 4.0A, Itrip=6.8A, http://www.bourns.com/docs/Product-Datasheets/mfrg.pdf")
 		(tags "ptc resettable fuse polyfuse THT")
 		(property "Reference" "F1"
@@ -43487,7 +43487,7 @@
 	(footprint "Resistor_THT:R_Array_SIP5"
 		(layer "F.Cu")
 		(uuid "ded87ecc-fe9f-45c1-9362-32785a91a65c")
-		(at 205.74 163.83 180)
+		(at 146.05 119.34 180)
 		(descr "5-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN2"
@@ -43777,7 +43777,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "deec56e2-4d4f-4702-a2c0-21433b9467de")
-		(at 185.43 33.07 -90)
+		(at 156.22 34.34 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP3"
@@ -43992,7 +43992,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "e11dac0f-5e0f-474d-932e-1a49306cb057")
-		(at 161.2 169.85)
+		(at 46.89 158.295)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP12"
@@ -44207,7 +44207,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "e522debc-3dc4-4c03-8bbc-ed890f171ec6")
-		(at 155 170.75)
+		(at 40.69 159.195)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD19"
@@ -44481,7 +44481,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "e733f605-0177-48ba-891e-677ebc14fc3d")
-		(at 142.314113 72.240968)
+		(at 334.564113 66.102339)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D29"
@@ -44728,7 +44728,7 @@
 	(footprint "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 		(layer "F.Cu")
 		(uuid "e8d4d4d8-0a43-40af-bf6c-4375e3dcf26c")
-		(at 193.04 97.75 90)
+		(at 107.95 52.03 90)
 		(descr "LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2, 2 pins, http://www.kingbright.com/attachments/file/psearch/000/00/00/L-169XCGDK(Ver.9B).pdf")
 		(tags "LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 2 pins")
 		(property "Reference" "LD22"
@@ -45002,11 +45002,11 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "eadb04fc-4a82-4fdc-9388-a99fa6a55a7b")
-		(at 145.56 119.28)
+		(at 212.09 34.33 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP8"
-			(at 1.25 -2.05 0)
+			(at -2.54 0 90)
 			(layer "F.SilkS")
 			(uuid "1937589d-b445-4c98-842d-6adb8b4d986c")
 			(effects
@@ -45017,7 +45017,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 1.25 2.05 0)
+			(at 5.08 0 90)
 			(layer "F.Fab")
 			(uuid "ea354d3b-14fa-4189-aa82-6ed3415c5788")
 			(effects
@@ -45028,7 +45028,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45041,7 +45041,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45054,7 +45054,7 @@
 			)
 		)
 		(property "Description" "Bypass Capacitor"
-			(at 0 0 0)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45072,16 +45072,6 @@
 		(sheetfile "stackunit.kicad_sch")
 		(attr through_hole)
 		(fp_line
-			(start 0.621 -0.92)
-			(end 1.879 -0.92)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "92bd9ed7-f29d-435a-b579-132cfa5f6fba")
-		)
-		(fp_line
 			(start 0.621 0.92)
 			(end 1.879 0.92)
 			(stroke
@@ -45092,14 +45082,14 @@
 			(uuid "3d6bff87-1ebd-43a8-812a-682a733c6933")
 		)
 		(fp_line
-			(start -1.05 -1.05)
-			(end -1.05 1.05)
+			(start 0.621 -0.92)
+			(end 1.879 -0.92)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "6406d5d0-42aa-42b5-981a-8a89e206d961")
+			(layer "F.SilkS")
+			(uuid "92bd9ed7-f29d-435a-b579-132cfa5f6fba")
 		)
 		(fp_line
 			(start -1.05 1.05)
@@ -45112,16 +45102,6 @@
 			(uuid "01fd01a7-bd42-411b-b8ab-3d14e7d5c576")
 		)
 		(fp_line
-			(start 3.55 -1.05)
-			(end -1.05 -1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "1ee75c23-b777-470f-9b87-8c85164e377e")
-		)
-		(fp_line
 			(start 3.55 1.05)
 			(end 3.55 -1.05)
 			(stroke
@@ -45132,14 +45112,24 @@
 			(uuid "d45d1c8d-2c0f-40ec-af0a-7bb4e7228e60")
 		)
 		(fp_line
-			(start -0.25 -0.8)
-			(end -0.25 0.8)
+			(start -1.05 -1.05)
+			(end -1.05 1.05)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "7607cb4e-36e7-44ed-b810-1d582f375080")
+			(layer "F.CrtYd")
+			(uuid "6406d5d0-42aa-42b5-981a-8a89e206d961")
+		)
+		(fp_line
+			(start 3.55 -1.05)
+			(end -1.05 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1ee75c23-b777-470f-9b87-8c85164e377e")
 		)
 		(fp_line
 			(start -0.25 0.8)
@@ -45152,16 +45142,6 @@
 			(uuid "23175040-d3c6-4126-be96-59c1faa90e23")
 		)
 		(fp_line
-			(start 2.75 -0.8)
-			(end -0.25 -0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "fca42d64-20b4-400c-875b-bebe73e57762")
-		)
-		(fp_line
 			(start 2.75 0.8)
 			(end 2.75 -0.8)
 			(stroke
@@ -45171,8 +45151,28 @@
 			(layer "F.Fab")
 			(uuid "ea136391-7b1c-45ba-ab99-b8b180325c0d")
 		)
+		(fp_line
+			(start -0.25 -0.8)
+			(end -0.25 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7607cb4e-36e7-44ed-b810-1d582f375080")
+		)
+		(fp_line
+			(start 2.75 -0.8)
+			(end -0.25 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fca42d64-20b4-400c-875b-bebe73e57762")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 0)
+			(at 1.25 0 90)
 			(layer "F.Fab")
 			(uuid "41a36127-af8d-4154-a108-c3446bb169ce")
 			(effects
@@ -45183,7 +45183,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -45193,7 +45193,7 @@
 			(uuid "18627103-1976-46d5-b4c3-3884d7b724bd")
 		)
 		(pad "2" thru_hole circle
-			(at 2.5 0)
+			(at 2.5 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -45217,7 +45217,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "ebc94b96-71c1-4d40-bbcb-3b39e4a57237")
-		(at 92.33 173.005)
+		(at 114.03 229.54)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP22"
@@ -45432,7 +45432,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "ed06b93e-d10d-47f4-b0b5-23a118fa3fb9")
-		(at 136.312742 57.15)
+		(at 328.562742 51.011371)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D16"
@@ -45679,11 +45679,11 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "ee4a540a-0bcc-49f0-89bf-a8b3349ee4f7")
-		(at 146.06 97.78)
+		(at 214.62 39.36 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC11"
-			(at 3.81 -2.33 0)
+			(at -2.55 10.17 180)
 			(layer "F.SilkS")
 			(uuid "38712243-931e-4c4b-92fa-909b5f8a625d")
 			(effects
@@ -45694,7 +45694,7 @@
 			)
 		)
 		(property "Value" "74HC161"
-			(at 3.81 20.11 0)
+			(at 3.81 20.11 90)
 			(layer "F.Fab")
 			(uuid "2c1b5806-28a0-40e7-8639-88a99dd8dcc5")
 			(effects
@@ -45705,7 +45705,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45718,7 +45718,7 @@
 			)
 		)
 		(property "Datasheet" "https://toshiba.semicon-storage.com/info/TC74HC161AF_datasheet_ja_20140301.pdf?did=10806&prodName=TC74HC161AF"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45731,7 +45731,7 @@
 			)
 		)
 		(property "Description" "CMOS 4bit presettable synchronous counter with asynchronous reset"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45744,7 +45744,7 @@
 			)
 		)
 		(property "Sim.Library" "74hc.lib"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45757,7 +45757,7 @@
 			)
 		)
 		(property "Sim.Name" "74HC161"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45770,7 +45770,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45783,7 +45783,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=MR 2=CP 3=D0 4=D1 5=D2 6=D3 7=CEP 8=VGND 9=PE 10=CET 11=Q3 12=Q2 13=Q1 14=Q0 15=TC 16=VCC"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -45800,6 +45800,16 @@
 		(sheetfile "stackunit.kicad_sch")
 		(attr through_hole)
 		(fp_line
+			(start 8.95 -1.39)
+			(end -1.33 -1.39)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a9a2aed3-9b03-4412-849b-64f0bdfd77b4")
+		)
+		(fp_line
 			(start -1.33 -1.39)
 			(end -1.33 19.17)
 			(stroke
@@ -45808,46 +45818,6 @@
 			)
 			(layer "F.SilkS")
 			(uuid "8d139f2b-ef0a-458b-b7e7-c444589ee4ef")
-		)
-		(fp_line
-			(start -1.33 19.17)
-			(end 8.95 19.17)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e74eb3e9-1917-497e-ae7b-f029efc93d2d")
-		)
-		(fp_line
-			(start 1.16 -1.33)
-			(end 1.16 19.11)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "b7097346-2495-44d3-a9d3-dce01d75d92a")
-		)
-		(fp_line
-			(start 1.16 19.11)
-			(end 6.46 19.11)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "aa75a34d-7364-499a-9535-7bac15c57699")
-		)
-		(fp_line
-			(start 2.81 -1.33)
-			(end 1.16 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "19271c60-5ca5-41f2-b799-a5fbd3deb47d")
 		)
 		(fp_line
 			(start 6.46 -1.33)
@@ -45860,6 +45830,26 @@
 			(uuid "51c44482-ff25-437e-88b4-0a25d6d97ea0")
 		)
 		(fp_line
+			(start 2.81 -1.33)
+			(end 1.16 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "19271c60-5ca5-41f2-b799-a5fbd3deb47d")
+		)
+		(fp_line
+			(start 1.16 -1.33)
+			(end 1.16 19.11)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b7097346-2495-44d3-a9d3-dce01d75d92a")
+		)
+		(fp_line
 			(start 6.46 19.11)
 			(end 6.46 -1.33)
 			(stroke
@@ -45870,14 +45860,14 @@
 			(uuid "fff5a9ad-b1c2-4701-b0b0-206518621c81")
 		)
 		(fp_line
-			(start 8.95 -1.39)
-			(end -1.33 -1.39)
+			(start 1.16 19.11)
+			(end 6.46 19.11)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "a9a2aed3-9b03-4412-849b-64f0bdfd77b4")
+			(uuid "aa75a34d-7364-499a-9535-7bac15c57699")
 		)
 		(fp_line
 			(start 8.95 19.17)
@@ -45888,6 +45878,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "400ca47a-bce2-46a6-b7b1-99238ae3196f")
+		)
+		(fp_line
+			(start -1.33 19.17)
+			(end 8.95 19.17)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e74eb3e9-1917-497e-ae7b-f029efc93d2d")
 		)
 		(fp_arc
 			(start 4.81 -1.33)
@@ -45901,26 +45901,6 @@
 			(uuid "ef876a51-df17-4b17-9aaa-1673dd6bc7f3")
 		)
 		(fp_line
-			(start -1.55 -1.6)
-			(end -1.55 19.4)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "1d705574-df3b-4308-8d86-3a7d71821cd0")
-		)
-		(fp_line
-			(start -1.55 19.4)
-			(end 9.15 19.4)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "df896b18-47e5-436f-86cf-ae2241b6b713")
-		)
-		(fp_line
 			(start 9.15 -1.6)
 			(end -1.55 -1.6)
 			(stroke
@@ -45929,6 +45909,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "5d35e237-5434-428b-9710-ade0687e2513")
+		)
+		(fp_line
+			(start -1.55 -1.6)
+			(end -1.55 19.4)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1d705574-df3b-4308-8d86-3a7d71821cd0")
 		)
 		(fp_line
 			(start 9.15 19.4)
@@ -45941,74 +45931,14 @@
 			(uuid "dd4a884e-40e8-49b6-a217-8c9952774750")
 		)
 		(fp_line
-			(start -1.27 -1.33)
-			(end -1.27 19.11)
+			(start -1.55 19.4)
+			(end 9.15 19.4)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "8f2077ef-5fd2-4068-bac4-8c4092756dcb")
-		)
-		(fp_line
-			(start -1.27 19.11)
-			(end 8.89 19.11)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "377afe44-6fce-43a7-b088-4e9b6184ef7a")
-		)
-		(fp_line
-			(start 0.635 -0.27)
-			(end 1.635 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "4182b998-f121-44d1-885d-8a77860a5851")
-		)
-		(fp_line
-			(start 0.635 19.05)
-			(end 0.635 -0.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "4f959ec2-40cb-478f-976a-980cc132d23e")
-		)
-		(fp_line
-			(start 1.635 -1.27)
-			(end 6.985 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2cf336f9-82e5-4453-91ed-07bb632894de")
-		)
-		(fp_line
-			(start 6.985 -1.27)
-			(end 6.985 19.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "86329f3a-4f06-4d85-a302-15691e6b92d3")
-		)
-		(fp_line
-			(start 6.985 19.05)
-			(end 0.635 19.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "de28eb47-1b8b-45fc-9c2b-207dd6322978")
+			(layer "F.CrtYd")
+			(uuid "df896b18-47e5-436f-86cf-ae2241b6b713")
 		)
 		(fp_line
 			(start 8.89 -1.33)
@@ -46021,6 +45951,66 @@
 			(uuid "01072303-6abb-4fcb-9394-7311cae05353")
 		)
 		(fp_line
+			(start -1.27 -1.33)
+			(end -1.27 19.11)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8f2077ef-5fd2-4068-bac4-8c4092756dcb")
+		)
+		(fp_line
+			(start 6.985 -1.27)
+			(end 6.985 19.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "86329f3a-4f06-4d85-a302-15691e6b92d3")
+		)
+		(fp_line
+			(start 1.635 -1.27)
+			(end 6.985 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2cf336f9-82e5-4453-91ed-07bb632894de")
+		)
+		(fp_line
+			(start 0.635 -0.27)
+			(end 1.635 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4182b998-f121-44d1-885d-8a77860a5851")
+		)
+		(fp_line
+			(start 6.985 19.05)
+			(end 0.635 19.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "de28eb47-1b8b-45fc-9c2b-207dd6322978")
+		)
+		(fp_line
+			(start 0.635 19.05)
+			(end 0.635 -0.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4f959ec2-40cb-478f-976a-980cc132d23e")
+		)
+		(fp_line
 			(start 8.89 19.11)
 			(end 8.89 -1.33)
 			(stroke
@@ -46030,8 +46020,18 @@
 			(layer "F.Fab")
 			(uuid "38564570-60a7-42a9-81b5-6f66b4e7efc0")
 		)
+		(fp_line
+			(start -1.27 19.11)
+			(end 8.89 19.11)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "377afe44-6fce-43a7-b088-4e9b6184ef7a")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 8.89 0)
+			(at 3.81 8.89 90)
 			(layer "F.Fab")
 			(uuid "2e2dfa77-b40e-4619-91b2-d9376c275a62")
 			(effects
@@ -46042,7 +46042,7 @@
 			)
 		)
 		(pad "1" thru_hole rect
-			(at 0 0)
+			(at 0 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46053,7 +46053,7 @@
 			(uuid "bfcc1d0d-7255-4e4a-bdb0-3ce12123d89b")
 		)
 		(pad "2" thru_hole oval
-			(at 0 2.54)
+			(at 0 2.54 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46064,7 +46064,7 @@
 			(uuid "d62b7eee-588f-4ad6-a21b-604a9445027c")
 		)
 		(pad "3" thru_hole oval
-			(at 0 5.08)
+			(at 0 5.08 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46075,7 +46075,7 @@
 			(uuid "81ae00d0-81c0-497c-8a61-17bcf8c846ed")
 		)
 		(pad "4" thru_hole oval
-			(at 0 7.62)
+			(at 0 7.62 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46086,7 +46086,7 @@
 			(uuid "38586bb3-9c12-4352-9833-c1e79828ee73")
 		)
 		(pad "5" thru_hole oval
-			(at 0 10.16)
+			(at 0 10.16 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46097,7 +46097,7 @@
 			(uuid "69b26ba5-4a70-4bf1-b36b-ea172966a8a3")
 		)
 		(pad "6" thru_hole oval
-			(at 0 12.7)
+			(at 0 12.7 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46108,7 +46108,7 @@
 			(uuid "f36ba1d6-156a-439a-8b0d-537cead46074")
 		)
 		(pad "7" thru_hole oval
-			(at 0 15.24)
+			(at 0 15.24 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46119,7 +46119,7 @@
 			(uuid "67ea560b-e2df-4f7f-84be-079508fecb08")
 		)
 		(pad "8" thru_hole oval
-			(at 0 17.78)
+			(at 0 17.78 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46130,7 +46130,7 @@
 			(uuid "7c0f0868-ddb7-45ea-8b17-bcebd5dcf963")
 		)
 		(pad "9" thru_hole oval
-			(at 7.62 17.78)
+			(at 7.62 17.78 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46141,7 +46141,7 @@
 			(uuid "24c0baa2-1f3c-4bd1-aa79-fc6b38b120ca")
 		)
 		(pad "10" thru_hole oval
-			(at 7.62 15.24)
+			(at 7.62 15.24 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46152,7 +46152,7 @@
 			(uuid "b7436738-bce5-452b-83f7-515a89b06839")
 		)
 		(pad "11" thru_hole oval
-			(at 7.62 12.7)
+			(at 7.62 12.7 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46163,7 +46163,7 @@
 			(uuid "8729abbe-abbb-4270-b10e-0cd888476461")
 		)
 		(pad "12" thru_hole oval
-			(at 7.62 10.16)
+			(at 7.62 10.16 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46174,7 +46174,7 @@
 			(uuid "69de59c9-b4b6-4353-95c0-8005502c23a4")
 		)
 		(pad "13" thru_hole oval
-			(at 7.62 7.62)
+			(at 7.62 7.62 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46185,7 +46185,7 @@
 			(uuid "13dc5b4e-0899-46dd-a696-af0895ff5537")
 		)
 		(pad "14" thru_hole oval
-			(at 7.62 5.08)
+			(at 7.62 5.08 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46196,7 +46196,7 @@
 			(uuid "baedba30-bae2-49a4-9e85-3b6db4030692")
 		)
 		(pad "15" thru_hole oval
-			(at 7.62 2.54)
+			(at 7.62 2.54 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46207,7 +46207,7 @@
 			(uuid "cbbb9edd-5bb3-4059-adf1-f58548c1fd5f")
 		)
 		(pad "16" thru_hole oval
-			(at 7.62 0)
+			(at 7.62 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -46232,7 +46232,7 @@
 	(footprint "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "ef71869f-c542-47a1-a579-81aba7c21b75")
-		(at 99.56 99.045)
+		(at -33.79 256.525)
 		(descr "Diode, DO-34_SOD68 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=3.04*1.6mm^2, , https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf")
 		(tags "Diode DO-34_SOD68 series Axial Horizontal pin pitch 7.62mm  length 3.04mm diameter 1.6mm")
 		(property "Reference" "D1"
@@ -46591,7 +46591,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "f1186690-dd3d-4ab6-87a3-5ea6a4d63426")
-		(at 82.319775 157.555)
+		(at 104.019775 214.09)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=5mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 5mm Electrolytic Capacitor")
 		(property "Reference" "C3"
@@ -47959,7 +47959,7 @@
 	(footprint "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "f4896f93-5c24-4a7d-aad1-c67e5b70f482")
-		(at 185.42 48.3 -90)
+		(at 156.21 49.57 -90)
 		(descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=3.0*1.6mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 2.50mm  diameter 3.0mm width 1.6mm Capacitor")
 		(property "Reference" "CP2"
@@ -48174,7 +48174,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "f7d4d266-4573-41b6-ae7c-b0bfe2273979")
-		(at 218.38 101.6 90)
+		(at 130.81 54.61 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC17"
@@ -48676,7 +48676,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "f884abaf-8645-4638-83ec-576de32be36e")
-		(at 218.44 68.58 90)
+		(at 185.42 69.85 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC8"
@@ -49178,7 +49178,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "fb0b80ee-f75c-4310-bb12-93a11a0d912f")
-		(at 165.34 43.958629)
+		(at 357.59 37.82)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R6"
@@ -49453,7 +49453,7 @@
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "fc53fc4a-4584-4ff4-abb5-71d8bcdd4018")
-		(at 142.314113 57.15)
+		(at 334.564113 51.011371)
 		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
 		(property "Reference" "D25"
@@ -49700,7 +49700,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 		(layer "F.Cu")
 		(uuid "ff69b9f4-3e54-4920-ad27-359d6ec7dfea")
-		(at 82.319775 164.105)
+		(at 104.019775 220.64)
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=5mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm  diameter 5mm Electrolytic Capacitor")
 		(property "Reference" "C4"
@@ -51097,7 +51097,7 @@
 		(uuid "f055314b-7d7e-492d-b986-e58e5e614416")
 	)
 	(gr_text "Instruction decoder"
-		(at 125.751371 29.286452 0)
+		(at 318.001371 23.147823 0)
 		(layer "F.Cu")
 		(uuid "200bb9e0-20fc-4203-a673-ee3ba5a15479")
 		(effects
@@ -51109,21 +51109,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Stack Unit"
-		(at 134.56 91.93 0)
-		(layer "F.Cu")
-		(uuid "4d431274-3f20-46cf-953e-7a71d484bfe9")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "other"
-		(at 87.46 53.195 0)
+		(at -45.89 210.675 0)
 		(layer "F.Cu")
 		(uuid "837a1ff3-e9cd-4a68-8822-0b2936292fd4")
 		(effects
@@ -51136,7 +51123,7 @@
 		)
 	)
 	(gr_text "PC"
-		(at 141.811371 127.497823 0)
+		(at 27.501371 115.942823 0)
 		(layer "F.Cu")
 		(uuid "a476a5f9-d7ce-47ac-a9fd-017f1fb6b7b8")
 		(effects
@@ -51149,7 +51136,7 @@
 		)
 	)
 	(gr_text "Clock and Reset"
-		(at 69.73 144.955 0)
+		(at 91.43 201.49 0)
 		(layer "F.Cu")
 		(uuid "ad9391bd-c95f-417f-91a2-b8af623f5867")
 		(effects
@@ -51161,8 +51148,21 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Stack Unit"
+		(at 213.36 29.21 0)
+		(layer "F.SilkS")
+		(uuid "4d431274-3f20-46cf-953e-7a71d484bfe9")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "ALU"
-		(at 186.69 27.94 0)
+		(at 162.56 27.94 0)
 		(layer "F.SilkS")
 		(uuid "500ddef3-11b7-4f1e-baa9-2779982d1f07")
 		(effects
@@ -51175,7 +51175,7 @@
 		)
 	)
 	(gr_text "Adress Bus"
-		(at 186.69 74.93 0)
+		(at 101.6 29.21 0)
 		(layer "F.SilkS")
 		(uuid "990c72e9-d718-4984-adce-28ae35f5e82c")
 		(effects
@@ -51188,7 +51188,7 @@
 		)
 	)
 	(gr_text "Data Bus"
-		(at 190.5 133.35 0)
+		(at 130.81 88.86 0)
 		(layer "F.SilkS")
 		(uuid "e2ce7a34-8a93-49f9-8c4a-36fe2d11646e")
 		(effects
@@ -51201,191 +51201,191 @@
 		)
 	)
 	(segment
-		(start 207.01 134.62)
-		(end 204.47 137.16)
+		(start 147.32 90.13)
+		(end 144.78 92.67)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 0)
 		(uuid "3e33c60f-0bfb-4a66-8989-d62ad252647f")
 	)
 	(segment
-		(start 204.47 137.16)
-		(end 204.47 142.24)
+		(start 144.78 92.67)
+		(end 144.78 97.75)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 0)
 		(uuid "814e9416-9959-446b-94b9-bb99ba3054ba")
 	)
 	(segment
-		(start 199.52 47.12)
-		(end 201.8 47.12)
+		(start 170.31 48.39)
+		(end 172.59 48.39)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "00cffd30-abc4-468a-8408-b1f7b5ea6a46")
 	)
 	(segment
-		(start 228.6 30.48)
-		(end 230 31.88)
+		(start 195.58 31.75)
+		(end 196.98 33.15)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "0381e703-a786-4557-ac77-d8077aeb4080")
 	)
 	(segment
-		(start 198.12 45.72)
-		(end 199.52 47.12)
+		(start 168.91 46.99)
+		(end 170.31 48.39)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "09c6ef6e-db21-423c-9b2a-06aa77b31d81")
 	)
 	(segment
-		(start 232.28 31.88)
-		(end 233.68 30.48)
+		(start 199.26 33.15)
+		(end 200.66 31.75)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "26ef7ad0-01b8-4ba4-9b38-f223e91bd148")
 	)
 	(segment
-		(start 224.74 78.84)
-		(end 229.56 78.84)
+		(start 137.29 33.12)
+		(end 142.11 33.12)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "37fab84e-b043-4b07-913d-c78355d26a0a")
 	)
 	(segment
-		(start 223.34 77.44)
-		(end 224.74 78.84)
+		(start 135.89 31.72)
+		(end 137.29 33.12)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "3ac72c57-213b-40ed-b46a-7f32cf085d6f")
 	)
 	(segment
-		(start 228.6 30.48)
-		(end 228.6 35.56)
+		(start 195.58 31.75)
+		(end 195.58 36.83)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "4c646a0e-f869-4e02-b5cd-58f34b5badfe")
 	)
 	(segment
-		(start 215.9 151.17)
-		(end 215.9 156.21)
+		(start 156.21 106.68)
+		(end 156.21 111.72)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "5d3f6531-8827-492e-8b03-09a0150271dd")
 	)
 	(segment
-		(start 198.12 45.72)
-		(end 198.12 50.8)
+		(start 168.91 46.99)
+		(end 168.91 52.07)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "5e2c82b4-96a1-4f2b-83e6-544a5ac9da3a")
 	)
 	(segment
-		(start 198.12 60.96)
-		(end 198.12 66)
+		(start 168.91 62.23)
+		(end 168.91 67.27)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "78d5fa23-1c79-4948-a429-cb3fb4835bb3")
 	)
 	(segment
-		(start 198.13 35.57)
-		(end 198.13 30.49)
+		(start 168.92 36.84)
+		(end 168.92 31.76)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "85159441-64bd-43d6-bf50-d9e73b40c78c")
 	)
 	(segment
-		(start 201.8 62.36)
-		(end 203.2 60.96)
+		(start 172.59 63.63)
+		(end 173.99 62.23)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "8e7790cd-6120-40cb-b301-9fdad244bff1")
 	)
 	(segment
-		(start 201.8 31.88)
-		(end 203.2 30.48)
+		(start 172.59 33.15)
+		(end 173.99 31.75)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "94861dff-558f-4279-adbb-f20cb40b1b35")
 	)
 	(segment
-		(start 199.52 62.36)
-		(end 201.8 62.36)
+		(start 170.31 63.63)
+		(end 172.59 63.63)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "bae8c95e-ad7e-4fc1-a46b-efe065a47770")
 	)
 	(segment
-		(start 199.52 31.88)
-		(end 201.8 31.88)
+		(start 170.31 33.15)
+		(end 172.59 33.15)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "caab58d1-c270-414c-9b73-df806262c842")
 	)
 	(segment
-		(start 198.12 60.96)
-		(end 199.52 62.36)
+		(start 168.91 62.23)
+		(end 170.31 63.63)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "cfb2729e-cfb8-4c54-9277-11ee3d02919b")
 	)
 	(segment
-		(start 198.12 30.48)
-		(end 199.52 31.88)
+		(start 168.91 31.75)
+		(end 170.31 33.15)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "d4866d9e-fa7a-44f5-a7c9-76cee138da35")
 	)
 	(segment
-		(start 230 31.88)
-		(end 232.28 31.88)
+		(start 196.98 33.15)
+		(end 199.26 33.15)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "eca52dc2-5466-4f79-b4f0-16e6b2569fff")
 	)
 	(segment
-		(start 229.56 78.84)
-		(end 230.96 77.44)
+		(start 142.11 33.12)
+		(end 143.51 31.72)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "f2a16f9d-7182-4c37-9a9f-c041bb596315")
 	)
 	(segment
-		(start 198.13 30.49)
-		(end 198.12 30.48)
+		(start 168.92 31.76)
+		(end 168.91 31.75)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "f3152eff-7a98-45d6-bbeb-743bed0b6911")
 	)
 	(segment
-		(start 201.8 47.12)
-		(end 203.2 45.72)
+		(start 172.59 48.39)
+		(end 173.99 46.99)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "f6903d8e-61e1-4d77-825f-94e7ca11a010")
 	)
 	(via
-		(at 215.9 156.21)
+		(at 156.21 111.72)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -51393,7 +51393,7 @@
 		(uuid "11cd8ab8-9ad5-4a9d-abca-e8b0fc29b880")
 	)
 	(via
-		(at 198.13 35.57)
+		(at 168.92 36.84)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -51401,7 +51401,7 @@
 		(uuid "1c70db1b-4655-4ce2-bf71-7013718dfcee")
 	)
 	(via
-		(at 228.6 35.56)
+		(at 195.58 36.83)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -51409,7 +51409,7 @@
 		(uuid "baabe098-8cd5-46a3-a234-d7adbe15bb3d")
 	)
 	(via
-		(at 198.12 50.8)
+		(at 168.91 52.07)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -51417,7 +51417,7 @@
 		(uuid "dab66bcd-a95f-4a1f-8a69-f0ec3aa79589")
 	)
 	(via
-		(at 198.12 66)
+		(at 168.91 67.27)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -51425,743 +51425,527 @@
 		(uuid "dd1628b9-18a7-41ae-86f6-ea80c2c54624")
 	)
 	(segment
-		(start 212.09 82.46)
-		(end 212.11 82.48)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "0e72a02f-668a-4986-9bc0-3772d1f410f7")
-	)
-	(segment
-		(start 220.8 82.48)
-		(end 220.84 82.44)
+		(start 133.35 36.76)
+		(end 133.39 36.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "0ea116e3-aab9-4ea0-8ae5-2c018853e344")
 	)
 	(segment
-		(start 229.87 35.56)
-		(end 236.22 35.56)
+		(start 196.85 36.83)
+		(end 203.2 36.83)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "16cd8ec3-aaa0-43d9-9828-d0159523486c")
 	)
 	(segment
-		(start 236.16 101.6)
-		(end 236.16 99.3)
+		(start 148.59 54.61)
+		(end 148.59 52.31)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "179921fa-5cca-4555-83d1-8c53434543c5")
 	)
 	(segment
-		(start 236.22 142.24)
-		(end 236.22 139.7)
+		(start 176.53 97.75)
+		(end 176.53 95.21)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "17a2496e-89c0-4bee-ab78-19f0655fb5fd")
 	)
 	(segment
-		(start 237.62 98.45)
-		(end 236.84 99.23)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "17aa49a9-9d52-4f9b-9a59-09dcb8b5aba9")
-	)
-	(segment
-		(start 189.23 139.66)
-		(end 207.01 139.66)
+		(start 129.54 95.17)
+		(end 147.32 95.17)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "1a637423-2c78-429c-a998-1c11cab3e660")
 	)
 	(segment
-		(start 187.97 35.57)
-		(end 187.97 38.09)
+		(start 158.76 36.84)
+		(end 158.76 39.36)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "1e49bb73-1827-4c52-b546-c7f409662418")
 	)
 	(segment
-		(start 187.96 53.34)
-		(end 187.96 50.8)
+		(start 175.26 111.72)
+		(end 177.8 111.72)
+		(width 0.8)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "230b5b03-0267-4a69-8cc0-e7d33c955e12")
+	)
+	(segment
+		(start 158.75 54.61)
+		(end 158.75 52.07)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "27f3a94a-8691-4d6f-b73c-40fb68e91533")
 	)
 	(segment
-		(start 205.74 82.46)
-		(end 205.76 82.48)
+		(start 120.65 36.74)
+		(end 120.67 36.76)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "2dac467b-4834-4870-b300-77d8ff56827c")
 	)
 	(segment
-		(start 236.22 66)
-		(end 237.45 66)
+		(start 203.2 67.27)
+		(end 204.43 67.27)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "300b89aa-04ea-41c0-861c-a781e348d425")
 	)
 	(segment
-		(start 237.62 35.69)
-		(end 237.49 35.56)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "32d3ee06-9e32-414a-a950-232c98cfa0be")
-	)
-	(segment
-		(start 236.22 158.79)
-		(end 236.22 156.21)
+		(start 176.53 114.3)
+		(end 176.53 111.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "32d7c3a4-aed3-4a56-868b-cc02e806728c")
 	)
 	(segment
-		(start 236.04 82.49)
-		(end 236.09 82.44)
+		(start 148.59 36.77)
+		(end 148.64 36.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "3399e5f6-2543-4533-abd9-fec8ccffbfbb")
 	)
 	(segment
-		(start 236.22 156.21)
-		(end 237.62 154.81)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "37d64fdf-c82a-49eb-8f9f-6d157ba162a5")
-	)
-	(segment
-		(start 207.01 142.24)
-		(end 207.01 139.66)
+		(start 147.32 97.75)
+		(end 147.32 95.17)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "3e200022-d108-4a01-874f-a57b9d9a6f44")
 	)
 	(segment
-		(start 237.62 138.3)
-		(end 236.22 139.7)
+		(start 148.64 36.72)
+		(end 149.93 36.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
-		(uuid "3f77500b-b6fe-422b-b0ed-bff087ac96e6")
+		(uuid "40e0925d-4099-4b3b-a704-10d35aec32d1")
 	)
 	(segment
-		(start 185.43 35.57)
-		(end 187.97 35.57)
+		(start 156.22 36.84)
+		(end 158.76 36.84)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "41fa5a14-a518-4134-9431-2c818b91cb7b")
 	)
 	(segment
-		(start 204.47 66)
-		(end 236.22 66)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "42980ac5-a33a-465d-95ae-f320039a66ba")
-	)
-	(segment
-		(start 191.77 35.56)
-		(end 218.44 35.56)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "430dcc3d-8003-44ea-916d-e1fd59ce2632")
-	)
-	(segment
-		(start 224.8 82.44)
-		(end 228.59 82.44)
+		(start 137.35 36.72)
+		(end 141.14 36.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "43ecde4f-817d-4c67-93c4-b287fa52f9ac")
 	)
 	(segment
-		(start 237.62 81.66)
-		(end 236.84 82.44)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "4760d3ee-dec7-4e0d-a6ce-953e1f5543a3")
-	)
-	(segment
-		(start 187.95 82.44)
-		(end 205.76 82.44)
+		(start 102.86 36.72)
+		(end 120.67 36.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "4a442143-c25e-4256-ba57-8917665dd5fe")
 	)
 	(segment
-		(start 218.44 35.56)
-		(end 228.6 35.56)
+		(start 185.42 36.83)
+		(end 195.58 36.83)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "4a607703-9e25-4e00-b119-74b45762b78f")
 	)
 	(segment
-		(start 237.62 154.81)
-		(end 237.62 138.3)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "4ea50387-79dd-4930-a5e3-eee2c4b85ca0")
-	)
-	(segment
-		(start 205.74 53.34)
-		(end 205.74 50.8)
+		(start 176.53 54.61)
+		(end 176.53 52.07)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "4eb6cfb2-f6d3-4475-9ebd-0bb210b66072")
 	)
 	(segment
-		(start 237.62 98.45)
-		(end 237.62 138.3)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "5212da7c-e183-4aab-957a-234963e03b27")
-	)
-	(segment
-		(start 236.22 38.1)
-		(end 236.22 35.56)
+		(start 203.2 39.37)
+		(end 203.2 36.83)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "54599e9a-8fe3-437c-943b-fe8f18f0eb55")
 	)
 	(segment
-		(start 212.11 82.48)
-		(end 220.8 82.48)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "5b7ce9d5-f133-45b6-a1c1-95f92158faf9")
-	)
-	(segment
-		(start 220.8 85.06)
-		(end 220.8 82.48)
+		(start 133.35 39.34)
+		(end 133.35 36.76)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "5bd3eaa2-6929-4f5e-b275-d9f444e8fec9")
 	)
 	(segment
-		(start 228.6 35.56)
-		(end 229.87 35.56)
+		(start 195.58 36.83)
+		(end 196.85 36.83)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "6238889a-71c6-4ffe-8c70-834ca67a714a")
 	)
 	(segment
-		(start 205.74 82.46)
-		(end 212.09 82.46)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "65a790f2-1811-427c-91ef-b8b03cda6b82")
-	)
-	(segment
-		(start 220.84 82.44)
-		(end 224.8 82.44)
+		(start 133.39 36.72)
+		(end 137.35 36.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "678e2e4d-7759-40a1-8b84-418f5b72b15e")
 	)
 	(segment
-		(start 237.62 60.83)
-		(end 237.62 81.66)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "6e64c1d5-ef48-459c-94ed-b7a3ae41491a")
-	)
-	(segment
-		(start 237.62 81.66)
-		(end 237.62 98.45)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "70bee528-b303-46c9-bdb4-149aca06bde2")
-	)
-	(segment
-		(start 205.74 68.58)
-		(end 205.74 66)
+		(start 176.53 69.85)
+		(end 176.53 67.27)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "714160f1-2c89-44bd-9182-0d1b95f859d2")
 	)
 	(segment
-		(start 187.96 66)
-		(end 198.12 66)
+		(start 203.2 36.83)
+		(end 204.47 36.83)
+		(width 0.8)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "77b83fc4-7aba-4401-ba20-3d184eda2541")
+	)
+	(segment
+		(start 158.75 67.27)
+		(end 168.91 67.27)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "786d6fb1-0809-477f-8703-e8ff05b1caae")
 	)
 	(segment
-		(start 218.44 38.1)
-		(end 218.44 35.56)
+		(start 185.42 39.37)
+		(end 185.42 36.83)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "80b5c1d9-d219-4592-8656-0b86ac411018")
 	)
 	(segment
-		(start 228.42 85.06)
-		(end 228.42 82.61)
+		(start 175.26 111.72)
+		(end 176.53 111.72)
+		(width 0.8)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "8219a0bf-447c-41b6-8507-7dda2255db10")
+	)
+	(segment
+		(start 140.97 39.34)
+		(end 140.97 36.89)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "887c2ebe-b083-4d4e-aaf4-1c16be7a92b2")
 	)
 	(segment
-		(start 237.49 35.56)
-		(end 236.22 35.56)
+		(start 147.38 52.24)
+		(end 149.75 52.24)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
-		(uuid "8ba9767c-43bd-4d29-8fbe-0a8825a249f3")
+		(uuid "8c0df56c-7f30-422e-b9dd-72863be46eac")
 	)
 	(segment
-		(start 210.82 156.21)
-		(end 215.9 156.21)
+		(start 151.13 111.72)
+		(end 156.21 111.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "8f1c6f1e-edea-457a-98a0-2c2c69f27583")
 	)
 	(segment
-		(start 205.74 38.1)
-		(end 205.74 35.58)
+		(start 156.21 111.72)
+		(end 175.26 111.72)
+		(width 0.8)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "952811a6-c1f7-4627-a69f-c878c9b84b80")
+	)
+	(segment
+		(start 176.53 39.37)
+		(end 176.53 36.85)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "970d3e4c-585a-4a3c-b2e5-7242f23567c1")
 	)
 	(segment
-		(start 237.45 66)
-		(end 237.49 66.04)
+		(start 147.38 52.24)
+		(end 148.52 52.24)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
-		(uuid "9d762740-c624-4be9-b97f-530f3fe58abd")
+		(uuid "9a5f3774-f4d1-47e3-890b-8fcdbc193c25")
 	)
 	(segment
-		(start 198.12 66)
-		(end 204.47 66)
+		(start 168.91 67.27)
+		(end 175.26 67.27)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "9def115d-2993-411c-bd27-86c6e8ef8902")
 	)
 	(segment
-		(start 191.77 50.8)
-		(end 236.22 50.8)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "a04a6daa-d49c-48a0-819c-2b9126058eb4")
-	)
-	(segment
-		(start 236.22 53.34)
-		(end 236.22 50.8)
+		(start 203.2 54.61)
+		(end 203.2 52.07)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "a097a433-275f-4954-ad18-4c7f40c5f58e")
 	)
 	(segment
-		(start 185.42 66)
-		(end 187.96 66)
+		(start 156.21 67.27)
+		(end 158.75 67.27)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "a843b028-2728-4b5f-bd9a-7d206312efa8")
 	)
 	(segment
-		(start 236.16 99.3)
-		(end 236.09 99.23)
+		(start 128.27 52.24)
+		(end 147.38 52.24)
+		(width 0.8)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "ac033f09-830c-4c7a-acd8-8972cb5a210e")
+	)
+	(segment
+		(start 148.59 52.31)
+		(end 148.52 52.24)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "ac4b5165-3ac1-451c-a27f-2ee08dcd15c9")
 	)
 	(segment
-		(start 205.74 84.94)
-		(end 205.74 82.46)
+		(start 120.65 39.22)
+		(end 120.65 36.74)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "ade91431-dbad-4369-9997-66a8bd3aaf48")
 	)
 	(segment
-		(start 236.22 139.7)
-		(end 236.22 139.66)
+		(start 176.53 95.21)
+		(end 176.53 95.17)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "b9c1be69-fd2c-4b48-be40-ac09ae5aa417")
 	)
 	(segment
-		(start 228.59 82.44)
-		(end 236.09 82.44)
+		(start 141.14 36.72)
+		(end 148.64 36.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "bed9c1e1-2083-4344-a737-42dfdcbf5d7a")
 	)
 	(segment
-		(start 198.13 35.57)
-		(end 205.75 35.57)
+		(start 168.92 36.84)
+		(end 176.54 36.84)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "bf43fe0e-860e-4629-bad5-e5096df364e5")
 	)
 	(segment
-		(start 237.62 65.91)
-		(end 237.62 35.69)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "c187d6a4-159d-4e2e-a7b7-625c22b1f0df")
-	)
-	(segment
-		(start 207.01 139.66)
-		(end 236.22 139.66)
+		(start 147.32 95.17)
+		(end 176.53 95.17)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "c1902b02-e2ad-4a2b-87d1-b2ef19b01ef9")
 	)
 	(segment
-		(start 237.49 50.8)
-		(end 237.62 50.93)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "c22e668a-e5a4-4d5a-a594-2a58c4f8dbd5")
-	)
-	(segment
-		(start 215.9 156.21)
-		(end 236.22 156.21)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "c80fae2d-3573-423e-8ae4-48918c489af1")
-	)
-	(segment
-		(start 215.84 99.23)
-		(end 236.09 99.23)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "c836d82a-dbb6-4cb1-a561-04a45df3067b")
-	)
-	(segment
-		(start 228.42 82.61)
-		(end 228.59 82.44)
+		(start 140.97 36.89)
+		(end 141.14 36.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "c8a94a0b-0e51-45a5-838f-10f72769254c")
 	)
 	(segment
-		(start 187.97 35.57)
-		(end 198.13 35.57)
+		(start 158.76 36.84)
+		(end 168.92 36.84)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "cebaed85-7d8d-495f-9024-f8c1b693d2da")
 	)
 	(segment
-		(start 185.42 50.8)
-		(end 187.96 50.8)
+		(start 156.21 52.07)
+		(end 158.75 52.07)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "d2c5372e-2339-4d7f-a59b-d84e1bea866f")
 	)
 	(segment
-		(start 236.09 82.44)
-		(end 236.84 82.44)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "d4bb8936-2f34-468d-9ec4-22421090c21d")
-	)
-	(segment
-		(start 205.74 35.58)
-		(end 205.75 35.57)
+		(start 176.53 36.85)
+		(end 176.54 36.84)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "d4bef895-8004-4703-a878-f25d0de3eea6")
 	)
 	(segment
-		(start 187.96 50.8)
-		(end 198.12 50.8)
+		(start 158.75 52.07)
+		(end 168.91 52.07)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "d69173b0-efcb-4747-9d21-cbac7ce5ff91")
 	)
 	(segment
-		(start 237.49 66.04)
-		(end 237.62 65.91)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "d8869b7c-1e3d-43ef-b28b-35b35569fe54")
-	)
-	(segment
-		(start 198.12 50.8)
-		(end 205.74 50.8)
+		(start 168.91 52.07)
+		(end 176.53 52.07)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "dca3294e-4d2f-453d-92e3-ae81aa6deac8")
 	)
 	(segment
-		(start 236.04 85.06)
-		(end 236.04 82.49)
+		(start 148.59 39.34)
+		(end 148.59 36.77)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "df7b84c4-2125-41ad-8fa4-481ae318f60d")
 	)
 	(segment
-		(start 236.22 68.58)
-		(end 236.22 66)
+		(start 176.53 95.21)
+		(end 177.8 95.21)
+		(width 0.8)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "e29b2c51-4c78-48ba-a96f-f98e1186d5fa")
+	)
+	(segment
+		(start 203.2 69.85)
+		(end 203.2 67.27)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "e6f007a2-1b23-4fc5-8ca3-7da8f404f033")
 	)
 	(segment
-		(start 187.96 68.58)
-		(end 187.96 66)
+		(start 158.75 69.85)
+		(end 158.75 67.27)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "ed31e2ee-2b53-4c25-b48a-424f1977f447")
 	)
 	(segment
-		(start 204.47 66)
-		(end 205.74 66)
+		(start 175.26 67.27)
+		(end 176.53 67.27)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "f4ed220c-38c6-4f2e-b810-06744680a083")
 	)
 	(segment
-		(start 236.84 99.23)
-		(end 236.09 99.23)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 1)
-		(uuid "fa1c3366-6051-4177-bbe1-ea1c0e5bb677")
-	)
-	(segment
-		(start 187.97 38.09)
-		(end 187.96 38.1)
+		(start 158.76 39.36)
+		(end 158.75 39.37)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "faef1490-c02d-4b0d-9a05-bea3f86b5caa")
 	)
 	(segment
-		(start 205.74 82.46)
-		(end 205.76 82.44)
+		(start 120.65 36.74)
+		(end 120.67 36.72)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "fb2039ae-b2b4-4628-9155-1ad0b3efba12")
 	)
 	(segment
-		(start 236.22 50.8)
-		(end 237.49 50.8)
+		(start 203.2 52.07)
+		(end 204.47 52.07)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 1)
 		(uuid "fc285b41-b323-42dc-9f49-2a6008e0f299")
 	)
 	(segment
-		(start 237.62 48.39)
-		(end 237.49 48.26)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "0c0917be-5fec-456f-b90d-c30ff437d5c9")
-	)
-	(segment
-		(start 236.22 153.67)
-		(end 237.49 153.67)
+		(start 176.53 109.18)
+		(end 177.8 109.18)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "0edf5e2c-fe89-4ffb-8ba4-ef00f5208f09")
 	)
 	(segment
-		(start 237.49 80.01)
-		(end 236.22 80.01)
+		(start 176.53 92.67)
+		(end 177.8 92.67)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 2)
-		(uuid "144cf47d-4dc2-4a34-8873-809d00396866")
+		(uuid "18a5d57e-a47e-4b56-bae0-06d3199fe819")
 	)
 	(segment
-		(start 237.62 58.55)
-		(end 237.62 80.02)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "188134d3-0949-4fcb-80d6-e53b81d3e744")
-	)
-	(segment
-		(start 237.62 33.15)
-		(end 237.62 63.63)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "233faf49-cac0-4693-bc43-99dbb7b23f22")
-	)
-	(segment
-		(start 236.22 137.16)
-		(end 237.62 135.76)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "2408b223-7fd7-4cf8-b7d9-64b77b07a186")
-	)
-	(segment
-		(start 237.62 63.63)
-		(end 237.49 63.5)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "247adb61-a94d-4b71-803c-1a7214e860b7")
-	)
-	(segment
-		(start 237.49 48.26)
-		(end 237.45 48.3)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "290a66b6-75ef-4122-a02f-fdd55457adef")
-	)
-	(segment
-		(start 237.49 63.5)
-		(end 236.22 63.5)
+		(start 204.47 64.77)
+		(end 203.2 64.77)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "2a497bcb-5b95-4ed3-bb0f-7c590d0fa6f3")
 	)
 	(segment
-		(start 237.62 95.45)
-		(end 237.56 95.39)
+		(start 203.2 34.33)
+		(end 204.43 34.33)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 2)
-		(uuid "2c736f2a-83d4-40e9-9639-b9c0f8821167")
+		(uuid "4b6b344c-e9ac-4a54-9ebe-8befd84d9b2f")
 	)
 	(segment
-		(start 237.62 135.76)
-		(end 237.62 95.45)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "5173cf77-6bc3-4923-9298-afde2c132cfe")
-	)
-	(segment
-		(start 237.62 80.02)
-		(end 237.56 80.08)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "5cdb77c1-06a4-4dc3-a8ac-775b6516b611")
-	)
-	(segment
-		(start 237.45 48.3)
-		(end 236.22 48.3)
+		(start 204.43 49.57)
+		(end 203.2 49.57)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "774a7b16-d0fe-4ae7-ab3d-013ace549455")
 	)
 	(segment
-		(start 237.56 80.08)
-		(end 237.56 95.39)
+		(start 148.65 49.74)
+		(end 149.71 49.74)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 2)
-		(uuid "7764bb89-a117-456d-be5c-1def4e454494")
+		(uuid "8d3686d4-cc7f-4ef5-bd44-a31c64bc0747")
 	)
 	(segment
-		(start 237.62 153.54)
-		(end 237.62 135.76)
+		(start 148.77 34.22)
+		(end 149.97 34.22)
 		(width 0.8)
 		(layer "F.Cu")
 		(net 2)
-		(uuid "83d1c3ca-b217-48e8-8505-350323b673b5")
-	)
-	(segment
-		(start 237.49 153.67)
-		(end 237.62 153.54)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "a85e06d0-3af9-4db3-8dae-b26e91890b1c")
-	)
-	(segment
-		(start 237.49 33.02)
-		(end 237.62 33.15)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "a8c8c314-2ab1-49bc-893e-be5d6c0649ee")
-	)
-	(segment
-		(start 236.22 33.02)
-		(end 237.49 33.02)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "c2824c31-6a06-42d6-80ce-84fb7e695485")
-	)
-	(segment
-		(start 237.56 95.39)
-		(end 236.22 96.73)
-		(width 0.8)
-		(layer "F.Cu")
-		(net 2)
-		(uuid "f57f7052-4bc3-4ec0-9f27-bd3c1c233cfe")
+		(uuid "e5483e0c-8f8c-403a-b657-cd28eb8cc8f6")
 	)
 	(via
-		(at 236.22 137.16)
+		(at 176.53 92.67)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -52169,7 +51953,7 @@
 		(uuid "00998800-d75c-4aed-a41b-3051a48df982")
 	)
 	(via
-		(at 236.22 153.67)
+		(at 176.53 109.18)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -52177,7 +51961,7 @@
 		(uuid "185bf9ef-003d-47e9-beed-a412880f7a90")
 	)
 	(via
-		(at 236.22 48.3)
+		(at 203.2 49.57)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -52185,7 +51969,7 @@
 		(uuid "256ea390-0c2b-4204-bef1-06d0f3693c07")
 	)
 	(via
-		(at 236.22 33.06)
+		(at 203.2 34.33)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -52193,7 +51977,7 @@
 		(uuid "82ce5db3-500c-4634-85d1-1969402e8418")
 	)
 	(via
-		(at 236.22 63.5)
+		(at 203.2 64.77)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -52201,7 +51985,7 @@
 		(uuid "86c166ab-20de-42e9-8e13-3a8da43483af")
 	)
 	(via
-		(at 236.22 96.73)
+		(at 148.65 49.74)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -52209,7 +51993,7 @@
 		(uuid "d9695a88-f9d1-49db-8895-d18661d2ca05")
 	)
 	(via
-		(at 236.22 79.94)
+		(at 148.77 34.22)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -52217,592 +52001,544 @@
 		(uuid "eb21ffdc-e802-4fbf-b1f0-97d948826f4d")
 	)
 	(segment
-		(start 218.44 60.96)
-		(end 218.44 63.5)
+		(start 185.42 62.23)
+		(end 185.42 64.77)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "03ba8399-d9d1-4daa-96d0-ab1420ecb6a6")
 	)
 	(segment
-		(start 218.38 96.69)
-		(end 218.34 96.73)
+		(start 130.81 49.7)
+		(end 130.77 49.74)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "0620721a-771f-4d38-a10a-6676c4bc97ce")
 	)
 	(segment
-		(start 213.36 153.67)
-		(end 213.36 153.71)
+		(start 153.67 109.18)
+		(end 153.67 109.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "0e14d2a4-76c6-4b3b-845e-cd4bd9d596c1")
 	)
 	(segment
-		(start 218.44 30.48)
-		(end 218.44 33.06)
+		(start 185.42 31.75)
+		(end 185.42 34.33)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "0ebf3b57-d880-48f4-8536-0dc152c13d7a")
 	)
 	(segment
-		(start 191.77 134.62)
-		(end 191.77 137.16)
+		(start 132.08 90.13)
+		(end 132.08 92.67)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "13860497-fcd1-4ea2-8502-9b082ca3b321")
 	)
 	(segment
-		(start 218.26 79.86)
-		(end 218.34 79.94)
+		(start 130.81 34.14)
+		(end 130.89 34.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "14ccdb55-277a-4699-a698-164d83f34c88")
 	)
 	(segment
-		(start 195.58 60.96)
-		(end 195.58 63.5)
+		(start 166.37 62.23)
+		(end 166.37 64.77)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "168bd320-563e-4c6e-9f8b-197e68467677")
 	)
 	(segment
-		(start 213.36 134.62)
-		(end 213.36 137.16)
+		(start 153.67 90.13)
+		(end 153.67 92.67)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "193a7f70-eef7-4f3c-9bff-def8c3a00c48")
 	)
 	(segment
-		(start 187.96 33.06)
-		(end 187.97 33.07)
+		(start 158.75 34.33)
+		(end 158.76 34.34)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "1a5062ea-3e80-4bf3-a841-637e2da47723")
 	)
 	(segment
-		(start 231.14 30.48)
-		(end 231.14 33.06)
+		(start 198.12 31.75)
+		(end 198.12 34.33)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "1b090a80-3fb3-4f33-9a17-4223f5092ab3")
 	)
 	(segment
-		(start 218.34 96.73)
-		(end 236.22 96.73)
+		(start 130.77 49.74)
+		(end 148.65 49.74)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "2e2f0b1c-64a4-46b8-943f-e4e60a126772")
 	)
 	(segment
-		(start 218.44 48.3)
-		(end 236.22 48.3)
+		(start 185.42 49.57)
+		(end 203.2 49.57)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "2ef6549c-0360-4b92-994b-ba2c40f21272")
 	)
 	(segment
-		(start 218.44 33.06)
-		(end 226.06 33.06)
+		(start 185.42 34.33)
+		(end 193.04 34.33)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "3177901d-49e2-44c0-b04a-84803c9f6038")
 	)
 	(segment
-		(start 237.45 33.06)
-		(end 237.49 33.02)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 2)
-		(uuid "33259c33-4115-4ab6-a88a-2ab3ea26f9a6")
-	)
-	(segment
-		(start 187.97 33.07)
-		(end 195.59 33.07)
+		(start 158.76 34.34)
+		(end 166.38 34.34)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "33d4ad8a-7fa2-4d24-8900-67ca65e5a2ce")
 	)
 	(segment
-		(start 190.5 79.83)
-		(end 190.61 79.94)
+		(start 105.41 34.11)
+		(end 105.52 34.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "39ea24c8-1e50-41c4-a250-e4f19a361ba5")
 	)
 	(segment
-		(start 200.66 60.96)
-		(end 200.66 63.5)
+		(start 171.45 62.23)
+		(end 171.45 64.77)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "3b0ba528-1544-4e88-b0f4-6f7a30c9e426")
 	)
 	(segment
-		(start 191.77 33.06)
-		(end 218.44 33.06)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 2)
-		(uuid "3f6d8cab-90d7-4209-9359-48934edc853b")
-	)
-	(segment
-		(start 195.58 30.48)
-		(end 195.58 33.06)
+		(start 166.37 31.75)
+		(end 166.37 34.33)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "41908ba3-5bed-4a9a-af79-3a602302ccf8")
 	)
 	(segment
-		(start 187.96 30.48)
-		(end 187.96 33.06)
+		(start 158.75 31.75)
+		(end 158.75 34.33)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "4a0b3260-4fbf-49c6-8602-cdca63ee7fa1")
 	)
 	(segment
-		(start 190.61 79.94)
-		(end 200.7 79.94)
+		(start 105.52 34.22)
+		(end 115.61 34.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "4ad6ea39-3b21-4f4a-ac9b-48245c4f1659")
 	)
 	(segment
-		(start 190.5 77.32)
-		(end 190.5 79.83)
+		(start 105.41 31.6)
+		(end 105.41 34.11)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "61a5a945-96cb-404a-b9e2-a47469a5619f")
 	)
 	(segment
-		(start 218.44 63.5)
-		(end 236.22 63.5)
+		(start 185.42 64.77)
+		(end 203.2 64.77)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "65f928ad-e680-46f5-bb8e-1445f17c792c")
 	)
 	(segment
-		(start 187.96 60.96)
-		(end 187.96 63.5)
+		(start 158.75 62.23)
+		(end 158.75 64.77)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "679b4e19-7d0b-4cc5-9c92-0651a1a2024a")
 	)
 	(segment
-		(start 213.36 137.16)
-		(end 236.22 137.16)
+		(start 153.67 92.67)
+		(end 176.53 92.67)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "6b3a68c5-5892-4a1a-8efa-b85a61c7528a")
 	)
 	(segment
-		(start 200.66 30.48)
-		(end 200.66 33.06)
+		(start 171.45 31.75)
+		(end 171.45 34.33)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "758fef9c-14e9-4aa9-8eec-9a570e5ce5b3")
 	)
 	(segment
-		(start 226.06 33.06)
-		(end 231.14 33.06)
+		(start 193.04 34.33)
+		(end 198.12 34.33)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "7a2a23a6-ce9a-430b-822f-ff359fb4d377")
 	)
 	(segment
-		(start 200.7 79.94)
-		(end 203.2 79.94)
+		(start 115.61 34.22)
+		(end 118.11 34.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "7f20ffe6-f159-4795-a521-0df748b5761f")
 	)
 	(segment
-		(start 195.58 48.3)
-		(end 200.66 48.3)
+		(start 166.37 49.57)
+		(end 171.45 49.57)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "7fc733a0-5be7-44fb-9147-82660b9f9396")
 	)
 	(segment
-		(start 218.44 63.5)
-		(end 200.66 63.5)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 2)
-		(uuid "82cf3735-1bf0-4df9-894a-1cc8dc69b908")
-	)
-	(segment
-		(start 200.66 33.06)
-		(end 200.67 33.07)
+		(start 171.45 34.33)
+		(end 171.46 34.34)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "886754b9-3fa0-447f-a01e-1a99d8904b59")
 	)
 	(segment
-		(start 236.22 33.06)
-		(end 237.45 33.06)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 2)
-		(uuid "89df4304-a8d5-485c-b193-1d76f2cfe734")
-	)
-	(segment
-		(start 187.96 45.72)
-		(end 187.96 48.3)
+		(start 158.75 46.99)
+		(end 158.75 49.57)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "8c44ee1d-afe9-4a38-9aa4-fc16e47ed45d")
 	)
 	(segment
-		(start 191.77 48.3)
-		(end 218.44 48.3)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 2)
-		(uuid "8e6df198-7871-4fc9-a340-8cda7cc6efbe")
-	)
-	(segment
-		(start 187.95 79.94)
-		(end 190.61 79.94)
+		(start 102.86 34.22)
+		(end 105.52 34.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "90c0a445-1d4b-4410-baac-4f8fffb3fd02")
 	)
 	(segment
-		(start 187.96 48.3)
-		(end 195.58 48.3)
+		(start 158.75 49.57)
+		(end 166.37 49.57)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "92525159-04be-4ffe-84c2-fac58d55a5b5")
 	)
 	(segment
-		(start 200.66 45.72)
-		(end 200.66 48.3)
+		(start 171.45 46.99)
+		(end 171.45 49.57)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "95306242-4b67-4e08-ad29-2bc08024d366")
 	)
 	(segment
-		(start 218.26 77.44)
-		(end 218.26 79.86)
+		(start 130.81 31.72)
+		(end 130.81 34.14)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "a0f214b4-500c-47bc-9268-09abf18dade4")
 	)
 	(segment
-		(start 213.36 151.17)
-		(end 213.36 153.67)
+		(start 153.67 106.68)
+		(end 153.67 109.18)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "a31b3c98-cfae-4294-ab3e-a7419a013c8f")
 	)
 	(segment
-		(start 191.77 137.16)
-		(end 213.36 137.16)
+		(start 132.08 92.67)
+		(end 153.67 92.67)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "a43ab538-3fac-4941-81ec-be31d04bf432")
 	)
 	(segment
-		(start 213.36 153.67)
-		(end 236.22 153.67)
+		(start 153.67 109.18)
+		(end 176.53 109.18)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "a6387fef-a747-4eb9-a492-97ddb35ea261")
 	)
 	(segment
-		(start 189.23 137.16)
-		(end 191.77 137.16)
+		(start 129.54 92.67)
+		(end 132.08 92.67)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "a6f24314-aaa5-4a61-af85-c2c74d2cf538")
 	)
 	(segment
-		(start 231.14 33.06)
-		(end 236.22 33.06)
+		(start 198.12 34.33)
+		(end 203.2 34.33)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "a830368f-a114-464d-9767-a2f848712726")
 	)
 	(segment
-		(start 200.66 77.32)
-		(end 200.66 79.9)
+		(start 115.57 31.6)
+		(end 115.57 34.18)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "a91f94f6-55d9-4fb1-a4f4-2bd16c82b39c")
 	)
 	(segment
-		(start 185.42 48.3)
-		(end 187.96 48.3)
+		(start 156.21 49.57)
+		(end 158.75 49.57)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "abbd610e-16bf-496c-9117-bd83dee9ddff")
 	)
 	(segment
-		(start 185.43 33.07)
-		(end 187.97 33.07)
+		(start 156.22 34.34)
+		(end 158.76 34.34)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "b20ad4b3-85f0-4ffa-bda8-e73363800572")
 	)
 	(segment
-		(start 200.66 79.9)
-		(end 200.7 79.94)
+		(start 115.57 34.18)
+		(end 115.61 34.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "b3e2b325-4fe1-4824-93d7-2904b0b31399")
 	)
 	(segment
-		(start 203.2 77.32)
-		(end 203.2 79.94)
+		(start 118.11 31.6)
+		(end 118.11 34.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "b9c316d2-a4d1-4461-b2be-78981d8eb47b")
 	)
 	(segment
-		(start 185.42 63.5)
-		(end 187.96 63.5)
+		(start 156.21 64.77)
+		(end 158.75 64.77)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "ba1c8332-5e08-4cf0-a63d-7474e30f8600")
 	)
 	(segment
-		(start 218.34 79.94)
-		(end 236.22 79.94)
+		(start 130.89 34.22)
+		(end 148.77 34.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "bb841a25-6478-4fdf-abe7-f270073cf390")
 	)
 	(segment
-		(start 195.58 33.06)
-		(end 195.59 33.07)
+		(start 166.37 34.33)
+		(end 166.38 34.34)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "c06088a6-6e1e-4d12-924d-1c5adc72852e")
 	)
 	(segment
-		(start 218.38 93.98)
-		(end 218.38 96.69)
+		(start 130.81 46.99)
+		(end 130.81 49.7)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "c91ebd4d-47fe-4d01-be17-f08681c7896b")
 	)
 	(segment
-		(start 215.84 96.73)
-		(end 218.34 96.73)
+		(start 128.27 49.74)
+		(end 130.77 49.74)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "cb4c8ae8-dd96-4dc6-a60d-7f5a58f9b452")
 	)
 	(segment
-		(start 195.58 45.72)
-		(end 195.58 48.3)
+		(start 166.37 46.99)
+		(end 166.37 49.57)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "d66e7f56-6631-4f62-a671-d1b1a028f094")
 	)
 	(segment
-		(start 203.2 79.94)
-		(end 218.34 79.94)
-		(width 0.8)
-		(layer "B.Cu")
-		(net 2)
-		(uuid "e8f26f96-dd49-4892-9957-32dad75f8cbf")
-	)
-	(segment
-		(start 218.44 45.72)
-		(end 218.44 48.3)
+		(start 185.42 46.99)
+		(end 185.42 49.57)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "eb7b061c-cd86-4b3e-8382-fca57d817439")
 	)
 	(segment
-		(start 195.58 63.5)
-		(end 200.66 63.5)
+		(start 166.37 64.77)
+		(end 171.45 64.77)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "ef44ef82-3809-40d2-bd1d-cdf5465903b7")
 	)
 	(segment
-		(start 187.96 63.5)
-		(end 195.58 63.5)
+		(start 158.75 64.77)
+		(end 166.37 64.77)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "efd7d5d2-f618-4e53-8aeb-aa5f7b692fb5")
 	)
 	(segment
-		(start 226.06 30.48)
-		(end 226.06 33.06)
+		(start 193.04 31.75)
+		(end 193.04 34.33)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "f31ec41d-fc00-4502-8a75-65ae96abab1d")
 	)
 	(segment
-		(start 210.82 153.71)
-		(end 213.36 153.71)
+		(start 151.13 109.22)
+		(end 153.67 109.22)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "fc1ffb33-0f26-424c-8031-335983f0c54e")
 	)
 	(segment
-		(start 195.59 33.07)
-		(end 200.67 33.07)
+		(start 166.38 34.34)
+		(end 171.46 34.34)
 		(width 0.8)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "fe240af8-1382-4f55-a062-402e085658e4")
 	)
 	(segment
-		(start 196.85 134.62)
-		(end 199.39 134.62)
+		(start 137.16 90.13)
+		(end 139.7 90.13)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 25)
 		(uuid "65049a1e-212e-4d6a-936c-da1d7a8a4da3")
 	)
 	(segment
-		(start 201.93 134.62)
-		(end 204.47 134.62)
+		(start 142.24 90.13)
+		(end 144.78 90.13)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 33)
 		(uuid "70f3c6bd-edd5-4df4-a6dd-ac5f436740bb")
 	)
 	(segment
-		(start 228.6 142.24)
-		(end 228.6 134.62)
+		(start 168.91 97.75)
+		(end 168.91 90.13)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 47)
 		(uuid "600dbad9-db9d-4f4e-9779-280f3b207eac")
 	)
 	(segment
-		(start 228.6 151.17)
-		(end 231.14 151.17)
+		(start 168.91 106.68)
+		(end 171.45 106.68)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 47)
 		(uuid "99f6dc53-9d29-4750-9e4e-dca3f76811cb")
 	)
 	(segment
-		(start 220.98 151.17)
-		(end 218.44 151.17)
+		(start 161.29 106.68)
+		(end 158.75 106.68)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 49)
 		(uuid "add70346-ff76-484a-a5ec-dd70dc3fb414")
 	)
 	(segment
-		(start 218.44 134.62)
-		(end 218.44 142.24)
+		(start 158.75 90.13)
+		(end 158.75 97.75)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 49)
 		(uuid "bc07c64f-904f-480b-8ae1-b9cf6a694b55")
 	)
 	(segment
-		(start 228.95 93.98)
-		(end 229.1 94.13)
+		(start 141.38 46.99)
+		(end 141.53 47.14)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 50)
 		(uuid "e0f48e1a-0d4e-4160-95ba-5ed9bca8533f")
 	)
 	(segment
-		(start 228.54 93.98)
-		(end 228.95 93.98)
+		(start 140.97 46.99)
+		(end 141.38 46.99)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 50)
 		(uuid "f7c2baa6-32a5-4359-9867-95854f25d757")
 	)
 	(segment
-		(start 223.52 142.24)
-		(end 223.52 134.62)
+		(start 163.83 97.75)
+		(end 163.83 90.13)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 54)
 		(uuid "1ca6507a-63b7-42dd-b1c4-a707778704be")
 	)
 	(segment
-		(start 226.06 151.17)
-		(end 223.52 151.17)
+		(start 166.37 106.68)
+		(end 163.83 106.68)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 54)
 		(uuid "482bd2a3-aae4-4226-b41c-44e248b160fe")
 	)
 	(segment
-		(start 233.68 151.17)
-		(end 236.22 151.17)
+		(start 173.99 106.68)
+		(end 176.53 106.68)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 56)
 		(uuid "5791717e-a7a0-4e94-baac-fca55b0f4a6f")
 	)
 	(segment
-		(start 233.68 142.24)
-		(end 233.68 134.62)
+		(start 173.99 97.75)
+		(end 173.99 90.13)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 56)
 		(uuid "898b388c-63cb-446a-9ae0-1d12e66a3711")
 	)
 	(segment
-		(start 228.6 38.1)
-		(end 228.034315 38.1)
+		(start 195.58 39.37)
+		(end 195.014315 39.37)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 77)
@@ -52833,19 +52569,6 @@
 			"b4263721-630e-4215-8315-c064938dc174" "b9750534-8ceb-42af-970b-2accff79a688"
 			"cac0cdde-bbab-4088-a658-ec4d8b4c7554" "ebc94b96-71c1-4d40-bbcb-3b39e4a57237"
 			"f1186690-dd3d-4ab6-87a3-5ea6a4d63426" "ff69b9f4-3e54-4920-ad27-359d6ec7dfea"
-		)
-	)
-	(group ""
-		(uuid "74e8740d-0723-4463-bd97-c004fec9acd7")
-		(members "01d04875-8b28-4df1-947f-c89b8099a56c" "0b1b4879-3b61-4428-a2ab-3e859cbdb137"
-			"0fa1c0d6-780a-4e7c-93f2-2c1cdf3a2c41" "2509f146-e573-4cc8-b2e8-59494de24496"
-			"275717df-c061-4a0a-adbf-f5986ef99c48" "2a4784a1-eab8-43bb-82c8-20a24f2f9c97"
-			"59dd8a67-be42-4933-b0fb-926a49837c86" "5db5d8e0-508d-4e85-bfac-3a6cb56baa40"
-			"6441ad01-d214-4bf8-91cd-e011a9e3e8d3" "64bb1ea6-8fe4-4397-a0ac-1fc8b00a33e7"
-			"6577ea5a-15c7-437c-a245-671bb4d27be5" "837a1ff3-e9cd-4a68-8822-0b2936292fd4"
-			"83ff3166-1085-4d36-9d49-a4c80f041711" "85d4f8ac-9758-4d7c-b24b-de56b0ea3092"
-			"b07f07e8-d816-41c6-ae8c-2366b48561e0" "db6161a2-3595-48c4-977e-c119424075fe"
-			"ef71869f-c542-47a1-a579-81aba7c21b75"
 		)
 	)
 	(group ""
@@ -52880,13 +52603,6 @@
 			"d4fd3d37-3b03-4f02-a9cb-2169874ce330" "d6297cc3-5614-4568-8397-49eff092bae6"
 			"e733f605-0177-48ba-891e-677ebc14fc3d" "ed06b93e-d10d-47f4-b0b5-23a118fa3fb9"
 			"fb0b80ee-f75c-4310-bb12-93a11a0d912f" "fc53fc4a-4584-4ff4-abb5-71d8bcdd4018"
-		)
-	)
-	(group ""
-		(uuid "c473ed94-f91b-4ffe-bab3-a39cfb353514")
-		(members "453ba390-67c6-40b6-bf81-2f1fbd6bf368" "4d431274-3f20-46cf-953e-7a71d484bfe9"
-			"87b36213-260c-4c71-8892-9a0d5e3d30a2" "eadb04fc-4a82-4fdc-9388-a99fa6a55a7b"
-			"ee4a540a-0bcc-49f0-89bf-a8b3349ee4f7"
 		)
 	)
 )
