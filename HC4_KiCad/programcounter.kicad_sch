@@ -1472,28 +1472,28 @@
 		(uuid "a64d6f63-e7fc-4fbd-84ee-740b7cc370f2")
 	)
 	(junction
+		(at 157.48 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa4d6f31-c22a-4b1f-bcbe-119f41bae428")
+	)
+	(junction
 		(at 115.57 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b02efeee-db6d-480d-bef7-c66577931875")
 	)
 	(junction
-		(at 157.48 170.18)
+		(at 148.59 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bc168289-ffe3-4df0-b15a-e30befb6b737")
+		(uuid "bacf7734-a791-4568-afac-10ecf37a90a6")
 	)
 	(junction
 		(at 157.48 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c384df44-2921-41b7-8973-b9e57c66c479")
-	)
-	(junction
-		(at 148.59 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c55b021a-a3db-4a59-bbb6-0be6d6a45f6c")
 	)
 	(junction
 		(at 148.59 97.79)
@@ -1816,16 +1816,6 @@
 			(type default)
 		)
 		(uuid "f2c535dc-7fe1-48e6-803e-0eb09f93238e")
-	)
-	(wire
-		(pts
-			(xy 148.59 170.18) (xy 157.48 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0113509c-27b5-4a1e-9f2b-4dbd4bcc1c34")
 	)
 	(wire
 		(pts
@@ -2326,6 +2316,16 @@
 			(type default)
 		)
 		(uuid "5e10d219-3f25-477c-84f8-09b2732af121")
+	)
+	(wire
+		(pts
+			(xy 148.59 170.18) (xy 157.48 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ec1ea82-d7f0-4d43-8bcf-9aa85f77d214")
 	)
 	(wire
 		(pts
@@ -2957,6 +2957,16 @@
 		)
 		(uuid "c59c5d72-5807-4906-a089-a13e2609f402")
 	)
+	(wire
+		(pts
+			(xy 157.48 170.18) (xy 166.37 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6ce6faa-2476-47e3-bc58-292cfd361ee9")
+	)
 	(bus
 		(pts
 			(xy 105.41 139.7) (xy 105.41 137.16)
@@ -3169,16 +3179,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 170.18) (xy 166.37 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee8c547d-3336-418f-9fac-1dec438f85a5")
-	)
-	(wire
-		(pts
 			(xy 148.59 74.93) (xy 148.59 73.66)
 		)
 		(stroke
@@ -3279,6 +3279,7 @@
 	)
 	(label "Level_B2"
 		(at 104.14 97.79 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3289,6 +3290,7 @@
 	)
 	(label "Level_A0"
 		(at 107.95 147.32 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3299,6 +3301,7 @@
 	)
 	(label "PC_3"
 		(at 149.86 139.7 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3309,6 +3312,7 @@
 	)
 	(label "Level_C3"
 		(at 104.14 52.07 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3319,6 +3323,7 @@
 	)
 	(label "Level_B0"
 		(at 104.14 102.87 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3329,6 +3334,7 @@
 	)
 	(label "PC_0"
 		(at 149.86 147.32 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3339,6 +3345,7 @@
 	)
 	(label "Level_A2"
 		(at 107.95 142.24 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3349,6 +3356,7 @@
 	)
 	(label "PC_6"
 		(at 149.86 97.79 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3359,6 +3367,7 @@
 	)
 	(label "PC_5"
 		(at 149.86 100.33 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3369,6 +3378,7 @@
 	)
 	(label "PC_9"
 		(at 149.86 57.15 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3379,6 +3389,7 @@
 	)
 	(label "Level_A1"
 		(at 107.95 144.78 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3389,6 +3400,7 @@
 	)
 	(label "PC_1"
 		(at 149.86 144.78 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3399,6 +3411,7 @@
 	)
 	(label "Level_B3"
 		(at 104.14 95.25 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3409,6 +3422,7 @@
 	)
 	(label "PC_11"
 		(at 149.86 52.07 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3419,6 +3433,7 @@
 	)
 	(label "PC_4"
 		(at 149.86 102.87 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3429,6 +3444,7 @@
 	)
 	(label "PC_7"
 		(at 149.86 95.25 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3439,6 +3455,7 @@
 	)
 	(label "Level_C2"
 		(at 104.14 54.61 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3449,6 +3466,7 @@
 	)
 	(label "Level_B1"
 		(at 104.14 100.33 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3459,6 +3477,7 @@
 	)
 	(label "PC_10"
 		(at 149.86 54.61 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3469,6 +3488,7 @@
 	)
 	(label "Level_A3"
 		(at 107.95 139.7 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3479,6 +3499,7 @@
 	)
 	(label "Level_C0"
 		(at 104.14 59.69 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3489,6 +3510,7 @@
 	)
 	(label "PC_8"
 		(at 149.86 59.69 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3499,6 +3521,7 @@
 	)
 	(label "Level_C1"
 		(at 104.14 57.15 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3509,6 +3532,7 @@
 	)
 	(label "PC_2"
 		(at 149.86 142.24 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3652,6 +3676,7 @@
 	(hierarchical_label "~{JMP}"
 		(shape input)
 		(at 114.3 83.82 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3663,6 +3688,7 @@
 	(hierarchical_label "Level_A[0..3]"
 		(shape input)
 		(at 102.87 134.62 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3674,6 +3700,7 @@
 	(hierarchical_label "PC_[0..12]"
 		(shape output)
 		(at 182.88 52.07 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3685,6 +3712,7 @@
 	(hierarchical_label "Level_B[0..3]"
 		(shape input)
 		(at 99.06 90.17 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3696,6 +3724,7 @@
 	(hierarchical_label "~{JMP}"
 		(shape input)
 		(at 114.3 40.64 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3707,6 +3736,7 @@
 	(hierarchical_label "Level_C[0..3]"
 		(shape input)
 		(at 99.06 46.99 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3718,6 +3748,7 @@
 	(hierarchical_label "~{JMP}"
 		(shape input)
 		(at 114.3 128.27 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4884,26 +4915,24 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 157.48 166.37 0)
-		(mirror x)
+		(at 148.59 166.37 180)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5d1c8c33-20d0-461e-a00a-4a2692d1cef0")
 		(property "Reference" "RN4"
-			(at 154.94 165.0999 0)
+			(at 151.13 165.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "1k"
-			(at 154.94 167.6399 0)
+			(at 151.13 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4912,7 +4941,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 155.448 166.37 90)
+			(at 150.622 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4921,7 +4950,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 157.48 166.37 0)
+			(at 148.59 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4930,7 +4959,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 157.48 166.37 0)
+			(at 148.59 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5563,8 +5592,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 166.37 166.37 0)
-		(mirror x)
+		(at 139.7 166.37 180)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5573,7 +5601,7 @@
 		(fields_autoplaced yes)
 		(uuid "89bdfbd5-f144-453c-b7ea-0da60db3c936")
 		(property "Reference" "RN4"
-			(at 163.83 165.0999 0)
+			(at 142.24 165.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5582,7 +5610,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 163.83 167.6399 0)
+			(at 142.24 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5591,7 +5619,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 164.338 166.37 90)
+			(at 141.732 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5600,7 +5628,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 166.37 166.37 0)
+			(at 139.7 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5609,7 +5637,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 166.37 166.37 0)
+			(at 139.7 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5923,8 +5951,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 148.59 166.37 0)
-		(mirror x)
+		(at 157.48 166.37 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5933,7 +5960,7 @@
 		(fields_autoplaced yes)
 		(uuid "a077cd6c-8f7d-4ab4-831d-9266ede018af")
 		(property "Reference" "RN4"
-			(at 146.05 165.0999 0)
+			(at 160.02 165.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5942,7 +5969,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 146.05 167.6399 0)
+			(at 160.02 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5951,7 +5978,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 146.558 166.37 90)
+			(at 159.512 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5960,7 +5987,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 148.59 166.37 0)
+			(at 157.48 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5969,7 +5996,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 148.59 166.37 0)
+			(at 157.48 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6598,8 +6625,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 139.7 166.37 0)
-		(mirror x)
+		(at 166.37 166.37 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6608,7 +6634,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2d8fab0-493b-412a-a535-5ed3849e8c13")
 		(property "Reference" "RN4"
-			(at 137.16 165.0999 0)
+			(at 168.91 165.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6617,7 +6643,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 137.16 167.6399 0)
+			(at 168.91 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6626,7 +6652,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 137.668 166.37 90)
+			(at 168.402 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6635,7 +6661,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 139.7 166.37 0)
+			(at 166.37 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6644,7 +6670,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 139.7 166.37 0)
+			(at 166.37 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)

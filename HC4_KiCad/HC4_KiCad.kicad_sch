@@ -6288,6 +6288,7 @@
 	)
 	(label "Instruction_4"
 		(at 251.46 101.6 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6298,6 +6299,7 @@
 	)
 	(label "Instruction_3"
 		(at 251.46 99.06 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6308,6 +6310,7 @@
 	)
 	(label "PC_5"
 		(at 215.9 104.14 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6318,6 +6321,7 @@
 	)
 	(label "RAM_A2"
 		(at 30.48 64.77 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6328,6 +6332,7 @@
 	)
 	(label "Instruction_2"
 		(at 251.46 96.52 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6338,6 +6343,7 @@
 	)
 	(label "PC_4"
 		(at 215.9 101.6 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6348,6 +6354,7 @@
 	)
 	(label "PC_9"
 		(at 215.9 114.3 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6358,6 +6365,7 @@
 	)
 	(label "RAM_A5"
 		(at 30.48 72.39 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6368,6 +6376,7 @@
 	)
 	(label "PC_0"
 		(at 215.9 91.44 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6378,6 +6387,7 @@
 	)
 	(label "Databus1"
 		(at 73.66 62.23 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6388,6 +6398,7 @@
 	)
 	(label "RAM_A3"
 		(at 30.48 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6398,6 +6409,7 @@
 	)
 	(label "PC_3"
 		(at 215.9 99.06 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6408,6 +6420,7 @@
 	)
 	(label "PC_6"
 		(at 215.9 106.68 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6418,6 +6431,7 @@
 	)
 	(label "PC_1"
 		(at 215.9 93.98 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6428,6 +6442,7 @@
 	)
 	(label "RAM_A0"
 		(at 30.48 59.69 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6438,6 +6453,7 @@
 	)
 	(label "RAM_A6"
 		(at 30.48 74.93 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6448,6 +6464,7 @@
 	)
 	(label "PC_8"
 		(at 215.9 111.76 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6458,6 +6475,7 @@
 	)
 	(label "Instruction_6"
 		(at 251.46 106.68 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6468,6 +6486,7 @@
 	)
 	(label "Databus2"
 		(at 73.66 64.77 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6478,6 +6497,7 @@
 	)
 	(label "Databus0"
 		(at 73.66 59.69 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6488,6 +6508,7 @@
 	)
 	(label "RAM_A7"
 		(at 30.48 77.47 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6498,6 +6519,7 @@
 	)
 	(label "RAM_A4"
 		(at 30.48 69.85 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6508,6 +6530,7 @@
 	)
 	(label "Databus3"
 		(at 73.66 67.31 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6518,6 +6541,7 @@
 	)
 	(label "PC_7"
 		(at 215.9 109.22 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6528,6 +6552,7 @@
 	)
 	(label "RAM_A1"
 		(at 30.48 62.23 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6538,6 +6563,7 @@
 	)
 	(label "Instruction_0"
 		(at 251.46 91.44 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6548,6 +6574,7 @@
 	)
 	(label "PC_10"
 		(at 215.9 116.84 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6558,6 +6585,7 @@
 	)
 	(label "Instruction_7"
 		(at 251.46 109.22 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6568,6 +6596,7 @@
 	)
 	(label "PC_2"
 		(at 215.9 96.52 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6578,6 +6607,7 @@
 	)
 	(label "Instruction_5"
 		(at 251.46 104.14 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6588,6 +6618,7 @@
 	)
 	(label "PC_11"
 		(at 215.9 119.38 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6598,6 +6629,7 @@
 	)
 	(label "Instruction_1"
 		(at 251.46 93.98 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
