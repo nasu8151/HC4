@@ -3479,12 +3479,6 @@
 		(uuid "b6834497-3e77-4c2c-aa68-31a756d1ef7f")
 	)
 	(junction
-		(at 69.85 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b7a6dff5-fe02-4231-9d49-e299bf0e58b5")
-	)
-	(junction
 		(at 69.85 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3509,22 +3503,28 @@
 		(uuid "d0eb0345-3476-47e5-b236-9e707c35e550")
 	)
 	(junction
+		(at 69.85 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5125cf0-f893-446e-b12f-c31171c0fa18")
+	)
+	(junction
 		(at 158.75 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da6604a3-4428-4ae2-ab3d-2c5f7d41895b")
 	)
 	(junction
+		(at 72.39 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2791de2-a25d-453d-bd59-bb827d3fe0e8")
+	)
+	(junction
 		(at 215.9 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eecfad30-c478-48eb-9268-00423ae90624")
-	)
-	(junction
-		(at 72.39 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f4e76cb3-5fae-4d43-8da1-4c5959dac52a")
 	)
 	(bus_entry
 		(at 205.74 106.68)
@@ -4026,7 +4026,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 148.59) (xy 165.1 148.59)
+			(xy 199.39 148.59) (xy 165.1 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4106,6 +4106,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 76.2) (xy 204.47 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b400a73-c0f1-490a-a81a-29e5cb1f3d85")
+	)
+	(wire
+		(pts
 			(xy 143.51 100.33) (xy 190.5 100.33)
 		)
 		(stroke
@@ -4176,6 +4186,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 160.02) (xy 72.39 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2356e4f7-88e8-4ca5-9c19-b329eea3ece7")
+	)
+	(wire
+		(pts
 			(xy 36.83 82.55) (xy 38.1 82.55)
 		)
 		(stroke
@@ -4213,6 +4233,16 @@
 			(type default)
 		)
 		(uuid "26f0b1c5-4749-48f0-bba9-a5756f54b60e")
+	)
+	(wire
+		(pts
+			(xy 201.93 161.29) (xy 69.85 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "277d8e8f-9b9f-4903-ab6f-4854b16ca0b2")
 	)
 	(wire
 		(pts
@@ -4606,16 +4636,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 151.13) (xy 199.39 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c4d084f-90af-498e-87d9-79be9cee76f0")
-	)
-	(wire
-		(pts
 			(xy 186.69 39.37) (xy 186.69 48.26)
 		)
 		(stroke
@@ -4703,16 +4723,6 @@
 			(type default)
 		)
 		(uuid "5974a030-f30f-4457-b19e-aa4ad0bec394")
-	)
-	(wire
-		(pts
-			(xy 72.39 144.78) (xy 72.39 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59a2c016-68eb-4666-a365-521f026b41a0")
 	)
 	(wire
 		(pts
@@ -5084,6 +5094,16 @@
 		)
 		(uuid "7d22bbca-c020-4aa3-858e-c21adb712441")
 	)
+	(wire
+		(pts
+			(xy 69.85 161.29) (xy 69.85 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d474f21-aca5-4dff-994f-d489b335d578")
+	)
 	(polyline
 		(pts
 			(xy 25.4 25.4) (xy 25.4 31.75)
@@ -5404,16 +5424,6 @@
 		)
 		(uuid "93bfbc38-c9ea-4f67-9fc3-97b81b4a4078")
 	)
-	(wire
-		(pts
-			(xy 69.85 111.76) (xy 69.85 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9421094b-1f56-480d-a358-3d507791464f")
-	)
 	(polyline
 		(pts
 			(xy 175.26 148.59) (xy 165.1 158.75)
@@ -5473,6 +5483,16 @@
 			(type default)
 		)
 		(uuid "99c3558b-7910-40fc-9654-aff467c96b70")
+	)
+	(wire
+		(pts
+			(xy 204.47 160.02) (xy 72.39 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a1d0fd7-0223-4dd2-b313-05881a8e40b8")
 	)
 	(wire
 		(pts
@@ -5563,6 +5583,16 @@
 			(type default)
 		)
 		(uuid "a4fcfb6f-db34-4d3f-a747-3792181b9403")
+	)
+	(wire
+		(pts
+			(xy 201.93 76.2) (xy 201.93 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ab89aa-8a7f-4d0c-9185-6534f5644800")
 	)
 	(wire
 		(pts
@@ -6086,7 +6116,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 76.2) (xy 201.93 148.59)
+			(xy 199.39 76.2) (xy 199.39 148.59)
 		)
 		(stroke
 			(width 0)
@@ -6123,16 +6153,6 @@
 			(type default)
 		)
 		(uuid "f50ded8a-c991-4491-8b53-908315c0efab")
-	)
-	(wire
-		(pts
-			(xy 199.39 151.13) (xy 199.39 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5f01a89-b280-4501-a5fc-97247f12acfe")
 	)
 	(wire
 		(pts
@@ -6244,9 +6264,9 @@
 		)
 		(uuid "fc4907de-fe9d-4aec-949c-0ea0937f65ee")
 	)
-	(text "When using 6116 SRAM, \nClose 2-3 of JP1"
+	(text "When using a 6116 type SRAM, \nClose 2-3 of JP1"
 		(exclude_from_sim no)
-		(at 43.434 118.872 0)
+		(at 45.466 118.872 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6268,7 +6288,6 @@
 	)
 	(label "Instruction_4"
 		(at 251.46 101.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6279,7 +6298,6 @@
 	)
 	(label "Instruction_3"
 		(at 251.46 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6290,7 +6308,6 @@
 	)
 	(label "PC_5"
 		(at 215.9 104.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6301,7 +6318,6 @@
 	)
 	(label "RAM_A2"
 		(at 30.48 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6312,7 +6328,6 @@
 	)
 	(label "Instruction_2"
 		(at 251.46 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6323,7 +6338,6 @@
 	)
 	(label "PC_4"
 		(at 215.9 101.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6334,7 +6348,6 @@
 	)
 	(label "PC_9"
 		(at 215.9 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6345,7 +6358,6 @@
 	)
 	(label "RAM_A5"
 		(at 30.48 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6356,7 +6368,6 @@
 	)
 	(label "PC_0"
 		(at 215.9 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6367,7 +6378,6 @@
 	)
 	(label "Databus1"
 		(at 73.66 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6378,7 +6388,6 @@
 	)
 	(label "RAM_A3"
 		(at 30.48 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6389,7 +6398,6 @@
 	)
 	(label "PC_3"
 		(at 215.9 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6400,7 +6408,6 @@
 	)
 	(label "PC_6"
 		(at 215.9 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6411,7 +6418,6 @@
 	)
 	(label "PC_1"
 		(at 215.9 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6422,7 +6428,6 @@
 	)
 	(label "RAM_A0"
 		(at 30.48 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6433,7 +6438,6 @@
 	)
 	(label "RAM_A6"
 		(at 30.48 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6444,7 +6448,6 @@
 	)
 	(label "PC_8"
 		(at 215.9 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6455,7 +6458,6 @@
 	)
 	(label "Instruction_6"
 		(at 251.46 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6466,7 +6468,6 @@
 	)
 	(label "Databus2"
 		(at 73.66 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6477,7 +6478,6 @@
 	)
 	(label "Databus0"
 		(at 73.66 59.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6488,7 +6488,6 @@
 	)
 	(label "RAM_A7"
 		(at 30.48 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6499,7 +6498,6 @@
 	)
 	(label "RAM_A4"
 		(at 30.48 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6510,7 +6508,6 @@
 	)
 	(label "Databus3"
 		(at 73.66 67.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6521,7 +6518,6 @@
 	)
 	(label "PC_7"
 		(at 215.9 109.22 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6532,7 +6528,6 @@
 	)
 	(label "RAM_A1"
 		(at 30.48 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6543,7 +6538,6 @@
 	)
 	(label "Instruction_0"
 		(at 251.46 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6554,7 +6548,6 @@
 	)
 	(label "PC_10"
 		(at 215.9 116.84 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6565,7 +6558,6 @@
 	)
 	(label "Instruction_7"
 		(at 251.46 109.22 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6576,7 +6568,6 @@
 	)
 	(label "PC_2"
 		(at 215.9 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6587,7 +6578,6 @@
 	)
 	(label "Instruction_5"
 		(at 251.46 104.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6598,7 +6588,6 @@
 	)
 	(label "PC_11"
 		(at 215.9 119.38 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6609,7 +6598,6 @@
 	)
 	(label "Instruction_1"
 		(at 251.46 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7381,7 +7369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60a36963-e73c-4c70-b591-d2f06c17d185")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR09"
 			(at 105.41 171.45 0)
 			(effects
 				(font
@@ -7431,7 +7419,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
-					(reference "#PWR07")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -7583,7 +7571,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f3b226b-9c8a-4deb-b94a-6b65c15de3ef")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR010"
 			(at 105.41 193.04 0)
 			(effects
 				(font
@@ -7633,7 +7621,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
-					(reference "#PWR08")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7797,7 +7785,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9781075c-9fb0-4e93-af9a-bc08b30688ba")
-		(property "Reference" "CP23"
+		(property "Reference" "CP1"
 			(at 63.5 175.2599 0)
 			(effects
 				(font
@@ -7851,7 +7839,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
-					(reference "CP23")
+					(reference "CP1")
 					(unit 1)
 				)
 			)
@@ -7867,7 +7855,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "993f0c92-c1b1-49a9-bca8-a0ce31cf1710")
-		(property "Reference" "CP24"
+		(property "Reference" "CP2"
 			(at 76.2 175.2599 0)
 			(effects
 				(font
@@ -7921,7 +7909,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
-					(reference "CP24")
+					(reference "CP2")
 					(unit 1)
 				)
 			)
@@ -8557,7 +8545,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "deccaf57-831f-4fd9-ae40-88c9e3a955ee")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR08"
 			(at 87.63 95.25 0)
 			(effects
 				(font
@@ -8607,7 +8595,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
-					(reference "#PWR010")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -8689,7 +8677,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f32bce3d-c04c-48c7-a993-6a69ad2ff61c")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR07"
 			(at 81.28 78.74 0)
 			(effects
 				(font
@@ -8739,7 +8727,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
-					(reference "#PWR09")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -9128,26 +9116,6 @@
 				(justify left top)
 			)
 		)
-		(pin "~{RAM_WR}" output
-			(at 69.85 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "6b80deed-18b1-4a05-9fbe-31c49f05a84d")
-		)
-		(pin "~{RAM_RD}" output
-			(at 72.39 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "142458c2-6ef0-4b91-8e60-929ab56c0ee8")
-		)
 		(pin "Instruction_[0..7]" input
 			(at 165.1 146.05 0)
 			(effects
@@ -9187,16 +9155,6 @@
 				(justify right)
 			)
 			(uuid "3f44a7a6-04f1-458f-9d8b-b6c9dced50d3")
-		)
-		(pin "READ" input
-			(at 165.1 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "b3f39d79-56e7-4cce-a502-1d19e888d659")
 		)
 		(pin "RAM_A[0..7]" output
 			(at 44.45 144.78 90)
@@ -9286,7 +9244,7 @@
 			(uuid "b8577c1d-f43f-42e0-997e-b4ea7c0a13b9")
 		)
 		(pin "MEMMode" output
-			(at 201.93 76.2 270)
+			(at 199.39 76.2 270)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9375,16 +9333,6 @@
 			)
 			(uuid "1f00f541-b877-46ed-a5ec-f5efa8223e8e")
 		)
-		(pin "READ" output
-			(at 199.39 76.2 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "837c35f8-8601-426f-93f9-85123cd470d4")
-		)
 		(pin "~{Imm_OE}" output
 			(at 191.77 48.26 90)
 			(effects
@@ -9414,6 +9362,26 @@
 				(justify right)
 			)
 			(uuid "345dcc83-751f-4791-98ca-ab613b33f093")
+		)
+		(pin "~{RAM_WR}" output
+			(at 201.93 76.2 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d065ffec-4f02-4be0-8e99-12a83e9f3233")
+		)
+		(pin "~{RAM_RD}" output
+			(at 204.47 76.2 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6e1104f5-bd07-458a-960a-8906c54da933")
 		)
 		(instances
 			(project "HC4_KiCad"
