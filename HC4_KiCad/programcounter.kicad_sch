@@ -3279,7 +3279,6 @@
 	)
 	(label "Level_B2"
 		(at 104.14 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3290,7 +3289,6 @@
 	)
 	(label "Level_A0"
 		(at 107.95 147.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3301,7 +3299,6 @@
 	)
 	(label "PC_3"
 		(at 149.86 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3312,7 +3309,6 @@
 	)
 	(label "Level_C3"
 		(at 104.14 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3323,7 +3319,6 @@
 	)
 	(label "Level_B0"
 		(at 104.14 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3334,7 +3329,6 @@
 	)
 	(label "PC_0"
 		(at 149.86 147.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3345,7 +3339,6 @@
 	)
 	(label "Level_A2"
 		(at 107.95 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3356,7 +3349,6 @@
 	)
 	(label "PC_6"
 		(at 149.86 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3367,7 +3359,6 @@
 	)
 	(label "PC_5"
 		(at 149.86 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3378,7 +3369,6 @@
 	)
 	(label "PC_9"
 		(at 149.86 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3389,7 +3379,6 @@
 	)
 	(label "Level_A1"
 		(at 107.95 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3400,7 +3389,6 @@
 	)
 	(label "PC_1"
 		(at 149.86 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3411,7 +3399,6 @@
 	)
 	(label "Level_B3"
 		(at 104.14 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3422,7 +3409,6 @@
 	)
 	(label "PC_11"
 		(at 149.86 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3433,7 +3419,6 @@
 	)
 	(label "PC_4"
 		(at 149.86 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3444,7 +3429,6 @@
 	)
 	(label "PC_7"
 		(at 149.86 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3455,7 +3439,6 @@
 	)
 	(label "Level_C2"
 		(at 104.14 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3466,7 +3449,6 @@
 	)
 	(label "Level_B1"
 		(at 104.14 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3477,7 +3459,6 @@
 	)
 	(label "PC_10"
 		(at 149.86 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3488,7 +3469,6 @@
 	)
 	(label "Level_A3"
 		(at 107.95 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3499,7 +3479,6 @@
 	)
 	(label "Level_C0"
 		(at 104.14 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3510,7 +3489,6 @@
 	)
 	(label "PC_8"
 		(at 149.86 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3521,7 +3499,6 @@
 	)
 	(label "Level_C1"
 		(at 104.14 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3532,7 +3509,6 @@
 	)
 	(label "PC_2"
 		(at 149.86 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3676,7 +3652,6 @@
 	(hierarchical_label "~{JMP}"
 		(shape input)
 		(at 114.3 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3688,7 +3663,6 @@
 	(hierarchical_label "Level_A[0..3]"
 		(shape input)
 		(at 102.87 134.62 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3700,7 +3674,6 @@
 	(hierarchical_label "PC_[0..12]"
 		(shape output)
 		(at 182.88 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3712,7 +3685,6 @@
 	(hierarchical_label "Level_B[0..3]"
 		(shape input)
 		(at 99.06 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3724,7 +3696,6 @@
 	(hierarchical_label "~{JMP}"
 		(shape input)
 		(at 114.3 40.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3736,7 +3707,6 @@
 	(hierarchical_label "Level_C[0..3]"
 		(shape input)
 		(at 99.06 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3748,7 +3718,6 @@
 	(hierarchical_label "~{JMP}"
 		(shape input)
 		(at 114.3 128.27 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
