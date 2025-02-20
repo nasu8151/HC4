@@ -5400,6 +5400,7 @@
 	)
 	(label "ALU0"
 		(at 81.28 57.15 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5410,6 +5411,7 @@
 	)
 	(label "Databus1"
 		(at 121.92 123.19 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5420,6 +5422,7 @@
 	)
 	(label "Stack0"
 		(at 137.16 106.68 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5430,6 +5433,7 @@
 	)
 	(label "Databus1"
 		(at 76.2 133.35 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5440,6 +5444,7 @@
 	)
 	(label "Level_C0"
 		(at 77.47 59.69 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5450,6 +5455,7 @@
 	)
 	(label "Stack2"
 		(at 137.16 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5460,6 +5466,7 @@
 	)
 	(label "Databus3"
 		(at 127 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5470,6 +5477,7 @@
 	)
 	(label "Databus3"
 		(at 127 68.58 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5480,6 +5488,7 @@
 	)
 	(label "Databus1"
 		(at 127 63.5 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5490,6 +5499,7 @@
 	)
 	(label "Databus0"
 		(at 76.2 130.81 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5500,6 +5510,7 @@
 	)
 	(label "Databus2"
 		(at 121.92 72.39 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5510,6 +5521,7 @@
 	)
 	(label "Databus3"
 		(at 121.92 128.27 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5520,6 +5532,7 @@
 	)
 	(label "Databus3"
 		(at 76.2 138.43 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5530,6 +5543,7 @@
 	)
 	(label "Stack1"
 		(at 137.16 104.14 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5540,6 +5554,7 @@
 	)
 	(label "Stack3"
 		(at 137.16 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5550,6 +5565,7 @@
 	)
 	(label "Databus3"
 		(at 121.92 80.01 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5560,6 +5576,7 @@
 	)
 	(label "Databus0"
 		(at 127 106.68 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5570,6 +5587,7 @@
 	)
 	(label "Instruction_3"
 		(at 86.36 128.27 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5580,6 +5598,7 @@
 	)
 	(label "RAM_A1"
 		(at 224.79 91.44 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5590,6 +5609,7 @@
 	)
 	(label "RAM_A2"
 		(at 194.31 93.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5600,6 +5620,7 @@
 	)
 	(label "ALU1"
 		(at 81.28 64.77 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5610,6 +5631,7 @@
 	)
 	(label "RAM_A4"
 		(at 194.31 96.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5620,6 +5642,7 @@
 	)
 	(label "Level_C2"
 		(at 77.47 74.93 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5630,6 +5653,7 @@
 	)
 	(label "RAM_A5"
 		(at 224.79 96.52 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5640,6 +5664,7 @@
 	)
 	(label "ALU2"
 		(at 81.28 72.39 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5650,6 +5675,7 @@
 	)
 	(label "Databus1"
 		(at 121.92 64.77 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5660,6 +5686,7 @@
 	)
 	(label "RAM_A6"
 		(at 194.31 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5670,6 +5697,7 @@
 	)
 	(label "RAM_A7"
 		(at 224.79 99.06 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5680,6 +5708,7 @@
 	)
 	(label "Level_C1"
 		(at 77.47 67.31 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5690,6 +5719,7 @@
 	)
 	(label "Instruction_1"
 		(at 86.36 123.19 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5700,6 +5730,7 @@
 	)
 	(label "Databus2"
 		(at 127 66.04 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5710,6 +5741,7 @@
 	)
 	(label "Databus3"
 		(at 226.06 83.82 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5720,6 +5752,7 @@
 	)
 	(label "Databus0"
 		(at 121.92 57.15 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5730,6 +5763,7 @@
 	)
 	(label "RAM_A0"
 		(at 194.31 91.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5740,6 +5774,7 @@
 	)
 	(label "Databus0"
 		(at 127 60.96 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5750,6 +5785,7 @@
 	)
 	(label "Databus0"
 		(at 121.92 120.65 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5760,6 +5796,7 @@
 	)
 	(label "Databus0"
 		(at 194.31 81.28 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5770,6 +5807,7 @@
 	)
 	(label "Databus2"
 		(at 194.31 83.82 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5780,6 +5818,7 @@
 	)
 	(label "Databus1"
 		(at 226.06 81.28 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5790,6 +5829,7 @@
 	)
 	(label "Databus2"
 		(at 76.2 135.89 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5800,6 +5840,7 @@
 	)
 	(label "Databus2"
 		(at 127 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5810,6 +5851,7 @@
 	)
 	(label "Instruction_2"
 		(at 86.36 125.73 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5820,6 +5862,7 @@
 	)
 	(label "Level_C3"
 		(at 77.47 82.55 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5830,6 +5873,7 @@
 	)
 	(label "Instruction_0"
 		(at 86.36 120.65 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5840,6 +5884,7 @@
 	)
 	(label "Databus2"
 		(at 121.92 125.73 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5850,6 +5895,7 @@
 	)
 	(label "Databus1"
 		(at 127 104.14 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5860,6 +5906,7 @@
 	)
 	(label "RAM_A3"
 		(at 224.79 93.98 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5870,6 +5917,7 @@
 	)
 	(label "ALU3"
 		(at 81.28 80.01 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5925,6 +5973,7 @@
 	(hierarchical_label "~{Immediate_OE}"
 		(shape input)
 		(at 86.36 143.51 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5936,6 +5985,7 @@
 	(hierarchical_label "Stack[0..3]"
 		(shape output)
 		(at 147.32 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5947,6 +5997,7 @@
 	(hierarchical_label "RAM_A[0..7]"
 		(shape input)
 		(at 189.23 69.85 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5958,6 +6009,7 @@
 	(hierarchical_label "Level_C_OE"
 		(shape input)
 		(at 86.36 87.63 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5969,6 +6021,7 @@
 	(hierarchical_label "Instruction_[0..7]"
 		(shape input)
 		(at 67.31 115.57 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5980,6 +6033,7 @@
 	(hierarchical_label "Level_C[0..3]"
 		(shape input)
 		(at 72.39 57.15 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5991,6 +6045,7 @@
 	(hierarchical_label "Databus[0..3]"
 		(shape bidirectional)
 		(at 127 92.71 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6002,6 +6057,7 @@
 	(hierarchical_label "~{WR}"
 		(shape input)
 		(at 215.9 78.74 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6013,6 +6069,7 @@
 	(hierarchical_label "BUS_Zero"
 		(shape output)
 		(at 162.56 64.77 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6024,6 +6081,7 @@
 	(hierarchical_label "~{ALU_OE}"
 		(shape input)
 		(at 86.36 90.17 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6035,6 +6093,7 @@
 	(hierarchical_label "ALU[0..3]"
 		(shape input)
 		(at 72.39 54.61 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6046,6 +6105,7 @@
 	(hierarchical_label "~{RD}"
 		(shape input)
 		(at 203.2 78.74 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

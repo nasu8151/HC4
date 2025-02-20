@@ -565,7 +565,7 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Reference",
           "name": "Reference",
           "show": true
@@ -641,7 +641,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Footprint"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -685,7 +685,7 @@
   "sheets": [
     [
       "33731ded-38c0-4297-bdd8-92b082f46ff8",
-      "Root"
+      "ルート"
     ],
     [
       "51fb15b9-2319-4d69-a07a-a04158a23ae2",

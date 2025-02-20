@@ -1006,6 +1006,592 @@
 				)
 			)
 		)
+		(symbol "Device2:LED_"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LD"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED__0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED__1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Network04_Split"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RN"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Network04_Split"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_THT:R_Array_SIP5"
+				(at -2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "4 resistor network, star topology, bussed resistors, split"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R network star-topology"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R?Array?SIP*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Network04_Split_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network04_Split_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R1.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network04_Split_2_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network04_Split_3_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R3.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network04_Split_4_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R4.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Network08_Split"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RN"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Network08_Split"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_THT:R_Array_SIP9"
+				(at -2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "8 resistor network, star topology, bussed resistors, split"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R network star-topology"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R?Array?SIP*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Network08_Split_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network08_Split_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R1.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network08_Split_2_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network08_Split_3_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R3.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network08_Split_4_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R4.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network08_Split_5_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R5.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network08_Split_6_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R6.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network08_Split_7_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R7.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Network08_Split_8_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R8.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1224,10 +1810,34 @@
 		)
 	)
 	(junction
+		(at 185.42 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07fa2d88-5a77-46ac-ac6f-ce18ee188cd8")
+	)
+	(junction
+		(at 170.18 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a2956d0-57ba-481e-83bd-6db0817fe2c9")
+	)
+	(junction
+		(at 180.34 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d948d8d-1e4d-4b91-8e9e-12e5542e5fb9")
+	)
+	(junction
 		(at 81.28 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d24e42f-08f3-44ba-8961-ec791ad2bc1d")
+	)
+	(junction
+		(at 154.94 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34da387f-3c9b-46b5-b935-eb55a5699fb7")
 	)
 	(junction
 		(at 100.33 153.67)
@@ -1236,16 +1846,40 @@
 		(uuid "361ccb23-2fab-4a71-ad81-8faacd4c563b")
 	)
 	(junction
+		(at 144.78 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e88fd0f-80f0-4749-8748-3fcd0cb05c7b")
+	)
+	(junction
 		(at 92.71 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4560c285-86ac-40bc-91de-76826ab1feb6")
 	)
 	(junction
+		(at 160.02 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4abfe897-255b-43b8-8cd7-a32d36e376c5")
+	)
+	(junction
+		(at 175.26 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55836b99-9999-48f5-9813-ef31f628d534")
+	)
+	(junction
 		(at 114.3 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56872bb8-2387-4560-8aab-973a410c613f")
+	)
+	(junction
+		(at 139.7 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58679e91-662f-41a7-81a5-869bfe0d67d5")
 	)
 	(junction
 		(at 100.33 146.05)
@@ -1258,6 +1892,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "71955acd-f24f-407d-b867-542584aeb32f")
+	)
+	(junction
+		(at 149.86 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aada0d9e-f24d-4cc7-b68f-5ae7ba3fde0a")
+	)
+	(junction
+		(at 165.1 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff9ea3e6-0e35-4990-9f91-9d20d0d26836")
 	)
 	(no_connect
 		(at 102.87 93.98)
@@ -1481,6 +2127,26 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 154.94) (xy 160.02 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0321a9dd-121b-40f0-8911-74c53dbd4b81")
+	)
+	(wire
+		(pts
+			(xy 170.18 139.7) (xy 170.18 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "049c909e-a0bb-4c79-b49f-f1bf7cba4faa")
+	)
+	(wire
+		(pts
 			(xy 92.71 116.84) (xy 92.71 115.57)
 		)
 		(stroke
@@ -1508,6 +2174,16 @@
 			(type default)
 		)
 		(uuid "06a1afb9-d032-428e-b9ae-4c845c43ab95")
+	)
+	(wire
+		(pts
+			(xy 149.86 154.94) (xy 154.94 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08a041b4-d637-4651-a747-7464c0b59f8e")
 	)
 	(wire
 		(pts
@@ -1548,6 +2224,16 @@
 			(type default)
 		)
 		(uuid "0ea4358a-d30f-4fb5-b980-f998cc0d2a73")
+	)
+	(wire
+		(pts
+			(xy 160.02 139.7) (xy 160.02 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ef82b11-b4ac-42f9-96b8-cec7aa0158a4")
 	)
 	(wire
 		(pts
@@ -1649,6 +2335,16 @@
 		)
 		(uuid "335f22b1-9c27-4c4c-82ac-086934f90807")
 	)
+	(wire
+		(pts
+			(xy 139.7 139.7) (xy 139.7 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36462dab-97e4-4a5a-9e1b-0a69fa561a93")
+	)
 	(bus
 		(pts
 			(xy 67.31 100.33) (xy 67.31 102.87)
@@ -1739,6 +2435,16 @@
 		)
 		(uuid "49303e2a-c6fe-42ec-be58-bdb55c0e5558")
 	)
+	(wire
+		(pts
+			(xy 180.34 139.7) (xy 180.34 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c309be5-c9c6-4361-8de2-05d6c9003fcb")
+	)
 	(bus
 		(pts
 			(xy 191.77 96.52) (xy 191.77 99.06)
@@ -1751,6 +2457,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 154.94) (xy 149.86 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dfbdb29-ed73-4ea1-9d59-e4c8e2e00e6e")
+	)
+	(wire
+		(pts
 			(xy 142.24 88.9) (xy 154.94 88.9)
 		)
 		(stroke
@@ -1758,6 +2474,16 @@
 			(type default)
 		)
 		(uuid "4ef4ccc2-8aa2-43c2-8a83-0d81a7ab95e1")
+	)
+	(wire
+		(pts
+			(xy 170.18 154.94) (xy 175.26 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54203279-db13-4eac-8f60-e92fd9678fc2")
 	)
 	(bus
 		(pts
@@ -1768,6 +2494,16 @@
 			(type default)
 		)
 		(uuid "5568cbd5-ac23-4dfc-b853-218fe3b2ed23")
+	)
+	(wire
+		(pts
+			(xy 144.78 139.7) (xy 144.78 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "571bb92f-2677-423d-bca9-aefc36faa2e3")
 	)
 	(wire
 		(pts
@@ -1861,6 +2597,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 139.7) (xy 134.62 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b1aad95-7920-40b4-a1c6-d21ae302ab05")
+	)
+	(wire
+		(pts
 			(xy 100.33 146.05) (xy 104.14 146.05)
 		)
 		(stroke
@@ -1921,6 +2667,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 139.7) (xy 154.94 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92cceb3f-3853-4f67-9c6b-6ae435659f65")
+	)
+	(wire
+		(pts
 			(xy 146.05 106.68) (xy 154.94 106.68)
 		)
 		(stroke
@@ -1939,6 +2695,16 @@
 		)
 		(uuid "949aee3d-2f10-4ca6-8d8c-9eb41d266f91")
 	)
+	(wire
+		(pts
+			(xy 139.7 154.94) (xy 144.78 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95a0d92a-08df-4dc6-9437-95dff1bd7d14")
+	)
 	(bus
 		(pts
 			(xy 143.51 104.14) (xy 143.51 101.6)
@@ -1948,6 +2714,16 @@
 			(type default)
 		)
 		(uuid "96b12b88-baed-4e8d-823b-1d2072867724")
+	)
+	(wire
+		(pts
+			(xy 185.42 139.7) (xy 185.42 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "983ec4ce-a2a2-4b22-bf73-d1d743fac06a")
 	)
 	(wire
 		(pts
@@ -1991,6 +2767,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 139.7) (xy 175.26 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a059f7ca-0e4d-464b-b093-6a2ddca68303")
+	)
+	(wire
+		(pts
 			(xy 102.87 107.95) (xy 111.76 107.95)
 		)
 		(stroke
@@ -2008,6 +2794,16 @@
 			(type default)
 		)
 		(uuid "a87743c1-f26d-4799-b66b-9910dfa46dac")
+	)
+	(wire
+		(pts
+			(xy 190.5 139.7) (xy 190.5 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0087fad-870e-402f-b2c5-e1af607a9fe2")
 	)
 	(wire
 		(pts
@@ -2061,6 +2857,26 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 139.7) (xy 149.86 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf6f8328-2efe-4608-af55-4e1608bb5598")
+	)
+	(wire
+		(pts
+			(xy 175.26 154.94) (xy 180.34 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4997d5f-3cf6-49b4-9e69-37f2118c2264")
+	)
+	(wire
+		(pts
 			(xy 146.05 104.14) (xy 154.94 104.14)
 		)
 		(stroke
@@ -2099,6 +2915,26 @@
 		)
 		(uuid "e037d7b9-173f-4e83-bac3-c8a02c9b1099")
 	)
+	(wire
+		(pts
+			(xy 165.1 154.94) (xy 170.18 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e12952fc-f162-4b94-a667-0d4da9244418")
+	)
+	(wire
+		(pts
+			(xy 185.42 154.94) (xy 190.5 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e163f1c9-43ae-40b2-9a96-09094b04fd86")
+	)
 	(bus
 		(pts
 			(xy 143.51 106.68) (xy 143.51 104.14)
@@ -2108,6 +2944,16 @@
 			(type default)
 		)
 		(uuid "e1cbd76f-26ec-42b1-870e-b591a083244b")
+	)
+	(wire
+		(pts
+			(xy 160.02 154.94) (xy 165.1 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e334e090-8a82-4c36-afa5-510e01434a6b")
 	)
 	(bus
 		(pts
@@ -2128,6 +2974,26 @@
 			(type default)
 		)
 		(uuid "e58ade6b-b8d8-4aed-881b-48eb9da59712")
+	)
+	(wire
+		(pts
+			(xy 165.1 139.7) (xy 165.1 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e702b7fa-299e-444e-8d31-2f8b682d0e90")
+	)
+	(wire
+		(pts
+			(xy 180.34 154.94) (xy 185.42 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7b3b139-27c4-4d90-87ad-3984dc4feae3")
 	)
 	(wire
 		(pts
@@ -2169,6 +3035,16 @@
 		)
 		(uuid "eb526842-b5bc-4e09-b6d9-f3978515bda4")
 	)
+	(wire
+		(pts
+			(xy 134.62 154.94) (xy 139.7 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edb1042a-a347-4e9d-9bb5-4630a81ef4f4")
+	)
 	(bus
 		(pts
 			(xy 67.31 100.33) (xy 67.31 99.06)
@@ -2209,8 +3085,20 @@
 		)
 		(uuid "fe9dcc25-b58e-4d68-831e-fe5d15646915")
 	)
+	(label "Level_C1"
+		(at 144.78 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "03fbc3ff-885d-40e2-adb0-6d23a509834c")
+	)
 	(label "Level_B3"
 		(at 189.23 96.52 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2219,8 +3107,20 @@
 		)
 		(uuid "0913899b-c764-4115-9d93-864fd983bbbe")
 	)
+	(label "Level_C2"
+		(at 139.7 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "150a8ecf-612b-4051-b163-7c060a6cfacf")
+	)
 	(label "Stack_IN0"
 		(at 69.85 102.87 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2231,6 +3131,7 @@
 	)
 	(label "Level_B2"
 		(at 146.05 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2241,6 +3142,7 @@
 	)
 	(label "Level_A0"
 		(at 146.05 88.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2249,8 +3151,20 @@
 		)
 		(uuid "267be7c3-da5c-4577-a968-ac085d84f857")
 	)
+	(label "Level_A0"
+		(at 190.5 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "27dc3814-ebe5-4061-9076-5edfe1581511")
+	)
 	(label "Level_A2"
 		(at 111.76 107.95 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2259,8 +3173,31 @@
 		)
 		(uuid "2866b817-0b47-4911-93c2-71fdc009ca36")
 	)
+	(label "Level_C0"
+		(at 149.86 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2a417d4f-0224-43d7-a0ee-3271f1a12006")
+	)
+	(label "Level_B2"
+		(at 160.02 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2b6d478f-4208-4bca-b11e-a888f20a9970")
+	)
 	(label "Level_A1"
 		(at 146.05 91.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2271,6 +3208,7 @@
 	)
 	(label "Level_B2"
 		(at 189.23 93.98 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2279,8 +3217,31 @@
 		)
 		(uuid "353818d4-3483-43a0-b5e4-ddf6c47e8714")
 	)
+	(label "Level_C3"
+		(at 134.62 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "36c8c3bd-f379-45c9-8216-67ee4ccf6546")
+	)
+	(label "Level_B3"
+		(at 154.94 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "43be08fe-4fe0-4fb5-b7e5-9e76aec4116f")
+	)
 	(label "Stack_IN3"
 		(at 69.85 110.49 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2291,6 +3252,7 @@
 	)
 	(label "Level_C3"
 		(at 189.23 106.68 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2301,6 +3263,7 @@
 	)
 	(label "Level_A3"
 		(at 146.05 96.52 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2311,6 +3274,7 @@
 	)
 	(label "Level_A1"
 		(at 111.76 105.41 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2321,6 +3285,7 @@
 	)
 	(label "Level_C0"
 		(at 189.23 99.06 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2331,6 +3296,7 @@
 	)
 	(label "Level_B3"
 		(at 146.05 99.06 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2339,8 +3305,20 @@
 		)
 		(uuid "6b0eed7d-149c-47a9-960c-702fa61e3910")
 	)
+	(label "Level_A2"
+		(at 180.34 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7a6fa48f-c697-4d0b-baaa-9c4bb2d043ea")
+	)
 	(label "Level_B1"
 		(at 189.23 91.44 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2351,6 +3329,7 @@
 	)
 	(label "Level_B1"
 		(at 146.05 104.14 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2361,6 +3340,7 @@
 	)
 	(label "Level_A3"
 		(at 111.76 110.49 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2369,8 +3349,31 @@
 		)
 		(uuid "91f629e0-270b-4ea3-946f-c9a5e413aa23")
 	)
+	(label "Level_A3"
+		(at 175.26 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "94478d61-21f3-4ef2-bd8b-1a1b8f49e557")
+	)
+	(label "Level_A1"
+		(at 185.42 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "972a1cbe-1068-4c8b-9b3d-2cd8010e3f17")
+	)
 	(label "Level_B0"
 		(at 189.23 88.9 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2379,8 +3382,20 @@
 		)
 		(uuid "9e0895d1-1638-4ba8-a893-94c822c1fc9e")
 	)
+	(label "Level_B0"
+		(at 170.18 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a3c7ea4b-94b8-4b1f-9df6-1428abe2fa22")
+	)
 	(label "Level_C2"
 		(at 189.23 104.14 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2391,6 +3406,7 @@
 	)
 	(label "Level_A0"
 		(at 111.76 102.87 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2401,6 +3417,7 @@
 	)
 	(label "Level_B0"
 		(at 146.05 106.68 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2411,6 +3428,7 @@
 	)
 	(label "Stack_IN2"
 		(at 69.85 107.95 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2421,6 +3439,7 @@
 	)
 	(label "Stack_IN1"
 		(at 69.85 105.41 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2431,6 +3450,7 @@
 	)
 	(label "Level_C1"
 		(at 189.23 101.6 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2441,6 +3461,7 @@
 	)
 	(label "Level_A2"
 		(at 146.05 93.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2448,6 +3469,17 @@
 			(justify left bottom)
 		)
 		(uuid "eb0da994-34ea-496c-9acb-a7b342c0c7f2")
+	)
+	(label "Level_B1"
+		(at 165.1 130.81 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fa1f0010-54a0-4646-a666-3b03d8c07830")
 	)
 	(global_label "~{RESET}"
 		(shape input)
@@ -2518,6 +3550,7 @@
 	(hierarchical_label "Level_A[0..3]"
 		(shape output)
 		(at 118.11 78.74 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2529,6 +3562,7 @@
 	(hierarchical_label "Level_C[0..3]"
 		(shape output)
 		(at 194.31 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2540,6 +3574,7 @@
 	(hierarchical_label "Level_B[0..3]"
 		(shape output)
 		(at 194.31 78.74 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2551,6 +3586,7 @@
 	(hierarchical_label "~{STACK_LE}"
 		(shape input)
 		(at 152.4 114.3 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2562,6 +3598,7 @@
 	(hierarchical_label "~{STACK_LE}"
 		(shape input)
 		(at 80.01 91.44 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2573,6 +3610,7 @@
 	(hierarchical_label "Stack_IN[0..3]"
 		(shape input)
 		(at 66.04 99.06 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2580,6 +3618,507 @@
 			(justify right)
 		)
 		(uuid "f51f5339-86de-45d1-b241-1d64ada038b7")
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 144.78 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "015beaa9-a56e-4448-aacd-cebdc041f8dd")
+		(property "Reference" "LD37"
+			(at 148.59 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 148.59 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 144.78 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 144.78 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1edff16-8756-48c7-8c8a-115f91bd4281")
+		)
+		(pin "2"
+			(uuid "a8b1bce7-d9c8-44ea-8bda-12f5f44b8244")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network04_Split")
+		(at 144.78 151.13 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "038cc412-5399-48d4-bcfa-2c8ab7aeee89")
+		(property "Reference" "RN8"
+			(at 147.32 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network04_Split"
+			(at 147.32 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP5"
+			(at 142.748 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 144.78 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, star topology, bussed resistors, split"
+			(at 144.78 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d2b9daa7-1b2e-486b-af13-7b02ed064563")
+		)
+		(pin "2"
+			(uuid "235674d6-8e18-4589-a2fe-a9361a0e96af")
+		)
+		(pin "1"
+			(uuid "bca82c40-df5f-41f5-9dca-87e408686f93")
+		)
+		(pin "4"
+			(uuid "117fda9b-3443-4e8a-bce2-0436e7109679")
+		)
+		(pin "5"
+			(uuid "191dbb76-16a9-492d-b4d3-7e8d91ac9159")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN8")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network04_Split")
+		(at 149.86 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05057cfc-8190-458e-9cb9-dc3b6cb1a6cb")
+		(property "Reference" "RN8"
+			(at 152.4 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network04_Split"
+			(at 152.4 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP5"
+			(at 147.828 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 149.86 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, star topology, bussed resistors, split"
+			(at 149.86 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d2b9daa7-1b2e-486b-af13-7b02ed064563")
+		)
+		(pin "2"
+			(uuid "235674d6-8e18-4589-a2fe-a9361a0e96af")
+		)
+		(pin "1"
+			(uuid "bca82c40-df5f-41f5-9dca-87e408686f93")
+		)
+		(pin "4"
+			(uuid "117fda9b-3443-4e8a-bce2-0436e7109679")
+		)
+		(pin "5"
+			(uuid "191dbb76-16a9-492d-b4d3-7e8d91ac9159")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network08_Split")
+		(at 190.5 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08c44da8-526f-4954-b971-1c96b1ad207d")
+		(property "Reference" "RN7"
+			(at 193.04 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network08_Split"
+			(at 193.04 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+			(at 188.468 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 190.5 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 resistor network, star topology, bussed resistors, split"
+			(at 190.5 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c2688f5a-028a-40ba-af9c-f45b1f5fa9dc")
+		)
+		(pin "2"
+			(uuid "25453519-e0a7-46b8-978c-611490783587")
+		)
+		(pin "7"
+			(uuid "72679318-fe99-4301-bcb1-aeb42bca3cfa")
+		)
+		(pin "1"
+			(uuid "1cb2c2be-8442-467d-af52-124a32a28992")
+		)
+		(pin "4"
+			(uuid "0d246cca-9f0b-4a7f-b705-47e6203efbb3")
+		)
+		(pin "9"
+			(uuid "64586331-cfc2-4093-8112-cfb44acbbe71")
+		)
+		(pin "5"
+			(uuid "17ca60c6-000f-465d-8da0-8539ba762fef")
+		)
+		(pin "3"
+			(uuid "928526f0-ba6a-47d3-8cb3-b5ded4426ea8")
+		)
+		(pin "8"
+			(uuid "17d594b6-1a59-4bb9-9c7e-c461f23a0d47")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network08_Split")
+		(at 185.42 151.13 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f4a40b0-37bb-4700-9eff-b64599b7b1fd")
+		(property "Reference" "RN7"
+			(at 187.96 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network08_Split"
+			(at 187.96 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+			(at 183.388 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 185.42 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 resistor network, star topology, bussed resistors, split"
+			(at 185.42 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c2688f5a-028a-40ba-af9c-f45b1f5fa9dc")
+		)
+		(pin "2"
+			(uuid "25453519-e0a7-46b8-978c-611490783587")
+		)
+		(pin "7"
+			(uuid "72679318-fe99-4301-bcb1-aeb42bca3cfa")
+		)
+		(pin "1"
+			(uuid "1cb2c2be-8442-467d-af52-124a32a28992")
+		)
+		(pin "4"
+			(uuid "0d246cca-9f0b-4a7f-b705-47e6203efbb3")
+		)
+		(pin "9"
+			(uuid "64586331-cfc2-4093-8112-cfb44acbbe71")
+		)
+		(pin "5"
+			(uuid "17ca60c6-000f-465d-8da0-8539ba762fef")
+		)
+		(pin "3"
+			(uuid "928526f0-ba6a-47d3-8cb3-b5ded4426ea8")
+		)
+		(pin "8"
+			(uuid "17d594b6-1a59-4bb9-9c7e-c461f23a0d47")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN7")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network08_Split")
+		(at 154.94 151.13 0)
+		(unit 8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e5fdff1-f0c0-48f0-85ec-94928210a899")
+		(property "Reference" "RN7"
+			(at 157.48 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network08_Split"
+			(at 157.48 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+			(at 152.908 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 154.94 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 resistor network, star topology, bussed resistors, split"
+			(at 154.94 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c2688f5a-028a-40ba-af9c-f45b1f5fa9dc")
+		)
+		(pin "2"
+			(uuid "25453519-e0a7-46b8-978c-611490783587")
+		)
+		(pin "7"
+			(uuid "72679318-fe99-4301-bcb1-aeb42bca3cfa")
+		)
+		(pin "1"
+			(uuid "1cb2c2be-8442-467d-af52-124a32a28992")
+		)
+		(pin "4"
+			(uuid "0d246cca-9f0b-4a7f-b705-47e6203efbb3")
+		)
+		(pin "9"
+			(uuid "64586331-cfc2-4093-8112-cfb44acbbe71")
+		)
+		(pin "5"
+			(uuid "17ca60c6-000f-465d-8da0-8539ba762fef")
+		)
+		(pin "3"
+			(uuid "928526f0-ba6a-47d3-8cb3-b5ded4426ea8")
+		)
+		(pin "8"
+			(uuid "17d594b6-1a59-4bb9-9c7e-c461f23a0d47")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN7")
+					(unit 8)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -2642,6 +4181,216 @@
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 149.86 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ae0657a-aab8-4d42-961f-5c4df0478800")
+		(property "Reference" "LD36"
+			(at 153.67 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 153.67 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 149.86 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 149.86 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6eb1dd5-3289-47ab-b1ee-26fc327c4245")
+		)
+		(pin "2"
+			(uuid "a1a3aa0e-d317-4b1c-8bd0-e4e338285f9c")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 180.34 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a603d92-2470-4b69-8c83-cf3aa8c261a8")
+		(property "Reference" "LD30"
+			(at 184.15 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 184.15 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 180.34 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 180.34 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4568043-dd18-4e44-bbcf-f9d469fce08f")
+		)
+		(pin "2"
+			(uuid "a3a51e5c-da0e-419e-b3a7-129d24df6e27")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 190.5 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d39774d-4e76-4cad-89cd-52686b9661d9")
+		(property "Reference" "LD28"
+			(at 194.31 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 194.31 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 190.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 190.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57f2de32-847f-4ace-8581-0b83089160d9")
+		)
+		(pin "2"
+			(uuid "ad709135-b717-4af1-800c-ed321ba5fd4d")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD28")
 					(unit 1)
 				)
 			)
@@ -2838,6 +4587,212 @@
 		)
 	)
 	(symbol
+		(lib_id "Device2:LED_")
+		(at 170.18 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f8aa931-5933-49db-88ce-5e0eacc321f0")
+		(property "Reference" "LD32"
+			(at 173.99 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 173.99 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 170.18 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 170.18 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae4a7563-cd2a-4e75-9f08-8a8d811d2b1f")
+		)
+		(pin "2"
+			(uuid "9c6020a1-6f19-46a9-b860-7ca6491ea5c5")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64d484b9-b861-4865-b98d-ae75162a2cbe")
+		(property "Reference" "#PWR083"
+			(at 139.7 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7767cf49-333a-4b7d-ab06-2ecf26c4b8d1")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 134.62 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6656141f-ef03-46f2-8ed8-8e0ac430d7ca")
+		(property "Reference" "LD39"
+			(at 138.43 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 138.43 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 134.62 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 134.62 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64d6b78c-d7d1-480e-a7bc-9bbda7b99922")
+		)
+		(pin "2"
+			(uuid "90b52ab2-b206-46ac-ac2e-d950d13fab4a")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 100.33 153.67 0)
 		(unit 1)
@@ -2897,6 +4852,225 @@
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network04_Split")
+		(at 134.62 151.13 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6cf2d21b-38e1-4196-aae9-d346708b147d")
+		(property "Reference" "RN8"
+			(at 137.16 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network04_Split"
+			(at 137.16 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP5"
+			(at 132.588 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 134.62 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, star topology, bussed resistors, split"
+			(at 134.62 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d2b9daa7-1b2e-486b-af13-7b02ed064563")
+		)
+		(pin "2"
+			(uuid "235674d6-8e18-4589-a2fe-a9361a0e96af")
+		)
+		(pin "1"
+			(uuid "bca82c40-df5f-41f5-9dca-87e408686f93")
+		)
+		(pin "4"
+			(uuid "117fda9b-3443-4e8a-bce2-0436e7109679")
+		)
+		(pin "5"
+			(uuid "191dbb76-16a9-492d-b4d3-7e8d91ac9159")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN8")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 175.26 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70ab0bcb-1b70-4b32-8c1f-7b5f651a5e0b")
+		(property "Reference" "LD31"
+			(at 179.07 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 179.07 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 175.26 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 175.26 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "364185b7-0f48-45f0-adc4-b6a217cc4a90")
+		)
+		(pin "2"
+			(uuid "be0c4958-ecef-46e2-919d-8fd5ed5c44ed")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 165.1 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "838a3e43-d46e-4bf4-ad51-5cf969b6f9d5")
+		(property "Reference" "LD33"
+			(at 168.91 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 168.91 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 165.1 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 165.1 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ac8eb0c-f9f9-4dfc-a2cb-9fd533cc0050")
+		)
+		(pin "2"
+			(uuid "c6b7369d-e55b-4244-ad14-07780f9f82f4")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD33")
 					(unit 1)
 				)
 			)
@@ -2966,6 +5140,76 @@
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
 					(reference "CP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 154.94 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96ed8824-0318-46b9-a499-6ce8ed74d672")
+		(property "Reference" "LD35"
+			(at 158.75 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 158.75 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 154.94 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 154.94 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7815e71b-16af-4bdb-aaad-6aced2ef1045")
+		)
+		(pin "2"
+			(uuid "0a99c3b4-88cc-481f-8f65-8cad67c205bd")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD35")
 					(unit 1)
 				)
 			)
@@ -3102,6 +5346,337 @@
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
 					(reference "#PWR041")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network08_Split")
+		(at 160.02 151.13 0)
+		(unit 7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac1db526-296d-436d-983c-8ca37da72ae3")
+		(property "Reference" "RN7"
+			(at 162.56 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network08_Split"
+			(at 162.56 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+			(at 157.988 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 160.02 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 resistor network, star topology, bussed resistors, split"
+			(at 160.02 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c2688f5a-028a-40ba-af9c-f45b1f5fa9dc")
+		)
+		(pin "2"
+			(uuid "25453519-e0a7-46b8-978c-611490783587")
+		)
+		(pin "7"
+			(uuid "72679318-fe99-4301-bcb1-aeb42bca3cfa")
+		)
+		(pin "1"
+			(uuid "1cb2c2be-8442-467d-af52-124a32a28992")
+		)
+		(pin "4"
+			(uuid "0d246cca-9f0b-4a7f-b705-47e6203efbb3")
+		)
+		(pin "9"
+			(uuid "64586331-cfc2-4093-8112-cfb44acbbe71")
+		)
+		(pin "5"
+			(uuid "17ca60c6-000f-465d-8da0-8539ba762fef")
+		)
+		(pin "3"
+			(uuid "928526f0-ba6a-47d3-8cb3-b5ded4426ea8")
+		)
+		(pin "8"
+			(uuid "17d594b6-1a59-4bb9-9c7e-c461f23a0d47")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN7")
+					(unit 7)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 139.7 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b328048d-2db8-4e34-ad94-8f8bbd9a4895")
+		(property "Reference" "LD38"
+			(at 143.51 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 143.51 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 139.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 139.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d40f6a5d-8071-4073-a792-081b3ea1c5fd")
+		)
+		(pin "2"
+			(uuid "84a52712-b355-4a27-bd52-d9a79b4443c4")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network08_Split")
+		(at 180.34 151.13 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b33a47eb-9079-47fa-aee2-dd1dc811bf49")
+		(property "Reference" "RN7"
+			(at 182.88 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network08_Split"
+			(at 182.88 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+			(at 178.308 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 180.34 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 resistor network, star topology, bussed resistors, split"
+			(at 180.34 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c2688f5a-028a-40ba-af9c-f45b1f5fa9dc")
+		)
+		(pin "2"
+			(uuid "25453519-e0a7-46b8-978c-611490783587")
+		)
+		(pin "7"
+			(uuid "72679318-fe99-4301-bcb1-aeb42bca3cfa")
+		)
+		(pin "1"
+			(uuid "1cb2c2be-8442-467d-af52-124a32a28992")
+		)
+		(pin "4"
+			(uuid "0d246cca-9f0b-4a7f-b705-47e6203efbb3")
+		)
+		(pin "9"
+			(uuid "64586331-cfc2-4093-8112-cfb44acbbe71")
+		)
+		(pin "5"
+			(uuid "17ca60c6-000f-465d-8da0-8539ba762fef")
+		)
+		(pin "3"
+			(uuid "928526f0-ba6a-47d3-8cb3-b5ded4426ea8")
+		)
+		(pin "8"
+			(uuid "17d594b6-1a59-4bb9-9c7e-c461f23a0d47")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN7")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network04_Split")
+		(at 139.7 151.13 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3b3c2d2-8b5d-4c12-bed3-8b6d2a4a13e0")
+		(property "Reference" "RN8"
+			(at 142.24 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network04_Split"
+			(at 142.24 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP5"
+			(at 137.668 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 139.7 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, star topology, bussed resistors, split"
+			(at 139.7 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d2b9daa7-1b2e-486b-af13-7b02ed064563")
+		)
+		(pin "2"
+			(uuid "235674d6-8e18-4589-a2fe-a9361a0e96af")
+		)
+		(pin "1"
+			(uuid "bca82c40-df5f-41f5-9dca-87e408686f93")
+		)
+		(pin "4"
+			(uuid "117fda9b-3443-4e8a-bce2-0436e7109679")
+		)
+		(pin "5"
+			(uuid "191dbb76-16a9-492d-b4d3-7e8d91ac9159")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN8")
+					(unit 3)
 				)
 			)
 		)
@@ -3318,6 +5893,328 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Network08_Split")
+		(at 170.18 151.13 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db4a2fbe-6e62-4c70-846f-8f32088bb04e")
+		(property "Reference" "RN7"
+			(at 172.72 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network08_Split"
+			(at 172.72 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+			(at 168.148 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 170.18 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 resistor network, star topology, bussed resistors, split"
+			(at 170.18 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c2688f5a-028a-40ba-af9c-f45b1f5fa9dc")
+		)
+		(pin "2"
+			(uuid "25453519-e0a7-46b8-978c-611490783587")
+		)
+		(pin "7"
+			(uuid "72679318-fe99-4301-bcb1-aeb42bca3cfa")
+		)
+		(pin "1"
+			(uuid "1cb2c2be-8442-467d-af52-124a32a28992")
+		)
+		(pin "4"
+			(uuid "0d246cca-9f0b-4a7f-b705-47e6203efbb3")
+		)
+		(pin "9"
+			(uuid "64586331-cfc2-4093-8112-cfb44acbbe71")
+		)
+		(pin "5"
+			(uuid "17ca60c6-000f-465d-8da0-8539ba762fef")
+		)
+		(pin "3"
+			(uuid "928526f0-ba6a-47d3-8cb3-b5ded4426ea8")
+		)
+		(pin "8"
+			(uuid "17d594b6-1a59-4bb9-9c7e-c461f23a0d47")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN7")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network08_Split")
+		(at 175.26 151.13 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc3d60ee-44c2-4949-9209-bf50e8940abe")
+		(property "Reference" "RN7"
+			(at 177.8 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network08_Split"
+			(at 177.8 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+			(at 173.228 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 175.26 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 resistor network, star topology, bussed resistors, split"
+			(at 175.26 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c2688f5a-028a-40ba-af9c-f45b1f5fa9dc")
+		)
+		(pin "2"
+			(uuid "25453519-e0a7-46b8-978c-611490783587")
+		)
+		(pin "7"
+			(uuid "72679318-fe99-4301-bcb1-aeb42bca3cfa")
+		)
+		(pin "1"
+			(uuid "1cb2c2be-8442-467d-af52-124a32a28992")
+		)
+		(pin "4"
+			(uuid "0d246cca-9f0b-4a7f-b705-47e6203efbb3")
+		)
+		(pin "9"
+			(uuid "64586331-cfc2-4093-8112-cfb44acbbe71")
+		)
+		(pin "5"
+			(uuid "17ca60c6-000f-465d-8da0-8539ba762fef")
+		)
+		(pin "3"
+			(uuid "928526f0-ba6a-47d3-8cb3-b5ded4426ea8")
+		)
+		(pin "8"
+			(uuid "17d594b6-1a59-4bb9-9c7e-c461f23a0d47")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN7")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 185.42 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5337f0e-6e51-4b1b-bf2b-c23818400daa")
+		(property "Reference" "LD29"
+			(at 189.23 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 189.23 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 185.42 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 185.42 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d129b30f-4ad7-4342-8691-afe800532385")
+		)
+		(pin "2"
+			(uuid "7c73cca8-6222-4258-8268-4b2497f0bb1d")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device2:LED_")
+		(at 160.02 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edabf4e2-a2d3-427b-9ce7-7c3d2c320645")
+		(property "Reference" "LD34"
+			(at 163.83 143.8274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 163.83 146.3674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
+			(at 160.02 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 160.02 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c0f5aad-367f-41cd-8061-d7d4d8af3f87")
+		)
+		(pin "2"
+			(uuid "d30410a9-7d3d-4a9d-a144-404cebbe990a")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "LD34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 92.71 116.84 0)
 		(unit 1)
@@ -3379,6 +6276,97 @@
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
 					(reference "#PWR037")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Network08_Split")
+		(at 165.1 151.13 0)
+		(unit 6)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd0a5e10-356c-4896-96b3-54df079c2716")
+		(property "Reference" "RN7"
+			(at 167.64 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Network08_Split"
+			(at 167.64 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Array_SIP9"
+			(at 163.068 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
+			(at 165.1 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8 resistor network, star topology, bussed resistors, split"
+			(at 165.1 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c2688f5a-028a-40ba-af9c-f45b1f5fa9dc")
+		)
+		(pin "2"
+			(uuid "25453519-e0a7-46b8-978c-611490783587")
+		)
+		(pin "7"
+			(uuid "72679318-fe99-4301-bcb1-aeb42bca3cfa")
+		)
+		(pin "1"
+			(uuid "1cb2c2be-8442-467d-af52-124a32a28992")
+		)
+		(pin "4"
+			(uuid "0d246cca-9f0b-4a7f-b705-47e6203efbb3")
+		)
+		(pin "9"
+			(uuid "64586331-cfc2-4093-8112-cfb44acbbe71")
+		)
+		(pin "5"
+			(uuid "17ca60c6-000f-465d-8da0-8539ba762fef")
+		)
+		(pin "3"
+			(uuid "928526f0-ba6a-47d3-8cb3-b5ded4426ea8")
+		)
+		(pin "8"
+			(uuid "17d594b6-1a59-4bb9-9c7e-c461f23a0d47")
+		)
+		(instances
+			(project ""
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
+					(reference "RN7")
+					(unit 6)
 				)
 			)
 		)
