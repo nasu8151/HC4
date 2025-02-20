@@ -15350,7 +15350,7 @@
 		(lib_id "74xx_2:74HC4002")
 		(at 205.74 120.65 90)
 		(mirror x)
-		(unit 2)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -15441,7 +15441,7 @@
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
 					(reference "IC10")
-					(unit 2)
+					(unit 1)
 				)
 			)
 		)

@@ -5476,7 +5476,7 @@
 		(uuid "23ceac3b-bf3b-42e0-966c-e11d912da80e")
 	)
 	(label "Databus3"
-		(at 127 68.58 0)
+		(at 127 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5487,7 +5487,7 @@
 		(uuid "271ff89e-b6d4-4066-a2ea-3ea20f5891c2")
 	)
 	(label "Databus1"
-		(at 127 63.5 0)
+		(at 127 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5729,7 +5729,7 @@
 		(uuid "989f34ec-fd62-401d-af57-729db7cca7c9")
 	)
 	(label "Databus2"
-		(at 127 66.04 0)
+		(at 127 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5773,7 +5773,7 @@
 		(uuid "aeeb21e8-165b-4943-b128-8c342c9ef4c7")
 	)
 	(label "Databus0"
-		(at 127 60.96 0)
+		(at 127 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7615,7 +7615,7 @@
 	(symbol
 		(lib_id "74xx_2:74HC4002")
 		(at 144.78 64.77 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7705,7 +7705,7 @@
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/294cbb59-ed60-4be2-81ec-3da02c446083"
 					(reference "IC10")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
