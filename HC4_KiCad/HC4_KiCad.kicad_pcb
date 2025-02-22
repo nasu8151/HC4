@@ -74,7 +74,7 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
 			(outputdirectory "")
 		)
@@ -55795,16 +55795,6 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "a245b905-fafa-4d7c-8849-0d039a669d39")
-	)
-	(gr_line
-		(start 164.75 44.815)
-		(end 164.75 194.675)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.2")
-		(uuid "f055314b-7d7e-492d-b986-e58e5e614416")
 	)
 	(gr_text "Address Bus"
 		(at 129.54 27.94 0)
