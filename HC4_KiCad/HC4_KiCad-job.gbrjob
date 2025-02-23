@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "8.0.6"
     },
-    "CreationDate": "2025-02-22T13:50:16+09:00"
+    "CreationDate": "2025-02-23T11:24:39+09:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "HC4_KiCad",
       "GUID": "4843345f-4b69-4436-9164-2e6b69636164",
-      "Revision": "rev?"
+      "Revision": "1.0"
     },
     "Size": {
       "X": 150.49,
@@ -27,7 +27,9 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.2
+      "MinLineWidth": 0.2,
+      "TrackToRegion": 0.5,
+      "RegionToRegion": 0.5
     }
   ],
   "FilesAttributes": [
