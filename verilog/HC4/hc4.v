@@ -6,7 +6,11 @@ module hc4 (
     output wire [11:0]      pc_out,
     output wire [3:0]       stackA_out,
     output wire [3:0]       stackB_out,
-    output wire [3:0]       stackC_out
+    output wire [3:0]       stackC_out,
+    output wire [7:0]       address_bus,
+    inout  wire [3:0]       data_bus,
+    output wire             nRAM_RD,
+    output wire             nRAM_WR
 
 );
     reg [3:0] level_A; //stack level A
@@ -14,12 +18,7 @@ module hc4 (
     reg [3:0] level_C; //stack level C
     reg [11:0] pc;
 
-
-    reg [3:0] ram [0:255];
     reg [7:0] rom [0:4095];
-
-    wire [7:0] address_bus;
-    wire [3:0] data_bus;
 
     initial $readmemh("./jmptest.hex", rom);
 
@@ -38,7 +37,8 @@ module hc4 (
     assign stackB_out = level_B;
     assign stackC_out = level_C;
     assign sub = instruction[6:4] == 3'b010 ? 1 : 0; //if opcode is 0010 (1010 is not ALU oplation)
-
+    assign nRAM_WR = !(!instruction[7] & !clk);
+    assign nRAM_RD = !(instruction[7] & !instruction[6] & !instruction[5] & !clk);
 
     alu ALU (
         .in_A (level_A),
@@ -91,16 +91,16 @@ module hc4 (
         NEXT_PC = nJMP == 0 ? {level_C, level_B, level_A} : pc + 1;
     endfunction
 
-    function [3:0] BUS_CTRL (input [7:0] instruction, input [3:0] alu_result, input [3:0] ram_out, input [3:0] level_C);
+    function [3:0] BUS_CTRL (input [7:0] instruction, input [3:0] alu_result, input [3:0] level_C);
         casez (instruction[7:5])
             3'b000:  BUS_CTRL = level_C;          //SC
             3'b0??:  BUS_CTRL = alu_result;       //ALU instructions (include SA)
-            3'b100:  BUS_CTRL = ram_out;          //LD [AB]
+            3'b100:  BUS_CTRL = 4'bz;             //LD [AB] or LD r (RAM)
             3'b101:  BUS_CTRL = instruction[3:0]; //LD i
-            default: BUS_CTRL = 4'bx;             //jp doesnt care data bus ;-)
+            default: BUS_CTRL = 4'bx;             //jp doesnt care data bus
         endcase
     endfunction
-    assign data_bus = BUS_CTRL(instruction, alu_result, ram[address_bus], level_C);
+    assign data_bus = BUS_CTRL(instruction, alu_result, level_C);
 
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
@@ -111,7 +111,6 @@ module hc4 (
         end else begin
             casez (instruction[7:6])
                 2'b0?: begin // if current instruction is an instruction which stores in the memory or registers
-                    ram[address_bus] <= data_bus;
                     zero_flg  <= data_bus == 4'b0 ? 1 : 0;
                     carry_flg <= instruction[7:5] == 3'b001 ? carry : carry_flg;
                 end 

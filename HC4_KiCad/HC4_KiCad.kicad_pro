@@ -551,7 +551,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "./HC4_gbr",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

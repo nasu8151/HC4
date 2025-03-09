@@ -1,56 +1,53 @@
-module tb_memory_4bit_256nibble;
+`timescale 1ns / 1ps
 
-    reg clk;
+module memory_4bit_256nibble_tb;
+
     reg [7:0] address;
-    wire [3:0] data_bus;
     reg [3:0] data_in;
-    reg write_enable;
-    reg data_bus_drive;
-    reg [3:0] bus_out;
+    wire [3:0] data_out;
+    reg nwrite_enable;
+    reg nread_enable;
 
-    // バスドライバ (双方向バスの制御)
-    assign data_bus = data_bus_drive ? data_in : 4'bz; // 入力時にドライブ
-    always @(*) bus_out = data_bus; // 読み出しデータをキャプチャ
+    // `data_bus` を inout にするためのトライステートバス
+    wire [3:0] data_bus;
+    assign data_bus = (!nwrite_enable && nread_enable) ? data_in : 4'bz;
 
-    ram uut (
-        .clk(clk),
+    // メモリモジュールのインスタンス化
+    memory_4bit_256nibble uut (
         .address(address),
         .data_bus(data_bus),
-        .write_enable(write_enable)
+        .nwrite_enable(nwrite_enable),
+        .nread_enable(nread_enable)
     );
 
-    // クロック生成
     initial begin
-        $dumpfile("ram.vcd"); // 保存する波形ファイル名
-        $dumpvars(0, tb_memory_4bit_256nibble); // 波形を記録する階層
-        clk = 0;
-        forever #5 clk = ~clk; // 10ns周期のクロック
-    end
+        $dumpfile("ram.vcd");
+        $dumpvars(0, memory_4bit_256nibble_tb);
 
-    initial begin
         // 初期化
-        write_enable = 0;
-        data_bus_drive = 0;
-        address = 0;
-        data_in = 0;
+        address = 8'h00;
+        data_in = 4'b0000;
+        nwrite_enable = 1;
+        nread_enable = 1;
 
-        // 書き込みテスト
-        #10;
-        address = 8'h0A;    // アドレス10
-        data_in = 4'b1010;  // データ 1010
-        data_bus_drive = 1; // バスにデータをドライブ
-        write_enable = 1;   // 書き込み有効
-        #10;                //ホールドタイム確保
-        write_enable = 0;
-        data_bus_drive = 0; // バス解放
+        // **書き込みテスト**
+        #10 address = 8'h05; data_in = 4'b1010; nwrite_enable = 0; nread_enable = 1; // アドレス5に1010を書き込み
+        #10 nwrite_enable = 1;
 
-        // 読み出しテスト
-        #10;
-        address = 8'h0A;    // アドレス10
+        #10 address = 8'h0A; data_in = 4'b0111; nwrite_enable = 0; nread_enable = 1; // アドレス10に0111を書き込み
+        #10 nwrite_enable = 1;
 
-        // 波形確認用
-        #10;
-        $finish;
+        // **読み出しテスト**
+        #10 address = 8'h05; nread_enable = 0; nwrite_enable = 1; // アドレス5の値を読み出し
+        #10 $display("Read from 0x05: %b", data_out);
+        #10 nread_enable = 1;
+
+        #10 address = 8'h0A; nread_enable = 0; nwrite_enable = 1; // アドレス10の値を読み出し
+        #10 $display("Read from 0x0A: %b", data_out);
+        #10 nread_enable = 1;
+
+        // シミュレーション終了
+        #10 $finish;
     end
 
 endmodule
