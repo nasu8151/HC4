@@ -3802,7 +3802,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network04_Split"
+		(property "Value" "1k"
 			(at 147.32 153.6701 0)
 			(effects
 				(font
@@ -3882,7 +3882,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network04_Split"
+		(property "Value" "1k"
 			(at 152.4 153.6701 0)
 			(effects
 				(font
@@ -3962,7 +3962,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network08_Split"
+		(property "Value" "1k"
 			(at 193.04 153.6701 0)
 			(effects
 				(font
@@ -4054,7 +4054,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network08_Split"
+		(property "Value" "1k"
 			(at 187.96 153.6701 0)
 			(effects
 				(font
@@ -4146,7 +4146,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network08_Split"
+		(property "Value" "1k"
 			(at 157.48 153.6701 0)
 			(effects
 				(font
@@ -4969,7 +4969,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network04_Split"
+		(property "Value" "1k"
 			(at 137.16 153.6701 0)
 			(effects
 				(font
@@ -5460,7 +5460,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network08_Split"
+		(property "Value" "1k"
 			(at 162.56 153.6701 0)
 			(effects
 				(font
@@ -5621,7 +5621,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network08_Split"
+		(property "Value" "1k"
 			(at 182.88 153.6701 0)
 			(effects
 				(font
@@ -5713,7 +5713,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network04_Split"
+		(property "Value" "1k"
 			(at 142.24 153.6701 0)
 			(effects
 				(font
@@ -6004,7 +6004,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network08_Split"
+		(property "Value" "1k"
 			(at 172.72 153.6701 0)
 			(effects
 				(font
@@ -6096,7 +6096,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network08_Split"
+		(property "Value" "1k"
 			(at 177.8 153.6701 0)
 			(effects
 				(font
@@ -6392,7 +6392,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Network08_Split"
+		(property "Value" "1k"
 			(at 167.64 153.6701 0)
 			(effects
 				(font

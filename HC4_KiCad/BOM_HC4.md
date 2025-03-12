@@ -34,8 +34,8 @@
 | Resister: 33k               | 1   |                                      |
 | Resister: 100               | 2   |                                      |
 | Resister array: 10k SIP5    | 1   |                                      |
-| Resister array: 1k SIP5     | 2   |                                      |
-| Resister array: 1k SIP9     | 2   |                                      |
+| Resister array: 1k SIP5     | 3   |                                      |
+| Resister array: 1k SIP9     | 3   |                                      |
 | Resister array: 10k SIP9    | 1   |                                      |
 | Slide SW_SPDT               | 3   |                                      |
 | SW_Push                     | 2   |                                      |
