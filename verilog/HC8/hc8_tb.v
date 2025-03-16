@@ -5,10 +5,10 @@ module hc4_tb;
     // 入出力信号の宣言
     reg clk;
     reg nReset;
-    wire [11:0] pc_out;
-    wire [3:0] level_A;
-    wire [3:0] level_B;
-    wire [3:0] level_C;
+    wire [15:0] pc_out;
+    wire [7:0] level_A;
+    wire [7:0] level_B;
+    wire [7:0] level_C;
 
     // テスト対象モジュールのインスタンス化
     hc4 uut (
@@ -26,7 +26,7 @@ module hc4_tb;
     // テストシナリオ
     initial begin
         // 波形ファイル生成（シミュレーション確認用）
-        $dumpfile("hc4_tb.vcd");
+        $dumpfile("hc8_tb.vcd");
         $dumpvars(0, hc4_tb);
 
         // 初期化
@@ -42,7 +42,7 @@ module hc4_tb;
 
     // テスト結果表示
     always @(negedge clk) begin
-        $display("Time=%0t | PC=%d | levelA=%b | levelB=%b | levelC=%b", $time, pc_out, level_A, level_B, level_C);
+        $display("Time=%0t | PC=%d | levelA=%h | levelB=%h | levelC=%h", $time, pc_out, level_A, level_B, level_C);
     end
 
 endmodule

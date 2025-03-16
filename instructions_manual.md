@@ -56,28 +56,28 @@ As noted [README](https://github.com/nasu8151/HC4), instruction of these CPUs ar
 
 | Name            | Opc  | Opr  | Flag changes |                            |
 | --------------- | ---- | ---- | ------------ | -------------------------- |
-| ```SC *[AB]```  | 0000 | 0000 | Z            | Store C in [AB]            |
+| \*```SC [AB]``` | 0000 | 0000 | Z            | Store C in [AB]            |
 | ```SC r```      | 0001 | r    | Z            | Store C in r               |
 | ```SA r```      | 0111 | r    | Z            | Store A in r               |
-| ```LD *[AB]```  | 1000 | 0000 |              | LoaD from r                |
-| ```LD r```      | 1001 | r    |              | LoaD form [AB]             |
+| \*```LD [AB]``` | 1000 | 0000 |              | LoaD from [AB]             |
+| ```LD r```      | 1001 | r    |              | LoaD form r                |
 | ```LD #i```     | 1010 | i    |              | LoaD immediate             |
 | \*\*```LS #i``` | 1100 | i    |              | Load immediate and Shift A |
 
 Note:    
-\* Can be omitted addressing.
+\* Can be omitted addressing.   
 \*\* Only for HC8.
 
 ## System control instructions
 
-|        Name        | Opc  | Opr  |                               |
-| ------------------ | ---- | ---- | ----------------------------- |
-| ```JP *[ABC]```    | 1110 | 0000 | JumP [ABC]                    |
-| ```JP C *[ABC]```  | 1110 | 0010 | Jump if Carry flag is set     |
-| ```JP NC *[ABC]``` | 1110 | 0011 | Jump if Carry flag is Not set |
-| ```JP Z *[ABC]```  | 1110 | 0100 | Jump if Zero flag is set      |
-| ```JP NZ *[ABC]``` | 1110 | 0101 | Jump if Zero flag is Not set  |
-| ```NP```           | 1110 | 0001 | No oPlation                   |
+| Name                | Opc  | Opr  |                               |
+| ------------------- | ---- | ---- | ----------------------------- |
+| \*```JP [ABC]```    | 1110 | 0000 | JumP [ABC]                    |
+| \*```JP C [ABC]```  | 1110 | 0010 | Jump if Carry flag is set     |
+| \*```JP NC [ABC]``` | 1110 | 0011 | Jump if Carry flag is Not set |
+| \*```JP Z [ABC]```  | 1110 | 0100 | Jump if Zero flag is set      |
+| \*```JP NZ [ABC]``` | 1110 | 0101 | Jump if Zero flag is Not set  |
+| ```NP```            | 1110 | 0001 | No oPlation                   |
 
 Note:    
 \* Can be omitted addressing.
@@ -90,9 +90,10 @@ These instructions are executed for stack levels A and B, and store the results 
 ## Register and memory access instructions
 
 Store instructions store value of stack level A or C in registers or memory area. ```SA r``` instruction refers stack level A, and ```SC r``` and ```SC [AB]``` instructions refer stack level C.   
-Load instructions, ```LD```,  load stack level A from register or memory area. When a value is loaded into stack level A, the previous value of level A moves to level B and value of level B moves to level C. ```LD r``` refers register ```r```, ```LD i``` loads immediate data and ```LD [AB]``` refers memory address specified level A and B.
+Load instructions, ```LD```,  load stack level A from register or memory area. When a value is loaded into stack level A, the previous value of level A moves to level B, and the value of level B moves to level C. ```LD r``` refers register ```r```, ```LD #i``` loads immediate data and ```LD [AB]``` refers memory address specified level A and B.
+Load and shift instruction, ```LS #i```, used to load an 8-bit wide data onto the stack.
 
 ## System control instructions
 
-```NP``` does nothing. This is equivalent to ```NOP```.
+```NP``` does nothing. This is equivalent to ```NOP```.   
 ```JP``` instructions change conditionally PC.

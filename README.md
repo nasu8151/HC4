@@ -36,5 +36,5 @@ Work in Progress... Please wait.
 [README.md](https://github.com/nasu8151/HC4) : This file.
 [instructions_manual.md](https://github.com/nasu8151/HC4/blob/main/instructions_manual.md) : Instruction manual.
 [verilog/HC4](https://github.com/nasu8151/HC4/blob/main/verilog/HC4) : Verilog simulation files of the HC4 CPU.
-[verilog/HC8](https://github.com/nasu8151/blob/main/HC4/verilog/HC8) : Verilog simulation files of the HC8 CPU (WIP).
+[verilog/HC8](https://github.com/nasu8151/blob/main/HC4/verilog/HC8) : Verilog simulation files of the HC8 CPU.
 [HC4_KiCad](https://github.com/nasu8151/HC4/blob/main/HC4_KiCad) : Schematics and board of HC4.
