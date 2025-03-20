@@ -60,12 +60,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let source_file_path = &args[1];
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         let l = line?;
-        let is_correct_syntax = false;
         if white_line.is_match(&l) { continue; }
+        let mut is_line_error = true;
         for i in 0.._instruction_table.len() {
             match _instruction_table[i].captures(&l) {
-                Some(caps) => {
-                    is_correct_syntax = true;
+                Some(caps) => { //行を解釈できた
+                    is_line_error = false;
                     let opc: u16 = i.try_into().unwrap();
                     let opr: u16 = if i == 0b1110 {
                         if &caps[1] == "NP" { 0b0001 }
@@ -85,10 +85,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                         }
                     };
                 },
-                None => {
-                    println!("error line:{}",line_index + 1);
+                None => { //行を解釈できなかった
                 }
             }
+        }
+        if is_line_error {
+            println!("error line;{}",line_index);
         }
         line_index += 1;
     }
