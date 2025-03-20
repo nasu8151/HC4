@@ -85,7 +85,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let white_line = Regex::new(r"^\s*$").unwrap();
 
 
-    let mut line_index = 0;
     let source_file_path = &args[1];
     let mut num_of_error = 0;
     let mut line_index = 0;
@@ -97,7 +96,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             match _instruction_table[i].captures(&l) {
                 Some(caps) => { //行を解釈できた
                     is_line_error = false;
-                    let opc: u16 = i.try_into().unwrap();
+                    let opc: u8 = i.try_into().unwrap();
+                    let opr: u8 = if i == 0b1110 {
                         if &caps[1] == "NP" { 0b0001 }
                         else {
                             match caps.get(2) {
