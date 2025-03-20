@@ -1,8 +1,14 @@
 use std::env;
 use std::fs::File;
-use std::io::{ BufReader, BufRead };
+use std::io::{ BufReader, BufRead, Write, BufWriter };
 extern crate regex;
 use regex::Regex;
+
+extern crate getopts;
+use getopts::Options;
+
+extern crate colored; // not needed in Rust 2018+
+use colored::Colorize;
 
 
 //NOTE:This table DON'T INCLUDE NP INSTRUCTION
@@ -42,35 +48,59 @@ fn get_instruction_table() -> [String; 16] {
     result
 }
 
+fn print_usage(program: &str, opts: Options) {
+    let brief = format!("Usage: {} FILE [options]", program);
+    print!("{}", opts.usage(&brief));
+}
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = env::args().collect();
-    dbg!(&args);
+    let program = args[0].clone();
 
+    let mut opts = Options::new();
+    opts.optopt("o", "", "set output file name", "NAME");
+    opts.optflag("h", "help", "print this help menu");
+
+    let matches = match opts.parse(&args[2..]) {
+        Ok(m) => { m },
+        Err(f)  => { panic!("{}",f.to_string())}
+    };
+    if matches.opt_present("h") {
+        print_usage(&program, opts);
+        return Ok(());
+    }
+    let output = match matches.opt_str("o") {
+        Some(p) => p,
+        None => {
+            println!("please set option -o output file path");
+            return Ok(());
+        },
+    };
+
+    //temporary data
+    let mut bin_buf: Vec<u8> = Vec::new();
 
     /*アセンブラそのものの構文定義。
     * ここではアルファベットによる命令と二つの引数を半角スペースで区切ることを定義。
     */
     let _line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s(.+))(?:\s(.+))").expect("REASON");
-
-    
     let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&(i + r"\s*" + COMMENT_STR)).unwrap());
     let white_line = Regex::new(r"^\s*$").unwrap();
 
 
-    let mut line_index = 0;
     let source_file_path = &args[1];
+    let mut num_of_error = 0;
+    let mut line_index = 0;
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         let l = line?;
-        println!("{}",&l);
         if white_line.is_match(&l) { continue; }
         let mut is_line_error = true;
         for i in 0.._instruction_table.len() {
             match _instruction_table[i].captures(&l) {
                 Some(caps) => { //行を解釈できた
                     is_line_error = false;
-                    let opc: u16 = i.try_into().unwrap();
-                    let opr: u16 = if i == 0b1110 {
+                    let opc: u8 = i.try_into().unwrap();
+                    let opr: u8 = if i == 0b1110 {
                         if &caps[1] == "NP" { 0b0001 }
                         else {
                             match caps.get(2) {
@@ -90,17 +120,36 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                             None => 0
                         }
                     };
-                    println!("{:04b}{:04b}",opc,opr);
+                    //バッファに追加
+                    bin_buf.push(opc * 0b10000 + opr);
                 },
                 None => { //行を解釈できなかった
                 }
             }
         }
         if is_line_error {
+            num_of_error += 1;
             println!("error line;{}",line_index);
         }
         line_index += 1;
     }
+
+    if num_of_error > 0 {
+        println!("{}",(source_file_path.to_owned() + " has " + &num_of_error.to_string() + " errors").red());
+    } else {
+        println!("writing...");
+        //File writer
+        let mut writer = BufWriter::new(File::create(output)?);
+
+        for byte in bin_buf {
+            writer.write_all(format!("{:02X}",byte).as_bytes())?;
+            writer.write_all(b"\n")?;
+        }
+        writer.flush()?;
+        println!("{}","success!".cyan().bold());
+        println!("exit writing hex file");
+    }
+
 
 
     Ok(())
