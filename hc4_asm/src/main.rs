@@ -7,6 +7,9 @@ use regex::Regex;
 extern crate getopts;
 use getopts::Options;
 
+extern crate colored; // not needed in Rust 2018+
+use colored::Colorize;
+
 
 //NOTE:This table DON'T INCLUDE NP INSTRUCTION
 const _INSTRUCTION_STRINGS: [&str;16] = [
@@ -132,6 +135,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     if num_of_error > 0 {
+        println!("{}",(source_file_path.to_owned() + " has " + &num_of_error.to_string() + " errors").red());
     } else {
         println!("writing...");
         //File writer
@@ -142,6 +146,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             writer.write_all(b"\n")?;
         }
         writer.flush()?;
+        println!("{}","success!".cyan().bold());
         println!("exit writing hex file");
     }
 
