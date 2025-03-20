@@ -52,11 +52,42 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&i).unwrap());
 
 
+    let mut line_index = 0;
     let source_file_path = &args[1];
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         let l = line?;
-        println!("{}", l);
+        let is_correct_syntax = false;
+        for i in 0.._instruction_table.len() {
+            match _instruction_table[i].captures(&l) {
+                Some(caps) => {
+                    is_correct_syntax = true;
+                    let opc: u16 = i.try_into().unwrap();
+                    let opr: u16 = if i == 0b1110 {
+                        if &caps[1] == "NP" { 0b0001 }
+                        else {
+                            match &caps[2] {
+                                None => 0b0000,
+                                "C" => 0b0010,
+                                "NC" => 0b0011,
+                                "Z" => 0b0100,
+                                "NZ" => 0b0101,
+                            }
+                        }
+                    } else {
+                        match &caps[2] {
+                            Some(value) => value.try_into().unwrap(),
+                            None => 0
+                        }
+                    };
+                },
+                None => {
+                    println!("error line:{}",line_index + 1);
+                }
+            }
+        }
+        line_index += 1;
     }
+
 
     Ok(())
 }
