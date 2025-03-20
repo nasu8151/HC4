@@ -1,0 +1,33 @@
+; 
+; 3-minutes timer
+; Make sure the clock is set to 1Hz.
+; Remove all comments before execution.
+; 
+
+E1
+AD
+71
+A9
+70
+90
+A1
+30
+A0
+A0
+A5
+E3
+91
+A1
+31
+A0
+A0
+A3
+E3
+AF
+AF
+A0
+00
+A0
+A1
+A7
+E0

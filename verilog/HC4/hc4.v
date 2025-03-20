@@ -65,30 +65,29 @@ module hc4 (
         reg nJMP;
         if (instruction[7:5] == 3'b111) begin // if current instruction is Jump
             case (instruction[2:0])
-                3'b000: nJMP = 0;              // JP
-                3'b001: nJMP = 1;              // NP
+                3'b000: NEXT_PC = {level_C, level_B, level_A};              // JP
+                3'b001: NEXT_PC = pc + 1;              // NP
                 3'b010: begin                  // JC
-                    if (C_flag == 1)  nJMP = 0;
-                    else              nJMP = 1;
+                    if (C_flag == 1) NEXT_PC = {level_C, level_B, level_A};
+                    else             NEXT_PC = pc + 1;
                 end
                 3'b011: begin                  // JNC
-                    if (C_flag == 0)  nJMP = 0;
-                    else              nJMP = 1;
+                    if (C_flag == 0) NEXT_PC = {level_C, level_B, level_A};
+                    else             NEXT_PC = pc + 1;
                 end
                 3'b100: begin                  // JZ
-                    if (Z_flag == 1)  nJMP = 0;
-                    else              nJMP = 1;
+                    if (Z_flag == 1) NEXT_PC = {level_C, level_B, level_A};
+                    else             NEXT_PC = pc + 1;
                 end
                 3'b101: begin                  // JNZ
-                    if (Z_flag == 0)  nJMP = 0;
-                    else              nJMP = 1;
+                    if (Z_flag == 0) NEXT_PC = {level_C, level_B, level_A};
+                    else             NEXT_PC = pc + 1;
                 end
-                default:  nJMP = 1;
+                default:  NEXT_PC = pc + 1;
             endcase
         end else begin
-            nJMP = 1;
+            NEXT_PC = pc + 1;
         end
-        NEXT_PC = nJMP == 0 ? {level_C, level_B, level_A} : pc + 1;
     endfunction
 
     function [3:0] BUS_CTRL (input [7:0] instruction, input [3:0] alu_result, input [3:0] level_C);

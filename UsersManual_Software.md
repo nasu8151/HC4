@@ -17,7 +17,7 @@
 As noted [README](https://github.com/nasu8151/HC4), instruction of these CPUs are 8-bit wide.   
 ```r``` means a 4-bit wide register. In the program, it is represented by ```r0``` to ```r15``` in program.    
 ```#i``` means a 4-bit wide immediate data.    
-```[AB]``` means indirect addressing of stack level A and B. MSB is level B.
+```[AB]``` means indirect addressing of stack level A and B. MSB is level B.   
 ```[ABC]``` means indirect addressing of stack level A, B and C. MSB is level C.    
 "PC" means Program Counter.
 
@@ -90,7 +90,7 @@ These instructions are executed for stack levels A and B, and store the results 
 ## Register and memory access instructions
 
 Store instructions store value of stack level A or C in registers or memory area. ```SA r``` instruction refers stack level A, and ```SC r``` and ```SC [AB]``` instructions refer stack level C.   
-Load instructions, ```LD```,  load stack level A from register or memory area. When a value is loaded into stack level A, the previous value of level A moves to level B, and the value of level B moves to level C. ```LD r``` refers register ```r```, ```LD #i``` loads immediate data and ```LD [AB]``` refers memory address specified level A and B.
+Load instructions, ```LD```,  load stack level A from register or memory area. When a value is loaded into stack level A, the previous value of level A moves to level B, and the value of level B moves to level C. ```LD r``` refers register ```r```, ```LD #i``` loads immediate data and ```LD [AB]``` refers memory address specified level A and B.   
 Load and shift instruction, ```LS #i```, used to load an 8-bit wide data onto the stack.
 
 ## System control instructions

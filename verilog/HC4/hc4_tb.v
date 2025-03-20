@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "ram.v"
 
 module hc4_tb;
 
@@ -52,7 +53,7 @@ module hc4_tb;
         #10 nReset = 1;
 
         // シミュレーション実行時間
-        #800 $finish;
+        #1860 $finish;
     end
 
     // テスト結果表示

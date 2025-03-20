@@ -1,3 +1,6 @@
+`ifndef __ram_v
+`define __ram_v
+
 module memory_4bit_256nibble (
     input wire [7:0] address,       // アドレス (8ビットで256ニブル指定)
     inout wire [3:0] data_bus,      // 共通バス (4ビット幅)
@@ -19,3 +22,5 @@ module memory_4bit_256nibble (
     end
 
 endmodule
+
+`endif

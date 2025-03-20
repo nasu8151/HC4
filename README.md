@@ -33,8 +33,21 @@ Work in Progress... Please wait.
 
 # List of files and folders
 
-[README.md](https://github.com/nasu8151/HC4) : This file.
-[instructions_manual.md](https://github.com/nasu8151/HC4/blob/main/instructions_manual.md) : Instruction manual.
-[verilog/HC4](https://github.com/nasu8151/HC4/blob/main/verilog/HC4) : Verilog simulation files of the HC4 CPU.
-[verilog/HC8](https://github.com/nasu8151/blob/main/HC4/verilog/HC8) : Verilog simulation files of the HC8 CPU.
-[HC4_KiCad](https://github.com/nasu8151/HC4/blob/main/HC4_KiCad) : Schematics and board of HC4.
+<pre>
+.
+├─extra
+├─HC4_KiCad
+│  ├─HC4_gbr
+│  ├─HC4_KiCad-backups
+│  └─Library.pretty
+└─verilog
+   ├─HC4
+   └─HC8
+</pre>
+
+* [README.md](https://github.com/nasu8151/HC4) : This file.
+* [instructions_manual.md](https://github.com/nasu8151/HC4/blob/main/instructions_manual.md) : Instruction manual.
+* verilog/
+  * [verilog/HC4](https://github.com/nasu8151/HC4/blob/main/verilog/HC4) : Verilog simulation files of the HC4 CPU.
+  * [verilog/HC8](https://github.com/nasu8151/blob/main/HC4/verilog/HC8) : Verilog simulation files of the HC8 CPU.
+* [HC4_KiCad](https://github.com/nasu8151/HC4/blob/main/HC4_KiCad) : Schematics and board of HC4.
