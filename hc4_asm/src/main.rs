@@ -4,6 +4,9 @@ use std::io::{ BufReader, BufRead };
 extern crate regex;
 use regex::Regex;
 
+extern crate getopts;
+use getopts::Options;
+
 
 //NOTE:This table DON'T INCLUDE NP INSTRUCTION
 const _INSTRUCTION_STRINGS: [&str;16] = [
@@ -42,10 +45,35 @@ fn get_instruction_table() -> [String; 16] {
     result
 }
 
+fn print_usage(program: &str, opts: Options) {
+    let brief = format!("Usage: {} FILE [options]", program);
+    print!("{}", opts.usage(&brief));
+}
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = env::args().collect();
     dbg!(&args);
+    let program = args[0].clone();
+
+    let mut opts = Options::new();
+    opts.optopt("o", "", "set output file name", "NAME");
+    opts.optflag("h", "help", "print this help menu");
+
+    let matches = match opts.parse(&args[2..]) {
+        Ok(m) => { m },
+        Err(f)  => { panic!("{}",f.to_string())}
+    };
+    if matches.opt_present("h") {
+        print_usage(&program, opts);
+        return Ok(());
+    }
+    let output = match matches.opt_str("o") {
+        Some(p) => p,
+        None => {
+            println!("please set option -o output file path");
+            return Ok(());
+        },
+    };
 
 
     /*アセンブラそのものの構文定義。
