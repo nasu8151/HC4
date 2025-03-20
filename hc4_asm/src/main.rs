@@ -60,6 +60,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let source_file_path = &args[1];
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         let l = line?;
+        println!("{}",&l);
         if white_line.is_match(&l) { continue; }
         let mut is_line_error = true;
         for i in 0.._instruction_table.len() {
@@ -84,6 +85,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                             None => 0
                         }
                     };
+                    println!("{:04b}{:04b}",opc,opr);
                 },
                 None => { //行を解釈できなかった
                 }
