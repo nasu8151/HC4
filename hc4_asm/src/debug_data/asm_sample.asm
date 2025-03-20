@@ -1,0 +1,27 @@
+SU r0
+AD r1
+XR r11
+OR r15
+AN r14
+
+SC
+SC [AB]
+SC r12
+SA r13
+LD
+LD [AB]
+LD r2
+LD #3
+
+
+JP
+JP [ABC]
+JP C
+JP C [ABC]
+JP NC
+JP NC [ABC]
+JP Z
+JP Z [ABC]
+JP NZ
+JP NZ [ABC]
+NP
