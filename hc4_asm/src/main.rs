@@ -21,6 +21,23 @@ const INSTRUCTION_MATRIX_DATA: [&str; 16] = [
     r"^AD\sr(\d+)", r"^SA\sr(\d+)", "", "",
 ];
 
+const INSTRUCTION_MATRIX_DATA_X: usize = 4;
+const INSTRUCTION_MATRIX_DATA_Y: usize = 4;
+
+fn get_instruction_table() -> [String; 16] {
+    let col_num = INSTRUCTION_MATRIX_DATA_X;
+    let row_num = INSTRUCTION_MATRIX_DATA_Y;
+
+    let mut result: [String; 16] = Default::default();
+    for x in 0..col_num {
+        for y in 0..row_num {
+            result[col_num * x + y] = INSTRUCTION_MATRIX_DATA[row_num * y + x].to_string();
+        }
+    }
+    result
+}
+
+
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = env::args().collect();
     dbg!(&args);
