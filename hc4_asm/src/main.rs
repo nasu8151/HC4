@@ -71,12 +71,15 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     let opr: u16 = if i == 0b1110 {
                         if &caps[1] == "NP" { 0b0001 }
                         else {
-                            match &caps[2] {
-                                "C" => 0b0010,
-                                "NC" => 0b0011,
-                                "Z" => 0b0100,
-                                "NZ" => 0b0101,
-                                &_ => 0b0000,
+                            match caps.get(2) {
+                                Some(value) => match value.as_str() {
+                                    "C" => 0b0010,
+                                    "NC" => 0b0011,
+                                    "Z" => 0b0100,
+                                    "NZ" => 0b0101,
+                                    &_ => 0b0000,
+                                }
+                                None => 0b0000,
                             }
                         }
                     } else {
