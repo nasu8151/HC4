@@ -42,6 +42,16 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = env::args().collect();
     dbg!(&args);
 
+
+    /*アセンブラそのものの構文定義。
+    * ここではアルファベットによる命令と二つの引数を半角スペースで区切ることを定義。
+    */
+    let _line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s(.+))(?:\s(.+))").expect("REASON");
+
+    
+    let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&i).unwrap());
+
+
     let source_file_path = &args[1];
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         let l = line?;
