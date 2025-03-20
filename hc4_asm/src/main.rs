@@ -14,12 +14,15 @@ const _INSTRUCTION_STRINGS: [&str;16] = [
 ];
 
 //命令文と、代に引数をキャプチャする正規表現の文字列の配列
-const INSTRUCTION_MATRIX_DATA: [&str; 16] = [
-    r"^SC(?:\s\[AB\])?", r"^XR\sr(\d+)", r"^LD(?:\s\[AB\])?", "",
-    r"^SC\sr(\d+)", r"^OR\sr(\d+)", r"^LD\sr(\d+)", "",
-    r"^SU\sr(\d+)", r"^AN\sr(\d+)", r"^LD\s#(\d+)", r"^(?:JP(?:\s((?:C|NC|Z|NZ)))?(?:\s\[ABC\])?)|NP",
-    r"^AD\sr(\d+)", r"^SA\sr(\d+)", "", "",
-];
+const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
+    const JP_DATA: &str = r"^([NP|JP])(?:\s([C|NC|Z|NZ]))?(?:\s\[ABC\])?";
+    [
+        r"^(SC)(?:\s\[AB\])?", r"^(XR)\sr(\d+)", r"^(LD)(?:\s\[AB\])?", r"^",
+        r"^(SC)\sr(\d+)", r"^(OR)\sr(\d+)", r"^(LD)\sr(\d+)", r"^",
+        r"^(SU)\sr(\d+)", r"^(AN)\sr(\d+)", r"^(LD)\s#(\d+)", JP_DATA,
+        r"^(AD)\sr(\d+)", r"^(SA)\sr(\d+)", r"^", r"^",
+    ]
+};
 
 const INSTRUCTION_MATRIX_DATA_X: usize = 4;
 const INSTRUCTION_MATRIX_DATA_Y: usize = 4;
