@@ -71,11 +71,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                         if &caps[1] == "NP" { 0b0001 }
                         else {
                             match &caps[2] {
-                                None => 0b0000,
                                 "C" => 0b0010,
                                 "NC" => 0b0011,
                                 "Z" => 0b0100,
                                 "NZ" => 0b0101,
+                                &_ => 0b0000,
                             }
                         }
                     } else {
