@@ -53,6 +53,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     
     let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&i).unwrap());
+    let white_line = Regex::new(r"^\s*$").unwrap();
 
 
     let mut line_index = 0;
@@ -60,6 +61,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         let l = line?;
         let is_correct_syntax = false;
+        if white_line.is_match(&l) { continue; }
         for i in 0.._instruction_table.len() {
             match _instruction_table[i].captures(&l) {
                 Some(caps) => {
