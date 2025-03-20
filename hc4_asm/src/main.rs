@@ -13,6 +13,8 @@ const _INSTRUCTION_STRINGS: [&str;16] = [
     "AD", "SA", "", "",
 ];
 
+const COMMENT_STR: &str = r"(?:\/\/.*)?$";
+
 //命令文と、代に引数をキャプチャする正規表現の文字列の配列
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
     const JP_DATA: &str = r"^([NP|JP])(?:\s([C|NC|Z|NZ]))?(?:\s\[ABC\])?";
@@ -52,7 +54,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let _line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s(.+))(?:\s(.+))").expect("REASON");
 
     
-    let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&i).unwrap());
+    let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&(i + r"\s*" + COMMENT_STR)).unwrap());
     let white_line = Regex::new(r"^\s*$").unwrap();
 
 
