@@ -17,7 +17,7 @@ const COMMENT_STR: &str = r"(?:\/\/.*)?$";
 
 //命令文と、代に引数をキャプチャする正規表現の文字列の配列
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
-    const JP_DATA: &str = r"^([NP|JP])(?:\s([C|NC|Z|NZ]))?(?:\s\[ABC\])?";
+    const JP_DATA: &str = r"^(JP|NP)(?:\s(C|NC|Z|NZ))?(?:\s\[ABC\])?";
     [
         r"^(SC)(?:\s\[AB\])?", r"^(XR)\sr(\d+)", r"^(LD)(?:\s\[AB\])?", r"^",
         r"^(SC)\sr(\d+)", r"^(OR)\sr(\d+)", r"^(LD)\sr(\d+)", r"^",
