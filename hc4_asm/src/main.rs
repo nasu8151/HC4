@@ -1,7 +1,7 @@
 use std::env;
 use std::fs::File;
 use std::io::{ BufReader, BufRead };
-
+extern crate regex;
 use regex::Regex;
 
 
@@ -13,13 +13,18 @@ const _INSTRUCTION_STRINGS: [&str;16] = [
     "AD", "SA", "", "",
 ];
 
+const COMMENT_STR: &str = r"(?:\/\/.*)?$";
+
 //命令文と、代に引数をキャプチャする正規表現の文字列の配列
-const INSTRUCTION_MATRIX_DATA: [&str; 16] = [
-    r"^SC(?:\s\[AB\])?", r"^XR\sr(\d+)", r"^LD(?:\s\[AB\])?", "",
-    r"^SC\sr(\d+)", r"^OR\sr(\d+)", r"^LD\sr(\d+)", "",
-    r"^SU\sr(\d+)", r"^AN\sr(\d+)", r"^LD\s#(\d+)", r"^(?:JP(?:\s((?:C|NC|Z|NZ)))?(?:\s\[ABC\])?)|NP",
-    r"^AD\sr(\d+)", r"^SA\sr(\d+)", "", "",
-];
+const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
+    const JP_DATA: &str = r"^(JP|NP)(?:\s(C|NC|Z|NZ))?(?:\s\[ABC\])?";
+    [
+        r"^(SC)(?:\s\[AB\])?", r"^(XR)\sr(\d+)", r"^(LD)(?:\s\[AB\])?", r"^",
+        r"^(SC)\sr(\d+)", r"^(OR)\sr(\d+)", r"^(LD)\sr(\d+)", r"^",
+        r"^(SU)\sr(\d+)", r"^(AN)\sr(\d+)", r"^(LD)\s#(\d+)", JP_DATA,
+        r"^(AD)\sr(\d+)", r"^(SA)\sr(\d+)", r"^", r"^",
+    ]
+};
 
 const INSTRUCTION_MATRIX_DATA_X: usize = 4;
 const INSTRUCTION_MATRIX_DATA_Y: usize = 4;
@@ -42,11 +47,61 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = env::args().collect();
     dbg!(&args);
 
+
+    /*アセンブラそのものの構文定義。
+    * ここではアルファベットによる命令と二つの引数を半角スペースで区切ることを定義。
+    */
+    let _line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s(.+))(?:\s(.+))").expect("REASON");
+
+    
+    let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&(i + r"\s*" + COMMENT_STR)).unwrap());
+    let white_line = Regex::new(r"^\s*$").unwrap();
+
+
+    let mut line_index = 0;
     let source_file_path = &args[1];
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         let l = line?;
-        println!("{}", l);
+        println!("{}",&l);
+        if white_line.is_match(&l) { continue; }
+        let mut is_line_error = true;
+        for i in 0.._instruction_table.len() {
+            match _instruction_table[i].captures(&l) {
+                Some(caps) => { //行を解釈できた
+                    is_line_error = false;
+                    let opc: u16 = i.try_into().unwrap();
+                    let opr: u16 = if i == 0b1110 {
+                        if &caps[1] == "NP" { 0b0001 }
+                        else {
+                            match caps.get(2) {
+                                Some(value) => match value.as_str() {
+                                    "C" => 0b0010,
+                                    "NC" => 0b0011,
+                                    "Z" => 0b0100,
+                                    "NZ" => 0b0101,
+                                    &_ => 0b0000,
+                                }
+                                None => 0b0000,
+                            }
+                        }
+                    } else {
+                        match caps.get(2) {
+                            Some(value) => value.as_str().parse().unwrap(),
+                            None => 0
+                        }
+                    };
+                    println!("{:04b}{:04b}",opc,opr);
+                },
+                None => { //行を解釈できなかった
+                }
+            }
+        }
+        if is_line_error {
+            println!("error line;{}",line_index);
+        }
+        line_index += 1;
     }
+
 
     Ok(())
 }

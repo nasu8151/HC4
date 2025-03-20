@@ -1,7 +1,7 @@
 SU r0
 AD r1
 XR r11
-OR r15
+OR r15  //コメント
 AN r14
 
 SC
