@@ -79,8 +79,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                             }
                         }
                     } else {
-                        match &caps[2] {
-                            Some(value) => value.try_into().unwrap(),
+                        match caps.get(2) {
+                            Some(value) => value.as_str().parse().unwrap(),
                             None => 0
                         }
                     };
