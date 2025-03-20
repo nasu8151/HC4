@@ -52,7 +52,6 @@ fn print_usage(program: &str, opts: Options) {
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = env::args().collect();
-    dbg!(&args);
     let program = args[0].clone();
 
     let mut opts = Options::new();
@@ -82,8 +81,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     * ここではアルファベットによる命令と二つの引数を半角スペースで区切ることを定義。
     */
     let _line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s(.+))(?:\s(.+))").expect("REASON");
-
-    
     let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&(i + r"\s*" + COMMENT_STR)).unwrap());
     let white_line = Regex::new(r"^\s*$").unwrap();
 
@@ -94,7 +91,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut line_index = 0;
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         let l = line?;
-        println!("{}",&l);
         if white_line.is_match(&l) { continue; }
         let mut is_line_error = true;
         for i in 0.._instruction_table.len() {
