@@ -23,12 +23,12 @@ const COMMENT_STR: &str = r"(?:\/\/.*)?$";
 
 //命令文と、代に引数をキャプチャする正規表現の文字列の配列
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
-    const JP_DATA: &str = r"^(JP|NP)(?:\s(C|NC|Z|NZ))?(?:\s\[ABC\])?";
+    const JP_DATA: &str = r"^(jp|np)(?:\s(c|nc|z|nz))?(?:\s\[abc\])?";
     [
-        r"^(SC)(?:\s\[AB\])?", r"^(XR)\sr(\d+)", r"^(LD)(?:\s\[AB\])?", r"^",
-        r"^(SC)\sr(\d+)", r"^(OR)\sr(\d+)", r"^(LD)\sr(\d+)", r"^",
-        r"^(SU)\sr(\d+)", r"^(AN)\sr(\d+)", r"^(LD)\s#(\d+)", JP_DATA,
-        r"^(AD)\sr(\d+)", r"^(SA)\sr(\d+)", r"^", r"^",
+        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\d+)", r"^(ld)(?:\s\[ab\])?", r"^",
+        r"^(sc)\sr(\d+)", r"^(or)\sr(\d+)", r"^(ld)\sr(\d+)", r"^",
+        r"^(su)\sr(\d+)", r"^(an)\sr(\d+)", r"^(ld)\s#(\d+)", JP_DATA,
+        r"^(ad)\sr(\d+)", r"^(sa)\sr(\d+)", r"^", r"^",
     ]
 };
 
@@ -92,7 +92,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut num_of_error = 0;
     let mut line_index = 0;
     for line in BufReader::new(File::open(source_file_path)?).lines() {
-        let l = line?;
+        let l = String::from(line?).to_lowercase();
         if white_line.is_match(&l) { continue; }
         let mut is_line_error = true;
         for i in 0.._instruction_table.len() {
@@ -101,14 +101,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     is_line_error = false;
                     let opc: u8 = i.try_into().unwrap();
                     let opr: u8 = if i == 0b1110 {
-                        if &caps[1] == "NP" { 0b0001 }
+                        if &caps[1] == "np" { 0b0001 }
                         else {
                             match caps.get(2) {
                                 Some(value) => match value.as_str() {
-                                    "C" => 0b0010,
-                                    "NC" => 0b0011,
-                                    "Z" => 0b0100,
-                                    "NZ" => 0b0101,
+                                    "c" => 0b0010,
+                                    "nc" => 0b0011,
+                                    "z" => 0b0100,
+                                    "nz" => 0b0101,
                                     &_ => 0b0000,
                                 }
                                 None => 0b0000,
