@@ -1,7 +1,7 @@
 SU r0
 AD r1
 XR r11
-OR r15  //コメント
+OR r15   ;コメント
 AN r14
 
 SC
@@ -29,7 +29,7 @@ NP
 su r0
 ad r1
 xr r11
-or r15  //コメント
+or r15;コメント
 an r14
 
 sc
