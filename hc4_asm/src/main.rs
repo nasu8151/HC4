@@ -19,7 +19,7 @@ const _INSTRUCTION_STRINGS: [&str;16] = [
     "AD", "SA", "", "",
 ];
 
-const COMMENT_STR: &str = r"(?:\/\/.*)?$";
+const COMMENT_STR: &str = r"(?:;.*)?$";
 
 //命令文と、代に引数をキャプチャする正規表現の文字列の配列
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
