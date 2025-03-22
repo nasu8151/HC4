@@ -48,6 +48,16 @@ fn get_instruction_table() -> [String; 16] {
     result
 }
 
+fn parse_to_u8(input: &str) -> Result<u8, ParseIntError> {
+    if input.starts_with("0x") {
+        u8::from_str_radix(&input[2..], 16)
+    } else if input.starts_with("0b") {
+        u8::from_str_radix(&input[2..], 2)
+    } else {
+        input.parse::<u8>()
+    }
+}
+
 fn print_usage(program: &str, opts: Options) {
     let brief = format!("Usage: {} FILE [options]", program);
     print!("{}", opts.usage(&brief));
