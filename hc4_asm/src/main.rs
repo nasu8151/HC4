@@ -139,7 +139,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                             Some(value) => {
                                 match parse_to_u8(value.as_str()) {
                                     Ok(value) => { //文字列を数字として解釈できた場合
-                                        value
+                                        if value < 16 { value }
+                                        else {
+                                            is_line_error = true; //エラー。解釈できないリテラル。
+                                            println!("解釈できないリテラル");
+                                            0b0000
+                                        }
                                     },
                                     Err(_e) => { //文字列を数字として解釈できなかった場合（エラー）
                                         is_line_error = true; //エラー。解釈できないリテラル。
