@@ -105,7 +105,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&(i + r"\s*" + COMMENT_STR)).unwrap());
     let white_line = Regex::new(r"^\s*$").unwrap();
 
-
     let source_file_path = &args[1];
     let mut num_of_error = 0;
     let mut line_index = 0;
