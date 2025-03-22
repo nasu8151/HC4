@@ -109,16 +109,22 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let source_file_path = &args[1];
     let mut num_of_error = 0;
     let mut line_index = 0;
-    let mut is_line_error;
+
+    let mut line_error;
+    let mut is_line_interpreted;
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         line_index += 1;
         let l = String::from(line?).to_lowercase();
         if white_line.is_match(&l) { continue; }
-        is_line_error = true;
+
+        line_error = AsmErrors::NotError; // 一度、構文エラーとして設定
+        is_line_interpreted = false; //この行が構文解釈に引っかかったことがあるか。
+
         for i in 0.._instruction_table.len() {
             match _instruction_table[i].captures(&l) {
                 Some(caps) => { //行を解釈できた
-                    is_line_error = false; //一度 false にし、その後の解釈でエラーがあれば、true とする。
+                    is_line_interpreted = true;
+                    line_error = AsmErrors::NotError; //一度 NotError にし、その後の解釈でエラーがあれば、true とする。
                     let opc: u8 = i.try_into().unwrap();
                     let opr: u8 = if i == 0b1110 { // JP または NP の場合
                         if &caps[1] == "np" { 0b0001 } //NP 構文のみ、JP命令記述ではないがJPと同じ命令 opc の bit のため例外処理を与える
@@ -130,8 +136,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                     "z" => 0b0100,
                                     "nz" => 0b0101,
                                     &_ => { //エラー。存在しないフラグ
-                                        is_line_error = true;
-                                        println!("存在しないフラグ");
+                                        line_error = AsmErrors::NonFlag;
                                         0b0000
                                     },
                                 }
@@ -145,14 +150,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                     Ok(value) => { //文字列を数字として解釈できた場合
                                         if value < 16 { value }
                                         else {
-                                            is_line_error = true; //エラー。解釈できないリテラル。
-                                            println!("解釈できないリテラル");
+                                            line_error = AsmErrors::NonValidLiter; //エラー。解釈できないリテラル。
                                             0b0000
                                         }
                                     },
                                     Err(_e) => { //文字列を数字として解釈できなかった場合（エラー）
-                                        is_line_error = true; //エラー。解釈できないリテラル。
-                                        println!("解釈できないリテラル");
+                                        line_error = AsmErrors::NonValidLiter; //エラー。解釈できないリテラル。
                                         0b0000
                                     },
                                 }
@@ -163,11 +166,21 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     //バッファに追加
                     bin_buf.push(opc * 0b10000 + opr);
                 },
-                None => { //行を解釈できなかった
-                }
+                None => {} //この正規表現では解釈されなかった
             }
         }
-        if is_line_error {
+
+        if is_line_interpreted {
+            match line_rgx.captures(&l) {
+                Some(caps) => {
+                    if !INSTRUCTION_STRINGS.contains(&&caps[1]) {
+                        println!("{}",&caps[1]);
+                        line_error = AsmErrors::NonexistentInstruction;
+                    }
+                },
+                None => line_error = AsmErrors::UnexpectedSyntax,
+            }
+        }
             num_of_error += 1;
             println!("An error occured at line {}",line_index + 1);
         }
