@@ -62,6 +62,15 @@ fn print_usage(program: &str, opts: Options) {
     print!("{}", opts.usage(&brief));
 }
 
+#[derive(Debug,PartialEq)]
+enum AsmErrors {
+    NotError,
+    NonexistentInstruction,
+    UnexpectedSyntax,
+    NonValidLiter,
+    NonFlag,
+}
+
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = env::args().collect();
     let program = args[0].clone();
