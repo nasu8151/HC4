@@ -180,8 +180,34 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 None => line_error = AsmErrors::UnexpectedSyntax,
             }
         }
+        if line_error != AsmErrors::NotError {
             num_of_error += 1;
-            println!("An error occured at line {}",line_index + 1);
+            let num_of_line_decimal_digits = {
+                let mut copy_index = line_index + 1;
+                let mut count = 1;
+                while 10 <= copy_index { 
+                    count += 1;
+                    copy_index /= 10;
+                }
+                count
+            };
+            let space = " ".repeat(num_of_line_decimal_digits + 1);
+            let border_code_space = "     ";
+            println!("{error}: {mes}\n   --> {source_path}:{line}\n{space}|\n{line} |{space2}{code}\n{space}|\n{space}|\n",
+                error="error".red(),
+                mes=match line_error {
+                    AsmErrors::NotError => "if you see this message, please contact the developer",
+                    AsmErrors::NonexistentInstruction => "nonexistent instruction",
+                    AsmErrors::UnexpectedSyntax => "unexpected syntax",
+                    AsmErrors::NonValidLiter => "nonexistent valid literal",
+                    AsmErrors::NonFlag => "nonexistent flag",
+                },
+                source_path=source_file_path,
+                line=line_index + 1,
+                space=space,
+                space2=border_code_space,
+                code=l,
+            );
         }
     }
 
