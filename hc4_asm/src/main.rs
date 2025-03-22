@@ -102,21 +102,21 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 Some(caps) => { //行を解釈できた
                     is_line_error = false; //一度 false にし、その後の解釈でエラーがあれば、true とする。
                     let opc: u8 = i.try_into().unwrap();
-                    let opr: u8 = if i == 0b1110 {
-                        if &caps[1] == "np" { 0b0001 }
+                    let opr: u8 = if i == 0b1110 { // JP または NP の場合
+                        if &caps[1] == "np" { 0b0001 } //NP 構文のみ、JP命令記述ではないがJPと同じ命令 opc の bit のため例外処理を与える
                         else {
-                            match caps.get(2) {
-                                Some(value) => match value.as_str() {
+                            match caps.get(2) { 
+                                Some(value) => match value.as_str() { //第二引数が存在する
                                     "c" => 0b0010,
                                     "nc" => 0b0011,
                                     "z" => 0b0100,
                                     "nz" => 0b0101,
                                     &_ => 0b0000,
                                 }
-                                None => 0b0000,
+                                None => 0b0000, //第二引数がない
                             }
                         }
-                    } else {
+                    } else { //JP ではなく、NPではない命令記述
                         match caps.get(2) {
                             Some(value) => value.as_str().parse().unwrap(),
                             None => 0
