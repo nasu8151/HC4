@@ -212,7 +212,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     if num_of_error > 0 {
-        println!("Assembly failed : {}", (source_file_path.to_owned() + " has " + &num_of_error.to_string() + " error(s)").red());
+        println!("Assemble failed : {}", (source_file_path.to_owned() + " has " + &num_of_error.to_string() + " error(s)").red());
     } else {
         println!("writing...");
         //File writer
