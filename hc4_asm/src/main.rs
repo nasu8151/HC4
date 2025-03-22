@@ -101,7 +101,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     /*アセンブラそのものの構文定義。
     * ここではアルファベットによる命令と二つの引数を半角スペースで区切ることを定義。
     */
-    let _line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s(.+))(?:\s(.+))").expect("REASON");
+    let line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s[r#]?(\w+))?").expect("REASON");
     let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&(i + r"\s*" + COMMENT_STR)).unwrap());
     let white_line = Regex::new(r"^\s*$").unwrap();
 
