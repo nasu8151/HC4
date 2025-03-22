@@ -113,7 +113,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut is_line_interpreted;
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         line_index += 1;
-        let l = String::from(line?).to_lowercase();
+        let l = String::from(line?).to_lowercase(); //ファイルを読めたらすぐに小文字に変換
         if white_line.is_match(&l) { continue; }
 
         line_error = AsmErrors::NotError; // 一度、構文エラーとして設定
