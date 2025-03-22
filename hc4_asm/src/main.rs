@@ -121,7 +121,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                     "nc" => 0b0011,
                                     "z" => 0b0100,
                                     "nz" => 0b0101,
-                                    &_ => 0b0000,
+                                    &_ => { //エラー。存在しないフラグ
+                                        is_line_error = true;
+                                        println!("存在しないフラグ");
+                                        0b0000
+                                    },
                                 }
                                 None => 0b0000, //第二引数がない
                             }
