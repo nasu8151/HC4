@@ -136,8 +136,19 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                         }
                     } else { //JP ではなく、NPではない命令記述
                         match caps.get(2) {
-                            Some(value) => value.as_str().parse().unwrap(),
-                            None => 0
+                            Some(value) => {
+                                match parse_to_u8(value.as_str()) {
+                                    Ok(value) => { //文字列を数字として解釈できた場合
+                                        value
+                                    },
+                                    Err(_e) => { //文字列を数字として解釈できなかった場合（エラー）
+                                        is_line_error = true; //エラー。解釈できないリテラル。
+                                        println!("解釈できないリテラル");
+                                        0b0000
+                                    },
+                                }
+                            },
+                            None => 0b0000
                         }
                     };
                     //バッファに追加
