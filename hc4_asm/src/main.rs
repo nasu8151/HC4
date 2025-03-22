@@ -25,10 +25,10 @@ const COMMENT_STR: &str = r"(?:;.*)?$";
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
     const JP_DATA: &str = r"^(jp|np)(?:\s(c|nc|z|nz))?(?:\s\[abc\])?";
     [
-        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\d+)", r"^(ld)(?:\s\[ab\])?", r"^",
-        r"^(sc)\sr(\d+)", r"^(or)\sr(\d+)", r"^(ld)\sr(\d+)", r"^",
-        r"^(su)\sr(\d+)", r"^(an)\sr(\d+)", r"^(ld)\s#(\d+)", JP_DATA,
-        r"^(ad)\sr(\d+)", r"^(sa)\sr(\d+)", r"^", r"^",
+        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\w+)", r"^(ld)(?:\s\[ab\])?", r"^",
+        r"^(sc)\sr(\w+)", r"^(or)\sr(\w+)", r"^(ld)\sr(\w+)", r"^",
+        r"^(su)\sr(\w+)", r"^(an)\sr(\w+)", r"^(ld)\s#(\w+)", JP_DATA,
+        r"^(ad)\sr(\w+)", r"^(sa)\sr(\w+)", r"^", r"^",
     ]
 };
 
