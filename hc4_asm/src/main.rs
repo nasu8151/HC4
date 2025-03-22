@@ -13,12 +13,7 @@ use colored::Colorize;
 
 
 //NOTE:This table DON'T INCLUDE NP INSTRUCTION
-const _INSTRUCTION_STRINGS: [&str;16] = [
-    "SC", "XR", "LD", "",
-    "SC", "OR", "LD", "",
-    "SU", "AN", "LD", "JP",
-    "AD", "SA", "", "",
-];
+const INSTRUCTION_STRINGS: [&str;10] = ["sc", "xr", "ld", "or", "su", "an", "jp", "ad", "sa","np"];
 
 const COMMENT_STR: &str = r"(?:;.*)?$";
 
