@@ -33,6 +33,9 @@ const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
     ]
 };
 
+const _REGISTER_INSTRUCTION: [u8; 8] = [1,2,3,4,5,6,7,9,];
+const _IMMEDIATE_INSTRUCTION: [u8; 1] = [10,];
+
 const INSTRUCTION_MATRIX_DATA_X: usize = 4;
 const INSTRUCTION_MATRIX_DATA_Y: usize = 4;
 
