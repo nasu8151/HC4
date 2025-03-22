@@ -1,6 +1,7 @@
 use std::env;
 use std::fs::File;
 use std::io::{ BufReader, BufRead, Write, BufWriter };
+use std::num::ParseIntError;
 extern crate regex;
 use regex::Regex;
 
@@ -25,12 +26,15 @@ const COMMENT_STR: &str = r"(?:;.*)?$";
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
     const JP_DATA: &str = r"^(jp|np)(?:\s(c|nc|z|nz))?(?:\s\[abc\])?";
     [
-        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\d+)", r"^(ld)(?:\s\[ab\])?", r"^",
-        r"^(sc)\sr(\d+)", r"^(or)\sr(\d+)", r"^(ld)\sr(\d+)", r"^",
-        r"^(su)\sr(\d+)", r"^(an)\sr(\d+)", r"^(ld)\s#(\d+)", JP_DATA,
-        r"^(ad)\sr(\d+)", r"^(sa)\sr(\d+)", r"^", r"^",
+        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\w+)", r"^(ld)(?:\s\[ab\])?", r"^",
+        r"^(sc)\sr(\w+)", r"^(or)\sr(\w+)", r"^(ld)\sr(\w+)", r"^",
+        r"^(su)\sr(\w+)", r"^(an)\sr(\w+)", r"^(ld)\s#(\w+)", JP_DATA,
+        r"^(ad)\sr(\w+)", r"^(sa)\sr(\w+)", r"^", r"^",
     ]
 };
+
+const _REGISTER_INSTRUCTION: [u8; 8] = [1,2,3,4,5,6,7,9,];
+const _IMMEDIATE_INSTRUCTION: [u8; 1] = [10,];
 
 const INSTRUCTION_MATRIX_DATA_X: usize = 4;
 const INSTRUCTION_MATRIX_DATA_Y: usize = 4;
@@ -46,6 +50,16 @@ fn get_instruction_table() -> [String; 16] {
         }
     }
     result
+}
+
+fn parse_to_u8(input: &str) -> Result<u8, ParseIntError> {
+    if input.starts_with("0x") {
+        u8::from_str_radix(&input[2..], 16)
+    } else if input.starts_with("0b") {
+        u8::from_str_radix(&input[2..], 2)
+    } else {
+        input.parse::<u8>()
+    }
 }
 
 fn print_usage(program: &str, opts: Options) {
@@ -91,33 +105,50 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let source_file_path = &args[1];
     let mut num_of_error = 0;
     let mut line_index = 0;
+    let mut is_line_error;
     for line in BufReader::new(File::open(source_file_path)?).lines() {
+        line_index += 1;
         let l = String::from(line?).to_lowercase();
         if white_line.is_match(&l) { continue; }
-        let mut is_line_error = true;
+        is_line_error = true;
         for i in 0.._instruction_table.len() {
             match _instruction_table[i].captures(&l) {
                 Some(caps) => { //行を解釈できた
-                    is_line_error = false;
+                    is_line_error = false; //一度 false にし、その後の解釈でエラーがあれば、true とする。
                     let opc: u8 = i.try_into().unwrap();
-                    let opr: u8 = if i == 0b1110 {
-                        if &caps[1] == "np" { 0b0001 }
+                    let opr: u8 = if i == 0b1110 { // JP または NP の場合
+                        if &caps[1] == "np" { 0b0001 } //NP 構文のみ、JP命令記述ではないがJPと同じ命令 opc の bit のため例外処理を与える
                         else {
-                            match caps.get(2) {
-                                Some(value) => match value.as_str() {
+                            match caps.get(2) { 
+                                Some(value) => match value.as_str() { //第二引数が存在する
                                     "c" => 0b0010,
                                     "nc" => 0b0011,
                                     "z" => 0b0100,
                                     "nz" => 0b0101,
-                                    &_ => 0b0000,
+                                    &_ => { //エラー。存在しないフラグ
+                                        is_line_error = true;
+                                        println!("存在しないフラグ");
+                                        0b0000
+                                    },
                                 }
-                                None => 0b0000,
+                                None => 0b0000, //第二引数がない
                             }
                         }
-                    } else {
+                    } else { //JP ではなく、NPではない命令記述
                         match caps.get(2) {
-                            Some(value) => value.as_str().parse().unwrap(),
-                            None => 0
+                            Some(value) => {
+                                match parse_to_u8(value.as_str()) {
+                                    Ok(value) => { //文字列を数字として解釈できた場合
+                                        value
+                                    },
+                                    Err(_e) => { //文字列を数字として解釈できなかった場合（エラー）
+                                        is_line_error = true; //エラー。解釈できないリテラル。
+                                        println!("解釈できないリテラル");
+                                        0b0000
+                                    },
+                                }
+                            },
+                            None => 0b0000
                         }
                     };
                     //バッファに追加
@@ -131,7 +162,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             num_of_error += 1;
             println!("An error occured at line {}",line_index + 1);
         }
-        line_index += 1;
     }
 
     if num_of_error > 0 {
