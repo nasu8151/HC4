@@ -1,6 +1,7 @@
 use std::env;
 use std::fs::File;
 use std::io::{ BufReader, BufRead, Write, BufWriter };
+use std::num::ParseIntError;
 extern crate regex;
 use regex::Regex;
 
