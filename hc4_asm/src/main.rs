@@ -1,6 +1,7 @@
 use std::env;
 use std::fs::File;
 use std::io::{ BufReader, BufRead, Write, BufWriter };
+use std::num::ParseIntError;
 extern crate regex;
 use regex::Regex;
 
@@ -12,12 +13,7 @@ use colored::Colorize;
 
 
 //NOTE:This table DON'T INCLUDE NP INSTRUCTION
-const _INSTRUCTION_STRINGS: [&str;16] = [
-    "SC", "XR", "LD", "",
-    "SC", "OR", "LD", "",
-    "SU", "AN", "LD", "JP",
-    "AD", "SA", "", "",
-];
+const INSTRUCTION_STRINGS: [&str;10] = ["sc", "xr", "ld", "or", "su", "an", "jp", "ad", "sa","np"];
 
 const COMMENT_STR: &str = r"(?:;.*)?$";
 
@@ -25,12 +21,15 @@ const COMMENT_STR: &str = r"(?:;.*)?$";
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
     const JP_DATA: &str = r"^(jp|np)(?:\s(c|nc|z|nz))?(?:\s\[abc\])?";
     [
-        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\d+)", r"^(ld)(?:\s\[ab\])?", r"^",
-        r"^(sc)\sr(\d+)", r"^(or)\sr(\d+)", r"^(ld)\sr(\d+)", r"^",
-        r"^(su)\sr(\d+)", r"^(an)\sr(\d+)", r"^(ld)\s#(\d+)", JP_DATA,
-        r"^(ad)\sr(\d+)", r"^(sa)\sr(\d+)", r"^", r"^",
+        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\w+)", r"^(ld)(?:\s\[ab\])?", r"^",
+        r"^(sc)\sr(\w+)", r"^(or)\sr(\w+)", r"^(ld)\sr(\w+)", r"^",
+        r"^(su)\sr(\w+)", r"^(an)\sr(\w+)", r"^(ld)\s#(\w+)", JP_DATA,
+        r"^(ad)\sr(\w+)", r"^(sa)\sr(\w+)", r"^", r"^",
     ]
 };
+
+const _REGISTER_INSTRUCTION: [u8; 8] = [1,2,3,4,5,6,7,9,];
+const _IMMEDIATE_INSTRUCTION: [u8; 1] = [10,];
 
 const INSTRUCTION_MATRIX_DATA_X: usize = 4;
 const INSTRUCTION_MATRIX_DATA_Y: usize = 4;
@@ -48,9 +47,28 @@ fn get_instruction_table() -> [String; 16] {
     result
 }
 
+fn parse_to_u8(input: &str) -> Result<u8, ParseIntError> {
+    if input.starts_with("0x") {
+        u8::from_str_radix(&input[2..], 16)
+    } else if input.starts_with("0b") {
+        u8::from_str_radix(&input[2..], 2)
+    } else {
+        input.parse::<u8>()
+    }
+}
+
 fn print_usage(program: &str, opts: Options) {
     let brief = format!("Usage: {} FILE [options]", program);
     print!("{}", opts.usage(&brief));
+}
+
+#[derive(Debug,PartialEq)]
+enum AsmErrors {
+    NotError,
+    NonexistentInstruction,
+    UnexpectedSyntax,
+    NonValidLiter,
+    NonFlag,
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -83,59 +101,118 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     /*アセンブラそのものの構文定義。
     * ここではアルファベットによる命令と二つの引数を半角スペースで区切ることを定義。
     */
-    let _line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s(.+))(?:\s(.+))").expect("REASON");
+    let line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s[r#]?(\w+))?").expect("REASON");
     let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&(i + r"\s*" + COMMENT_STR)).unwrap());
     let white_line = Regex::new(r"^\s*$").unwrap();
-
 
     let source_file_path = &args[1];
     let mut num_of_error = 0;
     let mut line_index = 0;
+
+    let mut line_error;
+    let mut is_line_interpreted;
     for line in BufReader::new(File::open(source_file_path)?).lines() {
-        let l = String::from(line?).to_lowercase();
+        line_index += 1;
+        let l = String::from(line?).to_lowercase(); //ファイルを読めたらすぐに小文字に変換
         if white_line.is_match(&l) { continue; }
-        let mut is_line_error = true;
+
+        line_error = AsmErrors::NotError; // 一度、構文エラーとして設定
+        is_line_interpreted = false; //この行が構文解釈に引っかかったことがあるか。
+
         for i in 0.._instruction_table.len() {
             match _instruction_table[i].captures(&l) {
                 Some(caps) => { //行を解釈できた
-                    is_line_error = false;
+                    is_line_interpreted = true;
+                    line_error = AsmErrors::NotError; //一度 NotError にし、その後の解釈でエラーがあれば、true とする。
                     let opc: u8 = i.try_into().unwrap();
-                    let opr: u8 = if i == 0b1110 {
-                        if &caps[1] == "np" { 0b0001 }
+                    let opr: u8 = if i == 0b1110 { // JP または NP の場合
+                        if &caps[1] == "np" { 0b0001 } //NP 構文のみ、JP命令記述ではないがJPと同じ命令 opc の bit のため例外処理を与える
                         else {
-                            match caps.get(2) {
-                                Some(value) => match value.as_str() {
+                            match caps.get(2) { 
+                                Some(value) => match value.as_str() { //第二引数が存在する
                                     "c" => 0b0010,
                                     "nc" => 0b0011,
                                     "z" => 0b0100,
                                     "nz" => 0b0101,
-                                    &_ => 0b0000,
+                                    &_ => { //エラー。存在しないフラグ
+                                        line_error = AsmErrors::NonFlag;
+                                        0b0000
+                                    },
                                 }
-                                None => 0b0000,
+                                None => 0b0000, //第二引数がない
                             }
                         }
-                    } else {
+                    } else { //JP ではなく、NPではない命令記述
                         match caps.get(2) {
-                            Some(value) => value.as_str().parse().unwrap(),
-                            None => 0
+                            Some(value) => {
+                                match parse_to_u8(value.as_str()) {
+                                    Ok(value) => { //文字列を数字として解釈できた場合
+                                        if value < 16 { value }
+                                        else {
+                                            line_error = AsmErrors::NonValidLiter; //エラー。解釈できないリテラル。
+                                            0b0000
+                                        }
+                                    },
+                                    Err(_e) => { //文字列を数字として解釈できなかった場合（エラー）
+                                        line_error = AsmErrors::NonValidLiter; //エラー。解釈できないリテラル。
+                                        0b0000
+                                    },
+                                }
+                            },
+                            None => 0b0000
                         }
                     };
                     //バッファに追加
                     bin_buf.push(opc * 0b10000 + opr);
                 },
-                None => { //行を解釈できなかった
-                }
+                None => {} //この正規表現では解釈されなかった
             }
         }
-        if is_line_error {
-            num_of_error += 1;
-            println!("error line;{}",line_index);
+
+        if is_line_interpreted {
+            match line_rgx.captures(&l) {
+                Some(caps) => {
+                    if !INSTRUCTION_STRINGS.contains(&&caps[1]) {
+                        println!("{}",&caps[1]);
+                        line_error = AsmErrors::NonexistentInstruction;
+                    }
+                },
+                None => line_error = AsmErrors::UnexpectedSyntax,
+            }
         }
-        line_index += 1;
+        if line_error != AsmErrors::NotError {
+            num_of_error += 1;
+            let num_of_line_decimal_digits = {
+                let mut copy_index = line_index + 1;
+                let mut count = 1;
+                while 10 <= copy_index { 
+                    count += 1;
+                    copy_index /= 10;
+                }
+                count
+            };
+            let space = " ".repeat(num_of_line_decimal_digits + 1);
+            let border_code_space = "     ";
+            println!("{error}: {mes}\n   --> {source_path}:{line}\n{space}|\n{line} |{space2}{code}\n{space}|\n{space}|\n",
+                error="error".red(),
+                mes=match line_error {
+                    AsmErrors::NotError => "if you see this message, please contact the developer",
+                    AsmErrors::NonexistentInstruction => "nonexistent instruction",
+                    AsmErrors::UnexpectedSyntax => "unexpected syntax",
+                    AsmErrors::NonValidLiter => "nonexistent valid literal",
+                    AsmErrors::NonFlag => "nonexistent flag",
+                },
+                source_path=source_file_path,
+                line=line_index + 1,
+                space=space,
+                space2=border_code_space,
+                code=l,
+            );
+        }
     }
 
     if num_of_error > 0 {
-        println!("{}",(source_file_path.to_owned() + " has " + &num_of_error.to_string() + " errors").red());
+        println!("Assemble failed : {}", (source_file_path.to_owned() + " has " + &num_of_error.to_string() + " error(s)").red());
     } else {
         println!("writing...");
         //File writer

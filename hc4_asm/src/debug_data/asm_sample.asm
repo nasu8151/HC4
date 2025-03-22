@@ -53,3 +53,7 @@ jp z [abc]
 jp nz
 jp nz [abc]
 np
+
+LD #3
+LD #0xf
+LD #0b0101
