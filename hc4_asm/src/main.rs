@@ -91,14 +91,16 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let source_file_path = &args[1];
     let mut num_of_error = 0;
     let mut line_index = 0;
+    let mut is_line_error;
     for line in BufReader::new(File::open(source_file_path)?).lines() {
+        line_index += 1;
         let l = String::from(line?).to_lowercase();
         if white_line.is_match(&l) { continue; }
-        let mut is_line_error = true;
+        is_line_error = true;
         for i in 0.._instruction_table.len() {
             match _instruction_table[i].captures(&l) {
                 Some(caps) => { //行を解釈できた
-                    is_line_error = false;
+                    is_line_error = false; //一度 false にし、その後の解釈でエラーがあれば、true とする。
                     let opc: u8 = i.try_into().unwrap();
                     let opr: u8 = if i == 0b1110 {
                         if &caps[1] == "np" { 0b0001 }
@@ -131,7 +133,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             num_of_error += 1;
             println!("error line;{}",line_index);
         }
-        line_index += 1;
     }
 
     if num_of_error > 0 {
