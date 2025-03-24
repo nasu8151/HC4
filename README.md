@@ -26,28 +26,33 @@ All of instructions are 8-bit wide.
 
 ## Instructions list
 
-Please refer to [here](https://github.com/nasu8151/HC4/blob/main/instructions_manual.md).
+Please refer to [here](https://github.com/nasu8151/HC4/blob/main/UsersManual_Software.md).
 
 # Software
-Work in Progress... Please wait.
+
+The assembler for this CPU can be found [here](https://github.com/nasu8151/HC4/blob/main/hc4_asm).
+Please see the documents for syntax and other details.
 
 # List of files and folders
 
 <pre>
 .
 ├─extra
+├─hc4_asm
+│  └─src
+│      └─debug_data
 ├─HC4_KiCad
 │  ├─HC4_gbr
 │  ├─HC4_KiCad-backups
 │  └─Library.pretty
 └─verilog
-   ├─HC4
-   └─HC8
-</pre>
+    ├─HC4
+    └─HC8</pre>
 
 * [README.md](https://github.com/nasu8151/HC4) : This file.
-* [instructions_manual.md](https://github.com/nasu8151/HC4/blob/main/instructions_manual.md) : Instruction manual.
+* [UsersManual_Software.md](https://github.com/nasu8151/HC4/blob/main/UsersManual_Software.md) : Instruction manual.
+* [hc4_asm/](https://github.com/nasu8151/HC4/blob/main/hc4_asm) : An assembler for the HC4 CPU.
 * verilog/
   * [verilog/HC4](https://github.com/nasu8151/HC4/blob/main/verilog/HC4) : Verilog simulation files of the HC4 CPU.
   * [verilog/HC8](https://github.com/nasu8151/blob/main/HC4/verilog/HC8) : Verilog simulation files of the HC8 CPU.
-* [HC4_KiCad](https://github.com/nasu8151/HC4/blob/main/HC4_KiCad) : Schematics and board of HC4.
+* [HC4_KiCad](https://github.com/nasu8151/HC4/blob/main/HC4_KiCad) : Schematics and board of the HC4.

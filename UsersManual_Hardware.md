@@ -1,3 +1,4 @@
+<span style="font-size: 110%">English version was excalibured.</span>
 
 ## 🎯 HC4 CPU Verilog 解説
 
@@ -249,4 +250,3 @@ module hc4 (
 ## 🎉 11. まとめ
 * HC4 は 4 ビットスタックベースの CPU で、ジャンプ、スタック操作、ALU 演算などの基本的な命令を実行可能。
 * Verilog での記述はモジュール化され、ALU、ROM 読み込み、バス制御などが含まれている。
-* テストベンチやシミュレーションを通して、各命令の動作確認が必要。
