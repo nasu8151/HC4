@@ -44,13 +44,13 @@ As noted [README](https://github.com/nasu8151/HC4), instruction of these CPUs ar
 
 ## Logical and alithmetic instructions
 
-| Name       | Opc  | Opr | Flag changes | Function|                            |
-| ---------- | ---- | --- | ------------ | ------- | -------------------------- |
-| ```SU r``` | 0010 | r   | C, Z         | r<-A-B  | SUbtract and store in r    |
-| ```AD r``` | 0011 | r   | C, Z         | r<-A+B  | ADd and store in r         |
-| ```XR r``` | 0100 | r   | Z            | r<-A^B  | bitwise XoR and store in r |
-| ```OR r``` | 0101 | r   | Z            | r<-A\|B | bitwise OR and store in r  |
-| ```AN r``` | 0110 | r   | Z            | r<-A&B  | bitwise ANd and store in r |
+| Name       | Opc  | Opr | Flag changes | Function   |                            |
+| ---------- | ---- | --- | ------------ | ---------- | -------------------------- |
+| ```SU r``` | 0010 | r   | C, Z         | r <= A-B   | SUbtract and store in r    |
+| ```AD r``` | 0011 | r   | C, Z         | r <= A+B   | ADd and store in r         |
+| ```XR r``` | 0100 | r   | Z            | r <= A^B   | bitwise XoR and store in r |
+| ```OR r``` | 0101 | r   | Z            | r <= A\|B  | bitwise OR and store in r  |
+| ```AN r``` | 0110 | r   | Z            | r <= A&B   | bitwise ANd and store in r |
 
 ## Register and memory access instructions
 
