@@ -115,7 +115,6 @@ module hc4 (
 
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
-            pc <= 16'b0;
             carry_flg <= 1'b0;
             zero_flg <= 1'b0;
             level_A <= 8'b0;
@@ -140,6 +139,13 @@ module hc4 (
                     //nothing to write here
                 end
             endcase
+        end
+    end
+
+    always @(negedge clk or negedge nReset) begin
+        if (nReset == 0) begin
+            pc = 16'b0;
+        end else begin
             pc <= NEXT_PC(instruction, pc, level_A, level_B, carry_flg, zero_flg);
         end
     end

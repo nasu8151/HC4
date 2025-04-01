@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module hc4_tb;
+module hc8_tb;
 
     // 入出力信号の宣言
     reg clk;
@@ -27,7 +27,7 @@ module hc4_tb;
     initial begin
         // 波形ファイル生成（シミュレーション確認用）
         $dumpfile("hc8_tb.vcd");
-        $dumpvars(0, hc4_tb);
+        $dumpvars(0, hc8_tb);
 
         // 初期化
         clk = 0;
