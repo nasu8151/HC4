@@ -6,11 +6,11 @@ module hc4 (
     output wire [15:0]      pc_out,
     output wire [7:0]       stackA_out,
     output wire [7:0]       stackB_out,
-    output wire [7:0]       stackC_out/*,
+    output wire [7:0]       stackC_out,
     output wire [15:0]       address_bus,
     inout  wire [7:0]       data_bus,
     output wire             nRAM_RD,
-    output wire             nRAM_WR*/
+    output wire             nRAM_WR
 
 );
     reg [7:0] level_A; //stack level A
@@ -22,8 +22,8 @@ module hc4 (
     reg [7:0] ram [0:255];
     reg [7:0] rom [0:4095];
 
-    wire [15:0] address_bus;
-    wire [7:0] data_bus;
+    // wire [15:0] address_bus;
+    // wire [7:0] data_bus;
 
     initial $readmemh("./test.hex", rom);
 
@@ -42,8 +42,8 @@ module hc4 (
     assign stackB_out = level_B;
     assign stackC_out = level_C;
     assign sub = instruction[6:4] == 3'b010 ? 1 : 0; //if opcode is 0010 (1010 is not ALU oplation)
-    //assign nRAM_WR = !(!instruction[7] & !clk);
-    //assign nRAM_RD = !(instruction[7] & !instruction[6] & !instruction[5] & !clk);
+    assign nRAM_WR = !(!instruction[7] & !clk);
+    assign nRAM_RD = !(instruction[7] & !instruction[6] & !instruction[5] & !clk);
 
     alu8 ALU (
         .in_A (level_A),
@@ -99,7 +99,7 @@ module hc4 (
         casez (instruction[7:5])
             3'b000:  BUS_CTRL = level_C;          //SC
             3'b0??:  BUS_CTRL = alu_result;       //ALU instructions (include SA)
-            3'b100:  BUS_CTRL = ram[address_bus]; //LD [AB] or LD r (RAM)
+            3'b100:  BUS_CTRL = 8'bz; //LD [AB] or LD r (RAM)
             3'b101: begin
                 BUS_CTRL[7:4] = level_A[7:4]; 
                 BUS_CTRL[3:0] = instruction[3:0]; //LD #i
@@ -123,7 +123,7 @@ module hc4 (
         end else begin
             casez (instruction[7:5])
                 3'b0??: begin // if current instruction is an instruction which stores in the memory or registers
-                    ram[address_bus] <= data_bus;
+                    // ram[address_bus] <= data_bus;
                     zero_flg  <= data_bus == 4'b0 ? 1 : 0;
                     carry_flg <= instruction[7:5] == 3'b001 ? carry : carry_flg;
                 end 

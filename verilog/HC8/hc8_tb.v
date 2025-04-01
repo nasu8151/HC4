@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "ram.v"
 
 module hc8_tb;
 
@@ -6,10 +7,22 @@ module hc8_tb;
     reg clk;
     reg nReset;
     wire [15:0] pc_out;
-    wire [7:0] level_A;
-    wire [7:0] level_B;
-    wire [7:0] level_C;
+    wire [7:0]  level_A;
+    wire [7:0]  level_B;
+    wire [7:0]  level_C;
+    wire [15:0] address_bus;
+    wire [7:0]  data_bus;
+    wire nRAM_RD;
+    wire nRAM_WR;
 
+    // メモリ兼レジスタの宣言
+    memory_8bit_2kbyte ram (
+        .address(address_bus),
+        .data_bus(data_bus),
+        .nchip_enable(1'b0),
+        .nwrite_enable(nRAM_WR),
+        .nread_enable(nRAM_RD)
+    );
     // テスト対象モジュールのインスタンス化
     hc4 uut (
         .clk(clk),
@@ -17,7 +30,11 @@ module hc8_tb;
         .pc_out(pc_out),
         .stackA_out(level_A),
         .stackB_out(level_B),
-        .stackC_out(level_C)
+        .stackC_out(level_C),
+        .nRAM_RD(nRAM_RD),
+        .nRAM_WR(nRAM_WR),
+        .address_bus(address_bus),
+        .data_bus(data_bus)
     );
 
     // クロック生成
