@@ -16,7 +16,7 @@ module hc8_tb;
     wire nRAM_WR;
 
     // メモリ兼レジスタの宣言
-    memory_8bit_2kbyte ram (
+    memory_8bit_64kbyte ram (
         .address(address_bus),
         .data_bus(data_bus),
         .nchip_enable(1'b0),
