@@ -1,6 +1,6 @@
 Instruction to internal signals. (x means "Don't Care")
 
-|      Name       | Opc  | ~ALU_OE | ~Imm_OE | LevC_OE | ~is_JP | BUS_EN | Memmode | ALU_~Eb | ~Stack_LE | I0a | I1a | I2a | I3a | Mem_R |
+|      Name       | Opc  | ~ALU_OE | ~Imm_OE | LevC_OE | ~is_JP | BUS_EN | Memmode | ALU_~Eb</br>~Carry_EN | ~Stack_LE | I0a | I1a | I2a | I3a | Mem_R |
 | --------------- | ---- | ------- | ------- | -------- | ------ | ------ | ------- | ------- | --------- | --- | --- | --- | --- | ----- |
 | ```SC *[AB]```  | 0000 | 0       | 1       | 1        | 1      | 1      | 1       | 1       | 1         | x   | x   | x   | x   | 0     |
 | ```SC r```      | 0001 | 0       | 1       | 1        | 1      | 1      | 0       | 1       | 1         | x   | x   | x   | x   | 0     |
@@ -10,8 +10,8 @@ Instruction to internal signals. (x means "Don't Care")
 | ```OR r```      | 0101 | 0       | 1       | 0        | 1      | 1      | 0       | 1       | 1         | 0   | 1   | 1   | 1   | 0     |
 | ```AN r```      | 0110 | 0       | 1       | 0        | 1      | 1      | 0       | 1       | 1         | 0   | 0   | 0   | 1   | 0     |
 | ```SA r```      | 0111 | 0       | 1       | 0        | 1      | 1      | 0       | 1       | 1         | 0   | 1   | 0   | 1   | 0     |
-| ```LD *[AB]```  | 1000 | 1       | 1       | x        | 1      | 1      | 1       | x       | 0         | x   | x   | x   | x   | 1     |
-| ```LD r```      | 1001 | 1       | 1       | x        | 1      | 1      | 0       | x       | 0         | x   | x   | x   | x   | 1     |
-| ```LD #i```     | 101x | 1       | 0       | x        | 1      | 0      | 0       | x       | 0         | x   | x   | x   | x   | 0     |
-| (Reserved)      | 110x | 1       | 1       | x        | 1      | 0      | 0       | x       | 0         | x   | x   | x   | x   | 0     |
-| ```JP *[ABC]``` | 111x | 1       | 1       | x        | 0      | 0      | 0       | x       | 1         | x   | x   | x   | x   | 0     |
+| ```LD *[AB]```  | 1000 | 1       | 1       | x        | 1      | 1      | 1       | 1       | 0         | x   | x   | x   | x   | 1     |
+| ```LD r```      | 1001 | 1       | 1       | x        | 1      | 1      | 0       | 1       | 0         | x   | x   | x   | x   | 1     |
+| ```LD #i```     | 101x | 1       | 0       | x        | 1      | 0      | 0       | 1       | 0         | x   | x   | x   | x   | 0     |
+| (Reserved)      | 110x | 1       | 1       | x        | 1      | 0      | 0       | 1       | 0         | x   | x   | x   | x   | 0     |
+| ```JP *[ABC]``` | 111x | 1       | 1       | x        | 0      | 0      | 0       | 1       | 1         | x   | x   | x   | x   | 0     |

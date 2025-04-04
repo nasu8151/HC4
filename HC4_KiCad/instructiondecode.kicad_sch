@@ -4624,265 +4624,6 @@
 				)
 			)
 		)
-		(symbol "Device:R_Network08_Split"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RN"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Network08_Split"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Resistor_THT:R_Array_SIP9"
-				(at -2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "8 resistor network, star topology, bussed resistors, split"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R network star-topology"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R?Array?SIP*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Network08_Split_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "R1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Network08_Split_1_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R1.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Network08_Split_2_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R2.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Network08_Split_3_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R3.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Network08_Split_4_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R4.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Network08_Split_5_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R5.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Network08_Split_6_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R6.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Network08_Split_7_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R7.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Network08_Split_8_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R8.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -5251,6 +4992,12 @@
 		(uuid "37128c0c-0184-4785-8635-c096509360b5")
 	)
 	(junction
+		(at 186.69 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38c7fd85-44ea-4077-a217-67db57da2fba")
+	)
+	(junction
 		(at 199.39 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5311,6 +5058,12 @@
 		(uuid "47c64226-b9f7-4823-b9cf-63d74eb3b545")
 	)
 	(junction
+		(at 212.09 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4841b5fd-e621-4106-8cac-00d933cb604a")
+	)
+	(junction
 		(at 114.3 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5347,12 +5100,6 @@
 		(uuid "527ea6af-2d92-428c-b8f1-5f8f55f6c477")
 	)
 	(junction
-		(at 148.59 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "563a16e0-9c02-4445-a857-73cea90290ae")
-	)
-	(junction
 		(at 203.2 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5377,10 +5124,22 @@
 		(uuid "60109dd4-c6d7-41f4-be0d-fc3e094feeae")
 	)
 	(junction
+		(at 173.99 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6142b183-a923-40f1-bf2e-deb79afdf91d")
+	)
+	(junction
 		(at 199.39 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63f0e569-1625-4f21-9ed5-378bc85cb24a")
+	)
+	(junction
+		(at 199.39 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64eb82c1-7acf-4b8b-8c2e-6b33ce3ff4a3")
 	)
 	(junction
 		(at 180.34 135.89)
@@ -5503,12 +5262,6 @@
 		(uuid "926a43aa-8ead-413e-9bd8-e9af22694120")
 	)
 	(junction
-		(at 173.99 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "93c532a5-adec-4a2c-ad3b-61a8112fb4d9")
-	)
-	(junction
 		(at 241.3 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5545,10 +5298,34 @@
 		(uuid "9c13b116-3c80-47dc-9881-a1ab8bf2daa8")
 	)
 	(junction
+		(at 237.49 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d7d28d0-e18b-4d63-aaf7-3124935fe418")
+	)
+	(junction
 		(at 109.22 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0488424-259a-478d-8d9c-094394094ce3")
+	)
+	(junction
+		(at 224.79 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1eb9102-9e10-4257-b90f-cccc88e0fe0f")
+	)
+	(junction
+		(at 161.29 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a38a85d4-941a-489b-9042-4e3671a43579")
+	)
+	(junction
+		(at 148.59 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a42d8dcf-db53-4a6d-9568-9d54c645f5b3")
 	)
 	(junction
 		(at 224.79 38.1)
@@ -5567,12 +5344,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5e91eee-11ef-4200-b9dc-c8b4e4227100")
-	)
-	(junction
-		(at 199.39 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5eb8ca8-90b4-4bb8-b12f-8545a00390ce")
 	)
 	(junction
 		(at 247.65 57.15)
@@ -5611,22 +5382,10 @@
 		(uuid "aa0b02f6-3680-402c-a4b0-9a45e4649bed")
 	)
 	(junction
-		(at 186.69 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "abc8313f-d19b-42cc-9633-85099518b56e")
-	)
-	(junction
 		(at 222.25 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad13c243-2efe-4029-b3de-6c95e92b7deb")
-	)
-	(junction
-		(at 161.29 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad869b56-336d-4b2d-9499-0c0a368fb2d5")
 	)
 	(junction
 		(at 240.03 63.5)
@@ -5677,12 +5436,6 @@
 		(uuid "c6e0ab23-e1ab-4148-939f-b9d557386085")
 	)
 	(junction
-		(at 212.09 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c6f90bff-93cf-483a-9f57-94816c368bb7")
-	)
-	(junction
 		(at 139.7 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5693,12 +5446,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0dc95bf-ab95-4441-98ab-55f142d1ba0b")
-	)
-	(junction
-		(at 237.49 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d2229d6a-ae5b-4551-bf16-ecc67f084118")
 	)
 	(junction
 		(at 199.39 38.1)
@@ -5723,12 +5470,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8358850-88df-4d30-bc24-a09ede1b1d66")
-	)
-	(junction
-		(at 224.79 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db330665-5df8-4020-af87-30e8f6354436")
 	)
 	(junction
 		(at 180.34 153.67)
@@ -6166,16 +5907,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 16.51) (xy 247.65 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11c5c71c-f17a-47b8-bc11-d03b7156f9b3")
-	)
-	(wire
-		(pts
 			(xy 166.37 63.5) (xy 191.77 63.5)
 		)
 		(stroke
@@ -6586,26 +6317,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 16.51) (xy 173.99 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d659e8c-4673-4268-bcea-124947b9f8b0")
-	)
-	(wire
-		(pts
-			(xy 148.59 16.51) (xy 161.29 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e91607e-aaa2-456e-93df-410951816364")
-	)
-	(wire
-		(pts
 			(xy 241.3 161.29) (xy 261.62 161.29)
 		)
 		(stroke
@@ -6683,6 +6394,16 @@
 			(type default)
 		)
 		(uuid "39db65d4-632c-4a89-9a8c-fff0b696dcb9")
+	)
+	(wire
+		(pts
+			(xy 199.39 16.51) (xy 212.09 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b582a4b-c6ff-49e2-b57f-2b7714f07ebc")
 	)
 	(wire
 		(pts
@@ -7036,6 +6757,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 16.51) (xy 247.65 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "577c3683-29fc-4273-85d7-a7a5498cb98d")
+	)
+	(wire
+		(pts
 			(xy 107.95 181.61) (xy 118.11 181.61)
 		)
 		(stroke
@@ -7296,16 +7027,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 16.51) (xy 237.49 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d3628d3-5291-4bee-a443-ffd592e19c87")
-	)
-	(wire
-		(pts
 			(xy 154.94 153.67) (xy 161.29 153.67)
 		)
 		(stroke
@@ -7333,6 +7054,16 @@
 			(type default)
 		)
 		(uuid "6f598599-37d1-49ff-970a-2e3ea3767d06")
+	)
+	(wire
+		(pts
+			(xy 161.29 16.51) (xy 173.99 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7083c47f-e9fe-41ee-87cc-15b42081ae34")
 	)
 	(wire
 		(pts
@@ -7423,6 +7154,16 @@
 			(type default)
 		)
 		(uuid "765596be-26e5-4d75-a4ca-211118ca44d1")
+	)
+	(wire
+		(pts
+			(xy 224.79 16.51) (xy 237.49 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77025fd9-548e-47cf-a053-c970c8a336a3")
 	)
 	(wire
 		(pts
@@ -7566,16 +7307,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 16.51) (xy 186.69 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83045b53-5ce2-4a1c-90fc-c4c26ba2a0ae")
-	)
-	(wire
-		(pts
 			(xy 109.22 68.58) (xy 109.22 82.55)
 		)
 		(stroke
@@ -7606,6 +7337,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 16.51) (xy 224.79 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84617610-a5d9-461d-934d-1c1cfe15b215")
+	)
+	(wire
+		(pts
 			(xy 29.21 153.67) (xy 29.21 151.13)
 		)
 		(stroke
@@ -7623,16 +7364,6 @@
 			(type default)
 		)
 		(uuid "8710ec7c-13df-4d5d-8354-5d0892c3e228")
-	)
-	(wire
-		(pts
-			(xy 186.69 16.51) (xy 199.39 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "871587d8-c4a5-430e-bd75-3aac1aa9e17e")
 	)
 	(wire
 		(pts
@@ -8376,6 +8107,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 16.51) (xy 186.69 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c592b790-77a5-4b9f-8971-a7061074ae6e")
+	)
+	(wire
+		(pts
 			(xy 204.47 68.58) (xy 204.47 76.2)
 		)
 		(stroke
@@ -8456,13 +8197,13 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 16.51) (xy 212.09 16.51)
+			(xy 186.69 16.51) (xy 199.39 16.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cef8eb19-17a4-47d0-a83f-8ceb79230081")
+		(uuid "cf7cc654-aeb1-42c0-8db5-54d539dbfc57")
 	)
 	(wire
 		(pts
@@ -8633,16 +8374,6 @@
 			(type default)
 		)
 		(uuid "de317270-5d48-4a13-a5dd-4df12162e390")
-	)
-	(wire
-		(pts
-			(xy 212.09 16.51) (xy 224.79 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0a249d7-3569-41e3-be2f-184b076a127e")
 	)
 	(wire
 		(pts
@@ -8883,6 +8614,16 @@
 			(type default)
 		)
 		(uuid "f1311c3f-e48b-4f8d-922b-dc64e19732b4")
+	)
+	(wire
+		(pts
+			(xy 148.59 16.51) (xy 161.29 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1ba999b-d25b-4078-980e-2ebf7fb09508")
 	)
 	(wire
 		(pts
@@ -9294,7 +9035,7 @@
 		)
 		(uuid "47f1f58d-a90e-40c5-ac21-d82d11341ecf")
 	)
-	(label "Instruction_7"
+	(label "~{i7}"
 		(at 46.99 58.42 0)
 		(effects
 			(font
@@ -9957,6 +9698,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D27")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10044,6 +9791,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D33")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10126,6 +9879,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D3")
 					(unit 1)
 				)
@@ -10217,6 +9976,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D26")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10304,6 +10069,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D37")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10359,7 +10130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "74hc.lib"
+		(property "Sim.Library" "sim\\74hc_full.lib"
 			(at 69.85 38.1 0)
 			(effects
 				(font
@@ -10368,7 +10139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "74HC00"
+		(property "Sim.Name" "74hc00a"
 			(at 69.85 40.64 0)
 			(effects
 				(font
@@ -10386,7 +10157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "7=VGND 14=VCC"
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 69.85 41.91 0)
 			(effects
 				(font
@@ -10440,6 +10211,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC21")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC21")
 					(unit 1)
 				)
@@ -10509,6 +10286,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "CP21")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "CP21")
 					(unit 1)
 				)
@@ -10595,6 +10378,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D7")
 					(unit 1)
 				)
@@ -10686,6 +10475,82 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 212.09 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "174866ab-bd30-42f5-b2e5-0e82be021e76")
+		(property "Reference" "R8"
+			(at 214.63 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 214.63 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 210.312 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 212.09 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b3485e94-0a39-4e6e-9339-ed38bda2d295")
+		)
+		(pin "1"
+			(uuid "158297b6-a3fa-4df4-b7fe-4ae26c0176b3")
+		)
+		(instances
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "R8")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10741,6 +10606,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 118.11 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc04a"
+			(at 118.11 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 118.11 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=0 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 118.11 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "f7294da0-88a8-49b7-8897-04302ba2a93a")
 		)
@@ -10786,6 +10687,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC20")
+					(unit 6)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC20")
 					(unit 6)
 				)
@@ -10877,6 +10784,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D39")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10946,6 +10859,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "CP22")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11008,6 +10927,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR074")
 					(unit 1)
 				)
@@ -11099,6 +11024,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D14")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11186,6 +11117,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D40")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11248,6 +11185,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR070")
 					(unit 1)
 				)
@@ -11318,6 +11261,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11374,7 +11323,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "74hc.lib"
+		(property "Sim.Library" "sim\\74hc_full.lib"
 			(at 273.05 140.97 0)
 			(effects
 				(font
@@ -11383,7 +11332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "74HC00"
+		(property "Sim.Name" "74hc00a"
 			(at 273.05 143.51 0)
 			(effects
 				(font
@@ -11401,7 +11350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "7=VGND 14=VCC"
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 273.05 144.78 0)
 			(effects
 				(font
@@ -11459,95 +11408,10 @@
 					(unit 5)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Network08_Split")
-		(at 161.29 20.32 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2d7589d5-0b5d-48e7-a578-71375684ac3c")
-		(property "Reference" "RN7"
-			(at 163.83 19.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 163.83 21.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 159.258 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 161.29 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 161.29 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "bd316253-1d70-40d6-9c25-2a67d025971f")
-		)
-		(pin "7"
-			(uuid "a63427bf-8f3e-4fab-8d55-c28ad2526702")
-		)
-		(pin "8"
-			(uuid "35e6000a-1b2d-4b7d-91fc-fa057b5a77af")
-		)
-		(pin "9"
-			(uuid "7319d689-4eff-4def-bf01-e270b3f5adf4")
-		)
-		(pin "5"
-			(uuid "ce110b59-ae87-43c9-87c8-d6c3c7a94259")
-		)
-		(pin "1"
-			(uuid "ac6b5186-16d0-4098-b039-a11ce2513983")
-		)
-		(pin "4"
-			(uuid "5d1b5d6f-385f-406b-832b-f29672b56368")
-		)
-		(pin "2"
-			(uuid "f4074ac6-00b1-4fe0-9047-4e47a84471b6")
-		)
-		(pin "3"
-			(uuid "3c8a19dc-40d4-4b1e-8966-ce391b964899")
-		)
-		(instances
-			(project ""
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "RN7")
-					(unit 2)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC21")
+					(unit 5)
 				)
 			)
 		)
@@ -11556,7 +11420,7 @@
 		(lib_id "74xx_2:74HC74")
 		(at 104.14 133.35 0)
 		(unit 2)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -11656,6 +11520,12 @@
 					(unit 2)
 				)
 			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC18")
+					(unit 2)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11721,6 +11591,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "CP19")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "CP19")
 					(unit 1)
 				)
@@ -11812,6 +11688,82 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 186.69 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2fc99bda-cf09-4581-aeeb-22b6b7ba4b1e")
+		(property "Reference" "R4"
+			(at 189.23 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 189.23 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 184.912 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 186.69 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d080de2f-b5c2-42d2-8f10-290b1063f2b9")
+		)
+		(pin "1"
+			(uuid "8a770935-d33a-4243-a89d-261621d53acf")
+		)
+		(instances
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "R4")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11878,6 +11830,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11934,7 +11892,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "74hc.lib"
+		(property "Sim.Library" "sim\\74hc_full.lib"
 			(at 157.48 121.92 0)
 			(effects
 				(font
@@ -11943,7 +11901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "74HC00"
+		(property "Sim.Name" "74hc00a"
 			(at 154.94 121.92 0)
 			(effects
 				(font
@@ -11961,7 +11919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "7=VGND 14=VCC"
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 153.67 121.92 0)
 			(effects
 				(font
@@ -12015,6 +11973,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC21")
+					(unit 3)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC21")
 					(unit 3)
 				)
@@ -12075,6 +12039,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\cd4000.lib"
+			(at 261.62 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "CD4002B"
+			(at 261.62 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 261.62 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y 2=A 3=B 4=C 5=D 7=VGND 14=VDD"
+			(at 261.62 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "14"
 			(uuid "8e6ccee4-7c6c-4f9e-8997-25996632473b")
 		)
@@ -12114,6 +12114,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC10")
+					(unit 3)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC10")
 					(unit 3)
 				)
@@ -12204,6 +12210,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D5")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12290,6 +12302,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12356,13 +12374,19 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "74xx_2:74HC74")
 		(at 241.3 148.59 0)
 		(unit 3)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -12462,20 +12486,26 @@
 					(unit 3)
 				)
 			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC18")
+					(unit 3)
+				)
+			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Network08_Split")
-		(at 186.69 20.32 0)
-		(unit 4)
+		(lib_id "Device:R")
+		(at 224.79 20.32 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "401ab9a5-c66f-4935-8448-f7d46bf810af")
-		(property "Reference" "RN7"
-			(at 189.23 19.0499 0)
+		(uuid "3c57f656-75ef-4dbe-9642-34be6df8860d")
+		(property "Reference" "R9"
+			(at 227.33 19.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12484,7 +12514,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 189.23 21.5899 0)
+			(at 227.33 21.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12492,8 +12522,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 184.658 20.32 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 223.012 20.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12501,8 +12531,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 186.69 20.32 0)
+		(property "Datasheet" "~"
+			(at 224.79 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12510,47 +12540,26 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 186.69 20.32 0)
+		(property "Description" "Resistor"
+			(at 224.79 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "6"
-			(uuid "bd316253-1d70-40d6-9c25-2a67d0259720")
-		)
-		(pin "7"
-			(uuid "a63427bf-8f3e-4fab-8d55-c28ad2526703")
-		)
-		(pin "8"
-			(uuid "35e6000a-1b2d-4b7d-91fc-fa057b5a77b0")
-		)
-		(pin "9"
-			(uuid "7319d689-4eff-4def-bf01-e270b3f5adf5")
-		)
-		(pin "5"
-			(uuid "ce110b59-ae87-43c9-87c8-d6c3c7a9425a")
-		)
-		(pin "1"
-			(uuid "ac6b5186-16d0-4098-b039-a11ce2513984")
-		)
-		(pin "4"
-			(uuid "5d1b5d6f-385f-406b-832b-f29672b56369")
 		)
 		(pin "2"
-			(uuid "f4074ac6-00b1-4fe0-9047-4e47a84471b7")
+			(uuid "ba939493-a258-45fe-ab93-05c6ad1948f3")
 		)
-		(pin "3"
-			(uuid "3c8a19dc-40d4-4b1e-8966-ce391b96489a")
+		(pin "1"
+			(uuid "bba6aea1-c362-46b6-988a-3757b74e6c57")
 		)
 		(instances
-			(project ""
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "RN7")
-					(unit 4)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "R9")
+					(unit 1)
 				)
 			)
 		)
@@ -12608,6 +12617,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 118.11 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc04a"
+			(at 118.11 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 118.11 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=0 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 118.11 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "f7294da0-88a8-49b7-8897-04302ba2a93b")
 		)
@@ -12655,6 +12700,82 @@
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
 					(reference "IC20")
 					(unit 2)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC20")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 161.29 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4986a1a5-1561-4b30-8e09-4e5cd30268bd")
+		(property "Reference" "R2"
+			(at 163.83 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 163.83 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 159.512 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 161.29 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "419c336c-4522-4baf-a442-3b040135ad15")
+		)
+		(pin "1"
+			(uuid "6ce75441-ea64-4c97-82a4-c3ba5dc06555")
+		)
+		(instances
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "R2")
+					(unit 1)
 				)
 			)
 		)
@@ -12740,6 +12861,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "D41")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D41")
 					(unit 1)
 				)
@@ -12831,6 +12958,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D23")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12918,94 +13051,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Network08_Split")
-		(at 148.59 20.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ba6f33d-adb9-415d-bf28-71f4ce7222fb")
-		(property "Reference" "RN7"
-			(at 151.13 19.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 151.13 21.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 146.558 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 148.59 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 148.59 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "bd316253-1d70-40d6-9c25-2a67d0259721")
-		)
-		(pin "7"
-			(uuid "a63427bf-8f3e-4fab-8d55-c28ad2526704")
-		)
-		(pin "8"
-			(uuid "35e6000a-1b2d-4b7d-91fc-fa057b5a77b1")
-		)
-		(pin "9"
-			(uuid "7319d689-4eff-4def-bf01-e270b3f5adf6")
-		)
-		(pin "5"
-			(uuid "ce110b59-ae87-43c9-87c8-d6c3c7a9425b")
-		)
-		(pin "1"
-			(uuid "ac6b5186-16d0-4098-b039-a11ce2513985")
-		)
-		(pin "4"
-			(uuid "5d1b5d6f-385f-406b-832b-f29672b5636a")
-		)
-		(pin "2"
-			(uuid "f4074ac6-00b1-4fe0-9047-4e47a84471b8")
-		)
-		(pin "3"
-			(uuid "3c8a19dc-40d4-4b1e-8966-ce391b96489b")
-		)
-		(instances
-			(project ""
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "RN7")
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -13064,6 +13112,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 118.11 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc04a"
+			(at 118.11 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 118.11 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=0 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 118.11 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "f7294da0-88a8-49b7-8897-04302ba2a93c")
 		)
@@ -13111,6 +13195,82 @@
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
 					(reference "IC20")
 					(unit 5)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC20")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 237.49 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "623b19f0-630e-4e0a-9c91-0402469b8396")
+		(property "Reference" "R10"
+			(at 240.03 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 240.03 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 235.712 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 237.49 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3d1d94ad-084e-4256-bc38-d7d33848e708")
+		)
+		(pin "1"
+			(uuid "fa7fb049-3910-489d-bc6f-8929e65995f4")
+		)
+		(instances
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "R10")
+					(unit 1)
 				)
 			)
 		)
@@ -13196,6 +13356,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D17")
 					(unit 1)
 				)
@@ -13286,13 +13452,19 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "74xx_2:74HC151")
 		(at 130.81 163.83 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -13398,13 +13570,89 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 148.59 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7016bbc2-ba44-4571-ba27-a934f00d75ee")
+		(property "Reference" "R1"
+			(at 151.13 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 151.13 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 146.812 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 148.59 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e17ce093-74a2-4f03-baa4-74a8a02f02a1")
+		)
+		(pin "1"
+			(uuid "14d69dc6-1d19-4665-8b2a-be1f0f7cfab4")
+		)
+		(instances
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "74xx_2:74HC74")
 		(at 29.21 143.51 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -13503,6 +13751,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC18")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13560,6 +13814,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 243.84 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 243.84 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 243.84 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 243.84 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "9be09d42-33c3-409d-89a7-f87441fe518b")
 		)
@@ -13605,6 +13895,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC19")
+					(unit 4)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC19")
 					(unit 4)
 				)
@@ -13696,6 +13992,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D36")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13761,95 +14063,10 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Network08_Split")
-		(at 173.99 20.32 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f833142-4706-42b9-b310-868967abd6f2")
-		(property "Reference" "RN7"
-			(at 176.53 19.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 176.53 21.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 171.958 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 173.99 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 173.99 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "bd316253-1d70-40d6-9c25-2a67d0259722")
-		)
-		(pin "7"
-			(uuid "a63427bf-8f3e-4fab-8d55-c28ad2526705")
-		)
-		(pin "8"
-			(uuid "35e6000a-1b2d-4b7d-91fc-fa057b5a77b2")
-		)
-		(pin "9"
-			(uuid "7319d689-4eff-4def-bf01-e270b3f5adf7")
-		)
-		(pin "5"
-			(uuid "ce110b59-ae87-43c9-87c8-d6c3c7a9425c")
-		)
-		(pin "1"
-			(uuid "ac6b5186-16d0-4098-b039-a11ce2513986")
-		)
-		(pin "4"
-			(uuid "5d1b5d6f-385f-406b-832b-f29672b5636b")
-		)
-		(pin "2"
-			(uuid "f4074ac6-00b1-4fe0-9047-4e47a84471b9")
-		)
-		(pin "3"
-			(uuid "3c8a19dc-40d4-4b1e-8966-ce391b96489c")
-		)
-		(instances
 			(project ""
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "RN7")
-					(unit 3)
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "#PWR066")
+					(unit 1)
 				)
 			)
 		)
@@ -13935,6 +14152,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D24")
 					(unit 1)
 				)
@@ -14026,6 +14249,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D38")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14113,6 +14342,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D34")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14169,7 +14404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "74hc.lib"
+		(property "Sim.Library" "sim\\74hc_full.lib"
 			(at 147.32 121.92 0)
 			(effects
 				(font
@@ -14178,7 +14413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "74HC00"
+		(property "Sim.Name" "74hc00a"
 			(at 144.78 121.92 0)
 			(effects
 				(font
@@ -14196,7 +14431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "7=VGND 14=VCC"
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 143.51 121.92 0)
 			(effects
 				(font
@@ -14250,6 +14485,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC21")
+					(unit 4)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC21")
 					(unit 4)
 				)
@@ -14316,6 +14557,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR067")
 					(unit 1)
 				)
@@ -14407,6 +14654,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D31")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14490,6 +14743,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D13")
 					(unit 1)
 				)
@@ -14581,95 +14840,10 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Network08_Split")
-		(at 237.49 20.32 0)
-		(unit 8)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91ece455-ffbe-4209-8e1d-645d5b1950a2")
-		(property "Reference" "RN7"
-			(at 240.03 19.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 240.03 21.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 235.458 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 237.49 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 237.49 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "bd316253-1d70-40d6-9c25-2a67d0259723")
-		)
-		(pin "7"
-			(uuid "a63427bf-8f3e-4fab-8d55-c28ad2526706")
-		)
-		(pin "8"
-			(uuid "35e6000a-1b2d-4b7d-91fc-fa057b5a77b3")
-		)
-		(pin "9"
-			(uuid "7319d689-4eff-4def-bf01-e270b3f5adf8")
-		)
-		(pin "5"
-			(uuid "ce110b59-ae87-43c9-87c8-d6c3c7a9425d")
-		)
-		(pin "1"
-			(uuid "ac6b5186-16d0-4098-b039-a11ce2513987")
-		)
-		(pin "4"
-			(uuid "5d1b5d6f-385f-406b-832b-f29672b5636c")
-		)
-		(pin "2"
-			(uuid "f4074ac6-00b1-4fe0-9047-4e47a84471ba")
-		)
-		(pin "3"
-			(uuid "3c8a19dc-40d4-4b1e-8966-ce391b96489d")
-		)
-		(instances
-			(project ""
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "RN7")
-					(unit 8)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D10")
+					(unit 1)
 				)
 			)
 		)
@@ -14758,6 +14932,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D4")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14816,6 +14996,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 170.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 170.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 170.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 170.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "9be09d42-33c3-409d-89a7-f87441fe518c")
 		)
@@ -14861,6 +15077,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC19")
+					(unit 2)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC19")
 					(unit 2)
 				)
@@ -14952,6 +15174,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D30")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15007,6 +15235,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 118.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc04a"
+			(at 118.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 118.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=0 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 118.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "f7294da0-88a8-49b7-8897-04302ba2a93f")
 		)
@@ -15052,6 +15316,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC20")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC20")
 					(unit 1)
 				)
@@ -15143,6 +15413,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D18")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15152,7 +15428,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9cdf8ddf-559b-4408-98e0-4f5bb9d7b82d")
 		(property "Reference" "IC19"
@@ -15192,6 +15468,42 @@
 			)
 		)
 		(property "Description" "Quad 2-input OR"
+			(at 40.64 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 40.64 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 40.64 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 40.64 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 40.64 92.71 0)
 			(effects
 				(font
@@ -15245,6 +15557,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC19")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC19")
 					(unit 1)
 				)
@@ -15336,6 +15654,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D32")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15423,6 +15747,82 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 173.99 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1fa4228-cd95-4b5a-a650-2e996456682c")
+		(property "Reference" "R3"
+			(at 176.53 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 176.53 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 172.212 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 173.99 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7e4fdfd4-93ae-466e-a591-a882d54bc337")
+		)
+		(pin "1"
+			(uuid "b2f2e559-7b85-4eed-98af-d936a49c11c9")
+		)
+		(instances
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "R3")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15433,7 +15833,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "a2efd4b9-653c-47b6-98fd-b35a34318487")
 		(property "Reference" "IC20"
 			(at 84.582 94.234 90)
@@ -15472,6 +15872,42 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
+			(at 67.31 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 67.31 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc04a"
+			(at 67.31 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 67.31 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=0 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
 			(at 67.31 92.71 0)
 			(effects
 				(font
@@ -15525,6 +15961,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC20")
+					(unit 4)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC20")
 					(unit 4)
 				)
@@ -15616,6 +16058,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D19")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15673,6 +16121,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\cd4000.lib"
+			(at 205.74 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "CD4002B"
+			(at 205.74 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 205.74 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=Y 2=A 3=B 4=C 5=D 7=VGND 14=VDD"
+			(at 205.74 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "14"
 			(uuid "8e6ccee4-7c6c-4f9e-8997-25996632473c")
 		)
@@ -15712,6 +16196,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC10")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC10")
 					(unit 1)
 				)
@@ -15777,6 +16267,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR073")
 					(unit 1)
 				)
@@ -15868,6 +16364,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D25")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15955,95 +16457,10 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Network08_Split")
-		(at 199.39 20.32 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "af5ded57-6cec-4524-b683-6ac83b68875f")
-		(property "Reference" "RN7"
-			(at 201.93 19.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 201.93 21.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 197.358 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 199.39 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 199.39 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "bd316253-1d70-40d6-9c25-2a67d0259724")
-		)
-		(pin "7"
-			(uuid "a63427bf-8f3e-4fab-8d55-c28ad2526707")
-		)
-		(pin "8"
-			(uuid "35e6000a-1b2d-4b7d-91fc-fa057b5a77b4")
-		)
-		(pin "9"
-			(uuid "7319d689-4eff-4def-bf01-e270b3f5adf9")
-		)
-		(pin "5"
-			(uuid "ce110b59-ae87-43c9-87c8-d6c3c7a9425e")
-		)
-		(pin "1"
-			(uuid "ac6b5186-16d0-4098-b039-a11ce2513988")
-		)
-		(pin "4"
-			(uuid "5d1b5d6f-385f-406b-832b-f29672b5636d")
-		)
-		(pin "2"
-			(uuid "f4074ac6-00b1-4fe0-9047-4e47a84471bb")
-		)
-		(pin "3"
-			(uuid "3c8a19dc-40d4-4b1e-8966-ce391b96489e")
-		)
-		(instances
-			(project ""
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "RN7")
-					(unit 5)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D21")
+					(unit 1)
 				)
 			)
 		)
@@ -16103,6 +16520,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 227.33 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 227.33 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 227.33 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 227.33 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "9be09d42-33c3-409d-89a7-f87441fe518e")
 		)
@@ -16148,6 +16601,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC19")
+					(unit 3)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC19")
 					(unit 3)
 				)
@@ -16239,6 +16698,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D15")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -16305,13 +16770,19 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "74xx_2:74HC4053")
 		(at 73.66 146.05 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -16415,6 +16886,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC22")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -16502,95 +16979,10 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Network08_Split")
-		(at 224.79 20.32 0)
-		(unit 7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2410d7d-b9aa-493c-8a5e-1c8ecdc0cf70")
-		(property "Reference" "RN7"
-			(at 227.33 19.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 227.33 21.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 222.758 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 224.79 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 224.79 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "bd316253-1d70-40d6-9c25-2a67d0259725")
-		)
-		(pin "7"
-			(uuid "a63427bf-8f3e-4fab-8d55-c28ad2526708")
-		)
-		(pin "8"
-			(uuid "35e6000a-1b2d-4b7d-91fc-fa057b5a77b5")
-		)
-		(pin "9"
-			(uuid "7319d689-4eff-4def-bf01-e270b3f5adfa")
-		)
-		(pin "5"
-			(uuid "ce110b59-ae87-43c9-87c8-d6c3c7a9425f")
-		)
-		(pin "1"
-			(uuid "ac6b5186-16d0-4098-b039-a11ce2513989")
-		)
-		(pin "4"
-			(uuid "5d1b5d6f-385f-406b-832b-f29672b5636e")
-		)
-		(pin "2"
-			(uuid "f4074ac6-00b1-4fe0-9047-4e47a84471bc")
-		)
-		(pin "3"
-			(uuid "3c8a19dc-40d4-4b1e-8966-ce391b96489f")
-		)
-		(instances
-			(project ""
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "RN7")
-					(unit 7)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D28")
+					(unit 1)
 				)
 			)
 		)
@@ -16650,6 +17042,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 222.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc04a"
+			(at 222.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 222.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=0 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 222.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "f7294da0-88a8-49b7-8897-04302ba2a940")
 		)
@@ -16699,95 +17127,10 @@
 					(unit 7)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Network08_Split")
-		(at 212.09 20.32 0)
-		(unit 6)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cea34449-7529-4a28-b1bc-55c28b23425e")
-		(property "Reference" "RN7"
-			(at 214.63 19.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 214.63 21.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 210.058 20.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 212.09 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 212.09 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "bd316253-1d70-40d6-9c25-2a67d0259726")
-		)
-		(pin "7"
-			(uuid "a63427bf-8f3e-4fab-8d55-c28ad2526709")
-		)
-		(pin "8"
-			(uuid "35e6000a-1b2d-4b7d-91fc-fa057b5a77b6")
-		)
-		(pin "9"
-			(uuid "7319d689-4eff-4def-bf01-e270b3f5adfb")
-		)
-		(pin "5"
-			(uuid "ce110b59-ae87-43c9-87c8-d6c3c7a94260")
-		)
-		(pin "1"
-			(uuid "ac6b5186-16d0-4098-b039-a11ce251398a")
-		)
-		(pin "4"
-			(uuid "5d1b5d6f-385f-406b-832b-f29672b5636f")
-		)
-		(pin "2"
-			(uuid "f4074ac6-00b1-4fe0-9047-4e47a84471bd")
-		)
-		(pin "3"
-			(uuid "3c8a19dc-40d4-4b1e-8966-ce391b9648a0")
-		)
-		(instances
 			(project ""
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "RN7")
-					(unit 6)
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC20")
+					(unit 7)
 				)
 			)
 		)
@@ -16855,6 +17198,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "CP20")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "CP20")
 					(unit 1)
 				)
@@ -16946,6 +17295,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D22")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -17008,6 +17363,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR064")
 					(unit 1)
 				)
@@ -17082,6 +17443,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "R6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -17138,6 +17505,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 158.75 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc04a"
+			(at 158.75 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 158.75 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=0 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 158.75 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "f7294da0-88a8-49b7-8897-04302ba2a93e")
 		)
@@ -17183,6 +17586,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC20")
+					(unit 3)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC20")
 					(unit 3)
 				)
@@ -17274,6 +17683,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D29")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -17336,6 +17751,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR068")
 					(unit 1)
 				)
@@ -17409,6 +17830,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "CP23")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -17478,6 +17905,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "CP18")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -17533,7 +17966,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "74hc.lib"
+		(property "Sim.Library" "sim\\74hc_full.lib"
 			(at 69.85 53.34 0)
 			(effects
 				(font
@@ -17542,7 +17975,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "74HC00"
+		(property "Sim.Name" "74hc00a"
 			(at 69.85 55.88 0)
 			(effects
 				(font
@@ -17560,7 +17993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "7=VGND 14=VCC"
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
 			(at 69.85 57.15 0)
 			(effects
 				(font
@@ -17614,6 +18047,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC21")
+					(unit 2)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC21")
 					(unit 2)
 				)
@@ -17674,6 +18113,24 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" "C"
+			(at 154.94 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 154.94 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3b7aeb8e-8451-401e-8950-326e52b655af")
 		)
@@ -17683,6 +18140,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "CP17")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "CP17")
 					(unit 1)
 				)
@@ -17744,6 +18207,42 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 203.2 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 203.2 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 203.2 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 203.2 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "9be09d42-33c3-409d-89a7-f87441fe518f")
 		)
@@ -17789,6 +18288,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC19")
+					(unit 5)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC19")
 					(unit 5)
 				)
@@ -17855,6 +18360,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR065")
 					(unit 1)
 				)
@@ -17945,6 +18456,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D9")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -18007,6 +18524,12 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR069")
 					(unit 1)
 				)
@@ -18097,6 +18620,12 @@
 					(unit 1)
 				)
 			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D8")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -18163,6 +18692,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "R5")
 					(unit 1)
 				)
@@ -18251,6 +18786,82 @@
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
 					(reference "D16")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 199.39 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fef4dbbc-d6fb-458d-8663-b18d996e4991")
+		(property "Reference" "R7"
+			(at 201.93 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 201.93 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 197.612 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 199.39 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "93b4e912-1b79-43a9-bc19-a6acce6a286d")
+		)
+		(pin "1"
+			(uuid "f44fc1bc-34bc-4971-97b3-3a0dd91e42b7")
+		)
+		(instances
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "R7")
 					(unit 1)
 				)
 			)

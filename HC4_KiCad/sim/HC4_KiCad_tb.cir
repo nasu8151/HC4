@@ -1,0 +1,111 @@
+.title KiCad schematic
+.include "74hc.lib"
+.include "74hc_full.lib"
+.include "cd4000.lib"
+.model __D13 D
+.model __D33 D
+.model __D37 D
+.model __D41 D
+.model __D25 D
+.model __D29 D
+.model __D21 D
+.model __D17 D
+.model __D11 D
+.model __D12 D
+.model __D15 D
+.model __D16 D
+.model __D19 D
+.model __D20 D
+.model __D23 D
+.model __D24 D
+.model __D39 D
+.model __D35 D
+.model __D36 D
+.model __D40 D
+.model __D31 D
+.model __D32 D
+.model __D27 D
+.model __D22 D
+.model __D26 D
+.model __D28 D
+.model __D18 D
+.model __D6 D
+.model __D2 D
+.model __D3 D
+.model __D7 D
+.model __D10 D
+.model __D14 D
+.model __D9 D
+.model __D4 D
+.model __D5 D
+.model __D8 D
+.model __D30 D
+.model __D38 D
+.model __D34 D
+.param VCC=5 speed=1 tripdt=1n VDD={VCC}
+.tran 0 260u 0 250n
+V1 VCC 0 DC 5
+V2 CLK 0 PULSE( 0 {VCC} 500n 2n 2n 500n 1u )
+XIC1 VCC VCC VCC VCC CLK unconnected-_IC1-A-Pad3_ unconnected-_IC1-B-Pad4_ unconnected-_IC1-C-Pad5_ unconnected-_IC1-D-Pad6_ /instruction_decoder/Instruction_4 /instruction_decoder/Instruction_5 /instruction_decoder/Instruction_6 /instruction_decoder/Instruction_7 unconnected-_IC1-CO-Pad15_ VCC 0 74HC161
+D13 /instruction_decoder/MEMMode /instruction_decoder/_i4 __D13
+XIC20 /instruction_decoder/Instruction_7 /instruction_decoder/_i7 /instruction_decoder/Instruction_5 /instruction_decoder/_i5 Net-_D6-A_ /instruction_decoder/_is_JP_inst 0 unconnected-_IC20-Pad8_ VCC /instruction_decoder/_i4 /instruction_decoder/Instruction_4 /instruction_decoder/_i6 /instruction_decoder/Instruction_6 VCC 74hc04a
+XIC19 VCC VCC unconnected-_IC19-Pad3_ /instruction_decoder/_i7 Net-_D6-A_ /instruction_decoder/_STACK_LE 0 /instruction_decoder/I2a /instruction_decoder/_i5 Net-_D26-A_ /instruction_decoder/I3a /instruction_decoder/Instruction_4 Net-_D30-A_ VCC 74hc32a
+XIC10 Net-_D18-A_ Net-_D18-A_ Net-_D22-A_ Net-_D22-A_ /instruction_decoder/I1a VCC 0 CD4002B
+D33 Net-_D30-A_ unconnected-_D33-K-Pad1_ __D33
+D37 /instruction_decoder/READ unconnected-_D37-K-Pad1_ __D37
+D41 /instruction_decoder/LevelC_OE unconnected-_D41-K-Pad1_ __D41
+CP23 VCC 0 0.1u
+CP21 VCC 0 0.1u
+CP22 VCC 0 0.1u
+CP19 VCC 0 0.1u
+CP20 VCC 0 0.1u
+CP18 VCC 0 0.1u
+XIC21 /instruction_decoder/READ CLK /instruction_decoder/_RAM_RD /instruction_decoder/_i7 CLK /instruction_decoder/_RAM_WR 0 /instruction_decoder/_Imm_OE Net-_D2-A_ /instruction_decoder/Instruction_7 /instruction_decoder/_Carry_EN Net-_D2-A_ /instruction_decoder/_i7 VCC 74hc00a
+D25 Net-_D22-A_ /instruction_decoder/_i4 __D25
+D29 Net-_D26-A_ /instruction_decoder/Instruction_4 __D29
+D21 Net-_D18-A_ /instruction_decoder/Instruction_4 __D21
+D17 /instruction_decoder/I0a /instruction_decoder/_i4 __D17
+CP17 VCC 0 0.1u
+D11 /instruction_decoder/MEMMode /instruction_decoder/_i6 __D11
+D12 /instruction_decoder/MEMMode /instruction_decoder/_i5 __D12
+D15 /instruction_decoder/I0a /instruction_decoder/Instruction_6 __D15
+D16 /instruction_decoder/I0a /instruction_decoder/_i5 __D16
+D19 Net-_D18-A_ /instruction_decoder/_i6 __D19
+D20 Net-_D18-A_ unconnected-_D20-K-Pad1_ __D20
+D23 Net-_D22-A_ /instruction_decoder/Instruction_6 __D23
+D24 Net-_D22-A_ /instruction_decoder/Instruction_5 __D24
+D39 /instruction_decoder/LevelC_OE /instruction_decoder/_i6 __D39
+D35 /instruction_decoder/READ /instruction_decoder/_i6 __D35
+D36 /instruction_decoder/READ /instruction_decoder/_i5 __D36
+D40 /instruction_decoder/LevelC_OE /instruction_decoder/_i5 __D40
+D31 Net-_D30-A_ /instruction_decoder/Instruction_6 __D31
+D32 Net-_D30-A_ /instruction_decoder/Instruction_5 __D32
+D27 Net-_D26-A_ /instruction_decoder/_i6 __D27
+D22 Net-_D22-A_ unconnected-_D22-K-Pad1_ __D22
+D26 Net-_D26-A_ unconnected-_D26-K-Pad1_ __D26
+D28 Net-_D26-A_ unconnected-_D28-K-Pad1_ __D28
+R8 VCC Net-_D22-A_ 10k
+R4 VCC /instruction_decoder/I0a 10k
+R7 VCC Net-_D18-A_ 10k
+R9 VCC Net-_D26-A_ 10k
+D18 Net-_D18-A_ unconnected-_D18-K-Pad1_ __D18
+D6 Net-_D6-A_ /instruction_decoder/Instruction_7 __D6
+D2 Net-_D2-A_ unconnected-_D2-K-Pad1_ __D2
+D3 Net-_D2-A_ /instruction_decoder/_i6 __D3
+D7 Net-_D6-A_ /instruction_decoder/Instruction_6 __D7
+D10 /instruction_decoder/MEMMode unconnected-_D10-K-Pad1_ __D10
+D14 /instruction_decoder/I0a unconnected-_D14-K-Pad1_ __D14
+R1 VCC Net-_D2-A_ 10k
+R2 VCC Net-_D6-A_ 10k
+R3 VCC /instruction_decoder/MEMMode 10k
+D9 Net-_D6-A_ unconnected-_D9-K-Pad1_ __D9
+D4 Net-_D2-A_ /instruction_decoder/Instruction_5 __D4
+D5 Net-_D2-A_ unconnected-_D5-K-Pad1_ __D5
+D8 Net-_D6-A_ /instruction_decoder/Instruction_5 __D8
+R6 VCC /instruction_decoder/LevelC_OE 10k
+D30 Net-_D30-A_ unconnected-_D30-K-Pad1_ __D30
+D38 /instruction_decoder/LevelC_OE unconnected-_D38-K-Pad1_ __D38
+D34 /instruction_decoder/READ /instruction_decoder/Instruction_7 __D34
+R5 VCC /instruction_decoder/READ 10k
+R10 VCC Net-_D30-A_ 10k
+.end
