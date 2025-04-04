@@ -6515,7 +6515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-28_W15.24mm"
+		(property "Footprint" "Package_SO:SOP-28_8.4x18.16mm_P1.27mm"
 			(at 48.26 85.09 0)
 			(effects
 				(font

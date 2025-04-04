@@ -1179,6 +1179,12 @@
 		)
 	)
 	(junction
+		(at 157.48 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "065fe5b9-56c8-4a69-be48-2e5c23df0372")
+	)
+	(junction
 		(at 148.59 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1189,12 +1195,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1536c08e-bd90-4bfc-9631-1bccc5c8f9a8")
-	)
-	(junction
-		(at 157.48 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "15ccd50a-873e-4555-a583-63f0ff4abaa7")
 	)
 	(junction
 		(at 157.48 57.15)
@@ -1239,6 +1239,18 @@
 		(uuid "527f2ca9-cc30-4736-8fd8-3ec8fbfafefa")
 	)
 	(junction
+		(at 148.59 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53e4505a-a3d6-46d3-afaa-ffaf5faf7676")
+	)
+	(junction
+		(at 157.48 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "550d429a-0cf9-46fa-aa52-69aad27ffa76")
+	)
+	(junction
 		(at 130.81 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1257,16 +1269,16 @@
 		(uuid "69c2d577-6531-4674-9e1f-dae03737a573")
 	)
 	(junction
-		(at 148.59 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "71f91632-254e-4908-9352-f672694f8d90")
-	)
-	(junction
 		(at 139.7 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76dc8b70-96c1-406f-a221-94b048fa477e")
+	)
+	(junction
+		(at 157.48 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78c9756b-552c-45d3-9277-62a5799bb8a0")
 	)
 	(junction
 		(at 157.48 100.33)
@@ -1281,40 +1293,28 @@
 		(uuid "83dba7f6-7f4d-414b-b7f4-b18ad24d0af5")
 	)
 	(junction
-		(at 157.48 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8cae5c06-67d9-48f6-accd-867f47ef29e0")
-	)
-	(junction
-		(at 148.59 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8f0c2c8a-fd56-455a-a7a5-901324ba7dfd")
-	)
-	(junction
 		(at 166.37 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "97ba3fcc-635e-4586-a80f-b26b6b1c82e0")
 	)
 	(junction
-		(at 157.48 82.55)
+		(at 148.59 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9e219709-1c4a-4bef-a453-e6033b3f4353")
+		(uuid "9b993b84-0564-4a25-8ddf-3da7f211ddca")
+	)
+	(junction
+		(at 148.59 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c41dd10-58ac-49fa-8644-bd9767ecf6c9")
 	)
 	(junction
 		(at 148.59 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a64d6f63-e7fc-4fbd-84ee-740b7cc370f2")
-	)
-	(junction
-		(at 148.59 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a862ff15-da57-4ab5-ada7-506dcc455e79")
 	)
 	(junction
 		(at 115.57 119.38)
@@ -1640,16 +1640,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 125.73) (xy 157.48 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "030a32b3-179b-4bb1-8d52-496205134d47")
-	)
-	(wire
-		(pts
 			(xy 118.11 175.26) (xy 118.11 173.99)
 		)
 		(stroke
@@ -1767,16 +1757,6 @@
 			(type default)
 		)
 		(uuid "1af305a0-72aa-4f2f-9d80-03b79f7fe218")
-	)
-	(wire
-		(pts
-			(xy 157.48 170.18) (xy 166.37 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c34a78c-40a1-4f00-800d-fa0a096b1c2e")
 	)
 	(wire
 		(pts
@@ -1970,6 +1950,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 170.18) (xy 166.37 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34c70ee2-24f5-4d05-a99b-7faa9e5ca3e1")
+	)
+	(wire
+		(pts
 			(xy 166.37 102.87) (xy 166.37 109.22)
 		)
 		(stroke
@@ -2018,6 +2008,16 @@
 		)
 		(uuid "3cc0d814-6085-4a84-8c14-03b8a64c06f3")
 	)
+	(wire
+		(pts
+			(xy 148.59 82.55) (xy 157.48 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d15130c-3b71-4550-841f-d7042281262f")
+	)
 	(bus
 		(pts
 			(xy 101.6 52.07) (xy 101.6 49.53)
@@ -2050,6 +2050,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 125.73) (xy 142.24 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45d18862-210d-4ca6-afb9-28fe078c4975")
+	)
+	(wire
+		(pts
 			(xy 107.95 139.7) (xy 116.84 139.7)
 		)
 		(stroke
@@ -2077,6 +2087,16 @@
 			(type default)
 		)
 		(uuid "4ad355f2-8d69-4a2e-84bf-b59a47425fa6")
+	)
+	(wire
+		(pts
+			(xy 157.48 125.73) (xy 166.37 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "501e8e67-f0ad-4f4a-9655-a374fb0df46e")
 	)
 	(wire
 		(pts
@@ -2247,6 +2267,16 @@
 			(type default)
 		)
 		(uuid "667a5536-f232-4eff-925d-cdd8dfb93226")
+	)
+	(wire
+		(pts
+			(xy 148.59 125.73) (xy 157.48 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66b36f59-69d2-4460-b6b7-69b467e9dcee")
 	)
 	(wire
 		(pts
@@ -2460,6 +2490,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 170.18) (xy 157.48 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "853e58f6-77b9-4ed7-91e1-a50a02dae473")
+	)
+	(wire
+		(pts
 			(xy 157.48 144.78) (xy 137.16 144.78)
 		)
 		(stroke
@@ -2480,16 +2520,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 82.55) (xy 166.37 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87184b95-546e-48b3-9d55-120b4b6bfaf0")
-	)
-	(wire
-		(pts
 			(xy 114.3 86.36) (xy 114.3 113.03)
 		)
 		(stroke
@@ -2497,16 +2527,6 @@
 			(type default)
 		)
 		(uuid "872e9479-f322-4ee3-b081-226012b2ad00")
-	)
-	(wire
-		(pts
-			(xy 148.59 170.18) (xy 157.48 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87c2a330-07d5-4544-9202-5f54d5eba818")
 	)
 	(wire
 		(pts
@@ -2687,6 +2707,16 @@
 			(type default)
 		)
 		(uuid "b33c0966-328e-414f-9a1b-46fe5fb0ca1d")
+	)
+	(wire
+		(pts
+			(xy 157.48 82.55) (xy 166.37 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b33cdfee-db24-4e5a-8667-fdc5943372b8")
 	)
 	(wire
 		(pts
@@ -2880,16 +2910,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 125.73) (xy 148.59 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d73d8a37-720c-4ae1-8ddb-791885619f7b")
-	)
-	(wire
-		(pts
 			(xy 137.16 113.03) (xy 137.16 130.81)
 		)
 		(stroke
@@ -3010,16 +3030,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 125.73) (xy 166.37 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f436ea82-42f2-45c9-9b6b-cd0d572c4b8e")
-	)
-	(wire
-		(pts
 			(xy 139.7 139.7) (xy 139.7 153.67)
 		)
 		(stroke
@@ -3057,16 +3067,6 @@
 			(type default)
 		)
 		(uuid "f8e460eb-b2ad-48c2-aba5-dd6dd70189fa")
-	)
-	(wire
-		(pts
-			(xy 148.59 82.55) (xy 157.48 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa22c4ba-d37d-4323-b155-aab01d488e7e")
 	)
 	(wire
 		(pts
@@ -3750,8 +3750,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 148.59 121.92 0)
-		(mirror x)
+		(at 157.48 121.92 180)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3760,7 +3759,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a55135d-97da-4af0-899b-8271d7049753")
 		(property "Reference" "RN5"
-			(at 146.05 120.6499 0)
+			(at 160.02 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,7 +3768,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 146.05 123.1899 0)
+			(at 160.02 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +3777,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 146.558 121.92 90)
+			(at 159.512 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3787,7 +3786,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 148.59 121.92 0)
+			(at 157.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3796,7 +3795,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 148.59 121.92 0)
+			(at 157.48 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4326,7 +4325,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 166.37 78.74 180)
+		(at 139.7 78.74 0)
+		(mirror x)
 		(unit 8)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4335,7 +4335,7 @@
 		(fields_autoplaced yes)
 		(uuid "42b420b0-9763-460c-8f1e-45b8b1ce2a29")
 		(property "Reference" "RN4"
-			(at 168.91 77.4699 0)
+			(at 137.16 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4344,7 +4344,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 168.91 80.0099 0)
+			(at 137.16 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4353,7 +4353,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 168.402 78.74 90)
+			(at 137.668 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4362,7 +4362,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 166.37 78.74 0)
+			(at 139.7 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4371,7 +4371,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 166.37 78.74 0)
+			(at 139.7 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4701,8 +4701,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 148.59 166.37 0)
-		(mirror x)
+		(at 157.48 166.37 180)
 		(unit 6)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4711,7 +4710,7 @@
 		(fields_autoplaced yes)
 		(uuid "662e4b55-2e98-4990-99d8-807f892f6efe")
 		(property "Reference" "RN5"
-			(at 151.13 167.6401 0)
+			(at 154.94 167.6401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4720,7 +4719,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 151.13 165.1001 0)
+			(at 154.94 165.1001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4729,7 +4728,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 146.558 166.37 90)
+			(at 159.512 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4738,7 +4737,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 148.59 166.37 0)
+			(at 157.48 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4747,7 +4746,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 148.59 166.37 0)
+			(at 157.48 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4793,7 +4792,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 139.7 78.74 180)
+		(at 166.37 78.74 0)
+		(mirror x)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4802,7 +4802,7 @@
 		(fields_autoplaced yes)
 		(uuid "67325703-c3d1-43fc-b60b-12d0369aa0f9")
 		(property "Reference" "RN4"
-			(at 142.24 77.4699 0)
+			(at 163.83 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4811,7 +4811,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 142.24 80.0099 0)
+			(at 163.83 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4820,7 +4820,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 141.732 78.74 90)
+			(at 164.338 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4829,7 +4829,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 139.7 78.74 0)
+			(at 166.37 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4838,7 +4838,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 139.7 78.74 0)
+			(at 166.37 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4884,8 +4884,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 157.48 166.37 0)
-		(mirror x)
+		(at 148.59 166.37 180)
 		(unit 7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4894,7 +4893,7 @@
 		(fields_autoplaced yes)
 		(uuid "77b61c08-0804-41c5-87fd-213d0df92089")
 		(property "Reference" "RN5"
-			(at 160.02 167.6401 0)
+			(at 146.05 167.6401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4903,7 +4902,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 160.02 165.1001 0)
+			(at 146.05 165.1001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4912,7 +4911,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 155.448 166.37 90)
+			(at 150.622 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4921,7 +4920,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 157.48 166.37 0)
+			(at 148.59 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4930,7 +4929,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 157.48 166.37 0)
+			(at 148.59 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5111,8 +5110,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 166.37 166.37 0)
-		(mirror x)
+		(at 139.7 166.37 180)
 		(unit 8)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5121,7 +5119,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e986125-c8df-4208-9572-c10d50043a04")
 		(property "Reference" "RN5"
-			(at 168.91 167.6401 0)
+			(at 137.16 167.6401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5130,7 +5128,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 168.91 165.1001 0)
+			(at 137.16 165.1001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5139,7 +5137,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 164.338 166.37 90)
+			(at 141.732 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5148,7 +5146,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 166.37 166.37 0)
+			(at 139.7 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5157,7 +5155,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 166.37 166.37 0)
+			(at 139.7 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5554,8 +5552,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 166.37 121.92 0)
-		(mirror x)
+		(at 139.7 121.92 180)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5564,7 +5561,7 @@
 		(fields_autoplaced yes)
 		(uuid "945833f0-8992-40c5-9002-7acdceabf36e")
 		(property "Reference" "RN5"
-			(at 163.83 120.6499 0)
+			(at 142.24 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5573,7 +5570,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 163.83 123.1899 0)
+			(at 142.24 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5582,7 +5579,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 164.338 121.92 90)
+			(at 141.732 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5591,7 +5588,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 166.37 121.92 0)
+			(at 139.7 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5600,7 +5597,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 166.37 121.92 0)
+			(at 139.7 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5712,8 +5709,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 139.7 166.37 0)
-		(mirror x)
+		(at 166.37 166.37 180)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5722,7 +5718,7 @@
 		(fields_autoplaced yes)
 		(uuid "99aa27fb-4440-4e22-b08f-470e0fdeb13b")
 		(property "Reference" "RN5"
-			(at 142.24 167.6401 0)
+			(at 163.83 167.6401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5731,7 +5727,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 142.24 165.1001 0)
+			(at 163.83 165.1001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5740,7 +5736,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 137.668 166.37 90)
+			(at 168.402 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5749,7 +5745,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 139.7 166.37 0)
+			(at 166.37 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5758,7 +5754,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 139.7 166.37 0)
+			(at 166.37 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5936,7 +5932,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 148.59 78.74 180)
+		(at 157.48 78.74 0)
+		(mirror x)
 		(unit 6)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5945,7 +5942,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad3ae64d-c5ad-4f16-bd6a-8f633a5f9afa")
 		(property "Reference" "RN4"
-			(at 151.13 77.4699 0)
+			(at 154.94 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5954,7 +5951,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 151.13 80.0099 0)
+			(at 154.94 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5963,7 +5960,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 150.622 78.74 90)
+			(at 155.448 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5972,7 +5969,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 148.59 78.74 0)
+			(at 157.48 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5981,7 +5978,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 148.59 78.74 0)
+			(at 157.48 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6237,8 +6234,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 157.48 121.92 0)
-		(mirror x)
+		(at 148.59 121.92 180)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6246,7 +6242,7 @@
 		(dnp no)
 		(uuid "bb27f4c0-9000-4220-aff5-7dcdb74ca612")
 		(property "Reference" "RN5"
-			(at 154.94 120.6499 0)
+			(at 155.448 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6255,7 +6251,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 154.94 123.1899 0)
+			(at 151.13 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6264,7 +6260,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 155.448 121.92 90)
+			(at 150.622 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6273,7 +6269,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 157.48 121.92 0)
+			(at 148.59 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6282,7 +6278,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 157.48 121.92 0)
+			(at 148.59 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6463,8 +6459,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 139.7 121.92 0)
-		(mirror x)
+		(at 166.37 121.92 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6473,7 +6468,7 @@
 		(fields_autoplaced yes)
 		(uuid "c19621b5-04de-4ff3-8c62-e1ae7e53c552")
 		(property "Reference" "RN5"
-			(at 137.16 120.6499 0)
+			(at 168.91 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6482,7 +6477,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 137.16 123.1899 0)
+			(at 168.91 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6491,7 +6486,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 137.668 121.92 90)
+			(at 168.402 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6500,7 +6495,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 139.7 121.92 0)
+			(at 166.37 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6509,7 +6504,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 139.7 121.92 0)
+			(at 166.37 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6555,7 +6550,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network08_Split")
-		(at 157.48 78.74 180)
+		(at 148.59 78.74 0)
+		(mirror x)
 		(unit 7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6564,7 +6560,7 @@
 		(fields_autoplaced yes)
 		(uuid "cab78fac-783f-4b26-83ee-a37dfab7e0d5")
 		(property "Reference" "RN4"
-			(at 160.02 77.4699 0)
+			(at 146.05 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6573,7 +6569,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 160.02 80.0099 0)
+			(at 146.05 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6582,7 +6578,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 159.512 78.74 90)
+			(at 146.558 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6591,7 +6587,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 157.48 78.74 0)
+			(at 148.59 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6600,7 +6596,7 @@
 			)
 		)
 		(property "Description" "8 resistor network, star topology, bussed resistors, split"
-			(at 157.48 78.74 0)
+			(at 148.59 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)

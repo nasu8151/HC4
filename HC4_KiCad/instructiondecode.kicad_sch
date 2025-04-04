@@ -9698,12 +9698,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D27")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -9791,12 +9785,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D33")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -9879,12 +9867,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D3")
 					(unit 1)
 				)
@@ -9976,12 +9958,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D26")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10065,12 +10041,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D37")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D37")
 					(unit 1)
 				)
@@ -10215,12 +10185,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC21")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10286,12 +10250,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "CP21")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "CP21")
 					(unit 1)
 				)
@@ -10378,12 +10336,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D7")
 					(unit 1)
 				)
@@ -10475,12 +10427,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D35")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10493,7 +10439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "174866ab-bd30-42f5-b2e5-0e82be021e76")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 214.63 19.0499 0)
 			(effects
 				(font
@@ -10545,6 +10491,12 @@
 			(uuid "158297b6-a3fa-4df4-b7fe-4ae26c0176b3")
 		)
 		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "R10")
+					(unit 1)
+				)
+			)
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "R8")
@@ -10784,12 +10736,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D39")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -10855,12 +10801,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "CP22")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "CP22")
 					(unit 1)
 				)
@@ -11024,12 +10964,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D14")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -11113,12 +11047,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D40")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D40")
 					(unit 1)
 				)
@@ -11261,12 +11189,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "#PWR072")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -11404,12 +11326,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC21")
-					(unit 5)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC21")
 					(unit 5)
 				)
@@ -11595,12 +11511,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "CP19")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -11688,12 +11598,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D20")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -11706,7 +11610,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fc99bda-cf09-4581-aeeb-22b6b7ba4b1e")
-		(property "Reference" "R4"
+		(property "Reference" "R8"
 			(at 189.23 19.0499 0)
 			(effects
 				(font
@@ -11758,6 +11662,12 @@
 			(uuid "8a770935-d33a-4243-a89d-261621d53acf")
 		)
 		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "R8")
+					(unit 1)
+				)
+			)
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "R4")
@@ -11973,12 +11883,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC21")
-					(unit 3)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC21")
 					(unit 3)
 				)
@@ -12210,12 +12114,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D5")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -12302,12 +12200,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D6")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -12370,12 +12262,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR063")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR063")
 					(unit 1)
 				)
@@ -12504,7 +12390,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c57f656-75ef-4dbe-9642-34be6df8860d")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 227.33 19.0499 0)
 			(effects
 				(font
@@ -12556,6 +12442,12 @@
 			(uuid "bba6aea1-c362-46b6-988a-3757b74e6c57")
 		)
 		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "R11")
+					(unit 1)
+				)
+			)
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "R9")
@@ -12720,7 +12612,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4986a1a5-1561-4b30-8e09-4e5cd30268bd")
-		(property "Reference" "R2"
+		(property "Reference" "R6"
 			(at 163.83 19.0499 0)
 			(effects
 				(font
@@ -12772,6 +12664,12 @@
 			(uuid "6ce75441-ea64-4c97-82a4-c3ba5dc06555")
 		)
 		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "R6")
+					(unit 1)
+				)
+			)
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "R2")
@@ -12865,12 +12763,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D41")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -12958,12 +12850,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D23")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -13047,12 +12933,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D11")
 					(unit 1)
 				)
@@ -13215,7 +13095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "623b19f0-630e-4e0a-9c91-0402469b8396")
-		(property "Reference" "R10"
+		(property "Reference" "R12"
 			(at 240.03 19.0499 0)
 			(effects
 				(font
@@ -13267,6 +13147,12 @@
 			(uuid "fa7fb049-3910-489d-bc6f-8929e65995f4")
 		)
 		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "R12")
+					(unit 1)
+				)
+			)
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "R10")
@@ -13360,12 +13246,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D17")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -13448,12 +13328,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D2")
 					(unit 1)
 				)
@@ -13588,7 +13462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7016bbc2-ba44-4571-ba27-a934f00d75ee")
-		(property "Reference" "R1"
+		(property "Reference" "R5"
 			(at 151.13 19.0499 0)
 			(effects
 				(font
@@ -13640,6 +13514,12 @@
 			(uuid "14d69dc6-1d19-4665-8b2a-be1f0f7cfab4")
 		)
 		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "R5")
+					(unit 1)
+				)
+			)
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "R1")
@@ -13992,12 +13872,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D36")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -14156,12 +14030,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D24")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -14249,12 +14117,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D38")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -14338,12 +14200,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D34")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D34")
 					(unit 1)
 				)
@@ -14485,12 +14341,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC21")
-					(unit 4)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC21")
 					(unit 4)
 				)
@@ -14654,12 +14504,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D31")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -14743,12 +14587,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D13")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D13")
 					(unit 1)
 				)
@@ -14840,12 +14678,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D10")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -14928,12 +14760,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D4")
 					(unit 1)
 				)
@@ -15174,12 +15000,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D30")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -15413,12 +15233,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D18")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -15561,12 +15375,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC19")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -15650,12 +15458,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D32")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D32")
 					(unit 1)
 				)
@@ -15747,12 +15549,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D12")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -15765,7 +15561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1fa4228-cd95-4b5a-a650-2e996456682c")
-		(property "Reference" "R3"
+		(property "Reference" "R7"
 			(at 176.53 19.0499 0)
 			(effects
 				(font
@@ -15817,6 +15613,12 @@
 			(uuid "b2f2e559-7b85-4eed-98af-d936a49c11c9")
 		)
 		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "R7")
+					(unit 1)
+				)
+			)
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "R3")
@@ -15965,12 +15767,6 @@
 					(unit 4)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC20")
-					(unit 4)
-				)
-			)
 		)
 	)
 	(symbol
@@ -16054,12 +15850,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D19")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D19")
 					(unit 1)
 				)
@@ -16196,12 +15986,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC10")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC10")
 					(unit 1)
 				)
@@ -16364,12 +16148,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D25")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -16453,12 +16231,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D21")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D21")
 					(unit 1)
 				)
@@ -16694,12 +16466,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D15")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D15")
 					(unit 1)
 				)
@@ -16979,12 +16745,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D28")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -17202,12 +16962,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "CP20")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -17291,12 +17045,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D22")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D22")
 					(unit 1)
 				)
@@ -17385,7 +17133,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d994dac0-9893-4949-8e6b-2b40b5376446")
-		(property "Reference" "R6"
+		(property "Reference" "R14"
 			(at 264.16 19.0499 0)
 			(effects
 				(font
@@ -17439,13 +17187,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "R6")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -17590,12 +17332,6 @@
 					(unit 3)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC20")
-					(unit 3)
-				)
-			)
 		)
 	)
 	(symbol
@@ -17679,12 +17415,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D29")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D29")
 					(unit 1)
 				)
@@ -17830,12 +17560,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "CP23")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -17901,12 +17625,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "CP18")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "CP18")
 					(unit 1)
 				)
@@ -18051,12 +17769,6 @@
 					(unit 2)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC21")
-					(unit 2)
-				)
-			)
 		)
 	)
 	(symbol
@@ -18140,12 +17852,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "CP17")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "CP17")
 					(unit 1)
 				)
@@ -18364,12 +18070,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -18452,12 +18152,6 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D9")
 					(unit 1)
 				)
@@ -18620,12 +18314,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D8")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -18638,7 +18326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fafe159a-51a7-425a-805c-6c4fa8a6e17f")
-		(property "Reference" "R5"
+		(property "Reference" "R13"
 			(at 250.19 19.0499 0)
 			(effects
 				(font
@@ -18692,13 +18380,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "R5")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -18789,12 +18471,6 @@
 					(unit 1)
 				)
 			)
-			(project "HC4_KiCad"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "D16")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
@@ -18807,7 +18483,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fef4dbbc-d6fb-458d-8663-b18d996e4991")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 201.93 19.0499 0)
 			(effects
 				(font
@@ -18859,6 +18535,12 @@
 			(uuid "f44fc1bc-34bc-4971-97b3-3a0dd91e42b7")
 		)
 		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "R9")
+					(unit 1)
+				)
+			)
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "R7")

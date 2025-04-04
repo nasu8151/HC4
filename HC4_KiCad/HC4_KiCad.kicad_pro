@@ -461,7 +461,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
+        "track_width": 0.2,
         "via_diameter": 0.5,
         "via_drill": 0.25,
         "wire_width": 6
@@ -499,8 +499,8 @@
         "pattern": "VCC"
       },
       {
-        "netclass": "Default",
-        "pattern": ""
+        "netclass": "Power",
+        "pattern": "Net-(F1-Pad1)"
       }
     ]
   },
