@@ -27,7 +27,7 @@ module hc4 (
 
     initial $readmemh("./test.hex", rom);
 
-    wire [7:0] instruction;
+    reg [7:0] instruction;
 
     wire sub;
 
@@ -36,7 +36,6 @@ module hc4 (
     reg  carry_flg;
     reg  zero_flg;
 
-    assign instruction = rom[pc];
     assign pc_out = pc;
     assign stackA_out = level_A;
     assign stackB_out = level_B;
@@ -120,6 +119,7 @@ module hc4 (
             level_A <= 8'b0;
             level_B <= 8'b0;
             level_C <= 8'b0;
+            instruction <= 8'b0;
         end else begin
             casez (instruction[7:5])
                 3'b0??: begin // if current instruction is an instruction which stores in the memory or registers
@@ -139,6 +139,7 @@ module hc4 (
                     //nothing to write here
                 end
             endcase
+            instruction <= rom[pc];
         end
     end
 
