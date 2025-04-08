@@ -3,6 +3,7 @@
 module hc4 (
     input wire clk,
     input wire nReset,
+    input wire nDMA_REQ,
     output wire [15:0]      pc_out,
     output wire [7:0]       stackA_out,
     output wire [7:0]       stackB_out,
@@ -36,13 +37,15 @@ module hc4 (
     reg  carry_flg;
     reg  zero_flg;
 
+    reg is_bus_accessible;
+
     assign pc_out = pc;
     assign stackA_out = level_A;
     assign stackB_out = level_B;
     assign stackC_out = level_C;
     assign sub = instruction[6:4] == 3'b010 ? 1 : 0; //if opcode is 0010 (1010 is not ALU oplation)
-    assign nRAM_WR = !(!instruction[7] & !clk);
-    assign nRAM_RD = !(instruction[7] & !instruction[6] & !instruction[5] & !clk);
+    assign nRAM_WR = is_bus_accessible ? !(!instruction[7] & !clk) : 1'bz;
+    assign nRAM_RD = is_bus_accessible ? !(instruction[7] & !instruction[6] & !instruction[5] & !clk) : 1'bz;
 
     alu8 ALU (
         .in_A (level_A),
@@ -54,16 +57,20 @@ module hc4 (
     );
 
 
-    function [15:0] ADDRESS_MUX(input [7:0] instruction, input [7:0] level_A, input [7:0] level_B);
-        if (instruction[6:4] == 3'b000) begin  //if addressing mode is [AB]
-            ADDRESS_MUX[7:0] = level_A;
-            ADDRESS_MUX[15:8] = level_B;
-        end else begin                         //if addressing mode is not [AB] (r, i)
-            ADDRESS_MUX[15:4] = 12'h0;
-            ADDRESS_MUX[3:0] = instruction[3:0];
+    function [15:0] ADDRESS_MUX(input [7:0] instruction, input bus_accessible, input [7:0] level_A, input [7:0] level_B);
+        if (bus_accessible == 0) begin
+            ADDRESS_MUX[15:0] = 16'bz;
+        end else begin
+            if (instruction[6:4] == 3'b000) begin  //if addressing mode is [AB]
+                ADDRESS_MUX[7:0] = level_A;
+                ADDRESS_MUX[15:8] = level_B;
+            end else begin                         //if addressing mode is not [AB] (r, i)
+                ADDRESS_MUX[15:4] = 12'h0;
+                ADDRESS_MUX[3:0] = instruction[3:0];
+            end
         end
     endfunction
-    assign address_bus = ADDRESS_MUX(instruction[7:0], level_A, level_B);
+    assign address_bus = ADDRESS_MUX(instruction[7:0], is_bus_accessible, level_A, level_B);
     
     function [15:0] NEXT_PC(input [7:0] instruction, input [15:0] pc, input [7:0] level_A, input [7:0] level_B, input C_flag, input Z_flag);
         reg nJMP;
@@ -94,23 +101,27 @@ module hc4 (
         end
     endfunction
 
-    function [7:0] BUS_CTRL (input [7:0] instruction, input [7:0] alu_result, input [7:0] level_C, input [7:0] level_A);
-        casez (instruction[7:5])
-            3'b000:  BUS_CTRL = level_C;          //SC
-            3'b0??:  BUS_CTRL = alu_result;       //ALU instructions (include SA)
-            3'b100:  BUS_CTRL = 8'bz; //LD [AB] or LD r (RAM)
-            3'b101: begin
-                BUS_CTRL[7:4] = level_A[7:4]; 
-                BUS_CTRL[3:0] = instruction[3:0]; //LD #i
-            end
-            3'b110: begin
-                BUS_CTRL[7:4] = level_A[3:0]; 
-                BUS_CTRL[3:0] = instruction[3:0]; //LS #i                
-            end
+    function [7:0] BUS_CTRL (input [7:0] instruction, input [7:0] alu_result, input bus_accessible, input [7:0] level_C, input [7:0] level_A);
+        if (bus_accessible == 0) begin
+            BUS_CTRL = 8'bz;
+        end else begin
+            casez (instruction[7:5])
+                3'b000:  BUS_CTRL = level_C;          //SC
+                3'b0??:  BUS_CTRL = alu_result;       //ALU instructions (include SA)
+                3'b100:  BUS_CTRL = 8'bz; //LD [AB] or LD r (RAM)
+                3'b101: begin
+                    BUS_CTRL[7:4] = level_A[7:4]; 
+                    BUS_CTRL[3:0] = instruction[3:0]; //LD #i
+                end
+                3'b110: begin
+                    BUS_CTRL[7:4] = level_A[3:0]; 
+                    BUS_CTRL[3:0] = instruction[3:0]; //LS #i                
+                end
             default: BUS_CTRL = 8'bx;             //JP doesnt care data bus
         endcase
+        end
     endfunction
-    assign data_bus = BUS_CTRL(instruction, alu_result, level_C, level_A);
+    assign data_bus = BUS_CTRL(instruction, alu_result, is_bus_accessible, level_C, level_A);
 
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
@@ -120,7 +131,7 @@ module hc4 (
             level_B <= 8'b0;
             level_C <= 8'b0;
             instruction <= 8'b0;
-        end else begin
+        end else if (is_bus_accessible == 1)begin
             casez (instruction[7:5])
                 3'b0??: begin // if current instruction is an instruction which stores in the memory or registers
                     // ram[address_bus] <= data_bus;
@@ -145,8 +156,12 @@ module hc4 (
 
     always @(negedge clk or negedge nReset) begin
         if (nReset == 0) begin
-            pc = 16'b0;
+            pc <= 16'b0;
+            is_bus_accessible <= 1'b1;
         end else begin
+            is_bus_accessible <= nDMA_REQ;
+        end
+        if (nReset == 1 && is_bus_accessible == 1) begin
             pc <= NEXT_PC(instruction, pc, level_A, level_B, carry_flg, zero_flg);
         end
     end

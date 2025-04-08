@@ -6,6 +6,7 @@ module hc8_tb;
     // 入出力信号の宣言
     reg clk;
     reg nReset;
+    reg dmareq;   // DMA要求信号
     wire [15:0] pc_out;
     wire [7:0]  level_A;
     wire [7:0]  level_B;
@@ -27,6 +28,7 @@ module hc8_tb;
     hc4 uut (
         .clk(clk),
         .nReset(nReset),
+        .nDMA_REQ(dmareq),
         .pc_out(pc_out),
         .stackA_out(level_A),
         .stackB_out(level_B),
@@ -49,12 +51,15 @@ module hc8_tb;
         // 初期化
         clk = 0;
         nReset = 0;
+        dmareq = 1;
 
         // リセット解除とテスト開始
         #10 nReset = 1;
 
         // シミュレーション実行時間
-        #800 $finish;
+        #50 dmareq = 0;
+        #80 dmareq = 1;
+        #720 $finish;
     end
 
     // テスト結果表示
