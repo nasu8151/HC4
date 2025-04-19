@@ -44671,7 +44671,7 @@
 	(footprint "LOGO"
 		(layer "F.Cu")
 		(uuid "ce116e6e-4af8-45f4-be52-15abbd03ed78")
-		(at 134.5 143)
+		(at 133.985 143)
 		(property "Reference" "G***"
 			(at -0.5 -3 0)
 			(layer "F.SilkS")
@@ -55965,7 +55965,7 @@
 		)
 	)
 	(gr_text "HC4_CPU\nRev 2.0"
-		(at 140 141 0)
+		(at 139.065 141 0)
 		(layer "F.SilkS")
 		(uuid "3c3d1b6d-613e-4523-898f-3d2ddcf75fe8")
 		(effects
@@ -55977,8 +55977,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "2025 DGK"
-		(at 140 142.5 0)
+	(gr_text "(C)2025 DGK\n"
+		(at 139.065 142.875 0)
 		(layer "F.SilkS")
 		(uuid "51eb2b23-991a-490a-96f7-565ff67c4452")
 		(effects
