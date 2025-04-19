@@ -1,13 +1,13 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "1f88bb02-62b0-480d-b7f1-602bcc3e5590")
 	(paper "A4")
 	(title_block
 		(title "HC4_CPU")
-		(date "2025-02-23")
-		(rev "1.2")
+		(date "2025-04-17")
+		(rev "2.0")
 	)
 	(lib_symbols
 		(symbol "74xx_2:74HC153"
@@ -87,6 +87,78 @@
 				)
 			)
 			(symbol "74HC153_1_0"
+				(pin input line
+					(at -12.7 17.78 0)
+					(length 5.08)
+					(name "I0a"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 15.24 0)
+					(length 5.08)
+					(name "I1a"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 12.7 0)
+					(length 5.08)
+					(name "I2a"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 10.16 0)
+					(length 5.08)
+					(name "I3a"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input inverted
 					(at -12.7 5.08 0)
 					(length 5.08)
@@ -177,24 +249,6 @@
 						)
 					)
 				)
-				(pin input line
-					(at -12.7 -17.78 0)
-					(length 5.08)
-					(name "S0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input inverted
 					(at -12.7 -12.7 0)
 					(length 5.08)
@@ -213,17 +267,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 25.4 270)
+				(pin input line
+					(at -12.7 -17.78 0)
 					(length 5.08)
-					(name "VCC"
+					(name "S0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "16"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -249,89 +303,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -12.7 10.16 0)
+				(pin power_in line
+					(at 0 25.4 270)
 					(length 5.08)
-					(name "I3a"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 12.7 0)
-					(length 5.08)
-					(name "I2a"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 15.24 0)
-					(length 5.08)
-					(name "I1a"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 17.78 0)
-					(length 5.08)
-					(name "I0a"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 17.78 180)
-					(length 5.08)
-					(name "Za"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -350,6 +332,24 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 17.78 180)
+					(length 5.08)
+					(name "Za"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -389,6 +389,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "74xx_2:74HC283"
 			(pin_names
@@ -467,197 +468,17 @@
 				)
 			)
 			(symbol "74HC283_1_0"
-				(pin output line
-					(at 12.7 10.16 180)
-					(length 5.08)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 5.08 180)
-					(length 5.08)
-					(name "S4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
-					(at -12.7 -12.7 0)
+					(at -12.7 12.7 0)
 					(length 5.08)
-					(name "B4"
+					(name "C0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 0 0)
-					(length 5.08)
-					(name "A4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 7.62 180)
-					(length 5.08)
-					(name "S3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 2.54 0)
-					(length 5.08)
-					(name "A3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -10.16 0)
-					(length 5.08)
-					(name "B3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 20.32 270)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -7.62 0)
-					(length 5.08)
-					(name "B2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 5.08 0)
-					(length 5.08)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 12.7 180)
-					(length 5.08)
-					(name "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -684,6 +505,60 @@
 					)
 				)
 				(pin input line
+					(at -12.7 5.08 0)
+					(length 5.08)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
 					(at -12.7 -5.08 0)
 					(length 5.08)
 					(name "B1"
@@ -702,16 +577,70 @@
 					)
 				)
 				(pin input line
-					(at -12.7 12.7 0)
+					(at -12.7 -7.62 0)
 					(length 5.08)
-					(name "C0"
+					(name "B2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -10.16 0)
+					(length 5.08)
+					(name "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -12.7 0)
+					(length 5.08)
+					(name "B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 20.32 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -730,6 +659,78 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 12.7 180)
+					(length 5.08)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 10.16 180)
+					(length 5.08)
+					(name "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 7.62 180)
+					(length 5.08)
+					(name "S3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 5.08)
+					(name "S4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -769,9 +770,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device2:C_Bypass"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -844,7 +848,7 @@
 			(symbol "C_Bypass_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -856,7 +860,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -905,12 +909,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1001,12 +1010,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1078,7 +1092,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1090,7 +1104,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1121,6 +1135,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -3523,7 +3538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "164e65fd-cc28-4ce0-98ca-981f270e9dc0")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR020"
 			(at 191.77 73.66 0)
 			(effects
 				(font
@@ -3573,7 +3588,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR026")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -3607,7 +3622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 77.1652 175.26 0)
 			(effects
 				(font
@@ -3677,7 +3692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 89.8652 175.26 0)
 			(effects
 				(font
@@ -3729,7 +3744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2abb0282-699c-48d8-ae4c-06247fa8e583")
-		(property "Reference" "IC6"
+		(property "Reference" "IC5"
 			(at 210.4741 45.72 0)
 			(effects
 				(font
@@ -3747,7 +3762,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 208.28 71.12 0)
 			(effects
 				(font
@@ -3825,7 +3840,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "IC6")
+					(reference "IC5")
 					(unit 1)
 				)
 			)
@@ -3841,7 +3856,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46bd9c61-ab95-468f-bf9b-3bc874e1f732")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR011"
 			(at 50.8 170.18 0)
 			(effects
 				(font
@@ -3891,7 +3906,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR017")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3907,7 +3922,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57a88f78-48f1-4eaf-aa39-3d8c30e52f13")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR013"
 			(at 55.88 46.99 0)
 			(effects
 				(font
@@ -3957,7 +3972,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR019")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3973,7 +3988,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6110566e-ffec-4742-b99e-c77ff50a1725")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR019"
 			(at 187.96 80.01 0)
 			(effects
 				(font
@@ -4023,7 +4038,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR025")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -4039,7 +4054,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "676f11ef-ae66-4c84-b8b4-ede89cc72c7d")
-		(property "Reference" "IC5"
+		(property "Reference" "IC4"
 			(at 159.6741 45.72 0)
 			(effects
 				(font
@@ -4057,7 +4072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 157.48 71.12 0)
 			(effects
 				(font
@@ -4135,7 +4150,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "IC5")
+					(reference "IC4")
 					(unit 1)
 				)
 			)
@@ -4150,7 +4165,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f14b87f-f476-488b-91bd-7029f1051461")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR012"
 			(at 50.8 182.88 0)
 			(effects
 				(font
@@ -4200,7 +4215,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR018")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4234,7 +4249,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 51.7652 175.26 0)
 			(effects
 				(font
@@ -4286,7 +4301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f1f0699-d872-4a97-95dc-dc9df4ebd724")
-		(property "Reference" "IC7"
+		(property "Reference" "IC6"
 			(at 261.2741 45.72 0)
 			(effects
 				(font
@@ -4304,7 +4319,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 259.08 66.04 0)
 			(effects
 				(font
@@ -4382,7 +4397,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "IC7")
+					(reference "IC6")
 					(unit 1)
 				)
 			)
@@ -4398,7 +4413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6a1a7b1-fd9d-456b-ac14-d286da7a794a")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR014"
 			(at 55.88 135.89 0)
 			(effects
 				(font
@@ -4448,7 +4463,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR020")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -4464,7 +4479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba845fc7-7bad-4564-9485-6bb53f2df207")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR017"
 			(at 137.16 80.01 0)
 			(effects
 				(font
@@ -4514,7 +4529,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR023")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -4548,7 +4563,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 102.5652 175.26 0)
 			(effects
 				(font
@@ -4618,7 +4633,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 64.4652 175.26 0)
 			(effects
 				(font
@@ -4670,7 +4685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2f8696c-752e-46a1-afeb-72131ae6ee9e")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR09"
 			(at 35.56 80.01 0)
 			(effects
 				(font
@@ -4720,7 +4735,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR015")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4736,7 +4751,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d59199d7-1f7a-4b0a-a03b-8209a1828ae4")
-		(property "Reference" "IC4"
+		(property "Reference" "IC3"
 			(at 108.8741 45.72 0)
 			(effects
 				(font
@@ -4754,7 +4769,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 106.68 71.12 0)
 			(effects
 				(font
@@ -4832,7 +4847,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "IC4")
+					(reference "IC3")
 					(unit 1)
 				)
 			)
@@ -4848,7 +4863,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e948bf29-a5eb-4564-8074-85715bf14434")
-		(property "Reference" "IC3"
+		(property "Reference" "IC2"
 			(at 58.0741 45.72 0)
 			(effects
 				(font
@@ -4866,7 +4881,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 55.88 71.12 0)
 			(effects
 				(font
@@ -4944,7 +4959,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "IC3")
+					(reference "IC2")
 					(unit 1)
 				)
 			)
@@ -4960,7 +4975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed602ebe-d234-4c19-8381-32b62082fae0")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR018"
 			(at 140.97 73.66 0)
 			(effects
 				(font
@@ -5010,7 +5025,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR024")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -5026,7 +5041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f37ce680-b7d0-4f07-9b50-27ec249993ad")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR015"
 			(at 86.36 80.01 0)
 			(effects
 				(font
@@ -5076,7 +5091,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR021")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5092,7 +5107,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f57905c7-091d-4098-a22f-ad18b7277002")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR010"
 			(at 39.37 73.66 0)
 			(effects
 				(font
@@ -5142,7 +5157,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR016")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -5158,7 +5173,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6c0e59d-1075-45cf-989e-3f131cfe81d0")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR016"
 			(at 90.17 73.66 0)
 			(effects
 				(font
@@ -5208,7 +5223,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "#PWR022")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)

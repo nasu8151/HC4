@@ -5,3 +5,7 @@
 *.lck
 *auto_save*
 *autosave*
+sim/74hc.lib
+sim/cd4000.lib
+*.log
+*.raw
