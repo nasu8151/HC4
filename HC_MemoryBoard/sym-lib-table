@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "74xx_2")(type "KiCad")(uri "C:/Users/senas/Documents/芝浦/DGK/CPU/HC4/HC4_KiCad/74xx_2.kicad_sym")(options "")(descr ""))
+  (lib (name "Device2")(type "KiCad")(uri "C:/Users/senas/Documents/芝浦/DGK/CPU/HC4/HC4_KiCad/Device2.kicad_sym")(options "")(descr ""))
+)
