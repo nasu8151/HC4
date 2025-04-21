@@ -1,4 +1,4 @@
-25208957173011065
+25210702392084641
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -99662,6 +99662,13 @@ TestPoint
 TestPoint_THTPad_D4.0mm_Drill2.0mm
 THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm
 test point THT pad
+0
+1
+1
+ThroughHole
+ThroughHole_d1.0_D1.7
+
+
 0
 1
 1
