@@ -1,5 +1,5 @@
 *.bak
-*-backups/
+*backups/
 *.kicad_sch-bak
 *.kicad_pcb-bak
 *.lck
