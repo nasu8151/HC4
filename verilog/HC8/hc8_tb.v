@@ -25,7 +25,7 @@ module hc8_tb;
         .nread_enable(nRAM_RD)
     );
     // テスト対象モジュールのインスタンス化
-    hc4 uut (
+    hc8 uut (
         .clk(clk),
         .nReset(nReset),
         .nDMA_REQ(dmareq),

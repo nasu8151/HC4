@@ -1,6 +1,6 @@
 `include "./alu8.v"
 
-module hc4 (
+module hc8 (
     input wire clk,
     input wire nReset,
     input wire nDMA_REQ,
@@ -8,7 +8,7 @@ module hc4 (
     output wire [7:0]       stackA_out,
     output wire [7:0]       stackB_out,
     output wire [7:0]       stackC_out,
-    output wire [15:0]       address_bus,
+    output wire [15:0]      address_bus,
     inout  wire [7:0]       data_bus,
     output wire             nRAM_RD,
     output wire             nRAM_WR
@@ -101,7 +101,7 @@ module hc4 (
         end
     endfunction
 
-    function [7:0] BUS_CTRL (input [7:0] instruction, input [7:0] alu_result, input bus_accessible, input [7:0] level_C, input [7:0] level_A);
+    function [7:0] BUS_CTRL (input [7:0] instruction, input [7:0] alu_result, input bus_accessible, input [7:0] level_C, input [7:0] level_A, input [15:0] pc);
         if (bus_accessible == 0) begin
             BUS_CTRL = 8'bz;
         end else begin
@@ -117,11 +117,11 @@ module hc4 (
                     BUS_CTRL[7:4] = level_A[3:0]; 
                     BUS_CTRL[3:0] = instruction[3:0]; //LS #i                
                 end
-            default: BUS_CTRL = 8'bx;             //JP doesnt care data bus
-        endcase
+                3'b111: BUS_CTRL = pc[7:0];           // for JL instruction
+            endcase
         end
     endfunction
-    assign data_bus = BUS_CTRL(instruction, alu_result, is_bus_accessible, level_C, level_A);
+    assign data_bus = BUS_CTRL(instruction, alu_result, is_bus_accessible, level_C, level_A, pc);
 
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin
@@ -132,29 +132,30 @@ module hc4 (
             level_C <= 8'b0;
             instruction <= 8'b0;
         end else if (is_bus_accessible == 1)begin
-            casez (instruction[7:5])
-                3'b0??: begin // if current instruction is an instruction which stores in the memory or registers
+            casez (instruction[7:4])
+                4'b0???: begin // if current instruction is 'SC', 'SU', 'AD', 'XR', 'OR', 'AN' or 'SA'
                     // ram[address_bus] <= data_bus;
-                    zero_flg  <= data_bus == 4'b0 ? 1 : 0;
+                    zero_flg  <= data_bus == 8'b0 ? 1 : 0;
                     carry_flg <= instruction[7:5] == 3'b001 ? carry : carry_flg;
                 end 
-                3'b10?: begin
+                4'b10??: begin
                     level_A <= data_bus;
                     level_B <= level_A;
                     level_C <= level_B;
                 end
-                3'b110: begin
+                4'b110?: begin
                     level_A <= data_bus;
                 end
-                3'b111: begin
+                4'b1110: begin
                     //nothing to write here
                 end
+                4'b1111: begin
+                    level_A <= data_bus;
+                    level_B <= pc[15:8];
+                end
             endcase
-            instruction <= rom[pc];
         end
-    end
-
-    always @(negedge clk or negedge nReset) begin
+        instruction <= rom[pc];
         if (nReset == 0) begin
             pc <= 16'b0;
             is_bus_accessible <= 1'b1;

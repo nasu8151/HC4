@@ -10,6 +10,7 @@
   - [Logical and alithmetic instructions](#logical-and-alithmetic-instructions-1)
   - [Register and memory access instructions](#register-and-memory-access-instructions-1)
   - [System control instructions](#system-control-instructions-1)
+    - [Differences between ```JP``` and ```JL```](#differences-between-jp-and-jl)
 
 
 # How to read these tables
@@ -70,14 +71,21 @@ Note:
 
 ## System control instructions
 
-| Name                | Opc  | Opr  |                               |
-| ------------------- | ---- | ---- | ----------------------------- |
-| \*```JP [ABC]```    | 1110 | 0000 | JumP [ABC]                    |
-| \*```JP C [ABC]```  | 1110 | 0010 | Jump if Carry flag is set     |
-| \*```JP NC [ABC]``` | 1110 | 0011 | Jump if Carry flag is Not set |
-| \*```JP Z [ABC]```  | 1110 | 0100 | Jump if Zero flag is set      |
-| \*```JP NZ [ABC]``` | 1110 | 0101 | Jump if Zero flag is Not set  |
-| ```NP```            | 1110 | 0001 | No oPlation                   |
+| Name                | Opc  | Opr  |                                        |
+| ------------------- | ---- | ---- | -------------------------------------- |
+| \*```JP [ABC]```    | 1110 | 0000 | JumP to [ABC]                          |
+| \*```JP C [ABC]```  | 1110 | 0010 | Jump if Carry flag is set              |
+| \*```JP NC [ABC]``` | 1110 | 0011 | Jump if Carry flag is Not set          |
+| \*```JP Z [ABC]```  | 1110 | 0100 | Jump if Zero flag is set               |
+| \*```JP NZ [ABC]``` | 1110 | 0101 | Jump if Zero flag is Not set           |
+| ```NP```            | 1110 | 0001 | No oPlation                            |
+| \*```JL [ABC]```    | 1111 | 0000 | Jump and Link to [ABC]                 |
+| \*```JL C [ABC]```  | 1111 | 0010 | Jump and Link if Carry flag is set     |
+| \*```JL NC [ABC]``` | 1111 | 0011 | Jump and Link if Carry flag is Not set |
+| \*```JL Z [ABC]```  | 1111 | 0100 | Jump and Link if Zero flag is set      |
+| \*```JL NZ [ABC]``` | 1111 | 0101 | Jump and Link if Zero flag is Not set  |
+| ```LP```            | 1111 | 0001 | Load Program counter to stack          |
+
 
 Note:    
 \* Can be omitted addressing.
@@ -96,4 +104,13 @@ Load and shift instruction, ```LS #i```, used to load an 8-bit wide data onto th
 ## System control instructions
 
 ```NP``` does nothing. This is equivalent to ```NOP```.   
-```JP``` instructions change conditionally PC.
+```JP``` instructions change conditionally the program counter.
+```JL``` instructions change conditionally the program counter and load previous value of program counter.   
+
+> [!important]
+> In HC8, you should put the ```NP``` instruction at the address following the ```JP``` instruction.
+
+### Differences between ```JP``` and ```JL```
+
+- ```JP``` : PC <= stack B:A
+- ```JL``` : PC <= stack B:A and stack B:A <= PC + 1
