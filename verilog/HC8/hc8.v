@@ -19,14 +19,13 @@ module hc8 (
     reg [7:0] level_C; //stack level C
     reg [15:0] pc;
 
-
     reg [7:0] ram [0:255];
     reg [7:0] rom [0:4095];
 
     // wire [15:0] address_bus;
     // wire [7:0] data_bus;
 
-    initial $readmemh("./test.hex", rom);
+    initial $readmemh("./subroutine.hex", rom);
 
     reg [7:0] instruction;
 
@@ -131,6 +130,8 @@ module hc8 (
             level_B <= 8'b0;
             level_C <= 8'b0;
             instruction <= 8'b0;
+            pc <= 16'b0;
+            is_bus_accessible <= 1'b1;
         end else if (is_bus_accessible == 1)begin
             casez (instruction[7:4])
                 4'b0???: begin // if current instruction is 'SC', 'SU', 'AD', 'XR', 'OR', 'AN' or 'SA'
@@ -154,16 +155,12 @@ module hc8 (
                     level_B <= pc[15:8];
                 end
             endcase
-        end
-        instruction <= rom[pc];
-        if (nReset == 0) begin
-            pc <= 16'b0;
-            is_bus_accessible <= 1'b1;
-        end else begin
-            is_bus_accessible <= nDMA_REQ;
-        end
-        if (nReset == 1 && is_bus_accessible == 1) begin
+            instruction <= rom[pc];
             pc <= NEXT_PC(instruction, pc, level_A, level_B, carry_flg, zero_flg);
+        end
+
+        if (nReset == 1) begin
+            is_bus_accessible <= nDMA_REQ;
         end
     end
 endmodule

@@ -57,10 +57,15 @@ module hc8_tb;
         #10 nReset = 1;
 
         // シミュレーション実行時間
-        #50 dmareq = 0;
-        #80 dmareq = 1;
         #720 $finish;
     end
+
+    /*initial begin
+        #30 dmareq = 0;
+        #60 dmareq = 1;
+        #100 dmareq = 0;
+        #123 dmareq = 1;
+    end*/
 
     // テスト結果表示
     always @(negedge clk) begin
