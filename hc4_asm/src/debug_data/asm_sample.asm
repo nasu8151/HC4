@@ -24,8 +24,9 @@ JP Z
 JP Z [ABC]
 JP NZ
 JP NZ [ABC]
-JP aho
-JP oha
+JP T
+JP T [ABC]
+JP NT
 NP
 
 JL
@@ -68,8 +69,8 @@ jp z
 jp z [abc]
 jp nz
 jp nz [abc]
-jp a
-jp nanaknk
+jp t
+jp nt
 np
 
 LD #3

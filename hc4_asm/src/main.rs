@@ -19,9 +19,9 @@ const COMMENT_STR: &str = r"(?:;.*)?$";
 
 //命令文と、代に引数をキャプチャする正規表現の文字列の配列
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
-    const JL_LP_DATA: &str = r"^(jl|lp)(?:\s(c|nc|z|nz))?(?:\s\[abc\])?";
-    const JP_DATA: &str = r"^(jp|np)(?:\s(c|nc|z|nz))?(?:\s\[abc\])?";
-    [
+    const JP_DATA: &str = r"^(jp|np)(?:\s(\w+))?(?:\s\[abc\])?";
+    const JL_LP_DATA: &str = r"^(jl|lp)(?:\s(\w+))?(?:\s\[abc\])?";
+        [
         r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\w+)", r"^(ld)(?:\s\[ab\])?" , r"^(ls)\s#(\w+)", // ← 0xC: LS追加
         r"^(sc)\sr(\w+)"     , r"^(or)\sr(\w+)", r"^(ld)\sr(\w+)"      , r"^",
         r"^(su)\sr(\w+)"     , r"^(an)\sr(\w+)", r"^(ld)\s#(\w+)"      , JP_DATA,          // ← 0xE: JP
@@ -110,6 +110,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 "nc" => Ok(0b0011), //ノンキャリー
                 "z" => Ok(0b0100),  //ゼロ
                 "nz" => Ok(0b0101), //ノンゼロ
+                "t" => Ok(0b0110),  //トリガー
+                "nt" => Ok(0b0111), //ノントリガー
                 _ => Err(AsmErrors::NonFlag),
             },
             None => Ok(0b0000),
@@ -238,7 +240,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     if num_of_error > 0 {
-        println!("Assemble failed : {}", (source_file_path.to_owned() + " has " + &num_of_error.to_string() + " error(s)").red());
+        println!("Assembly failed : {}", (source_file_path.to_owned() + " has " + &num_of_error.to_string() + " error(s)").red());
     } else {
         println!("writing...");
         //File writer
