@@ -13,23 +13,27 @@ use colored::Colorize;
 
 
 //NOTE:This table DON'T INCLUDE NP INSTRUCTION
-const INSTRUCTION_STRINGS: [&str;10] = ["sc", "xr", "ld", "or", "su", "an", "jp", "ad", "sa","np"];
+const INSTRUCTION_STRINGS: [&str; 13] = ["sc", "xr", "ld", "or", "su", "an", "jp", "ad", "sa", "np", "ls", "lp", "jl"];
 
 const COMMENT_STR: &str = r"(?:;.*)?$";
 
 //命令文と、代に引数をキャプチャする正規表現の文字列の配列
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
+    const JL_LP_DATA: &str = r"^(jl|lp)(?:\s(c|nc|z|nz))?(?:\s\[abc\])?";
     const JP_DATA: &str = r"^(jp|np)(?:\s(c|nc|z|nz))?(?:\s\[abc\])?";
     [
-        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\w+)", r"^(ld)(?:\s\[ab\])?", r"^",
-        r"^(sc)\sr(\w+)", r"^(or)\sr(\w+)", r"^(ld)\sr(\w+)", r"^",
-        r"^(su)\sr(\w+)", r"^(an)\sr(\w+)", r"^(ld)\s#(\w+)", JP_DATA,
-        r"^(ad)\sr(\w+)", r"^(sa)\sr(\w+)", r"^", r"^",
+        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\w+)", r"^(ld)(?:\s\[ab\])?" , r"^(ls)\s#(\w+)", // ← 0xC: LS追加
+        r"^(sc)\sr(\w+)"     , r"^(or)\sr(\w+)", r"^(ld)\sr(\w+)"      , r"^",
+        r"^(su)\sr(\w+)"     , r"^(an)\sr(\w+)", r"^(ld)\s#(\w+)"      , JP_DATA,          // ← 0xE: JP
+        r"^(ad)\sr(\w+)"     , r"^(sa)\sr(\w+)", r"^"                  , JL_LP_DATA        // ← 0xF: JL/LP
     ]
 };
 
 const _REGISTER_INSTRUCTION: [u8; 8] = [1,2,3,4,5,6,7,9,];
-const _IMMEDIATE_INSTRUCTION: [u8; 1] = [10,];
+const _IMMEDIATE_INSTRUCTION: [u8; 2] = [10,12,];
+
+const OPCODE_JP_NP: usize = 0xE;
+const OPCODE_JL_LP: usize = 0xF;
 
 const INSTRUCTION_MATRIX_DATA_X: usize = 4;
 const INSTRUCTION_MATRIX_DATA_Y: usize = 4;
@@ -47,6 +51,10 @@ fn get_instruction_table() -> [String; 16] {
     result
 }
 
+/// Parse string into u8. Supports:
+/// - "0xA" (hex)
+/// - "0b1010" (binary)
+/// - "10" (decimal)
 fn parse_to_u8(input: &str) -> Result<u8, ParseIntError> {
     if input.starts_with("0x") {
         u8::from_str_radix(&input[2..], 16)
@@ -95,6 +103,19 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         },
     };
 
+    fn parse_flag_to_opr(flag: Option<regex::Match>) -> Result<u8, AsmErrors> { //フラグを数値に変換する関数
+        match flag {
+            Some(f) => match f.as_str() {
+                "c" => Ok(0b0010),  //キャリー
+                "nc" => Ok(0b0011), //ノンキャリー
+                "z" => Ok(0b0100),  //ゼロ
+                "nz" => Ok(0b0101), //ノンゼロ
+                _ => Err(AsmErrors::NonFlag),
+            },
+            None => Ok(0b0000),
+        }
+    }    
+
     //temporary data
     let mut bin_buf: Vec<u8> = Vec::new();
 
@@ -125,21 +146,26 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                     is_line_interpreted = true;
                     line_error = AsmErrors::NotError; //一度 NotError にし、その後の解釈でエラーがあれば、true とする。
                     let opc: u8 = i.try_into().unwrap();
-                    let opr: u8 = if i == 0b1110 { // JP または NP の場合
+                    let opr: u8 = if i == OPCODE_JP_NP { // JP または NP の場合
                         if &caps[1] == "np" { 0b0001 } //NP 構文のみ、JP命令記述ではないがJPと同じ命令 opc の bit のため例外処理を与える
                         else {
-                            match caps.get(2) { 
-                                Some(value) => match value.as_str() { //第二引数が存在する
-                                    "c" => 0b0010,
-                                    "nc" => 0b0011,
-                                    "z" => 0b0100,
-                                    "nz" => 0b0101,
-                                    &_ => { //エラー。存在しないフラグ
-                                        line_error = AsmErrors::NonFlag;
-                                        0b0000
-                                    },
+                            match parse_flag_to_opr(caps.get(2)) {
+                                Ok(v) => v,
+                                Err(e) => {
+                                    line_error = e;
+                                    0b0000
                                 }
-                                None => 0b0000, //第二引数がない
+                            }
+                        }
+                    } else if i == OPCODE_JL_LP { //LP の場合
+                        if &caps[1] == "lp" { 0b0001 } //LP 構文のみ、JP命令記述ではないがJLと同じ命令 opc の bit のため例外処理を与える
+                        else {
+                            match parse_flag_to_opr(caps.get(2)) {
+                                Ok(v) => v,
+                                Err(e) => {
+                                    line_error = e;
+                                    0b0000
+                                }
                             }
                         }
                     } else { //JP ではなく、NPではない命令記述
