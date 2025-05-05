@@ -65,6 +65,57 @@ fn parse_to_u8(input: &str) -> Result<u8, ParseIntError> {
     }
 }
 
+/// Write binary data to a file in Intel HEX format
+fn write_intel_hex(bin: &[u8], writer: &mut dyn Write) -> std::io::Result<()> {
+    let mut addr = 0u16;
+    while (addr as usize) < bin.len() {
+        let remaining = bin.len() - addr as usize;
+        let count = if remaining >= 16 { 16 } else { remaining };
+        let chunk = &bin[addr as usize..addr as usize + count];
+
+        let record = make_intel_hex_record(addr, chunk);
+        writeln!(writer, "{}", record)?;
+
+        addr += count as u16;
+    }
+    // EOF record
+    writeln!(writer, ":00000001FF")?;
+    Ok(())
+}
+
+fn make_intel_hex_record(addr: u16, data: &[u8]) -> String {
+    let byte_count = data.len() as u8;
+    let record_type = 0x00;
+    let high = (addr >> 8) as u8;
+    let low = (addr & 0xFF) as u8;
+
+    let mut sum: u8 = byte_count.wrapping_add(high)
+                                .wrapping_add(low)
+                                .wrapping_add(record_type);
+
+    let mut data_str = String::new();
+    for &b in data {
+        sum = sum.wrapping_add(b);
+        data_str.push_str(&format!("{:02X}", b));
+    }
+
+    let checksum = (!sum).wrapping_add(1);
+
+    format!(
+        ":{:02X}{:04X}{:02X}{}{:02X}",
+        byte_count,
+        addr,
+        record_type,
+        data_str,
+        checksum
+    )
+}
+
+/// Print usage information
+/// for the program
+/// # Arguments
+/// * `program` - The name of the program
+/// * `opts` - The options for the program
 fn print_usage(program: &str, opts: Options) {
     let brief = format!("Usage: {} FILE [options]", program);
     print!("{}", opts.usage(&brief));
@@ -85,6 +136,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let mut opts = Options::new();
     opts.optopt("o", "", "set output file name", "NAME");
+    opts.optopt("f", "format", "output format: hex or ihex", "FORMAT");
     opts.optflag("h", "help", "print this help menu");
 
     let matches = match opts.parse(&args[2..]) {
@@ -241,14 +293,23 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     if num_of_error > 0 {
         println!("Assembly failed : {}", (source_file_path.to_owned() + " has " + &num_of_error.to_string() + " error(s)").red());
+        println!("I have no idea.");
     } else {
+        let format = matches.opt_str("f").unwrap_or("hex".to_string());
+        if format != "hex" && format != "ihex" {
+            println!("Unsupported format '{}'. Use 'hex' or 'ihex'", format);
+            return Ok(());
+        }
+
         println!("writing...");
         //File writer
         let mut writer = BufWriter::new(File::create(output)?);
-
-        for byte in bin_buf {
-            writer.write_all(format!("{:02X}",byte).as_bytes())?;
-            writer.write_all(b"\n")?;
+        if format == "ihex" {
+            write_intel_hex(&bin_buf, &mut writer)?;
+        } else {
+            for byte in bin_buf {
+                writeln!(writer, "{:02X}", byte)?;
+            }
         }
         writer.flush()?;
         println!("{}","success!".cyan().bold());

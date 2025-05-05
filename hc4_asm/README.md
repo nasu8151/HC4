@@ -8,7 +8,7 @@ On HC4 assembler, comments are represented by `;`. characters on the line after 
 ```assembly
 <Instruction>
 <Instruction> <reg> ;reg means a 4-bit wide register. In the program, it is represented by r0 to r15 in program.
-<Instruction> <imm> ;imm means 4 bits wide immediate data. In a program, it is represented as binary from #0000 to #1111.
+<Instruction> <imm> ;imm means 4 bits wide immediate data. In a program, it is represented as literal such as #12, #0xC or #0b1100.
 <Instruction> <flg> ;flg means flag register.
 
 ;stk is optional. stk is represented [AB] or [ABC].
