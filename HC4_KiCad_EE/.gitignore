@@ -1,0 +1,7 @@
+*.bak
+*-backups/
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.lck
+*auto_save*
+*autosave*
