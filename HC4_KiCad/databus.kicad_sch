@@ -9552,7 +9552,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "759dd809-2f2f-41eb-9f1b-d35ca5f20c44")
-		(property "Reference" "LD10"
+		(property "Reference" "LD9"
 			(at 233.68 181.356 90)
 			(effects
 				(font
@@ -9606,7 +9606,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/294cbb59-ed60-4be2-81ec-3da02c446083"
-					(reference "LD10")
+					(reference "LD9")
 					(unit 1)
 				)
 			)
@@ -9937,7 +9937,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8df42bec-7149-4f29-b1da-4df765508c72")
-		(property "Reference" "LD9"
+		(property "Reference" "LD10"
 			(at 237.49 179.578 90)
 			(effects
 				(font
@@ -9991,7 +9991,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/294cbb59-ed60-4be2-81ec-3da02c446083"
-					(reference "LD9")
+					(reference "LD10")
 					(unit 1)
 				)
 			)
@@ -10277,7 +10277,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b08e84d0-673d-419e-af2a-dbdecd6fbae7")
-		(property "Reference" "LD8"
+		(property "Reference" "LD11"
 			(at 241.3 181.356 90)
 			(effects
 				(font
@@ -10331,7 +10331,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/294cbb59-ed60-4be2-81ec-3da02c446083"
-					(reference "LD8")
+					(reference "LD11")
 					(unit 1)
 				)
 			)
@@ -10479,7 +10479,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c3d6cafd-5897-4c9d-9f7a-df559972b277")
-		(property "Reference" "LD11"
+		(property "Reference" "LD8"
 			(at 229.87 179.578 90)
 			(effects
 				(font
@@ -10533,7 +10533,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/294cbb59-ed60-4be2-81ec-3da02c446083"
-					(reference "LD11")
+					(reference "LD8")
 					(unit 1)
 				)
 			)

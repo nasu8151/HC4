@@ -64,11 +64,11 @@
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "error",
+        "clearance": "warning",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -82,7 +82,7 @@
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "hole_to_hole": "error",
-        "holes_co_located": "warning",
+        "holes_co_located": "error",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -93,7 +93,7 @@
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "error",
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
@@ -101,9 +101,9 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -113,33 +113,33 @@
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
-        "track_dangling": "warning",
+        "track_dangling": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "error",
         "zones_intersect": "error"
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.2,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.0,
-        "min_hole_to_hole": 0.6,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.15,
-        "min_track_width": 0.15,
-        "min_via_annular_width": 0.0,
-        "min_via_diameter": 0.0,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.0,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -484,8 +484,8 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.5,
-        "via_drill": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -497,17 +497,17 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Clock",
+        "name": "CLK",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
-        "schematic_color": "rgb(86, 4, 255)",
+        "schematic_color": "rgb(0, 0, 194)",
         "track_width": 0.2,
-        "via_diameter": 0.5,
-        "via_drill": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
-        "bus_width": 16,
+        "bus_width": 18,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -519,10 +519,10 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
+        "track_width": 0.8,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 10
+        "wire_width": 12
       },
       {
         "bus_width": 12,
@@ -533,13 +533,13 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Reset",
+        "name": "~{RESET}",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
-        "schematic_color": "rgb(254, 65, 255)",
+        "schematic_color": "rgb(255, 0, 209)",
         "track_width": 0.2,
-        "via_diameter": 0.5,
-        "via_drill": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -551,23 +551,23 @@
     "netclass_patterns": [
       {
         "netclass": "Power",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "Power",
         "pattern": "VCC"
       },
       {
         "netclass": "Power",
-        "pattern": "Net-(F1-Pad1)"
+        "pattern": "GND"
       },
       {
-        "netclass": "Reset",
+        "netclass": "~{RESET}",
         "pattern": "~{RESET}"
       },
       {
-        "netclass": "Clock",
+        "netclass": "CLK",
         "pattern": "CLK"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(F1-Pad1)"
       }
     ]
   },

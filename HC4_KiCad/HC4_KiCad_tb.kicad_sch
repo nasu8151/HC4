@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "ac701ae9-c0d5-4247-9a0e-c458418535da")
 	(paper "A4")
 	(lib_symbols
@@ -141,6 +141,24 @@
 						)
 					)
 				)
+				(pin input input_low
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "/LOAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at -10.16 5.08 0)
 					(length 2.54)
@@ -159,107 +177,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 -11.43 180)
+				(pin input line
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "QD"
+					(name "ENP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 -8.89 180)
-					(length 2.54)
-					(name "QC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 -6.35 180)
-					(length 2.54)
-					(name "QB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 -3.81 180)
-					(length 2.54)
-					(name "QA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "CO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 15.24 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -357,17 +285,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 2.54 0)
+				(pin power_in line
+					(at 0 15.24 270)
 					(length 2.54)
-					(name "ENP"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -393,17 +321,89 @@
 						)
 					)
 				)
-				(pin input input_low
-					(at -10.16 7.62 0)
+				(pin output line
+					(at 10.16 5.08 180)
 					(length 2.54)
-					(name "/LOAD"
+					(name "CO"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -3.81 180)
+					(length 2.54)
+					(name "QA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -6.35 180)
+					(length 2.54)
+					(name "QB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -8.89 180)
+					(length 2.54)
+					(name "QC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -11.43 180)
+					(length 2.54)
+					(name "QD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -412,12 +412,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Simulation_SPICE:0"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -508,9 +513,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Simulation_SPICE:VDC"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.0254)
 			)
@@ -708,9 +716,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Simulation_SPICE:VPULSE"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.0254)
 			)
@@ -882,12 +893,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -978,12 +994,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1055,7 +1076,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1067,7 +1088,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1098,7 +1119,19 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text ".param VCC=5 speed=1 tripdt=1n VDD={VCC}\n.tran 0 260u 0 250n"
+		(exclude_from_sim no)
+		(at 148.082 138.176 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a79048c2-a223-4d07-822d-8c7ff459e4af")
 	)
 	(junction
 		(at 102.87 26.67)
@@ -1426,17 +1459,6 @@
 		)
 		(uuid "fe4dadcb-aa18-43f3-90fa-b5d6f0221406")
 	)
-	(text ".param VCC=5 speed=1 tripdt=1n VDD={VCC}\n.tran 0 260u 0 250n"
-		(exclude_from_sim no)
-		(at 148.082 138.176 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a79048c2-a223-4d07-822d-8c7ff459e4af")
-	)
 	(label "Instruction_5"
 		(at 123.19 38.1 0)
 		(effects
@@ -1701,7 +1723,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1aa2686b-a350-48b2-b1b5-fbee78f51a90")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR04"
 			(at 144.78 130.81 0)
 			(effects
 				(font
@@ -1751,7 +1773,7 @@
 		(instances
 			(project ""
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da"
-					(reference "#PWR02")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -1865,7 +1887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f7c3a78-d4bb-4463-b2cb-48816b150009")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 144.78 118.11 0)
 			(effects
 				(font
@@ -1915,7 +1937,7 @@
 		(instances
 			(project ""
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1931,7 +1953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e027967-8229-4209-b6b6-5c31378cecb0")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR01"
 			(at 113.03 20.32 0)
 			(effects
 				(font
@@ -1981,7 +2003,7 @@
 		(instances
 			(project ""
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da"
-					(reference "#PWR05")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -2170,7 +2192,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec4bb49d-14ac-431f-8684-f31b85a32729")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR02"
 			(at 113.03 53.34 0)
 			(effects
 				(font
@@ -2220,7 +2242,7 @@
 		(instances
 			(project ""
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da"
-					(reference "#PWR04")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -2236,7 +2258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed8675a0-f86e-4d9d-9667-9f18961df3a9")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR05"
 			(at 157.48 130.81 0)
 			(effects
 				(font
@@ -2286,7 +2308,7 @@
 		(instances
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da"
-					(reference "#PWR03")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2295,6 +2317,10 @@
 	(sheet
 		(at 195.58 24.13)
 		(size 60.96 62.23)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2324,183 +2350,183 @@
 		)
 		(pin "I0a" output
 			(at 256.54 34.29 0)
+			(uuid "cc91c105-c572-4f97-8942-d05431ce2f1c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cc91c105-c572-4f97-8942-d05431ce2f1c")
 		)
 		(pin "I1a" output
 			(at 256.54 31.75 0)
+			(uuid "7234009d-b01f-4fa7-a871-b34f57525fa7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7234009d-b01f-4fa7-a871-b34f57525fa7")
 		)
 		(pin "I2a" output
 			(at 256.54 29.21 0)
+			(uuid "8d9721bb-2b34-444b-a349-a5f0bc18ae3b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8d9721bb-2b34-444b-a349-a5f0bc18ae3b")
 		)
 		(pin "I3a" output
 			(at 256.54 26.67 0)
+			(uuid "12bc84f4-5d63-4294-ac49-d52b4afa337b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "12bc84f4-5d63-4294-ac49-d52b4afa337b")
 		)
 		(pin "LevelC_OE" output
 			(at 234.95 24.13 90)
+			(uuid "69e54424-17e8-4755-b658-4bc5eb603ded")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "69e54424-17e8-4755-b658-4bc5eb603ded")
 		)
 		(pin "MEMMode" output
 			(at 242.57 86.36 270)
+			(uuid "60d39d97-1a87-4d44-a46f-f315651b7c94")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "60d39d97-1a87-4d44-a46f-f315651b7c94")
 		)
 		(pin "~{STACK_LE}" output
 			(at 232.41 24.13 90)
+			(uuid "28186863-a8e5-4965-a501-9fd729b00d53")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "28186863-a8e5-4965-a501-9fd729b00d53")
 		)
 		(pin "Carry_Flg" output
 			(at 256.54 41.91 0)
+			(uuid "93ec60c0-6ded-447c-967c-7babf9126ef9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "93ec60c0-6ded-447c-967c-7babf9126ef9")
 		)
 		(pin "~{JMP}" output
 			(at 247.65 86.36 270)
+			(uuid "70506570-02a1-455a-b3c8-5df004e6f6a4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "70506570-02a1-455a-b3c8-5df004e6f6a4")
 		)
 		(pin "~{Imm_OE}" output
 			(at 237.49 24.13 90)
+			(uuid "70d755a3-259a-43c9-90a1-c33e65b8641b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "70d755a3-259a-43c9-90a1-c33e65b8641b")
 		)
 		(pin "ALU_~{Eb}" output
 			(at 256.54 36.83 0)
+			(uuid "3186d5dd-48e8-4de1-80c3-e9ed9007800c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3186d5dd-48e8-4de1-80c3-e9ed9007800c")
 		)
 		(pin "~{ALU_OE}" output
 			(at 240.03 24.13 90)
+			(uuid "e0ff766c-5089-44f1-a698-b6abffded876")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e0ff766c-5089-44f1-a698-b6abffded876")
 		)
 		(pin "Zero_Flg" output
 			(at 256.54 44.45 0)
+			(uuid "b46a8cb9-c299-41b8-8052-68f063a73d68")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b46a8cb9-c299-41b8-8052-68f063a73d68")
 		)
 		(pin "BUS_Zero" input
 			(at 195.58 41.91 180)
+			(uuid "cc27d2b1-f90a-4a13-9cab-bd47e104b954")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "cc27d2b1-f90a-4a13-9cab-bd47e104b954")
 		)
 		(pin "Carry_OUT" input
 			(at 195.58 44.45 180)
+			(uuid "ef5437c5-24cc-4411-a560-568f6931f451")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ef5437c5-24cc-4411-a560-568f6931f451")
 		)
 		(pin "Instruction_[0..7]" input
 			(at 195.58 39.37 180)
+			(uuid "ce5a7146-bc94-42da-9d0e-26096559ee67")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ce5a7146-bc94-42da-9d0e-26096559ee67")
 		)
 		(pin "~{RAM_WR}" output
 			(at 195.58 31.75 180)
+			(uuid "2096809e-2332-45df-b39e-c9a875ec80b5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2096809e-2332-45df-b39e-c9a875ec80b5")
 		)
 		(pin "~{RAM_RD}" output
 			(at 195.58 34.29 180)
+			(uuid "87d1ca5a-5614-4c38-acd2-ac409d59b864")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "87d1ca5a-5614-4c38-acd2-ac409d59b864")
 		)
 		(instances
 			(project "HC4_KiCad_tb"
@@ -2515,4 +2541,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
