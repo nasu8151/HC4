@@ -3125,16 +3125,6 @@
 	)
 	(bus
 		(pts
-			(xy 76.2 39.37) (xy 76.2 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0523aa82-3813-4c5a-8113-ea959c1d5b9c")
-	)
-	(bus
-		(pts
 			(xy 254 71.12) (xy 254 93.98)
 		)
 		(stroke
@@ -3365,26 +3355,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 49.53) (xy 60.96 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "294edec0-be81-477f-894d-5c01acf38fc4")
-	)
-	(bus
-		(pts
-			(xy 55.88 44.45) (xy 27.94 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e51b141-4dc6-4acb-b5f6-1b558b5da729")
-	)
-	(wire
-		(pts
 			(xy 43.18 171.45) (xy 48.26 171.45)
 		)
 		(stroke
@@ -3432,16 +3402,6 @@
 			(type default)
 		)
 		(uuid "33235602-1d81-48d1-8f5c-42db0770e29a")
-	)
-	(wire
-		(pts
-			(xy 203.2 39.37) (xy 203.2 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c5e4c66-90fb-497a-9d51-c748f014329e")
 	)
 	(polyline
 		(pts
@@ -3632,16 +3592,6 @@
 			(type default)
 		)
 		(uuid "5e3d1731-10c0-47e5-98b6-3dcc332f27b8")
-	)
-	(bus
-		(pts
-			(xy 27.94 44.45) (xy 27.94 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5eb7bc21-e933-413d-8739-8d6d78265f1f")
 	)
 	(wire
 		(pts
@@ -3903,16 +3853,6 @@
 		)
 		(uuid "89187d5e-6bbd-4063-9988-890233356a66")
 	)
-	(wire
-		(pts
-			(xy 189.23 39.37) (xy 189.23 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "898f87e1-da95-45e7-bf06-0c9f1a5e6998")
-	)
 	(bus
 		(pts
 			(xy 246.38 119.38) (xy 254 119.38)
@@ -3942,16 +3882,6 @@
 			(type default)
 		)
 		(uuid "8b1649ff-d0ec-42bf-b429-557d562ba366")
-	)
-	(bus
-		(pts
-			(xy 55.88 39.37) (xy 55.88 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cf9bd11-fd17-4db9-b2d0-6fe3e70b1b84")
 	)
 	(bus
 		(pts
@@ -4282,16 +4212,6 @@
 			(type default)
 		)
 		(uuid "e33e5fff-029d-40e0-b925-48fb0b0b3fb1")
-	)
-	(wire
-		(pts
-			(xy 58.42 39.37) (xy 58.42 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e39ffefd-f5a0-4941-93d3-ed599860d739")
 	)
 	(bus
 		(pts
@@ -6507,16 +6427,6 @@
 				(justify left)
 			)
 		)
-		(pin "BUS_Zero" input
-			(at 203.2 48.26 90)
-			(uuid "0d7e3e72-1553-4830-81f6-07eef34bcf12")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "Zero_Flg" output
 			(at 238.76 59.69 0)
 			(uuid "99ec8412-78fd-4b34-9055-18271df43162")
@@ -6605,16 +6515,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "LevelC_OE" output
-			(at 189.23 48.26 90)
-			(uuid "345dcc83-751f-4791-98ca-ab613b33f093")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "~{RAM_WR}" output
@@ -6780,39 +6680,9 @@
 				(justify left)
 			)
 		)
-		(pin "ALU[0..3]" input
-			(at 91.44 39.37 270)
-			(uuid "d8731db7-1001-4ab5-80b6-20557cabf0c6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Databus[0..3]" bidirectional
-			(at 76.2 39.37 270)
-			(uuid "50d15c3a-8160-4d45-a8e7-a72914204ccb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "Stack[0..3]" output
 			(at 105.41 39.37 270)
 			(uuid "218ce36f-20cf-4cfb-83ec-2705822db320")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "~{ALU_OE}" input
-			(at 186.69 39.37 270)
-			(uuid "6f4cbeff-bf1b-4c1e-bfe4-e813a1a99413")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,9 +6710,9 @@
 				(justify left)
 			)
 		)
-		(pin "BUS_Zero" output
-			(at 203.2 39.37 270)
-			(uuid "18234a75-2248-4afa-a710-e5ccf0c91605")
+		(pin "ALU[0..3]" input
+			(at 91.44 39.37 270)
+			(uuid "f3df9acd-b8bc-4a50-a661-356d9fe9ee22")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6850,39 +6720,9 @@
 				(justify left)
 			)
 		)
-		(pin "RAM_A[0..7]" input
-			(at 55.88 39.37 270)
-			(uuid "00317572-489c-4b39-bbc1-03e13d5f0e5d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "~{RD}" input
-			(at 58.42 39.37 270)
-			(uuid "22a75230-7235-491d-9be1-5e9a1b2509c5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "~{WR}" input
-			(at 60.96 39.37 270)
-			(uuid "42367c67-e56c-4602-bfed-3590a598ea6e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Level_C_OE" input
-			(at 189.23 39.37 270)
-			(uuid "1e7c8269-118f-4856-ba2e-582b777707c8")
+		(pin "~{ALU_OE}" input
+			(at 186.69 39.37 270)
+			(uuid "488cefa2-12a1-4322-b4cd-f6dc09830e95")
 			(effects
 				(font
 					(size 1.27 1.27)
