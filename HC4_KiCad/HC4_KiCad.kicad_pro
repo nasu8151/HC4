@@ -576,10 +576,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "./HC4_gbr",
+      "plot": "../../",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "HC4_KiCad.step",
       "svg": "",
       "vrml": ""
     },
