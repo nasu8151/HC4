@@ -8,5 +8,5 @@ Instruction to internal signals. (x means "Don't Care")
 | ```SA r```      | 0111 | 11          | 0       | 1      | 1         | 1         | 0     |
 | ```LD r```      | 100x | xx          | 1       | 1      | 1         | 0         | 1     |
 | ```LD #i```     | 1010 | 00          | 0       | 1      | 1         | 0         | 0     |
-| (Reserved)      | 110x | xx          | x       | x      | x         | 0         | x     |
-| ```JP *[ABC]``` | 111x | xx          | 0       | 0      | 1         | 1         | 0     |
+| (Reserved)      | 110x | xx          | x       | x      | x         | x         | x     |
+| ```JP *[ABC]``` | 111x | xx          | x       | 0      | 1         | 1         | 0     |

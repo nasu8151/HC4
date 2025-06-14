@@ -744,12 +744,12 @@
       "Program Counter"
     ],
     [
-      "164b1f41-83dc-48ee-8dfe-457b556a7022",
-      "Instruction Decoder"
-    ],
-    [
       "ee79785c-5138-4152-a60d-370cd803a828",
       "ROM_RAM"
+    ],
+    [
+      "164b1f41-83dc-48ee-8dfe-457b556a7022",
+      "Instruction Decoder"
     ],
     [
       "3d67359d-c55c-4207-8a6b-ff7c83e276f6",
