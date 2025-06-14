@@ -4111,7 +4111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "204f0c84-3b53-403f-9765-43a2ac4d2cb4")
-		(property "Reference" "CP5"
+		(property "Reference" "CP3"
 			(at 80.01 170.1799 0)
 			(effects
 				(font
@@ -4165,7 +4165,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "CP5")
+					(reference "CP3")
 					(unit 1)
 				)
 			)
@@ -4181,7 +4181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2629c4fa-b99c-419e-b541-5e3e7938c8d8")
-		(property "Reference" "CP6"
+		(property "Reference" "CP4"
 			(at 92.71 170.1799 0)
 			(effects
 				(font
@@ -4235,7 +4235,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "CP6")
+					(reference "CP4")
 					(unit 1)
 				)
 			)
@@ -4976,7 +4976,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "972e1203-e1cd-4b27-a84a-fa450dee09e6")
-		(property "Reference" "CP3"
+		(property "Reference" "CP1"
 			(at 54.61 170.1799 0)
 			(effects
 				(font
@@ -5030,7 +5030,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "CP3")
+					(reference "CP1")
 					(unit 1)
 				)
 			)
@@ -5365,7 +5365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdec367b-d54b-48a0-8aef-c4a4c41b7cca")
-		(property "Reference" "CP4"
+		(property "Reference" "CP2"
 			(at 67.31 170.1799 0)
 			(effects
 				(font
@@ -5419,7 +5419,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/51fb15b9-2319-4d69-a07a-a04158a23ae2"
-					(reference "CP4")
+					(reference "CP2")
 					(unit 1)
 				)
 			)

@@ -3058,7 +3058,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 87.63) (xy 179.07 87.63)
+			(xy 168.91 87.63) (xy 196.85 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3098,7 +3098,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 88.9) (xy 275.59 97.79)
+			(xy 275.59 87.63) (xy 275.59 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3115,16 +3115,6 @@
 			(type default)
 		)
 		(uuid "0ceaaeac-90e3-40f9-9491-2b42e8e893a3")
-	)
-	(wire
-		(pts
-			(xy 257.81 87.63) (xy 257.81 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cf7fb96-35e2-4099-9bca-66659e4785dc")
 	)
 	(wire
 		(pts
@@ -3255,16 +3245,6 @@
 			(type default)
 		)
 		(uuid "27112128-728e-4f77-84e7-d6b687270b39")
-	)
-	(wire
-		(pts
-			(xy 257.81 88.9) (xy 275.59 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27d9cb2b-2234-4952-b10d-38a9a5ef21f3")
 	)
 	(wire
 		(pts
@@ -3468,7 +3448,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 88.9) (xy 196.85 97.79)
+			(xy 196.85 87.63) (xy 196.85 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3905,26 +3885,6 @@
 			(type default)
 		)
 		(uuid "9107cf39-7054-4af7-bf0b-602bf6aa95ac")
-	)
-	(wire
-		(pts
-			(xy 179.07 87.63) (xy 179.07 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91ff54da-f890-4ed2-839d-089797221786")
-	)
-	(wire
-		(pts
-			(xy 179.07 88.9) (xy 196.85 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9209364e-aefb-432a-9934-61ec5217e3cc")
 	)
 	(bus
 		(pts
@@ -4468,7 +4428,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 87.63) (xy 257.81 87.63)
+			(xy 247.65 87.63) (xy 275.59 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5794,7 +5754,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "437253a4-5ae7-4bd6-8094-9ea0214b4ec4")
-		(property "Reference" "CP8"
+		(property "Reference" "CP5"
 			(at 144.018 170.942 0)
 			(effects
 				(font
@@ -5848,7 +5808,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/294cbb59-ed60-4be2-81ec-3da02c446083"
-					(reference "CP8")
+					(reference "CP5")
 					(unit 1)
 				)
 			)
@@ -7066,7 +7026,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6de23311-fff3-4c4b-a7fa-ea9e84715815")
-		(property "Reference" "CP11"
+		(property "Reference" "CP7"
 			(at 156.718 170.942 0)
 			(effects
 				(font
@@ -7120,7 +7080,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/294cbb59-ed60-4be2-81ec-3da02c446083"
-					(reference "CP11")
+					(reference "CP7")
 					(unit 1)
 				)
 			)
@@ -8570,7 +8530,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f8cb66e4-01b7-41fe-85a6-7854671071d0")
-		(property "Reference" "CP9"
+		(property "Reference" "CP6"
 			(at 150.368 170.942 0)
 			(effects
 				(font
@@ -8624,7 +8584,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/294cbb59-ed60-4be2-81ec-3da02c446083"
-					(reference "CP9")
+					(reference "CP6")
 					(unit 1)
 				)
 			)

@@ -3057,7 +3057,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2f1cf91f-b7c5-4594-9eac-e574727f7e85")
-		(property "Reference" "CP13"
+		(property "Reference" "CP10"
 			(at 122.428 189.992 0)
 			(effects
 				(font
@@ -3111,7 +3111,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "CP13")
+					(reference "CP10")
 					(unit 1)
 				)
 			)
@@ -4550,7 +4550,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf3ce88f-94aa-4bec-901c-08ecc4eddac3")
-		(property "Reference" "CP12"
+		(property "Reference" "CP9"
 			(at 116.078 189.992 0)
 			(effects
 				(font
@@ -4604,7 +4604,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "CP12")
+					(reference "CP9")
 					(unit 1)
 				)
 			)
