@@ -1,6 +1,7 @@
 - [How to read these tables](#how-to-read-these-tables)
 - [Instruction table](#instruction-table)
   - [HC4](#hc4)
+  - [HC4E](#hc4e)
   - [HC8](#hc8)
 - [Instruction List](#instruction-list)
   - [Logical and alithmetic instructions](#logical-and-alithmetic-instructions)
@@ -10,6 +11,7 @@
   - [Logical and alithmetic instructions](#logical-and-alithmetic-instructions-1)
   - [Register and memory access instructions](#register-and-memory-access-instructions-1)
   - [System control instructions](#system-control-instructions-1)
+  - [HC4E](#hc4e-1)
 
 
 # How to read these tables
@@ -22,6 +24,10 @@ As noted [README](https://github.com/nasu8151/HC4), instruction of these CPUs ar
 "PC" means Program Counter.
 
 # Instruction table
+
+Do not include any instructions marked as (Reserved) in the program.
+These instrucitons may not work correctly. 
+
 ## HC4
 
 | bit 5-4\7-6 | 00            | 01         | 10            | 11                       |
@@ -30,6 +36,15 @@ As noted [README](https://github.com/nasu8151/HC4), instruction of these CPUs ar
 | 01          | ```SC r```    | ```OR r``` | ```LD r```    | (Reserved)               |
 | 10          | ```SU r```    | ```AN r``` | ```LD #i```   | ```JP [ABC]```, ```NP``` |
 | 11          | ```AD r```    | ```SA r``` | (Reserved)    | (Reservred)              |
+
+## HC4<sub>E</sub>
+
+| bit 5-4\7-6 | 00         | 01         | 10          | 11                      |
+| ----------- | ---------- | ---------- | ----------- | ----------------------- |
+| 00          | (Reserved) | ```XR r``` | (Reserved)  | (Reserved)              |
+| 01          | (Reserved) | (Reserved) | ```LD r```  | (Reserved)              |
+| 10          | (Reserved) | (Reserved) | ```LD #i``` | ```JP [AB]```, ```NP``` |
+| 11          | ```AD r``` | ```SA r``` | (Reserved)  | (Reservred)             |
 
 ## HC8
 
@@ -97,3 +112,7 @@ Load and shift instruction, ```LS #i```, used to load an 8-bit wide data onto th
 
 ```NP``` does nothing. This is equivalent to ```NOP```.   
 ```JP``` instructions change conditionally PC.
+
+## HC4<sub>E</sub>
+
+In HC4<sub>E</sub>, only stack levels A and B are valid. Therefore, the ```SC``` instruction 
