@@ -7,7 +7,7 @@ ls #0
 ld #0x8
 ls #0
 jl      ;jump and link to 0x0080
-e1      ;fill delay slot
+np      ;fill delay slot
 ld r0
 ld #0xf
 ls #0xe

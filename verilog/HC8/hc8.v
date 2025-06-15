@@ -153,6 +153,7 @@ module hc8 (
                 4'b1111: begin
                     level_A <= data_bus;
                     level_B <= pc[15:8];
+                    level_C <= level_B;
                 end
             endcase
             instruction <= rom[pc];
