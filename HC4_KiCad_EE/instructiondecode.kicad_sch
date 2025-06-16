@@ -3350,6 +3350,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "~{Carry_Flg}"
+		(exclude_from_sim no)
+		(at 121.92 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b47c3ad3-998d-4725-8fa7-e32ce17f51ed")
+	)
 	(junction
 		(at 184.15 102.87)
 		(diameter 0)
@@ -3515,6 +3526,10 @@
 		(uuid "403d9f1a-5a06-4270-8104-0b74c929ee79")
 	)
 	(no_connect
+		(at 121.92 135.89)
+		(uuid "5a142990-7dfe-4709-b2dd-5eaba0666a0c")
+	)
+	(no_connect
 		(at 107.95 100.33)
 		(uuid "66b1e006-8ada-4878-b6b2-0485c917a912")
 	)
@@ -3577,6 +3592,15 @@
 		(uuid "a2a16c34-d4ca-44a0-bb8b-27c2c83acc5c")
 	)
 	(bus_entry
+		(at 261.62 48.26)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5fb581d-29a4-4f90-ac53-1691daf6d76f")
+	)
+	(bus_entry
 		(at 20.32 48.26)
 		(size 2.54 2.54)
 		(stroke
@@ -3593,6 +3617,33 @@
 			(type default)
 		)
 		(uuid "bba5c302-5347-409f-85f1-d867b99cb836")
+	)
+	(bus_entry
+		(at 261.62 40.64)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d09f8b0a-a85f-421e-aea0-b81ab966ec09")
+	)
+	(bus_entry
+		(at 261.62 43.18)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e828f058-9d44-4802-be86-1adb49365648")
+	)
+	(bus_entry
+		(at 261.62 45.72)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f893a9db-dff5-433b-ad15-9141d6739989")
 	)
 	(wire
 		(pts
@@ -3743,6 +3794,16 @@
 			(type default)
 		)
 		(uuid "1c18f415-b7c0-406e-9607-9be72536a1b8")
+	)
+	(wire
+		(pts
+			(xy 240.03 48.26) (xy 261.62 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cfa0f5c-6abe-4523-9480-7748952e78e2")
 	)
 	(wire
 		(pts
@@ -3913,6 +3974,16 @@
 			(type default)
 		)
 		(uuid "3868e02c-2331-4c0a-a42a-d1483ddf7766")
+	)
+	(bus
+		(pts
+			(xy 264.16 48.26) (xy 264.16 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a8bfdec-7d9e-444c-b501-a1290640a9f2")
 	)
 	(wire
 		(pts
@@ -4214,6 +4285,16 @@
 		)
 		(uuid "728fdd28-9df9-4b5a-ae8e-782ee8d39e51")
 	)
+	(bus
+		(pts
+			(xy 264.16 50.8) (xy 266.7 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72f16bfb-19c8-4ca4-8a72-253ed87eb980")
+	)
 	(wire
 		(pts
 			(xy 163.83 82.55) (xy 163.83 85.09)
@@ -4283,6 +4364,26 @@
 			(type default)
 		)
 		(uuid "7faab5ac-31a7-490d-8569-75fda4e36424")
+	)
+	(bus
+		(pts
+			(xy 264.16 45.72) (xy 264.16 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "822bd421-456f-48a8-9028-e7965ba9784c")
+	)
+	(wire
+		(pts
+			(xy 240.03 43.18) (xy 261.62 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8253db65-15c7-4d1f-b270-32d5c965b46b")
 	)
 	(wire
 		(pts
@@ -4503,6 +4604,16 @@
 			(type default)
 		)
 		(uuid "ae607eca-c144-4b91-912d-08097b475b7e")
+	)
+	(wire
+		(pts
+			(xy 240.03 45.72) (xy 261.62 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afadf61d-c2c0-4445-84a7-218d9156eb68")
 	)
 	(wire
 		(pts
@@ -4744,6 +4855,16 @@
 		)
 		(uuid "dedc6a86-a53f-4069-b253-a95fbc2427d6")
 	)
+	(bus
+		(pts
+			(xy 264.16 43.18) (xy 264.16 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df41cc93-2700-4bd0-a975-a9ce0f4a1447")
+	)
 	(wire
 		(pts
 			(xy 133.35 102.87) (xy 139.7 102.87)
@@ -4884,6 +5005,16 @@
 		)
 		(uuid "f767dfc2-646c-45f6-bcaf-34f59530161a")
 	)
+	(wire
+		(pts
+			(xy 240.03 40.64) (xy 261.62 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8adb4c7-9b0c-4762-9808-85ba1fbe914f")
+	)
 	(bus
 		(pts
 			(xy 20.32 40.64) (xy 20.32 38.1)
@@ -4954,6 +5085,26 @@
 		)
 		(uuid "00c3ca72-5449-4548-ace4-d5935a1ba148")
 	)
+	(label "Data_A0"
+		(at 261.62 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04c018b9-c077-46b2-9c37-33260508747d")
+	)
+	(label "Data_A2"
+		(at 261.62 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "08268629-da02-4260-be5a-5558dfe24b32")
+	)
 	(label "Carry_EN"
 		(at 204.47 60.96 180)
 		(effects
@@ -4993,6 +5144,16 @@
 			(justify left bottom)
 		)
 		(uuid "2eead590-feb9-4cc4-98e2-3a8f3fed75af")
+	)
+	(label "Instruction_0"
+		(at 240.03 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "31035e06-3250-4b3c-a14d-5ce224344d72")
 	)
 	(label "Carry_EN"
 		(at 143.51 74.93 270)
@@ -5034,6 +5195,16 @@
 		)
 		(uuid "66d33c10-d08c-441c-98aa-12a56a10e200")
 	)
+	(label "Data_A3"
+		(at 261.62 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "67156749-0caf-497f-8f4c-59ef02f0ac5e")
+	)
 	(label "Instruction_0"
 		(at 46.99 138.43 0)
 		(effects
@@ -5054,16 +5225,6 @@
 		)
 		(uuid "6ff967b0-04a7-4df2-a2fc-1d4b97e8b643")
 	)
-	(label "~{Carry_Flg}"
-		(at 121.92 135.89 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "700cb01b-5adf-4678-a6e6-2d7ce6f28252")
-	)
 	(label "Instruction_7"
 		(at 97.79 38.1 0)
 		(effects
@@ -5083,6 +5244,26 @@
 			(justify left bottom)
 		)
 		(uuid "8e4871b7-1d95-4b5d-a95c-86b7d7a680c0")
+	)
+	(label "Instruction_1"
+		(at 240.03 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "937d6b78-8cd4-4194-8c9b-07ff4d1c454f")
+	)
+	(label "Data_A1"
+		(at 261.62 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "987c0058-4089-4410-914a-bf1ef3949eca")
 	)
 	(label "Instruction_6"
 		(at 97.79 43.18 0)
@@ -5185,6 +5366,16 @@
 		(uuid "d7285763-f2c6-46a7-96c6-8e0eb97257e0")
 	)
 	(label "Instruction_2"
+		(at 240.03 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da3b2ba5-de7b-4286-b402-a4c565f38baf")
+	)
+	(label "Instruction_2"
 		(at 36.83 50.8 180)
 		(effects
 			(font
@@ -5193,6 +5384,16 @@
 			(justify right bottom)
 		)
 		(uuid "dce037f1-b680-4441-b5f6-e2e73845413b")
+	)
+	(label "Instruction_3"
+		(at 240.03 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e54f64ea-a182-45ff-a4b3-38da23ace8c3")
 	)
 	(label "Instruction_6"
 		(at 36.83 40.64 180)
@@ -5431,6 +5632,17 @@
 		)
 		(uuid "b91bd530-177c-4276-b145-73ae13194d01")
 	)
+	(hierarchical_label "Data_A[0..3]"
+		(shape output)
+		(at 266.7 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bca8d60c-cea8-44e7-9a7d-2ec31367d106")
+	)
 	(hierarchical_label "~{RAM_RD}"
 		(shape output)
 		(at 80.01 45.72 0)
@@ -5468,7 +5680,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 69.85 45.72 0)
 			(effects
 				(font
@@ -5609,7 +5821,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 181.3052 152.4 0)
 			(effects
 				(font
@@ -5677,7 +5889,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 185.42 60.96 0)
 			(effects
 				(font
@@ -5782,7 +5994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 187.6552 152.4 0)
 			(effects
 				(font
@@ -5834,7 +6046,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21e5c9a2-7034-4189-b5dc-549660082d43")
-		(property "Reference" "R4"
+		(property "Reference" "R11"
 			(at 135.89 97.7899 0)
 			(effects
 				(font
@@ -5888,7 +6100,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "R4")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -5904,7 +6116,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22c7e96a-572e-4f36-8a36-fa106a90ceb6")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR063"
 			(at 241.3 138.43 0)
 			(effects
 				(font
@@ -5955,7 +6167,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR060")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -5971,7 +6183,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2596461a-43c0-4466-a2db-4e287f499bd5")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR062"
 			(at 139.7 109.22 0)
 			(effects
 				(font
@@ -6021,7 +6233,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR072")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -6054,7 +6266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 261.62 148.59 0)
 			(effects
 				(font
@@ -6196,7 +6408,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 104.14 133.35 0)
 			(effects
 				(font
@@ -6302,7 +6514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 100.33 97.79 0)
 			(effects
 				(font
@@ -6408,7 +6620,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 241.3 148.59 0)
 			(effects
 				(font
@@ -6495,7 +6707,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3d698510-90c0-47c3-836b-713bba658baa")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR056"
 			(at 72.39 97.79 0)
 			(effects
 				(font
@@ -6545,7 +6757,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR054")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -6577,7 +6789,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 186.69 40.64 0)
 			(effects
 				(font
@@ -6682,7 +6894,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 63.5 97.79 0)
 			(effects
 				(font
@@ -6787,7 +6999,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 81.28 97.79 0)
 			(effects
 				(font
@@ -7014,7 +7226,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6036932c-6d77-474a-9026-e351cee2171f")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR055"
 			(at 54.61 153.67 0)
 			(effects
 				(font
@@ -7064,7 +7276,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR053")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -7080,7 +7292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65dff92d-e507-4edb-b264-cfa44617b74d")
-		(property "Reference" "R7"
+		(property "Reference" "R14"
 			(at 166.37 97.7899 0)
 			(effects
 				(font
@@ -7134,7 +7346,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "R7")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -7219,7 +7431,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a7db273-469d-4a5f-a746-ed2fdb7365e3")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR057"
 			(at 73.66 125.73 0)
 			(effects
 				(font
@@ -7269,7 +7481,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR055")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -7285,7 +7497,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89e34a4e-bc42-425d-b688-e13f53deff33")
-		(property "Reference" "R8"
+		(property "Reference" "R15"
 			(at 176.53 97.7899 0)
 			(effects
 				(font
@@ -7339,7 +7551,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "R8")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -7355,7 +7567,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e35a9de-e525-4085-b039-2feff7310d68")
-		(property "Reference" "R9"
+		(property "Reference" "R16"
 			(at 186.69 97.7899 0)
 			(effects
 				(font
@@ -7409,7 +7621,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "R9")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -7425,7 +7637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f87f9a0-f740-43c9-ba47-fdfc5b5aeb71")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR058"
 			(at 76.2 177.8 0)
 			(effects
 				(font
@@ -7475,7 +7687,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR056")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -7701,7 +7913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b696ecbf-fc74-46c2-9714-b6641b21cc79")
-		(property "Reference" "R6"
+		(property "Reference" "R13"
 			(at 156.21 97.7899 0)
 			(effects
 				(font
@@ -7755,7 +7967,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "R6")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -7771,7 +7983,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc60b0a5-9f3c-4b8f-a92b-6362c74cb3aa")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR064"
 			(at 241.3 171.45 0)
 			(effects
 				(font
@@ -7821,7 +8033,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR061")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -7853,7 +8065,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 73.66 147.32 0)
 			(effects
 				(font
@@ -7947,7 +8159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bedb4765-1f04-4c00-91cc-902034519a2c")
-		(property "Reference" "R10"
+		(property "Reference" "R17"
 			(at 198.12 97.7899 0)
 			(effects
 				(font
@@ -8001,7 +8213,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "R10")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -8017,7 +8229,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c703a872-e2cf-476f-96e7-751074f1669d")
-		(property "Reference" "R5"
+		(property "Reference" "R12"
 			(at 146.05 97.7899 0)
 			(effects
 				(font
@@ -8071,7 +8283,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "R5")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -8086,7 +8298,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ce1ee1fd-7534-4c1a-a22b-9b0ab20ac8e3")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR054"
 			(at 54.61 97.79 0)
 			(effects
 				(font
@@ -8136,7 +8348,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR052")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -8169,7 +8381,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 174.9552 152.4 0)
 			(effects
 				(font
@@ -8238,7 +8450,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 135.89 52.07 0)
 			(effects
 				(font
@@ -8432,7 +8644,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0226d04-4584-4cb5-8336-a62f5bc3dcd9")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR061"
 			(at 104.14 128.27 0)
 			(effects
 				(font
@@ -8482,7 +8694,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR059")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -8498,7 +8710,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e18ed9df-be75-404a-9fb9-034f0c33a2d7")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR060"
 			(at 100.33 93.98 0)
 			(effects
 				(font
@@ -8548,7 +8760,7 @@
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR058")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -8581,7 +8793,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 194.0052 152.4 0)
 			(effects
 				(font
@@ -8633,7 +8845,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e89668f5-9038-4f67-988b-b30089585924")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR059"
 			(at 92.71 99.06 0)
 			(effects
 				(font
@@ -8683,7 +8895,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "#PWR057")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -8715,7 +8927,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 69.85 60.96 0)
 			(effects
 				(font
@@ -8857,7 +9069,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 220.98 148.59 0)
 			(effects
 				(font
@@ -8961,7 +9173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 118.11 40.64 0)
 			(effects
 				(font

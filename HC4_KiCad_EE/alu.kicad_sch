@@ -25,7 +25,7 @@
 					)
 				)
 			)
-			(property "Value" "74HC257"
+			(property "Value" "74HC253"
 				(at -7.62 -24.13 0)
 				(effects
 					(font
@@ -3845,7 +3845,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 151.13 101.6 0)
 			(effects
 				(font
@@ -3986,7 +3986,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 151.13 116.84 0)
 			(effects
 				(font
@@ -4129,7 +4129,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 77.1652 175.26 0)
 			(effects
 				(font
@@ -4199,7 +4199,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 89.8652 175.26 0)
 			(effects
 				(font
@@ -4267,7 +4267,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 151.13 133.35 0)
 			(effects
 				(font
@@ -4410,7 +4410,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 115.57 171.45 0)
 			(effects
 				(font
@@ -4882,7 +4882,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 213.36 110.49 0)
 			(effects
 				(font
@@ -4994,7 +4994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 51.7652 175.26 0)
 			(effects
 				(font
@@ -5128,7 +5128,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 151.13 148.59 0)
 			(effects
 				(font
@@ -5271,7 +5271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -5383,7 +5383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 64.4652 175.26 0)
 			(effects
 				(font
@@ -5585,7 +5585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 213.36 50.8 0)
 			(effects
 				(font

@@ -1326,6 +1326,12 @@
 		(uuid "c3814503-33be-4426-abd7-6885641bd5ab")
 	)
 	(junction
+		(at 63.5 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06d9e943-783f-44f8-b964-12068e72b1ed")
+	)
+	(junction
 		(at 101.6 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1348,12 +1354,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "54a4e449-cc11-44ed-af40-4d2c9374c56d")
-	)
-	(junction
-		(at 59.69 181.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "59bafa84-d9d0-4c67-846a-8df204e3fae6")
 	)
 	(junction
 		(at 59.69 171.45)
@@ -1607,6 +1607,16 @@
 		)
 		(uuid "4399870d-8261-4bea-8a7a-857c04f677b5")
 	)
+	(bus
+		(pts
+			(xy 63.5 40.64) (xy 161.29 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43a90af3-1930-47a9-b31c-cbfbd521d6d6")
+	)
 	(polyline
 		(pts
 			(xy 15.24 35.56) (xy 25.4 25.4)
@@ -1839,6 +1849,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 180.34) (xy 59.69 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86fc6001-c570-4c58-8260-1fb9dbecaaff")
+	)
+	(wire
+		(pts
 			(xy 20.32 187.96) (xy 17.78 187.96)
 		)
 		(stroke
@@ -1987,6 +2007,16 @@
 		)
 		(uuid "b5f1cd4f-33cf-4389-87f2-219c739e0985")
 	)
+	(bus
+		(pts
+			(xy 63.5 40.64) (xy 63.5 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b803bd44-df27-4538-aa76-d0e36561834a")
+	)
 	(polyline
 		(pts
 			(xy 175.26 148.59) (xy 165.1 138.43)
@@ -1996,6 +2026,16 @@
 			(type default)
 		)
 		(uuid "bda4f58f-1754-4df8-90f4-01e8568547f4")
+	)
+	(bus
+		(pts
+			(xy 161.29 40.64) (xy 161.29 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be05a800-6af4-41ab-85b9-9b3a6d079be7")
 	)
 	(bus
 		(pts
@@ -2017,16 +2057,6 @@
 		)
 		(uuid "c4bcfc67-7332-48a1-929f-94f13502d05c")
 	)
-	(wire
-		(pts
-			(xy 60.96 181.61) (xy 59.69 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5a60510-8828-47c2-a979-b901ff3beed5")
-	)
 	(bus
 		(pts
 			(xy 80.01 144.78) (xy 120.65 144.78)
@@ -2036,6 +2066,16 @@
 			(type default)
 		)
 		(uuid "ca4584f8-5906-4619-92f4-1d8df716eba1")
+	)
+	(bus
+		(pts
+			(xy 63.5 39.37) (xy 63.5 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5a606c7-35ec-4980-b63a-6b1443664d4d")
 	)
 	(wire
 		(pts
@@ -2166,16 +2206,6 @@
 			(type default)
 		)
 		(uuid "f82888c0-c223-4191-b487-09ed25acf81e")
-	)
-	(wire
-		(pts
-			(xy 59.69 180.34) (xy 59.69 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8f537fa-4f20-491d-ad96-e9031455cfb4")
 	)
 	(wire
 		(pts
@@ -2450,73 +2480,6 @@
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 60.96 181.61 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e0a6415-7988-4e80-b2e5-68b48b6262c1")
-		(property "Reference" "#FLG02"
-			(at 62.865 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 64.77 181.6099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 60.96 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b42a683-2fce-4ff8-b6b6-56b02be69b67")
-		)
-		(instances
-			(project "HC4_KiCad"
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
-					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -3395,6 +3358,16 @@
 				(justify left)
 			)
 		)
+		(pin "Data_A[0..3]" output
+			(at 161.29 48.26 90)
+			(uuid "af0bd94f-e090-4028-b646-27713bc0720a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
@@ -3551,6 +3524,16 @@
 		(pin "Databus[0..3]" bidirectional
 			(at 105.41 39.37 270)
 			(uuid "548ce7d6-55e7-4c75-ac8a-9cae0d2b2e96")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Data_A[0..3]" input
+			(at 63.5 39.37 270)
+			(uuid "1c224eb1-a903-4bb9-b670-6e4cb843975a")
 			(effects
 				(font
 					(size 1.27 1.27)
