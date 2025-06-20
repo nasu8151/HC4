@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HC4_CPU")
-		(date "2025-02-23")
-		(rev "1.2")
+		(date "2025-06-16")
+		(rev "1.0")
 	)
 	(lib_symbols
 		(symbol "Connector:AVR-UPDI-6"
@@ -4132,7 +4132,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
 			(at 50.8 69.85 90)
 			(effects
 				(font
@@ -4332,7 +4332,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cc067f1-e196-4387-b122-b8467df3fca4")
-		(property "Reference" "R10"
+		(property "Reference" "R3"
 			(at 149.86 113.0299 0)
 			(effects
 				(font
@@ -4350,7 +4350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 145.542 114.3 90)
 			(effects
 				(font
@@ -4386,7 +4386,7 @@
 		(instances
 			(project ""
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/ee79785c-5138-4152-a60d-370cd803a828"
-					(reference "R10")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4490,7 +4490,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 147.32 105.41 0)
 			(effects
 				(font

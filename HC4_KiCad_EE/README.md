@@ -1,4 +1,4 @@
-Schematics and board of HC4.
+Schematics and board of HC4<sub>E</sub> (E means "for Education").
 
 ![Picture of the Board](/extra/HC4_KiCad.png)
 
