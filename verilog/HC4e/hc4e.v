@@ -1,3 +1,7 @@
+/*
+iverilog -o hc4e_tb.out -s hc4e_tb hc4e_tb.v hc4e.v
+vvp hc4e_tb.out
+*/
 `include "alu.v"
 
 module hc4e (
@@ -7,6 +11,7 @@ module hc4e (
     output wire [3:0]       stackA_out,
     output wire [3:0]       stackB_out,
     inout  wire [3:0]       data_bus,
+    output wire [3:0]       address_bus,
     output wire             nRAM_RD,
     output wire             nRAM_WR
 
@@ -35,7 +40,7 @@ module hc4e (
     assign sub = instruction[6:4] == 3'b010 ? 1 : 0; //if opcode is 0010 (1010 is not ALU oplation)
     assign nRAM_WR = !(!instruction[7] & !clk);
     assign nRAM_RD = !(instruction[7] & !instruction[6] & !instruction[5] & !clk);
-
+    assign address_bus = instruction[3:0];
     alu ALU (
         .in_A (level_A),
         .in_B (level_B),

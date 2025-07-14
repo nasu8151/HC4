@@ -28,6 +28,7 @@ module hc4e_tb;
         .pc_out(pc_out),
         .stackA_out(level_A),
         .stackB_out(level_B),
+        .address_bus(address_bus),
         .data_bus(data_bus),
         .nRAM_RD(nRAM_RD),
         .nRAM_WR(nRAM_WR)

@@ -32,8 +32,8 @@ module alu_tb;
         sel_in = 3'b0;
         carry_in = 1'b0;
 
-        // テストケース: 加算 (sel_in = 3'b010)
-        #10 in_A = 4'b0101; in_B = 4'b0011; sel_in = 3'b010; carry_in = 1'b1;
+        // テストケース: 加算 (sel_in = 3'b011)
+        #10 in_A = 4'b0101; in_B = 4'b0011; sel_in = 3'b011; carry_in = 1'b0;
         #10 $display("Add: A=%b, B=%b, Cin=%b, Out=%b, Cout=%b", in_A, in_B, carry_in, out, carry_out);
 
         // テストケース: XOR (sel_in = 3'b100)

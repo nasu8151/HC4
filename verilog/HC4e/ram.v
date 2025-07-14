@@ -8,7 +8,7 @@ module memory_4bit_16nibble (
     input wire nread_enable          // 読み出し有効信号
 );
 
-    // 4ビット幅、256個のメモリ配列
+    // 4ビット幅、16個のメモリ配列
     reg [3:0] memory [0:15];
 
     // トライステートバスの中間信号
