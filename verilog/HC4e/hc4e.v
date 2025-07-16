@@ -5,8 +5,9 @@ vvp hc4e_tb.out
 `include "alu.v"
 
 module hc4e (
-    input wire clk,
+    input wire clock,
     input wire nReset,
+    input wire [7:0] instruction,
     output wire [7:0]      pc_out,
     output wire [3:0]       stackA_out,
     output wire [3:0]       stackB_out,
@@ -19,12 +20,11 @@ module hc4e (
     reg [3:0] level_A; //stack level A
     reg [3:0] level_B; //stack level B
     reg [7:0] pc;
+    reg [23:0] prescale;
+    reg clk;
 
-    reg [7:0] rom [0:255];
 
-    initial $readmemh("./hc4etest.hex", rom);
 
-    wire [7:0] instruction;
 
     wire sub;
 
@@ -33,7 +33,6 @@ module hc4e (
     reg  carry_flg;
     reg  zero_flg;
 
-    assign instruction = rom[pc];
     assign pc_out = pc;
     assign stackA_out = level_A;
     assign stackB_out = level_B;
@@ -41,6 +40,21 @@ module hc4e (
     assign nRAM_WR = !(!instruction[7] & !clk);
     assign nRAM_RD = !(instruction[7] & !instruction[6] & !instruction[5] & !clk);
     assign address_bus = instruction[3:0];
+
+    initial begin
+        prescale = 24'd0;
+        clk    = 1'd0;
+    end
+
+        always @(posedge clock) begin
+        if (prescale == 24'd9_999_999) begin
+            prescale <= 24'd0;         // プリスケールをクリア
+            clk    <= ~clk;  // 1 Hz ごとにメインカウンタを +1
+        end else begin
+            prescale <= prescale + 24'd1; // それ以外はプリスケールをインクリメント
+        end
+    end
+    
     alu ALU (
         .in_A (level_A),
         .in_B (level_B),
