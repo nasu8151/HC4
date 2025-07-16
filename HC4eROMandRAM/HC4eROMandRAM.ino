@@ -1,148 +1,158 @@
 /*
- * HC4eROMandRAM.ino  ── ATmega4809 を “簡易メモリユニット” として使うスケッチ
- *
- *  ■ 階層構造（2025‑07‑11 改訂）
- *    ① **ROM プログラマ (UART)**
- *       ‑ PC から 64 B ×2 フレームで 128 B の命令列を書込み
- *       ‑ ベリファイ用に 1 B 読出し `'R'` コマンドも残す
- *         → 書込み×2 → 読取り×1 の 3 フレームで完了
- *    ② **ROM 読み出し (パラレル)**
- *       ‑ PA[7:0] = アドレス入力 → PD[7:0] にデータ提示
- *    ③ **RAM 制御**（フックのみ。今後拡張）
- *
- *  ▼ UART フレーム（①）
- *    [0]=0x02 [1]=CMD('W'/'R') [2]=ADDR [3]=LEN [4…]=DATA [last]=0x03
- *      CMD='W': LEN=1–64, DATA=書込バイト列
- *      CMD='R': LEN=0      , DATA=なし  → MCU が 1 B 応答
- *
- *  ▼ ポート割り当て（②）
- *    PA0‑PA7 … アドレス入力  (8bit)
- *    PD0‑PD7 … データ出力   (8bit, 常時ドライブ)
+ * HC4eROMandRAM.ino ── 128 B ROM + 16×4‑bit RAM/I/O  “三役” 完全版
+ *   ▼ UART コマンド
+ *       02 'W' ADDR LEN DATA… 03   → EEPROM.write
+ *       02 'R' ADDR 00  03        → EEPROM.read 1B 応答
+ *       02 'r' ADDR 00  03        → RAM4[0‑F] 読出し (4bit)
+ *   ▼ ハード配線
+ *       ROM : PA→addr (未使用)  PD→data
+ *       RAM : PE0‑3=data  PC2‑5=addr  PF0=nRD̅ PF1=nWR̅ PF2=AI̅ PF3=AO̅ PF4=BO̅
  */
 
 #include <Arduino.h>
 #include <EEPROM.h>
 #include <avr/io.h>
 
-/* ===== 設定 ===== */
-#define BAUD_RATE   115200
-#define MEM_SIZE    256u
-#define USE_REG_IO  1         // 0: Arduino API, 1: レジスタ直叩き
-/* ================= */
+#define BAUD_RATE 115200
+#define MEM_SIZE  256u
 
-/* 受信パーサ状態 */
-enum S : uint8_t { STX, CMD, ADDR, LEN, DATA, ETX };
+/* ===== グローバル ===== */
+static uint8_t ram4[16] = {0};        // 4‑bit×16 word (下位4bitのみ使用)
 
-/* プロトタイプ */
-static void programROM();   // UART 書込み + 1B 読出し
-static void serviceROM();   // パラレル読み出し
-static void serviceRAM();   // 予備
+/* ===== ピン定義 (PortF) ===== */
+#define PF_nRD 0
+#define PF_nWR 1
+#define PF_AI  2
+#define PF_AO  3
+#define PF_BO  4
 
-/* ===== SETUP ===== */
-void setup() {
-  Serial1.begin(BAUD_RATE);     // PC 不在でも即起動
+/* ===== 状態列挙 (UART パーサ) ===== */
+enum S:uint8_t{STX,CMD,ADDR,LEN,DATA,ETX};
 
-#if USE_REG_IO
-  PORTA.DIR = 0x00;             // PA as input (addr)
-  PORTD.DIR = 0xFF;             // PD as output (data)
+/* ===== プロトタイプ ===== */
+static void programUART();   // ROM W/R + RAM r
+static void serviceRAM();    // 4bit RAM + I/O
+static void serviceROM();    // PA→EEPROM→PD (ポート ROM)
+
+/******************** setup ************************/
+void setup(){
+  Serial1.begin(BAUD_RATE);
+
+  /* --- RAM/I/O バス設定 --- */
+  PORTC.DIR &= ~(0b00111100);   // PC2‑5 A0‑A3 入力
+  PORTE.DIR &= ~0x0F;           // PE0‑3 データ Hi‑Z
+  PORTE.OUT &= ~0x0F;
+
+  PORTF.DIR &= ~((1<<PF_nRD)|(1<<PF_nWR));
+  PORTF.DIR |=  (1<<PF_AI)|(1<<PF_AO)|(1<<PF_BO);
+  VPORTF.OUT |= (1<<PF_AI)|(1<<PF_AO)|(1<<PF_BO); // disable (負論理)
+
+  /* --- PA/PD (ROM 出力) --- */
+  PORTA.DIR = 0x00;   // PA 入力 (アドレス)
+  PORTD.DIR = 0xFF;   // PD 出力 (データ)
   VPORTD.OUT = 0x00;
-#else
-  const uint8_t paPins[8] = {22,23,24,25,26,27,28,29};
-  const uint8_t pdPins[8] = {2,3,4,5,6,7,8,9};
-  for (uint8_t p: paPins) pinMode(p, INPUT);
-  for (uint8_t p: pdPins) { pinMode(p, OUTPUT); digitalWrite(p, LOW);}  
-#endif
+  Serial1.write(PORTF.DIR);
+  Serial1.write(VPORTF.OUT);
 }
 
-/* ===== LOOP ===== */
-void loop() {
-  programROM();   // UART フレーム処理
-  serviceROM();   // パラレル ROM 出力
-  serviceRAM();   // 将来拡張
+/******************** loop *************************/
+void loop(){
+  programUART();   // UART 処理（ROM W/R と RAM 読み）
+  serviceRAM();    // RAM / I/O バス
+  serviceROM();    // EEPROM → PD 出力
 }
 
-/* ------------------------------------------------- */
-/* ① UART → ROM 書込み / 1B 読出し                  */
-/* ------------------------------------------------- */
-static void programROM() {
-  static S st = STX;
-  static uint8_t cmd, addr, len, idx;
-  static uint8_t buf[64];
-
-  if (!Serial1.available()) return;
-  uint8_t b = Serial1.read();
-  if (b == '\r' || b == '\n') return;   // 改行コード無視
-
-  switch (st) {
-    case STX:
-      if (b == 0x02) st = CMD;
-      break;
-
-    case CMD:
-      if (b == 'W' || b == 'R') { cmd = b; st = ADDR; }
-      else st = STX;  // 不正コマンド
-      break;
-
-    case ADDR:
-      addr = b;
-      st   = LEN;
-      break;
-
-    case LEN:
-      len = b; idx = 0;
-      st  = (cmd == 'W' ? (len ? DATA : ETX) : ETX);  // 'R' は LEN=0 を期待
-      break;
-
-    case DATA:
-      buf[idx++] = b;
-      if (idx >= len) st = ETX;
-      break;
-
-    case ETX:
-      if (b == 0x03) {
-        if (cmd == 'W') {
-          for (uint8_t i = 0; i < len && (uint16_t)addr + i < MEM_SIZE; ++i) {
-            EEPROM.update(addr + i, buf[i]);
+/**************** UART プロトコル ******************/
+static void programUART(){
+  static S st=STX; static uint8_t cmd,addr,len,idx; static uint8_t buf[64];
+  while(Serial1.available()){
+    uint8_t b=Serial1.read();
+    if((st==STX)&&(b=='\r'||b=='\n')) continue;   // STX待ち時のみ改行無視
+    switch(st){
+      case STX:  if(b==0x02) st=CMD; break;
+      case CMD:  if(b=='W'||b=='R'||b=='r'){cmd=b;st=ADDR;} else st=STX; break;
+      case ADDR: addr=b; st=LEN; break;
+      case LEN:  len=b; idx=0; st=(cmd=='W'?(len?DATA:ETX):ETX); break;
+      case DATA: buf[idx++]=b; if(idx>=len) st=ETX; break;
+      case ETX:
+        if(b==0x03){
+          if(cmd=='W'){
+            for(uint8_t i=0;i<len && addr+i<MEM_SIZE;i++)
+              EEPROM.update(addr+i,buf[i]);
+          }else if(cmd=='R'){
+            if(addr<MEM_SIZE) Serial1.write(EEPROM.read(addr));
+          }else if(cmd=='r'){
+            addr &= 0x0F;
+            Serial1.write(ram4[addr] & 0x0F);
           }
-        } else if (cmd == 'R') {
-          if (addr < MEM_SIZE) Serial1.write(EEPROM.read(addr));
         }
-      }
-      st = STX;
-      break;
+        st=STX; break;
+    }
   }
 }
 
-/* ------------------------------------------------- */
-/* ② PA[7:0] → EEPROM → PD[7:0]                     */
-/* ------------------------------------------------- */
-static void serviceROM() {
-  static uint8_t prevAddr = 0xFF;
-  uint8_t addr;
+/**************** 4bit RAM / I/O サイクル **********/
+static void serviceRAM(){
+  uint8_t pf = VPORTF.IN;
+  bool rd = !(pf & (1<<PF_nRD));   // Low active
+  bool wr = !(pf & (1<<PF_nWR));
+  if(rd && wr) return;             // 同時 Low は定義しない
 
-#if USE_REG_IO
-  addr = VPORTA.IN;
-#else
-  const uint8_t paPins[8] = {22,23,24,25,26,27,28,29};
-  addr = 0;
-  for (uint8_t i = 0; i < 8; ++i) addr |= (digitalRead(paPins[i]) ? 1 : 0) << i;
-#endif
+  uint8_t addr = (VPORTC.IN >> 2) & 0x0F; // A0‑A3
+  uint8_t data;
 
-  if (addr != prevAddr) {
-    uint8_t val = EEPROM.read(addr);
-#if USE_REG_IO
-    VPORTD.OUT = val;
-#else
-  const uint8_t pdPins[8] = {2,3,4,5,6,7,8,9};
-    for (uint8_t i = 0; i < 8; ++i) digitalWrite(pdPins[i], (val >> i) & 1);
-#endif
-    prevAddr = addr;
+  /* --- 書込みサイクル --- */
+  if(wr && !rd){
+    data = VPORTE.IN & 0x0F;
+
+    if(addr==0x0E){  
+      VPORTF.OUT &= ~(1<<PF_AI);    // AI̅ パルス
+      ram4[addr] = data;
+
+    } else{
+      VPORTF.OUT |= (1<<PF_AI);
+      ram4[addr] = data;
+    }
+    PORTE.DIR &= ~0x0F;          // Hi‑Z 戻し
+  }
+  /* --- 読出しサイクル --- */
+  else if(rd && !wr){
+    if(addr==0x0E){
+    VPORTF.OUT |= (1<<PF_AO);
+    VPORTF.OUT |= (1<<PF_BO);    
+    VPORTF.OUT &= ~(1<<PF_AO);
+    data = ram4[addr];
+    PORTE.OUT = (PORTE.OUT & ~0x0F) | data;
+    PORTE.DIR |= 0x0F;          // 駆動
+  }
+    else if(addr==0x0F){
+    VPORTF.OUT |= (1<<PF_AO);
+    VPORTF.OUT |= (1<<PF_BO);
+    VPORTF.OUT &= ~(1<<PF_BO);
+    data = ram4[addr];
+    PORTE.OUT = (PORTE.OUT & ~0x0F) | data;
+    PORTE.DIR |= 0x0F;          // 駆動
+  } else{
+    VPORTF.OUT |= (1<<PF_AO);
+    VPORTF.OUT |= (1<<PF_BO);
+    data = ram4[addr];
+    PORTE.OUT = (PORTE.OUT & ~0x0F) | data;
+    PORTE.DIR |= 0x0F;          // 駆動
+  }
+  }
+  /* --- アイドル --- */
+  else{
+    PORTE.DIR &= ~0x0F;
+    VPORTF.OUT |= (1<<PF_AO)|(1<<PF_BO);
   }
 }
 
-/* ------------------------------------------------- */
-/* ③ RAM 用フック                                   */
-/* ------------------------------------------------- */
-static void serviceRAM() {
-  //  未実装
+/**************** PA→EEPROM→PD (ROM 出力) **********/
+static void serviceROM(){
+  static uint8_t prev=0xFF;
+  uint8_t a = VPORTA.IN;
+  if(a!=prev){
+    VPORTD.OUT = EEPROM.read(a);
+    prev = a;
+  }
 }
