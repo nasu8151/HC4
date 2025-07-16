@@ -1,92 +1,77 @@
 /*
- * HC4eROMandRAM.ino ── ATmega4809 内蔵 EEPROM を
- *   ├─ UART 経由で書き込める "RAM 面"
- *   └─ 8bit アドレス線 → 8bit データ線 で読み出せる "ROM 面"
- * の２つの顔を持たせたワンチップ簡易メモリ。
+ * HC4eROMandRAM.ino  ── ATmega4809 を “簡易メモリユニット” として使うスケッチ
  *
- * ▼ UART プロトコル (RAM 面) — 変更なし
- *   [STX=0x02][CMD('W'/'R')][ADDR][LEN][DATA…][ETX=0x03]
- *   - 'W' : LEN≤64B を EEPROM[ADDR] へ順次書込
- *   - 'R' : LEN=0     で EEPROM[ADDR] 1B を応答
+ *  ■ 階層構造（2025‑07‑11 改訂）
+ *    ① **ROM プログラマ (UART)**
+ *       ‑ PC から 64 B ×2 フレームで 128 B の命令列を書込み
+ *       ‑ ベリファイ用に 1 B 読出し `'R'` コマンドも残す
+ *         → 書込み×2 → 読取り×1 の 3 フレームで完了
+ *    ② **ROM 読み出し (パラレル)**
+ *       ‑ PA[7:0] = アドレス入力 → PD[7:0] にデータ提示
+ *    ③ **RAM 制御**（フックのみ。今後拡張）
  *
- * ▼ ROM 面 (UPDATE)
- *   ・PA0‑PA7  … アドレス入力  (8bit)
- *   ・PD0‑PD7  … データ出力   (8bit, 常時ドライブ)
- *   CPU がアドレスバスに値を出力すると、ATmega4809 が同一アドレスの EEPROM を
- *   読んで PD0‑7 に反映する。CS/OE 信号は省略し常時有効 (必要なら後で追加可)。
+ *  ▼ UART フレーム（①）
+ *    [0]=0x02 [1]=CMD('W'/'R') [2]=ADDR [3]=LEN [4…]=DATA [last]=0x03
+ *      CMD='W': LEN=1–64, DATA=書込バイト列
+ *      CMD='R': LEN=0      , DATA=なし  → MCU が 1 B 応答
  *
- *   時系列イメージ:
- *     CPU→[PA] = 0x3C   → MCU 読取 → EEPROM.read(0x3C) = 0xA5
- *                                             ↓
- *                       MCU→[PD] = 0xA5  (CPU データバスへ提示)
+ *  ▼ ポート割り当て（②）
+ *    PA0‑PA7 … アドレス入力  (8bit)
+ *    PD0‑PD7 … データ出力   (8bit, 常時ドライブ)
  */
 
 #include <Arduino.h>
 #include <EEPROM.h>
-#include <avr/io.h>  // 低レベル Port 操作用
+#include <avr/io.h>
 
-/* ===== ユーザ設定 ============================= */
-#define BAUD_RATE   115200        // UART1 速度 (PC0/PC1)
-#define MEM_SIZE    256u          // EEPROM サイズ
-#define USE_REG_IO  1             // 1=レジスタ直叩き / 0=pinMode/digitalRead
-/* ============================================= */
+/* ===== 設定 ===== */
+#define BAUD_RATE   115200
+#define MEM_SIZE    256u
+#define USE_REG_IO  1         // 0: Arduino API, 1: レジスタ直叩き
+/* ================= */
 
-/* --- 受信パーサ状態 --- */
+/* 受信パーサ状態 */
 enum S : uint8_t { STX, CMD, ADDR, LEN, DATA, ETX };
 
-/* --- 前方宣言 --- */
-static void handleSerial();
-static void serviceROM();
+/* プロトタイプ */
+static void programROM();   // UART 書込み + 1B 読出し
+static void serviceROM();   // パラレル読み出し
+static void serviceRAM();   // 予備
 
-/* ===== MCU SETUP ===== */
+/* ===== SETUP ===== */
 void setup() {
-  /* UART (RAM 面) */
-  Serial1.begin(BAUD_RATE);
-  while (!Serial1);
+  Serial1.begin(BAUD_RATE);     // PC 不在でも即起動
 
 #if USE_REG_IO
-  /* PA0‑7 : アドレス入力 (DIR=0) */
-  PORTA.DIR = 0x00;
-  /* PD0‑7 : データ出力  (DIR=1, 初期値=0) */
-  PORTD.DIR = 0xFF;
+  PORTA.DIR = 0x00;             // PA as input (addr)
+  PORTD.DIR = 0xFF;             // PD as output (data)
   VPORTD.OUT = 0x00;
 #else
-  /*
-   * === Arduino ピンマッピング例 (Nano Every) ===
-   *   PD0 → D2   PD4 → D6
-   *   PD1 → D3   PD5 → D7
-   *   PD2 → D4   PD6 → D8
-   *   PD3 → D5   PD7 → D9
-   *
-   * ボードによって異なる場合は pdPins[] を書き替えてください。
-   */
-  const uint8_t paPins[8] = {22,23,24,25,26,27,28,29};  // PA0‑7
-  const uint8_t pdPins[8] = {2,3,4,5,6,7,8,9};          // PD0‑7 (例)
-  for (uint8_t i = 0; i < 8; ++i) pinMode(paPins[i], INPUT);
-  for (uint8_t i = 0; i < 8; ++i) {
-    pinMode(pdPins[i], OUTPUT);
-    digitalWrite(pdPins[i], LOW);
-  }
+  const uint8_t paPins[8] = {22,23,24,25,26,27,28,29};
+  const uint8_t pdPins[8] = {2,3,4,5,6,7,8,9};
+  for (uint8_t p: paPins) pinMode(p, INPUT);
+  for (uint8_t p: pdPins) { pinMode(p, OUTPUT); digitalWrite(p, LOW);}  
 #endif
 }
 
-/* ===== MAIN LOOP ===== */
+/* ===== LOOP ===== */
 void loop() {
-  handleSerial();  // RAM 面 (UART 書込/読込)
-  serviceROM();    // ROM 面 (ポート読み→出力)
+  programROM();   // UART フレーム処理
+  serviceROM();   // パラレル ROM 出力
+  serviceRAM();   // 将来拡張
 }
 
 /* ------------------------------------------------- */
-/*  RAM 面 : UART プロトコル                         */
+/* ① UART → ROM 書込み / 1B 読出し                  */
 /* ------------------------------------------------- */
-static void handleSerial() {
+static void programROM() {
   static S st = STX;
   static uint8_t cmd, addr, len, idx;
   static uint8_t buf[64];
 
   if (!Serial1.available()) return;
   uint8_t b = Serial1.read();
-  if (b == '\r' || b == '\n') return;
+  if (b == '\r' || b == '\n') return;   // 改行コード無視
 
   switch (st) {
     case STX:
@@ -95,7 +80,7 @@ static void handleSerial() {
 
     case CMD:
       if (b == 'W' || b == 'R') { cmd = b; st = ADDR; }
-      else st = STX;             // 不正コマンド
+      else st = STX;  // 不正コマンド
       break;
 
     case ADDR:
@@ -105,7 +90,7 @@ static void handleSerial() {
 
     case LEN:
       len = b; idx = 0;
-      st  = (len ? DATA : ETX);
+      st  = (cmd == 'W' ? (len ? DATA : ETX) : ETX);  // 'R' は LEN=0 を期待
       break;
 
     case DATA:
@@ -120,8 +105,7 @@ static void handleSerial() {
             EEPROM.update(addr + i, buf[i]);
           }
         } else if (cmd == 'R') {
-          if (addr < MEM_SIZE)
-            Serial1.write(EEPROM.read(addr));
+          if (addr < MEM_SIZE) Serial1.write(EEPROM.read(addr));
         }
       }
       st = STX;
@@ -130,33 +114,35 @@ static void handleSerial() {
 }
 
 /* ------------------------------------------------- */
-/*  ROM 面 : PA[7:0] = アドレス, PD[7:0] = データ   */
+/* ② PA[7:0] → EEPROM → PD[7:0]                     */
 /* ------------------------------------------------- */
 static void serviceROM() {
-  /* クロック 16 MHz / 115200bps でも 100 µs に 1 回程度呼ばれれば十分 */
-  static uint8_t prevAddr = 0xFF;   // 初回強制更新用
+  static uint8_t prevAddr = 0xFF;
   uint8_t addr;
 
 #if USE_REG_IO
-  addr = VPORTA.IN;                 // 8bit 一括読取り
+  addr = VPORTA.IN;
 #else
   const uint8_t paPins[8] = {22,23,24,25,26,27,28,29};
-  const uint8_t pdPins[8] = {2,3,4,5,6,7,8,9};
   addr = 0;
-  for (uint8_t bit = 0; bit < 8; ++bit) {
-    addr |= (digitalRead(paPins[bit]) ? 1 : 0) << bit;
-  }
+  for (uint8_t i = 0; i < 8; ++i) addr |= (digitalRead(paPins[i]) ? 1 : 0) << i;
 #endif
 
   if (addr != prevAddr) {
     uint8_t val = EEPROM.read(addr);
 #if USE_REG_IO
-    VPORTD.OUT = val;               // データ提示
+    VPORTD.OUT = val;
 #else
-    for (uint8_t bit = 0; bit < 8; ++bit) {
-      digitalWrite(pdPins[bit], (val >> bit) & 1);
-    }
+  const uint8_t pdPins[8] = {2,3,4,5,6,7,8,9};
+    for (uint8_t i = 0; i < 8; ++i) digitalWrite(pdPins[i], (val >> i) & 1);
 #endif
     prevAddr = addr;
   }
+}
+
+/* ------------------------------------------------- */
+/* ③ RAM 用フック                                   */
+/* ------------------------------------------------- */
+static void serviceRAM() {
+  //  未実装
 }
