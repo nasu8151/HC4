@@ -1,10 +1,15 @@
 # HC4 ASSEMBLER
+
 ## Syntax
+
 > [!NOTE]
 > IF you want to know function about assembly, please read [instructions_manual.md](https://github.com/nasu8151/HC4/blob/main/instructions_manual.md).
+
 ### Basic syntax
+
 Let's get right to the explanation, but first, we tell you one.
 On HC4 assembler, comments are represented by `;`. characters on the line after `;` are ignored during assembly.
+
 ```assembly
 <Instruction>
 <Instruction> <reg> ;reg means a 4-bit wide register. In the program, it is represented by r0 to r15 in program.
@@ -17,3 +22,12 @@ On HC4 assembler, comments are represented by `;`. characters on the line after 
 <Instruction> <stk>
 <Instruction> <flg> <stk>
 ```
+
+## Command Line Options
+
+```shell
+hc4_asm filename -o output -f [hex | ihex]
+```
+
+- ```-o``` : Set output file name.
+- ```-f``` : Set output format (```hex``` for verilog or ```ihex```)
