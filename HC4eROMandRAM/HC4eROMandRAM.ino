@@ -1,97 +1,144 @@
 /*
- * HC4eROMandRAM.ino ── 128 B ROM + 16×4‑bit RAM/I/O  “三役” 完全版
- *   ▼ UART コマンド
- *       02 'W' ADDR LEN DATA… 03   → EEPROM.write
- *       02 'R' ADDR 00  03        → EEPROM.read 1B 応答
- *       02 'r' ADDR 00  03        → RAM4[0‑F] 読出し (4bit)
- *   ▼ ハード配線
- *       ROM : PA→addr (未使用)  PD→data
- *       RAM : PE0‑3=data  PC2‑5=addr  PF0=nRD̅ PF1=nWR̅ PF2=AI̅ PF3=AO̅ PF4=BO̅
- */
+ * HC4eROMandRAM.ino ── 128 B ROM (EEPROM) + 16×4‑bit RAM/I/O “三役” 完全版
+ *   2025‑07‑18   Intel‑HEX 行毎即書込み版 + 小文字 l,r コマンド
+ *   2025‑07‑18b  CR を無視し LF で行確定（空行 ERR 解消）
+ *
+ * ─── 概要 ──────────────────────────────────
+ *  UART コマンド (115200‑8N1)
+ *    L / l  : Intel‑HEX ローダ  (1 行ずつ即 EEPROM 書込み)
+ *    R / r  : 4‑bit RAM ダンプ   (16 word, comma separated)
+ *
+ *  内蔵 EEPROM 0‑255 を ROM 領域として読み出し、
+ *  外付け 4‑bit RAM を PC2‑5, PE0‑3, PF0‑1 で制御。
+ *────────────────────────────────────────────*/
 
 #include <Arduino.h>
 #include <EEPROM.h>
 #include <avr/io.h>
 
+/************* 定数 ******************************/
 #define BAUD_RATE 115200
-#define MEM_SIZE  256u
+#define MEM_SIZE  256u      /* 内蔵 EEPROM = 256 バイト */
 
-/* ===== グローバル ===== */
-static uint8_t ram4[16] = {0};        // 4‑bit×16 word (下位4bitのみ使用)
-
-/* ===== ピン定義 (PortF) ===== */
+/************* Port/F ビット定義 ******************/
 #define PF_nRD 0
 #define PF_nWR 1
 #define PF_AI  2
 #define PF_AO  3
 #define PF_BO  4
 
-/* ===== 状態列挙 (UART パーサ) ===== */
-enum S:uint8_t{STX,CMD,ADDR,LEN,DATA,ETX};
+/************* 4‑bit RAM/I‑O *********************/
+static uint8_t ram4[16] = {0};   /* 4‑bit ×16 word */
 
-/* ===== プロトタイプ ===== */
-static void programUART();   // ROM W/R + RAM r
-static void serviceRAM();    // 4bit RAM + I/O
-static void serviceROM();    // PA→EEPROM→PD (ポート ROM)
-
-/******************** setup ************************/
-void setup(){
-  Serial1.begin(BAUD_RATE);
-
-  /* --- RAM/I/O バス設定 --- */
-  PORTC.DIR &= ~(0b00111100);   // PC2‑5 A0‑A3 入力
-  PORTE.DIR &= ~0x0F;           // PE0‑3 データ Hi‑Z
-  PORTE.OUT &= ~0x0F;
-
-  PORTF.DIR &= ~((1<<PF_nRD)|(1<<PF_nWR));
-  PORTF.DIR |=  (1<<PF_AI)|(1<<PF_AO)|(1<<PF_BO);
-  VPORTF.OUT |= (1<<PF_AI)|(1<<PF_AO)|(1<<PF_BO); // disable (負論理)
-
-  /* --- PA/PD (ROM 出力) --- */
-  PORTA.DIR = 0x00;   // PA 入力 (アドレス)
-  PORTD.DIR = 0xFF;   // PD 出力 (データ)
-  VPORTD.OUT = 0x00;
-  Serial1.write(PORTF.DIR);
-  Serial1.write(VPORTF.OUT);
+/************* HEX 変換ユーティリティ *************/
+static int hex1(char c){
+  if(c>='0'&&c<='9') return c-'0';
+  if(c>='A'&&c<='F') return c-'A'+10;
+  if(c>='a'&&c<='f') return c-'a'+10;
+  return -1;
+}
+static int hex2(const char* p){
+  int h=hex1(p[0]), l=hex1(p[1]);
+  return (h<0||l<0)?-1: (h<<4)|l;
+}
+static int hex4(const char* p){
+  int hi=hex2(p), lo=hex2(p+2);
+  return (hi<0||lo<0)?-1: (hi<<8)|lo;
+}
+static int readDataBytes(int len,const char* p,uint8_t* dst){
+  for(int i=0;i<len;i++){
+    int v=hex2(p+i*2);
+    if(v<0) return -1;
+    dst[i]=(uint8_t)v;
+  }
+  return 0;
+}
+static void putHex(uint8_t b){
+  static const char tbl[]="0123456789ABCDEF";
+  Serial1.write(tbl[b>>4]); Serial1.write(tbl[b&0x0F]);
 }
 
-/******************** loop *************************/
-void loop(){
-  programUART();   // UART 処理（ROM W/R と RAM 読み）
-  serviceRAM();    // RAM / I/O バス
-  serviceROM();    // EEPROM → PD 出力
+/************* Intel‑HEX ローダ *******************/
+static void intelhexLoad(){
+  char line[96];
+  uint32_t baseHigh = 0;   /* type‑04 上位アドレス */
+  uint16_t written  = 0;
+
+  while(true){
+    /* ---------- 1 行受信 : CR 無視, LF で確定 ---------- */
+    uint8_t idx=0;
+    while(true){
+      while(!Serial1.available()){}
+      char c = Serial1.read();
+      if(c=='\r') continue;       /* CR 無視 */
+      if(c=='\n') break;          /* LF で行確定 */
+      if(idx < sizeof(line)-1) line[idx++] = c;
+    }
+    line[idx] = '\0';
+
+    if(idx==0){ Serial1.println(F("[ERR] empty")); return; }
+
+    /* EOF */
+    if(strcmp(line,":00000001FF")==0){
+      Serial1.print(F("[OK] ")); Serial1.println(written);
+      return;
+    }
+
+    /* 基本フォーマット */
+    if(line[0] != ':'){ Serial1.println(F("[ERR] fmt")); return; }
+    int len   = hex2(&line[1]);
+    int addr  = hex4(&line[3]);
+    int rtype = hex2(&line[7]);
+    if(len<0||addr<0||rtype<0){ Serial1.println(F("[ERR] fmt")); return; }
+
+    /* 拡張線形アドレス */
+    if(rtype==0x04 && len==2){
+      baseHigh = (uint32_t)hex2(&line[9])<<8 | hex2(&line[11]);
+      continue;
+    }
+    /* データレコード以外はスキップ */
+    if(rtype!=0x00) continue;
+
+    uint32_t fullAddr = (baseHigh<<16) | (uint16_t)addr;
+    if(fullAddr + len > MEM_SIZE){ Serial1.println(F("[ERR] range")); return; }
+
+    uint8_t buf[64];
+    if(readDataBytes(len,&line[9],buf)!=0){ Serial1.println(F("[ERR] data")); return; }
+    for(int i=0;i<len;i++) EEPROM.write(fullAddr+i, buf[i]);
+    written += len;
+  }
 }
 
-/**************** UART プロトコル ******************/
+/************* 4‑bit RAM ダンプ *******************/
+static void ramDump(){
+  for(uint8_t i=0;i<16;i++){
+    putHex(ram4[i] & 0x0F);
+    if(i==15) Serial1.println(); else Serial1.write(',');
+  }
+}
+
+/************* UART コマンド受付 ******************/
 static void programUART(){
-  static S st=STX; static uint8_t cmd,addr,len,idx; static uint8_t buf[64];
+  static char buf[8];
+  static uint8_t idx=0;
+
   while(Serial1.available()){
-    uint8_t b=Serial1.read();
-    if((st==STX)&&(b=='\r'||b=='\n')) continue;   // STX待ち時のみ改行無視
-    switch(st){
-      case STX:  if(b==0x02) st=CMD; break;
-      case CMD:  if(b=='W'||b=='R'||b=='r'){cmd=b;st=ADDR;} else st=STX; break;
-      case ADDR: addr=b; st=LEN; break;
-      case LEN:  len=b; idx=0; st=(cmd=='W'?(len?DATA:ETX):ETX); break;
-      case DATA: buf[idx++]=b; if(idx>=len) st=ETX; break;
-      case ETX:
-        if(b==0x03){
-          if(cmd=='W'){
-            for(uint8_t i=0;i<len && addr+i<MEM_SIZE;i++)
-              EEPROM.update(addr+i,buf[i]);
-          }else if(cmd=='R'){
-            if(addr<MEM_SIZE) Serial1.write(EEPROM.read(addr));
-          }else if(cmd=='r'){
-            addr &= 0x0F;
-            Serial1.write(ram4[addr] & 0x0F);
-          }
-        }
-        st=STX; break;
+    char c = Serial1.read();
+    if(c=='\r') continue;          /* CR 無視 */
+    if(c=='\n'){
+      if(idx==0){ continue; }      /* 連続改行は無視 */
+      buf[idx]='\0';
+      char cmd = buf[0];
+      if(cmd=='L'||cmd=='l') intelhexLoad();
+      else if(cmd=='R'||cmd=='r') ramDump();
+      idx=0;                       /* バッファクリア */
+    }else if(idx<sizeof(buf)-1){
+      buf[idx++] = c;
     }
   }
 }
 
-/**************** 4bit RAM / I/O サイクル **********/
+/************* serviceROM *************************/
 static void serviceRAM(){
   uint8_t pf = VPORTF.IN;
   bool rd = !(pf & (1<<PF_nRD));   // Low active
@@ -155,4 +202,29 @@ static void serviceROM(){
     VPORTD.OUT = EEPROM.read(a);
     prev = a;
   }
+}
+
+/************* Arduino 標準関数 *******************/
+void setup(){
+  Serial1.begin(BAUD_RATE);
+
+  /* --- RAM/I/O バス設定 --- */
+  PORTC.DIR &= ~(0b00111100);   // PC2‑5 A0‑A3 入力
+  PORTE.DIR &= ~0x0F;           // PE0‑3 データ Hi‑Z
+  PORTE.OUT &= ~0x0F;
+
+  PORTF.DIR &= ~((1<<PF_nRD)|(1<<PF_nWR));
+  PORTF.DIR |=  (1<<PF_AI)|(1<<PF_AO)|(1<<PF_BO);
+  VPORTF.OUT |= (1<<PF_AI)|(1<<PF_AO)|(1<<PF_BO); // disable (負論理)
+
+  /* --- PA/PD (ROM 出力) --- */
+  PORTA.DIR = 0x00;   // PA 入力 (アドレス)
+  PORTD.DIR = 0xFF;   // PD 出力 (データ)
+  VPORTD.OUT = 0x00;
+}
+
+void loop(){
+  programUART();   /* UART コマンド受付 */
+  serviceROM();    /* ROM 読出し */
+  serviceRAM();    /* 4‑bit RAM RW */
 }
