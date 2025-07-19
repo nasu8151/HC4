@@ -4243,7 +4243,7 @@
 	)
 	(symbol
 		(lib_id "74xx_2:74HC86")
-		(at 151.13 133.35 0)
+		(at 151.13 148.59 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4252,7 +4252,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f71ba74-1b22-44fa-b483-5dc3886ea050")
 		(property "Reference" "IC1"
-			(at 150.8252 124.46 0)
+			(at 150.8252 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4260,7 +4260,7 @@
 			)
 		)
 		(property "Value" "74HC86"
-			(at 150.8252 127 0)
+			(at 150.8252 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4268,7 +4268,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
-			(at 151.13 133.35 0)
+			(at 151.13 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4277,7 +4277,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC86"
-			(at 151.13 133.35 0)
+			(at 151.13 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4286,7 +4286,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input XOR"
-			(at 151.13 133.35 0)
+			(at 151.13 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4295,7 +4295,7 @@
 			)
 		)
 		(property "Sim.Library" "74hc.lib"
-			(at 151.13 129.54 0)
+			(at 151.13 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4304,7 +4304,7 @@
 			)
 		)
 		(property "Sim.Name" "74HC86"
-			(at 151.13 130.81 0)
+			(at 151.13 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4313,7 +4313,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 151.13 128.27 0)
+			(at 151.13 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,7 +4322,7 @@
 			)
 		)
 		(property "Sim.Pins" "7=VGND 14=VCC"
-			(at 151.13 137.16 0)
+			(at 151.13 152.4 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5104,7 +5104,7 @@
 	)
 	(symbol
 		(lib_id "74xx_2:74HC86")
-		(at 151.13 148.59 0)
+		(at 151.13 133.35 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5113,7 +5113,7 @@
 		(fields_autoplaced yes)
 		(uuid "9b95adf4-4f9d-4ae9-9294-74f3876f4af7")
 		(property "Reference" "IC1"
-			(at 150.8252 139.7 0)
+			(at 150.8252 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5121,7 +5121,7 @@
 			)
 		)
 		(property "Value" "74HC86"
-			(at 150.8252 142.24 0)
+			(at 150.8252 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5129,7 +5129,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
-			(at 151.13 148.59 0)
+			(at 151.13 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5138,7 +5138,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC86"
-			(at 151.13 148.59 0)
+			(at 151.13 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5147,7 +5147,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input XOR"
-			(at 151.13 148.59 0)
+			(at 151.13 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5156,7 +5156,7 @@
 			)
 		)
 		(property "Sim.Library" "74hc.lib"
-			(at 151.13 144.78 0)
+			(at 151.13 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5165,7 +5165,7 @@
 			)
 		)
 		(property "Sim.Name" "74HC86"
-			(at 151.13 146.05 0)
+			(at 151.13 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5174,7 +5174,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 151.13 143.51 0)
+			(at 151.13 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5183,7 +5183,7 @@
 			)
 		)
 		(property "Sim.Pins" "7=VGND 14=VCC"
-			(at 151.13 152.4 0)
+			(at 151.13 137.16 0)
 			(do_not_autoplace yes)
 			(effects
 				(font

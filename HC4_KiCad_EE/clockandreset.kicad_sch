@@ -3399,7 +3399,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 38.1 87.63 0)
+		(at 38.1 146.05 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3408,7 +3408,7 @@
 		(fields_autoplaced yes)
 		(uuid "272dc755-ae34-4ba8-a277-6b186ea2d920")
 		(property "Reference" "RN15"
-			(at 40.64 86.3599 0)
+			(at 40.64 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3417,7 +3417,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 40.64 88.8999 0)
+			(at 40.64 147.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3426,7 +3426,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 36.068 87.63 90)
+			(at 36.068 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3435,7 +3435,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 87.63 0)
+			(at 38.1 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3444,7 +3444,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 38.1 87.63 0)
+			(at 38.1 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5183,7 +5183,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 38.1 146.05 0)
+		(at 38.1 87.63 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5192,7 +5192,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb31af3a-1872-407b-882f-2ac4f1c9d7bf")
 		(property "Reference" "RN15"
-			(at 40.64 144.7799 0)
+			(at 40.64 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5201,7 +5201,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 40.64 147.3199 0)
+			(at 40.64 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5210,7 +5210,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 36.068 146.05 90)
+			(at 36.068 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5219,7 +5219,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 146.05 0)
+			(at 38.1 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5228,7 +5228,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 38.1 146.05 0)
+			(at 38.1 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)

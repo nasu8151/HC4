@@ -1218,13 +1218,13 @@
 		(at 165.1 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "077307eb-c078-43d9-a4fe-ee7e15d4affa")
+		(uuid "02faa7b8-0aee-4982-b54a-1521a7238c96")
 	)
 	(junction
-		(at 160.02 158.75)
+		(at 180.34 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "58f89149-3517-4e9a-8c17-2dff203a904b")
+		(uuid "62969c7b-14c8-46d0-a401-88eb040bc49b")
 	)
 	(junction
 		(at 82.55 72.39)
@@ -1233,34 +1233,34 @@
 		(uuid "71955acd-f24f-407d-b867-542584aeb32f")
 	)
 	(junction
+		(at 170.18 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71c44c8a-37ac-4ba0-bb77-393cf7e15795")
+	)
+	(junction
 		(at 156.21 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8eb6794e-152e-4b2c-be88-1e096fe2a133")
 	)
 	(junction
+		(at 160.02 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fafbfe0-0f51-467e-b9d1-9b19bb477a4d")
+	)
+	(junction
 		(at 185.42 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9a21548f-d1f1-447e-829d-fa2b0ac7b6c8")
+		(uuid "bc60ce70-493c-49fb-9548-ed8fa767fe12")
 	)
 	(junction
 		(at 175.26 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a0b4d801-f0ef-40f1-b30a-311e074cd38c")
-	)
-	(junction
-		(at 170.18 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b84152f7-9c9b-4960-8921-4389f3704924")
-	)
-	(junction
-		(at 180.34 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f15f2e86-8fd3-4b35-92d3-d7385e10a3e5")
+		(uuid "fb0cfc8f-55c6-449c-9d42-c8141237f75a")
 	)
 	(bus_entry
 		(at 80.01 87.63)
@@ -1478,16 +1478,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 158.75) (xy 190.5 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a431ac5-88d7-4d63-9d6c-008d847143b7")
-	)
-	(wire
-		(pts
 			(xy 45.72 95.25) (xy 36.83 95.25)
 		)
 		(stroke
@@ -1505,26 +1495,6 @@
 			(type default)
 		)
 		(uuid "20e3e794-9e49-4bb7-81ff-0cb156373db8")
-	)
-	(wire
-		(pts
-			(xy 165.1 158.75) (xy 170.18 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20eaf662-5095-4f9f-943c-3af682e9f938")
-	)
-	(wire
-		(pts
-			(xy 170.18 158.75) (xy 175.26 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26629db5-6f35-4631-bc8d-851c0288e62d")
 	)
 	(wire
 		(pts
@@ -1558,23 +1528,13 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 158.75) (xy 156.21 158.75)
+			(xy 165.1 158.75) (xy 170.18 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3a4f78d2-b022-40b8-a276-34a8d6882f1c")
-	)
-	(wire
-		(pts
-			(xy 180.34 158.75) (xy 185.42 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d5f18aa-6320-4a4d-8e85-3fe3e35243b5")
+		(uuid "412108a6-9397-4cbf-ae2f-533a0e2efe4c")
 	)
 	(wire
 		(pts
@@ -1598,13 +1558,13 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 158.75) (xy 180.34 158.75)
+			(xy 185.42 158.75) (xy 190.5 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58bdedda-0600-4aa7-98dd-86a0a1f28f71")
+		(uuid "511af3cd-ce4d-4ecc-b399-0734c0b647b9")
 	)
 	(wire
 		(pts
@@ -1638,16 +1598,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 158.75) (xy 160.02 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "667d72d7-202a-4108-917c-5f5875fea0ed")
-	)
-	(wire
-		(pts
 			(xy 160.02 147.32) (xy 160.02 151.13)
 		)
 		(stroke
@@ -1678,13 +1628,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 158.75) (xy 165.1 158.75)
+			(xy 170.18 158.75) (xy 175.26 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ed857bb-4eec-4b69-bd2f-b632b46e7faa")
+		(uuid "7a464e17-9610-45bd-b506-f3a1f7039cb9")
 	)
 	(bus
 		(pts
@@ -1836,6 +1786,16 @@
 		)
 		(uuid "a059f7ca-0e4d-464b-b093-6a2ddca68303")
 	)
+	(wire
+		(pts
+			(xy 156.21 158.75) (xy 160.02 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8809253-69e7-4ecc-82c0-20e51059a502")
+	)
 	(bus
 		(pts
 			(xy 30.48 85.09) (xy 30.48 87.63)
@@ -1928,6 +1888,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 158.75) (xy 180.34 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc80d6ff-e206-422f-b2e6-b2842706a290")
+	)
+	(wire
+		(pts
 			(xy 71.12 87.63) (xy 80.01 87.63)
 		)
 		(stroke
@@ -1945,6 +1915,16 @@
 			(type default)
 		)
 		(uuid "da1e9171-078a-4ac9-b53a-006ff566d496")
+	)
+	(wire
+		(pts
+			(xy 180.34 158.75) (xy 185.42 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde70466-f181-46fd-8084-c48dbc0b2563")
 	)
 	(bus
 		(pts
@@ -2006,6 +1986,16 @@
 		)
 		(uuid "eb6ae7ee-b134-48f0-8b28-e38211476ec6")
 	)
+	(wire
+		(pts
+			(xy 154.94 158.75) (xy 156.21 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efba584e-d92c-473d-8ebd-3f7021237ece")
+	)
 	(bus
 		(pts
 			(xy 82.55 72.39) (xy 82.55 85.09)
@@ -2025,6 +2015,16 @@
 			(type default)
 		)
 		(uuid "f3688727-ef7a-4891-a2b7-b40f844b3ad7")
+	)
+	(wire
+		(pts
+			(xy 160.02 158.75) (xy 165.1 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3bfaada-abdc-4f30-b175-9ca4554c1e85")
 	)
 	(wire
 		(pts
@@ -2344,7 +2344,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 175.26 154.94 0)
+		(at 190.5 154.94 0)
+		(mirror y)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2352,7 +2353,7 @@
 		(dnp no)
 		(uuid "07dc48e1-1ec5-4f71-ab7f-ad6135393aeb")
 		(property "Reference" "RN8"
-			(at 177.8 153.6699 0)
+			(at 187.96 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2361,7 +2362,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 177.8 156.2099 0)
+			(at 187.96 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2370,7 +2371,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 173.228 154.94 90)
+			(at 192.532 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2379,7 +2380,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 175.26 154.94 0)
+			(at 190.5 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2388,7 +2389,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 175.26 154.94 0)
+			(at 190.5 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2825,7 +2826,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 170.18 154.94 0)
+		(at 154.94 154.94 0)
+		(mirror y)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2834,7 +2836,7 @@
 		(fields_autoplaced yes)
 		(uuid "5a598b9a-9855-4c88-ba42-bbd4b428b03e")
 		(property "Reference" "RN7"
-			(at 172.72 153.6699 0)
+			(at 152.4 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2843,7 +2845,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 172.72 156.2099 0)
+			(at 152.4 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2852,7 +2854,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 168.148 154.94 90)
+			(at 156.972 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2861,7 +2863,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 170.18 154.94 0)
+			(at 154.94 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2870,7 +2872,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 170.18 154.94 0)
+			(at 154.94 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3116,7 +3118,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 190.5 154.94 0)
+		(at 175.26 154.94 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3124,7 +3127,7 @@
 		(dnp no)
 		(uuid "7138f6c3-547b-4523-891e-b9a49730b3a6")
 		(property "Reference" "RN8"
-			(at 193.04 153.6699 0)
+			(at 172.72 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3133,7 +3136,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 193.04 156.2099 0)
+			(at 172.72 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3142,7 +3145,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 188.468 154.94 90)
+			(at 177.292 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3151,7 +3154,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 154.94 0)
+			(at 175.26 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3160,7 +3163,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 190.5 154.94 0)
+			(at 175.26 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3203,7 +3206,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 185.42 154.94 0)
+		(at 180.34 154.94 0)
+		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3211,7 +3215,7 @@
 		(dnp no)
 		(uuid "79b06bad-1481-439e-b343-8e786338f8ea")
 		(property "Reference" "RN8"
-			(at 187.96 153.6699 0)
+			(at 177.8 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3220,7 +3224,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 187.96 156.2099 0)
+			(at 177.8 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3229,7 +3233,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 183.388 154.94 90)
+			(at 182.372 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3238,7 +3242,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 154.94 0)
+			(at 180.34 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3247,7 +3251,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 185.42 154.94 0)
+			(at 180.34 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3290,7 +3294,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 160.02 154.94 0)
+		(at 165.1 154.94 0)
+		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3317,7 +3322,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 157.988 154.94 90)
+			(at 167.132 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3326,7 +3331,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 154.94 0)
+			(at 165.1 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3335,7 +3340,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 160.02 154.94 0)
+			(at 165.1 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3717,7 +3722,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 180.34 154.94 0)
+		(at 185.42 154.94 0)
+		(mirror y)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3743,7 +3749,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 178.308 154.94 90)
+			(at 187.452 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3752,7 +3758,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 154.94 0)
+			(at 185.42 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3761,7 +3767,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 180.34 154.94 0)
+			(at 185.42 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3804,7 +3810,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 165.1 154.94 0)
+		(at 160.02 154.94 0)
+		(mirror y)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3813,7 +3820,7 @@
 		(fields_autoplaced yes)
 		(uuid "d02517d7-d524-453d-8e94-dd725193ebb7")
 		(property "Reference" "RN7"
-			(at 167.64 153.6699 0)
+			(at 157.48 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3822,7 +3829,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 167.64 156.2099 0)
+			(at 157.48 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3831,7 +3838,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 163.068 154.94 90)
+			(at 162.052 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3840,7 +3847,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 154.94 0)
+			(at 160.02 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3849,7 +3856,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 165.1 154.94 0)
+			(at 160.02 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4030,7 +4037,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 154.94 154.94 0)
+		(at 170.18 154.94 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4039,7 +4047,7 @@
 		(fields_autoplaced yes)
 		(uuid "f4cda797-c018-4ba6-80ab-d20599805a33")
 		(property "Reference" "RN7"
-			(at 157.48 153.6699 0)
+			(at 167.64 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,7 +4056,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 157.48 156.2099 0)
+			(at 167.64 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4057,7 +4065,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 152.908 154.94 90)
+			(at 172.212 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,7 +4074,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 154.94 0)
+			(at 170.18 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,7 +4083,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 154.94 154.94 0)
+			(at 170.18 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1582,7 +1582,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 161.29) (xy 72.39 161.29)
+			(xy 72.39 161.29) (xy 201.93 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2022,7 +2022,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 160.02) (xy 74.93 160.02)
+			(xy 74.93 160.02) (xy 204.47 160.02)
 		)
 		(stroke
 			(width 0)
@@ -3830,26 +3830,6 @@
 				(justify left top)
 			)
 		)
-		(pin "~{PORTB_OUT_OE}" input
-			(at 49.53 39.37 270)
-			(uuid "d5706884-260f-40d4-813d-814fef0ad055")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "~{PORTA_OUT_OE}" input
-			(at 52.07 39.37 270)
-			(uuid "78a4ca1b-cd96-450b-8290-29ffda938376")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "~{IN_PORT_OE}" input
 			(at 55.88 39.37 270)
 			(uuid "755bbd4f-bb36-46d9-b495-1f26883b9c0d")
@@ -3873,6 +3853,26 @@
 		(pin "Data_A[0..3]" input
 			(at 63.5 39.37 270)
 			(uuid "1c224eb1-a903-4bb9-b670-6e4cb843975a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{PORTA_OUT_WE}" input
+			(at 52.07 39.37 270)
+			(uuid "665b8f17-1cf3-400f-917c-1464fd762ece")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{PORTB_OUT_WE}" input
+			(at 49.53 39.37 270)
+			(uuid "f5566def-86c1-425d-9875-7e36d6c9888f")
 			(effects
 				(font
 					(size 1.27 1.27)
