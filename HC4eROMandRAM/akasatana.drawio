@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="ページ1" id="ZyRBFUfoapcY5uo07v97">
-        <mxGraphModel dx="359" dy="180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="459" dy="230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -228,14 +228,19 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="2" style="edgeStyle=none;html=1;" edge="1" parent="1" source="h3gUuhife9UV1E4KLszD-66">
+                <mxCell id="2" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h3gUuhife9UV1E4KLszD-66" target="h3gUuhife9UV1E4KLszD-89">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="409.9999999999999" y="680" as="targetPoint"/>
+                        <mxPoint x="400" y="820.8510638297872" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="340" y="700"/>
+                            <mxPoint x="340" y="810"/>
+                            <mxPoint x="407" y="810"/>
+                        </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="3" value="それ以外" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2">
                     <mxGeometry x="-0.3613" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
+                        <mxPoint y="-13" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="h3gUuhife9UV1E4KLszD-66" value="アドレスは？" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
