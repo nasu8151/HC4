@@ -5,8 +5,8 @@
 	(uuid "d13f6ba6-fb23-4d9a-b8aa-34b47c04fd68")
 	(paper "A4")
 	(title_block
-		(title "HC4_CPU")
-		(date "2025-06-16")
+		(title "HC4e_CPU")
+		(date "2025-07-21")
 		(rev "1.0")
 	)
 	(lib_symbols

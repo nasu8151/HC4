@@ -5,8 +5,8 @@
 	(uuid "33731ded-38c0-4297-bdd8-92b082f46ff8")
 	(paper "A4")
 	(title_block
-		(title "HC4_CPU")
-		(date "2025-06-16")
+		(title "HC4e_CPU")
+		(date "2025-07-21")
 		(rev "1.0")
 	)
 	(lib_symbols
@@ -3267,7 +3267,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Carry"
+		(property "Value" "LED"
 			(at 273.05 90.4874 90)
 			(effects
 				(font

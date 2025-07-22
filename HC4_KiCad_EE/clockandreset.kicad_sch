@@ -5,8 +5,8 @@
 	(uuid "845da8e7-2de3-42e2-9372-7004493808e3")
 	(paper "A4")
 	(title_block
-		(title "HC4_CPU")
-		(date "2025-06-16")
+		(title "HC4e_CPU")
+		(date "2025-07-21")
 		(rev "1.0")
 	)
 	(lib_symbols
@@ -3876,7 +3876,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "FreqSel"
+		(property "Value" "SW_SPDT"
 			(at 60.706 56.896 90)
 			(effects
 				(font
@@ -4413,7 +4413,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 107.95 118.11 0)
+		(at 38.1 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4422,7 +4422,7 @@
 		(fields_autoplaced yes)
 		(uuid "8bce80bc-5836-4868-bf01-88e119b1c4d8")
 		(property "Reference" "RN15"
-			(at 110.49 116.8399 0)
+			(at 40.64 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4431,7 +4431,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 110.49 119.3799 0)
+			(at 40.64 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4440,7 +4440,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 105.918 118.11 90)
+			(at 36.068 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4449,7 +4449,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 118.11 0)
+			(at 38.1 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4458,7 +4458,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 107.95 118.11 0)
+			(at 38.1 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5183,7 +5183,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 38.1 87.63 0)
+		(at 107.95 118.11 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5192,7 +5192,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb31af3a-1872-407b-882f-2ac4f1c9d7bf")
 		(property "Reference" "RN15"
-			(at 40.64 86.3599 0)
+			(at 110.49 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5201,7 +5201,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 40.64 88.8999 0)
+			(at 110.49 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5210,7 +5210,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 36.068 87.63 90)
+			(at 105.918 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5219,7 +5219,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 87.63 0)
+			(at 107.95 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5228,7 +5228,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 38.1 87.63 0)
+			(at 107.95 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)

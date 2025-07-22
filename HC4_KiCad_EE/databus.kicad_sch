@@ -5,8 +5,8 @@
 	(uuid "a0e994aa-1611-40d5-803a-ee2f2a1cc6b5")
 	(paper "A4")
 	(title_block
-		(title "HC4_CPU")
-		(date "2025-06-16")
+		(title "HC4e_CPU")
+		(date "2025-07-21")
 		(rev "1.0")
 	)
 	(lib_symbols
@@ -6786,7 +6786,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SW_User"
+		(property "Value" "SW_Push"
 			(at 64.77 110.4899 90)
 			(effects
 				(font
@@ -7015,7 +7015,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 248.92 87.63 270)
+		(at 248.92 85.09 270)
 		(mirror x)
 		(unit 2)
 		(exclude_from_sim no)
@@ -7025,7 +7025,7 @@
 		(fields_autoplaced yes)
 		(uuid "277a3dcb-86ac-43dc-ab8e-c6003552219b")
 		(property "Reference" "RN6"
-			(at 248.92 81.28 90)
+			(at 248.92 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7033,7 +7033,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 248.92 83.82 90)
+			(at 248.92 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7041,7 +7041,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 248.92 89.662 90)
+			(at 248.92 87.122 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7050,7 +7050,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 248.92 87.63 0)
+			(at 248.92 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7059,7 +7059,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 248.92 87.63 0)
+			(at 248.92 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7656,7 +7656,7 @@
 				)
 			)
 		)
-		(property "Value" "Port_IN"
+		(property "Value" "Port"
 			(at 39.37 115.824 0)
 			(effects
 				(font
@@ -8478,7 +8478,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 248.92 92.71 270)
+		(at 248.92 90.17 270)
 		(mirror x)
 		(unit 4)
 		(exclude_from_sim no)
@@ -8488,7 +8488,7 @@
 		(fields_autoplaced yes)
 		(uuid "78159ec2-901f-453b-9831-92ca01f114c8")
 		(property "Reference" "RN6"
-			(at 248.92 86.36 90)
+			(at 248.92 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8496,7 +8496,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 248.92 88.9 90)
+			(at 248.92 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8504,7 +8504,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 248.92 94.742 90)
+			(at 248.92 92.202 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8513,7 +8513,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 248.92 92.71 0)
+			(at 248.92 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8522,7 +8522,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 248.92 92.71 0)
+			(at 248.92 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9031,7 +9031,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4511"
+		(property "Value" "74HC4511"
 			(at 234.5533 69.85 0)
 			(effects
 				(font
@@ -9780,7 +9780,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 248.92 90.17 270)
+		(at 248.92 87.63 270)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -9790,7 +9790,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb862b5b-ac99-4851-ae00-b9a772777579")
 		(property "Reference" "RN6"
-			(at 248.92 83.82 90)
+			(at 248.92 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9798,7 +9798,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 248.92 86.36 90)
+			(at 248.92 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9806,7 +9806,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 248.92 92.202 90)
+			(at 248.92 89.662 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9815,7 +9815,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 248.92 90.17 0)
+			(at 248.92 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9824,7 +9824,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 248.92 90.17 0)
+			(at 248.92 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9933,7 +9933,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 248.92 85.09 270)
+		(at 248.92 92.71 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9943,7 +9943,7 @@
 		(fields_autoplaced yes)
 		(uuid "e61c7e0a-656d-4c98-a000-27f502f937c2")
 		(property "Reference" "RN6"
-			(at 248.92 78.74 90)
+			(at 248.92 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9951,7 +9951,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 248.92 81.28 90)
+			(at 248.92 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9959,7 +9959,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 248.92 87.122 90)
+			(at 248.92 94.742 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9968,7 +9968,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 248.92 85.09 0)
+			(at 248.92 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9977,7 +9977,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 248.92 85.09 0)
+			(at 248.92 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10485,7 +10485,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Port_A"
+		(property "Value" "Port"
 			(at 176.53 80.0101 0)
 			(effects
 				(font

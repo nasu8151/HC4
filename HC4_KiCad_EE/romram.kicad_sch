@@ -5,8 +5,8 @@
 	(uuid "2b370191-98cb-4277-89ba-10eaaa9b5601")
 	(paper "A4")
 	(title_block
-		(title "HC4_CPU")
-		(date "2025-06-16")
+		(title "HC4e_CPU")
+		(date "2025-07-21")
 		(rev "1.0")
 	)
 	(lib_symbols
@@ -4342,7 +4342,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ACT"
+		(property "Value" "Chip"
 			(at 151.13 108.2675 90)
 			(effects
 				(font
