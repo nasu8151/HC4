@@ -178,6 +178,10 @@ static void checkEneble(){
     data = ram4[addr];
     PORTE.OUT = (PORTE.OUT & ~0x0F) | data;
     return;
+  }else{
+    PORTE.DIR |= 0x0F;
+    data = ram4[addr];
+    PORTE.OUT = (PORTE.OUT & ~0x0F) | data;
   }
   }else{
       VPORTA.OUT |= (1<<PA_AI);
