@@ -14,8 +14,13 @@ module hc4e (
     inout  wire [3:0]       data_bus,
     output wire [3:0]       address_bus,
     output wire             nRAM_RD,
-    output wire             nRAM_WR
-
+    output wire             nRAM_WR,
+    input wire [3:0] AI,
+    input wire nAI_EN,
+    output wire [3:0] AO,
+    input wire nAO_EN,
+    output wire [3:0] BO,
+    input wire nBO_EN
 );
     reg [3:0] level_A; //stack level A
     reg [3:0] level_B; //stack level B
@@ -40,6 +45,8 @@ module hc4e (
     assign nRAM_WR = !(!instruction[7] & !clk);
     assign nRAM_RD = !(instruction[7] & !instruction[6] & !instruction[5] & !clk);
     assign address_bus = instruction[3:0];
+    assign AO = (nAO_EN == 0) ? data_bus : 4'bz;
+    assign BO = (nBO_EN == 0) ? data_bus : 4'bz; // 3-state buffer for BO
 
     initial begin
         prescale = 24'd0;
@@ -85,15 +92,31 @@ module hc4e (
         end
     endfunction
 
-    function [3:0] BUS_CTRL (input [7:0] instruction, input [3:0] alu_result);
-        casez (instruction[7:5])
-            3'b0??:  BUS_CTRL = alu_result;       //ALU instructions (include SA)
-            3'b100:  BUS_CTRL = 4'bz;             //LD [AB] or LD r (RAM)
-            3'b101:  BUS_CTRL = instruction[3:0]; //LD i
-            default: BUS_CTRL = 4'bx;             //jp doesnt care data bus
-        endcase
+    function [3:0] BUS_CTRL (input [7:0] instruction, input [3:0] alu_result, input [3:0] AI, input nAI_EN);
+        reg [3:0] result;
+        begin
+            if (nAI_EN == 0) begin
+                result = AI; // PA Enable - 最優先
+            end else begin
+                casez (instruction[7:5])
+                    3'b0??: begin
+                        result = alu_result;       //ALU instructions (include SA)
+                    end
+                    3'b100: begin
+                        result = 4'bz;             //LD [AB] or LD r (RAM)
+                    end
+                    3'b101: begin
+                        result = instruction[3:0]; //LD i
+                    end
+                    default: begin
+                        result = 4'bx;             //jp doesnt care data bus
+                    end
+                endcase
+            end
+            BUS_CTRL = result; // 最終的な戻り値を設定
+        end
     endfunction
-    assign data_bus = BUS_CTRL(instruction, alu_result);
+    assign data_bus = BUS_CTRL(instruction, alu_result, AI, nAI_EN);
 
     always @(posedge clk or negedge nReset) begin
         if (nReset == 0) begin

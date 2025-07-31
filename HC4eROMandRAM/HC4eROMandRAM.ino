@@ -158,13 +158,13 @@ static void checkEneble(){
   uint8_t addr = VPORTF.IN & 0x0F; // A0‑A3
   uint8_t data;
   
-  if(wr && !rd){
+  if(!rd && wr){
     if(addr==0x0E){  
       VPORTA.OUT &= ~(1<<PA_AI);    // AI̅ パルス
     }
     return;
     }
-  else if(rd && !wr){
+  else if(!wr && rd){
     if(addr==0x0E){    
     VPORTA.OUT &= ~(1<<PA_AO);
     PORTE.DIR |= 0x0F;
@@ -192,14 +192,14 @@ static void checkEneble(){
 }
 
 static void RAMRead(){
-  VPORTA.OUT |= (1<<PA_AI);
+  VPORTA.OUT |= (1<<PA_AO);
+  VPORTA.OUT |= (1<<PA_BO);
 }
 
 static void RAMWrite(){
   uint8_t addr = VPORTF.IN & 0x0F; // A0‑A3
   uint8_t data;
-  VPORTA.OUT |= (1<<PA_AO);
-  VPORTA.OUT |= (1<<PA_BO);
+  VPORTA.OUT |= (1<<PA_AI);
   data = VPORTE.IN & 0x0F;
   ram4[addr] = data;
 }
