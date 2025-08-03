@@ -107,6 +107,7 @@ These instructions are executed for stack levels A and B, and store the results 
 Store instructions store value of stack level A or C in registers or memory area. ```SA r``` instruction refers stack level A, and ```SC r``` and ```SC [AB]``` instructions refer stack level C.   
 Load instructions, ```LD```,  load stack level A from register or memory area. When a value is loaded into stack level A, the previous value of level A moves to level B, and the value of level B moves to level C. ```LD r``` refers register ```r```, ```LD #i``` loads immediate data and ```LD [AB]``` refers memory address specified level A and B.   
 Load and shift instruction, ```LS #i```, used to load an 8-bit wide data onto the stack.
+For the ```LS #``` and ```LD #``` instructions, binary(```0b1010```) and hexadecimal(```0xA```) literals can be used.
 
 ## System control instructions
 
@@ -115,4 +116,6 @@ Load and shift instruction, ```LS #i```, used to load an 8-bit wide data onto th
 
 ## HC4<sub>E</sub>
 
-In HC4<sub>E</sub>, only stack levels A and B are valid. Therefore, the ```SC``` instruction 
+In HC4<sub>E</sub>, only stack levels A and B are valid.
+It has 16 nibbles of address space and only register addressing mode(```r```).
+I/O Registers are placed ```r14``` and ```r15```.

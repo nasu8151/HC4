@@ -17,7 +17,7 @@ A 4- or 8-bit CPU made with 74-series logic ICs.
 # Architecture
 ## Overview
 
-The CPU has an 8-bit wide address bus and a 4-bit wide data bus.
+HC4 has an 8-bit wide address bus and a 4-bit wide data bus.
 All of instructions are 8-bit wide.
 
 ## Block diagram
@@ -46,6 +46,7 @@ Please see the documents for syntax and other details.
 │  ├─Library.pretty
 │  └─sim
 ├─HC4_KiCad_EE
+|  ├─production
 │  ├─HC4_KiCad_EE-backups
 │  └─Library.pretty
 ├─HC_MemoryBoard
@@ -65,3 +66,4 @@ Please see the documents for syntax and other details.
 * verilog/
   * [verilog/HC4](https://github.com/nasu8151/HC4/blob/main/verilog/HC4) : Verilog simulation files of the HC4 CPU.
   * [verilog/HC8](https://github.com/nasu8151/blob/main/HC4/verilog/HC8) : Verilog simulation files of the HC8 CPU.
+  * [verilog/HC4e](https://github.com/nasu8151/blob/main/HC4/verilog/HC8) : Verilog simulation files of the HC4e CPU.
