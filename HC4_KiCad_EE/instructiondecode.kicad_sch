@@ -10240,16 +10240,14 @@
 	(symbol
 		(lib_id "Device2:LED_")
 		(at 165.1 91.44 90)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "af4b1a75-52f1-47b4-8474-97a766e63593")
 		(property "Reference" "LD35"
-			(at 168.91 90.4876 90)
+			(at 169.164 90.2969 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10258,7 +10256,7 @@
 			)
 		)
 		(property "Value" "Chip"
-			(at 168.91 88.5825 90)
+			(at 169.164 92.202 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11076,16 +11074,14 @@
 	(symbol
 		(lib_id "Device2:LED_")
 		(at 154.94 91.44 90)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "dcce0135-3df1-40e1-8eb9-3dc7cfa5b51f")
 		(property "Reference" "LD34"
-			(at 158.75 90.4876 90)
+			(at 158.496 90.424 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11094,7 +11090,7 @@
 			)
 		)
 		(property "Value" "Chip"
-			(at 158.75 88.5825 90)
+			(at 158.496 92.3291 90)
 			(effects
 				(font
 					(size 1.27 1.27)
