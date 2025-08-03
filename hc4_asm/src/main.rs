@@ -19,13 +19,13 @@ const COMMENT_STR: &str = r"(?:;.*)?$";
 
 //命令文と、代に引数をキャプチャする正規表現の文字列の配列
 const INSTRUCTION_MATRIX_DATA: [&str; 16] = {
-    const JP_DATA: &str = r"^(jp|np)(?:\s(\w+))?(?:\s\[abc\])?";
-    const JL_LP_DATA: &str = r"^(jl|lp)(?:\s(\w+))?(?:\s\[abc\])?";
+    const JP_DATA: &str = r"(jp|np)(?:\s(\w+))?(?:\s\[abc\])?";
+    const JL_LP_DATA: &str = r"(jl|lp)(?:\s(\w+))?(?:\s\[abc\])?";
         [
-        r"^(sc)(?:\s\[ab\])?", r"^(xr)\sr(\w+)", r"^(ld)(?:\s\[ab\])?" , r"^(ls)\s#(\w+)", // ← 0xC: LS追加
-        r"^(sc)\sr(\w+)"     , r"^(or)\sr(\w+)", r"^(ld)\sr(\w+)"      , r"^",
-        r"^(su)\sr(\w+)"     , r"^(an)\sr(\w+)", r"^(ld)\s#(\w+)"      , JP_DATA,          // ← 0xE: JP
-        r"^(ad)\sr(\w+)"     , r"^(sa)\sr(\w+)", r"^"                  , JL_LP_DATA        // ← 0xF: JL/LP
+        r"(sc)(?:\s\[ab\])?", r"(xr)\sr(\w+)", r"(ld)(?:\s\[ab\])?" , r"(ls)\s#(\w+)", // ← 0xC: LS追加
+        r"(sc)\sr(\w+)"     , r"(or)\sr(\w+)", r"(ld)\sr(\w+)"      , r"",
+        r"(su)\sr(\w+)"     , r"(an)\sr(\w+)", r"(ld)\s#(\w+)"      , JP_DATA,          // ← 0xE: JP
+        r"(ad)\sr(\w+)"     , r"(sa)\sr(\w+)", r""                  , JL_LP_DATA        // ← 0xF: JL/LP
     ]
 };
 
@@ -112,15 +112,26 @@ fn make_intel_hex_record(addr: u16, data: &[u8]) -> String {
 }
 
 /// Write assembly list file
-fn write_list_file(assembly_lines: &[AssemblyLine], writer: &mut dyn Write) -> std::io::Result<()> {
+fn write_list_file(assembly_lines: &[AssemblyLine], labels: &[Label], writer: &mut dyn Write) -> std::io::Result<()> {
     writeln!(writer, "HC4 Assembly List File")?;
     writeln!(writer, "======================")?;
     writeln!(writer)?;
+    
+    // ラベルテーブルを出力
+    if !labels.is_empty() {
+        writeln!(writer, "Label Table:")?;
+        writeln!(writer, "-----------")?;
+        for label in labels {
+            writeln!(writer, "{:<16} = {:04X} (Line {:3})", label.name, label.address, label.line_number)?;
+        }
+        writeln!(writer)?;
+    }
+    
     writeln!(writer, "Address  Machine Code  Line#  Source")?;
     writeln!(writer, "-------  ------------  -----  ------")?;
     
     for line in assembly_lines {
-        let addr_str = if line.machine_code.is_some() {
+        let addr_str = if line.machine_code.is_some() || line.label.is_some() {
             format!("{:04X}", line.address)
         } else {
             "    ".to_string()
@@ -133,14 +144,18 @@ fn write_list_file(assembly_lines: &[AssemblyLine], writer: &mut dyn Write) -> s
         
         let error_mark = if line.error != AsmErrors::NotError { " *ERROR*" } else { "" };
         
+        // ラベルがある場合は特別な表示
+        let label_mark = if line.label.is_some() { "<LABEL>" } else { "" };
+        
         writeln!(
             writer,
-            "{}     {}         {:5}  {}{}",
+            "{}     {}         {:5}  {}{}{}",
             addr_str,
             machine_code_str,
             line.line_number,
             line.source_line.trim(),
-            error_mark
+            error_mark,
+            if !label_mark.is_empty() { format!(" {}", label_mark) } else { String::new() }
         )?;
     }
     
@@ -175,6 +190,14 @@ struct AssemblyLine {
     machine_code: Option<u8>,
     source_line: String,
     error: AsmErrors,
+    label: Option<String>,
+}
+
+#[derive(Debug, Clone)]
+struct Label {
+    name: String,
+    address: usize,
+    line_number: usize,
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -221,13 +244,21 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     //temporary data
     let mut bin_buf: Vec<u8> = Vec::new();
     let mut assembly_lines: Vec<AssemblyLine> = Vec::new();
+    let mut labels: Vec<Label> = Vec::new();
 
     /*アセンブラそのものの構文定義。
     * ここではアルファベットによる命令と二つの引数を半角スペースで区切ることを定義。
     */
-    let line_rgx: Regex = Regex::new(r"^([a-zA-Z]+)(?:\s[r#]?(\w+))?").expect("REASON");
-    let _instruction_table: [Regex;16] = get_instruction_table().map(|i| Regex::new(&(i + r"\s*" + COMMENT_STR)).unwrap());
+    let line_rgx: Regex = Regex::new(r"^\s*([a-zA-Z]+)(?:\s[r#]?(\w+))?").expect("REASON");
+    let _instruction_table: [Regex;16] = get_instruction_table().map(|i| {
+        if i.is_empty() {
+            Regex::new(r"$a").unwrap() // 決してマッチしない正規表現
+        } else {
+            Regex::new(&(String::from(r"^\s*") + &i + r"\s*" + COMMENT_STR)).unwrap()
+        }
+    });
     let white_line = Regex::new(r"^\s*$").unwrap();
+    let label_rgx = Regex::new(r"^\s*([a-zA-Z_][a-zA-Z0-9_]*):").unwrap();
 
     let source_file_path = &args[1];
     let mut num_of_error = 0;
@@ -249,6 +280,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 machine_code: None,
                 source_line: original_line,
                 error: AsmErrors::NotError,
+                label: None,
             });
             continue; 
         }
@@ -256,6 +288,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         line_error = AsmErrors::NotError; // 一度、構文エラーとして設定
         is_line_interpreted = false; //この行が構文解釈に引っかかったことがあるか。
         let mut generated_machine_code: Option<u8> = None;
+        let mut current_line_label: Option<String> = None;
+
+        // ラベルを検出
+        if let Some(caps) = label_rgx.captures(&l) {
+            let label_name = caps[1].to_string();
+            labels.push(Label {
+                name: label_name.clone(),
+                address: current_address,
+                line_number: line_index,
+            });
+            current_line_label = Some(label_name);
+        }
 
         for i in 0.._instruction_table.len() {
             match _instruction_table[i].captures(&l) {
@@ -362,6 +406,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             machine_code: generated_machine_code,
             source_line: original_line,
             error: line_error.clone(),
+            label: current_line_label,
         });
         
         // アドレスを更新（マシンコードが生成された場合のみ）
@@ -378,7 +423,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         if let Some(list_file_path) = matches.opt_str("l") {
             println!("generating list file with errors...");
             let mut list_writer = BufWriter::new(File::create(list_file_path)?);
-            write_list_file(&assembly_lines, &mut list_writer)?;
+            write_list_file(&assembly_lines, &labels, &mut list_writer)?;
             list_writer.flush()?;
             println!("{}","list file generated with errors!".yellow().bold());
         }
@@ -407,7 +452,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         if let Some(list_file_path) = matches.opt_str("l") {
             println!("generating list file...");
             let mut list_writer = BufWriter::new(File::create(list_file_path)?);
-            write_list_file(&assembly_lines, &mut list_writer)?;
+            write_list_file(&assembly_lines, &labels, &mut list_writer)?;
             list_writer.flush()?;
             println!("{}","list file generated!".cyan().bold());
         }

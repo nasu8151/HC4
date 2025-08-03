@@ -1,4 +1,4 @@
-np
+reset: np
 start: ;ラベル
     ld r0
     ld #1
