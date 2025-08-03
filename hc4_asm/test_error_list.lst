@@ -1,0 +1,12 @@
+HC4 Assembly List File
+======================
+
+Address  Machine Code  Line#  Source
+-------  ------------  -----  ------
+0000     91             1  LD r1       ; 正常な命令
+                        2  INVALID r2  ; エラー：存在しない命令
+0001     A0             3  LD #16      ; エラー：無効なリテラル *ERROR*
+0002     E0             4  JP XYZ      ; エラー：無効なフラグ *ERROR*
+0003     10             5  SC r0       ; 正常な命令
+
+End of assembly list

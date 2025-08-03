@@ -1,0 +1,85 @@
+HC4 Assembly List File
+======================
+
+Address  Machine Code  Line#  Source
+-------  ------------  -----  ------
+0000     20             1  SU r0
+0001     31             2  AD r1
+0002     4B             3  XR r11
+0003     5F             4  OR r15   ;コメント
+0004     6E             5  AN r14
+                        6  
+0005     00             7  SC
+0006     00             8  SC [AB]
+0007     1C             9  SC r12
+0008     7D            10  SA r13
+0009     80            11  LD
+000A     80            12  LD [AB]
+000B     92            13  LD r2
+000C     A3            14  LD #3
+000D     C1            15  LS #1
+                       16  
+000E     E0            17  JP
+000F     E0            18  JP [ABC]
+0010     E2            19  JP C
+0011     E2            20  JP C [ABC]
+0012     E3            21  JP NC
+0013     E3            22  JP NC [ABC]
+0014     E4            23  JP Z
+0015     E4            24  JP Z [ABC]
+0016     E5            25  JP NZ
+0017     E5            26  JP NZ [ABC]
+0018     E6            27  JP T
+0019     E6            28  JP T [ABC]
+001A     E7            29  JP NT
+001B     E1            30  NP
+                       31  
+001C     F0            32  JL
+001D     F0            33  JL [ABC]
+001E     F2            34  JL C
+001F     F2            35  JL C [ABC]
+0020     F3            36  JL NC
+0021     F3            37  JL NC [ABC]
+0022     F4            38  JL Z
+0023     F4            39  JL Z [ABC]
+0024     F5            40  JL NZ
+0025     F5            41  JL NZ [ABC]
+0026     F6            42  JL T
+0027     F7            43  JL NT
+0028     F1            44  LP
+                       45  
+0029     20            46  su r0
+002A     31            47  ad r1
+002B     4B            48  xr r11
+002C     5F            49  or r15;コメント
+002D     6E            50  an r14
+                       51  
+002E     00            52  sc
+002F     00            53  sc [ab]
+0030     1C            54  sc r12
+0031     7D            55  sa r13
+0032     80            56  ld
+0033     80            57  ld [ab]
+0034     92            58  ld r2
+0035     A3            59  ld #3
+                       60  
+                       61  
+0036     E0            62  jp
+0037     E0            63  jp [abc]
+0038     E2            64  jp c
+0039     E2            65  jp c [abc]
+003A     E3            66  jp nc
+003B     E3            67  jp nc [abc]
+003C     E4            68  jp z
+003D     E4            69  jp z [abc]
+003E     E5            70  jp nz
+003F     E5            71  jp nz [abc]
+0040     E6            72  jp t
+0041     E7            73  jp nt
+0042     E1            74  np
+                       75  
+0043     A3            76  LD #3
+0044     AF            77  LD #0xf
+0045     A5            78  LD #0b0101
+
+End of assembly list

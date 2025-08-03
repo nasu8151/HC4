@@ -111,6 +111,44 @@ fn make_intel_hex_record(addr: u16, data: &[u8]) -> String {
     )
 }
 
+/// Write assembly list file
+fn write_list_file(assembly_lines: &[AssemblyLine], writer: &mut dyn Write) -> std::io::Result<()> {
+    writeln!(writer, "HC4 Assembly List File")?;
+    writeln!(writer, "======================")?;
+    writeln!(writer)?;
+    writeln!(writer, "Address  Machine Code  Line#  Source")?;
+    writeln!(writer, "-------  ------------  -----  ------")?;
+    
+    for line in assembly_lines {
+        let addr_str = if line.machine_code.is_some() {
+            format!("{:04X}", line.address)
+        } else {
+            "    ".to_string()
+        };
+        
+        let machine_code_str = match line.machine_code {
+            Some(code) => format!("{:02X}", code),
+            None => "  ".to_string(),
+        };
+        
+        let error_mark = if line.error != AsmErrors::NotError { " *ERROR*" } else { "" };
+        
+        writeln!(
+            writer,
+            "{}     {}         {:5}  {}{}",
+            addr_str,
+            machine_code_str,
+            line.line_number,
+            line.source_line.trim(),
+            error_mark
+        )?;
+    }
+    
+    writeln!(writer)?;
+    writeln!(writer, "End of assembly list")?;
+    Ok(())
+}
+
 /// Print usage information
 /// for the program
 /// # Arguments
@@ -121,13 +159,22 @@ fn print_usage(program: &str, opts: Options) {
     print!("{}", opts.usage(&brief));
 }
 
-#[derive(Debug,PartialEq)]
+#[derive(Debug,PartialEq,Clone)]
 enum AsmErrors {
     NotError,
     NonexistentInstruction,
     UnexpectedSyntax,
     NonValidLiter,
     NonFlag,
+}
+
+#[derive(Debug, Clone)]
+struct AssemblyLine {
+    line_number: usize,
+    address: usize,
+    machine_code: Option<u8>,
+    source_line: String,
+    error: AsmErrors,
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -137,6 +184,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut opts = Options::new();
     opts.optopt("o", "", "set output file name", "NAME");
     opts.optopt("f", "format", "output format: hex or ihex", "FORMAT");
+    opts.optopt("l", "list", "generate assembly list file", "LIST_FILE");
     opts.optflag("h", "help", "print this help menu");
 
     let matches = match opts.parse(&args[2..]) {
@@ -172,6 +220,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     //temporary data
     let mut bin_buf: Vec<u8> = Vec::new();
+    let mut assembly_lines: Vec<AssemblyLine> = Vec::new();
 
     /*アセンブラそのものの構文定義。
     * ここではアルファベットによる命令と二つの引数を半角スペースで区切ることを定義。
@@ -186,13 +235,27 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let mut line_error;
     let mut is_line_interpreted;
+    let mut current_address = 0;
     for line in BufReader::new(File::open(source_file_path)?).lines() {
         line_index += 1;
-        let l = String::from(line?).to_lowercase(); //ファイルを読めたらすぐに小文字に変換
-        if white_line.is_match(&l) { continue; }
+        let original_line = line?;
+        let l = original_line.to_lowercase(); //ファイルを読めたらすぐに小文字に変換
+        
+        // 空行の場合は記録のみして次へ
+        if white_line.is_match(&l) { 
+            assembly_lines.push(AssemblyLine {
+                line_number: line_index,
+                address: current_address,
+                machine_code: None,
+                source_line: original_line,
+                error: AsmErrors::NotError,
+            });
+            continue; 
+        }
 
         line_error = AsmErrors::NotError; // 一度、構文エラーとして設定
         is_line_interpreted = false; //この行が構文解釈に引っかかったことがあるか。
+        let mut generated_machine_code: Option<u8> = None;
 
         for i in 0.._instruction_table.len() {
             match _instruction_table[i].captures(&l) {
@@ -243,7 +306,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                         }
                     };
                     //バッファに追加
-                    bin_buf.push(opc * 0b10000 + opr);
+                    let machine_code = opc * 0b10000 + opr;
+                    bin_buf.push(machine_code);
+                    generated_machine_code = Some(machine_code);
                 },
                 None => {} //この正規表現では解釈されなかった
             }
@@ -289,11 +354,34 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 code=l,
             );
         }
+        
+        // 各行の情報を記録
+        assembly_lines.push(AssemblyLine {
+            line_number: line_index,
+            address: current_address,
+            machine_code: generated_machine_code,
+            source_line: original_line,
+            error: line_error.clone(),
+        });
+        
+        // アドレスを更新（マシンコードが生成された場合のみ）
+        if generated_machine_code.is_some() {
+            current_address += 1;
+        }
     }
 
     if num_of_error > 0 {
         println!("Assembly failed : {}", (source_file_path.to_owned() + " has " + &num_of_error.to_string() + " error(s)").red());
         println!("I have no idea.");
+        
+        // エラーがあってもリストファイルは生成する
+        if let Some(list_file_path) = matches.opt_str("l") {
+            println!("generating list file with errors...");
+            let mut list_writer = BufWriter::new(File::create(list_file_path)?);
+            write_list_file(&assembly_lines, &mut list_writer)?;
+            list_writer.flush()?;
+            println!("{}","list file generated with errors!".yellow().bold());
+        }
     } else {
         let format = matches.opt_str("f").unwrap_or("hex".to_string());
         if format != "hex" && format != "ihex" {
@@ -314,6 +402,15 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         writer.flush()?;
         println!("{}","success!".cyan().bold());
         println!("exit writing hex file");
+        
+        // リストファイルの生成
+        if let Some(list_file_path) = matches.opt_str("l") {
+            println!("generating list file...");
+            let mut list_writer = BufWriter::new(File::create(list_file_path)?);
+            write_list_file(&assembly_lines, &mut list_writer)?;
+            list_writer.flush()?;
+            println!("{}","list file generated!".cyan().bold());
+        }
     }
 
 
