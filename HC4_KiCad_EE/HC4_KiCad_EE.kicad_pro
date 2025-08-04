@@ -68,7 +68,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "warning",
+        "courtyards_overlap": "error",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -76,21 +76,21 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_filters_mismatch": "ignore",
+        "footprint_filters_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "hole_to_hole": "error",
         "holes_co_located": "error",
-        "invalid_outline": "error",
+        "invalid_outline": "warning",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "warning",
-        "malformed_courtyard": "error",
+        "malformed_courtyard": "warning",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "error",
@@ -101,9 +101,9 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "ignore",
-        "silk_over_copper": "ignore",
-        "silk_overlap": "ignore",
+        "silk_edge_clearance": "warning",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -132,7 +132,7 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
@@ -140,7 +140,7 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -188,7 +188,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.3,
+        0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -465,14 +468,14 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "HC4_KiCad.kicad_pro",
+    "filename": "HC4_KiCad_EE.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -497,7 +500,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "CLK",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 0, 194)",
         "priority": 0,
         "schematic_color": "rgb(0, 0, 194)",
         "track_width": 0.2,
@@ -507,7 +510,7 @@
       },
       {
         "bus_width": 18,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -517,7 +520,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.8,
+        "track_width": 0.5,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 12
@@ -531,7 +534,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "~{RESET}",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 209)",
         "priority": 2,
         "schematic_color": "rgb(255, 0, 209)",
         "track_width": 0.2,
@@ -555,16 +558,12 @@
         "pattern": "GND"
       },
       {
-        "netclass": "~{RESET}",
+        "netclass": "Default",
         "pattern": "~{RESET}"
       },
       {
-        "netclass": "CLK",
+        "netclass": "Default",
         "pattern": "CLK"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "Net-(F1-Pad1)"
       }
     ]
   },
@@ -573,10 +572,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../../",
+      "plot": "./HC4_gbr",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "HC4_KiCad.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -584,7 +583,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "../../BOM_HC4.csv",
+    "bom_export_filename": "../../BOM_HC4e.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -741,8 +740,8 @@
       "Program Counter"
     ],
     [
-      "06be0d13-f4ff-478c-92b4-64c4ff1b6880",
-      "Address BUS"
+      "ee79785c-5138-4152-a60d-370cd803a828",
+      "ROM_RAM"
     ],
     [
       "164b1f41-83dc-48ee-8dfe-457b556a7022",
