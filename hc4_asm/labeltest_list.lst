@@ -1,0 +1,25 @@
+HC4 Assembly List File
+======================
+
+Label Table:
+-----------
+reset            = 0000 (Line   1)
+start            = 0001 (Line   2)
+koko             = 0009 (Line  11)
+
+Address  Machine Code  Line#  Source
+-------  ------------  -----  ------
+0000     E1             1  reset: np ;おもち <LABEL>
+0001                    2  start: ;ラベル <LABEL>
+0001     90             3  ld r0
+0002     A1             4  ld #1
+0003     30             5  ad r0       ;r0をインクリメント
+0004     A0             6  ld #0x0
+0005     C0             7  ls #0x0
+0006     A0             8  ld #0x0
+0007     C1             9  ls #0x1
+0008     E0            10  jp
+0009                   11  koko: ;banana <LABEL>
+0009     31            12  ad r1 ; 実行されない命令
+
+End of assembly list

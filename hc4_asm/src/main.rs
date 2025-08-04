@@ -290,7 +290,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let mut generated_machine_code: Option<u8> = None;
         let mut current_line_label: Option<String> = None;
 
-        // ラベルを検出
+        // ラベルを検出し、ラベル後の命令部分を抽出
+        let mut line_to_process = l.clone();
         if let Some(caps) = label_rgx.captures(&l) {
             let label_name = caps[1].to_string();
             labels.push(Label {
@@ -299,10 +300,16 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 line_number: line_index,
             });
             current_line_label = Some(label_name);
+            
+            // ラベルの後の部分を取得（ラベル: の後の命令部分）
+            if let Some(colon_pos) = l.find(':') {
+                let after_label = &l[colon_pos + 1..].trim_start();
+                line_to_process = after_label.to_string();
+            }
         }
 
         for i in 0.._instruction_table.len() {
-            match _instruction_table[i].captures(&l) {
+            match _instruction_table[i].captures(&line_to_process) {
                 Some(caps) => { //行を解釈できた
                     is_line_interpreted = true;
                     line_error = AsmErrors::NotError; //一度 NotError にし、その後の解釈でエラーがあれば、true とする。
@@ -359,7 +366,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
 
         if is_line_interpreted {
-            match line_rgx.captures(&l) {
+            match line_rgx.captures(&line_to_process) {
                 Some(caps) => {
                     if !INSTRUCTION_STRINGS.contains(&&caps[1]) {
                         println!("{}",&caps[1]);
@@ -418,15 +425,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     if num_of_error > 0 {
         println!("Assembly failed : {}", (source_file_path.to_owned() + " has " + &num_of_error.to_string() + " error(s)").red());
         println!("I have no idea.");
-        
-        // エラーがあってもリストファイルは生成する
-        if let Some(list_file_path) = matches.opt_str("l") {
-            println!("generating list file with errors...");
-            let mut list_writer = BufWriter::new(File::create(list_file_path)?);
-            write_list_file(&assembly_lines, &labels, &mut list_writer)?;
-            list_writer.flush()?;
-            println!("{}","list file generated with errors!".yellow().bold());
-        }
     } else {
         let format = matches.opt_str("f").unwrap_or("hex".to_string());
         if format != "hex" && format != "ihex" {
@@ -447,8 +445,19 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         writer.flush()?;
         println!("{}","success!".cyan().bold());
         println!("exit writing hex file");
-        
-        // リストファイルの生成
+    }
+    // リストファイルの生成
+    if num_of_error > 0 {
+        // エラーがあってもリストファイルは生成する
+        if let Some(list_file_path) = matches.opt_str("l") {
+            println!("generating list file with errors...");
+            let mut list_writer = BufWriter::new(File::create(list_file_path)?);
+            write_list_file(&assembly_lines, &labels, &mut list_writer)?;
+            list_writer.flush()?;
+            println!("{}","list file generated with errors!".yellow().bold());
+        }
+
+    } else {// リストファイルの生成
         if let Some(list_file_path) = matches.opt_str("l") {
             println!("generating list file...");
             let mut list_writer = BufWriter::new(File::create(list_file_path)?);
@@ -457,8 +466,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             println!("{}","list file generated!".cyan().bold());
         }
     }
-
-
 
     Ok(())
 }

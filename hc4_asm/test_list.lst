@@ -81,5 +81,7 @@ Address  Machine Code  Line#  Source
 0043     A3            76  LD #3
 0044     AF            77  LD #0xf
 0045     A5            78  LD #0b0101
+                       79  
+                       80  ; 全行コメント
 
 End of assembly list
