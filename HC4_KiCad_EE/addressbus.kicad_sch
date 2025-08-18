@@ -1,0 +1,13 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "b1cab78b-d9d6-4f80-b878-dd6f4e413407")
+	(paper "A4")
+	(title_block
+		(title "HC4_CPU")
+		(date "2025-02-23")
+		(rev "1.2")
+	)
+	(lib_symbols)
+)
