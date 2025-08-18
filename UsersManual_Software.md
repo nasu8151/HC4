@@ -1,6 +1,7 @@
 - [How to read these tables](#how-to-read-these-tables)
 - [Instruction table](#instruction-table)
   - [HC4](#hc4)
+  - [HC4E](#hc4e)
   - [HC8](#hc8)
 - [Instruction List](#instruction-list)
   - [Logical and alithmetic instructions](#logical-and-alithmetic-instructions)
@@ -24,21 +25,30 @@ As noted [README](https://github.com/nasu8151/HC4), instruction of these CPUs ar
 # Instruction table
 ## HC4
 
-| bit 5-4\7-6 | 00            | 01         | 10            | 11                       |
-| ----------- | ------------- | ---------- | ------------- | ------------------------ |
-| 00          | ```SC [AB]``` | ```XR r``` | ```LD [AB]``` | (Reserved)               |
-| 01          | ```SC r```    | ```OR r``` | ```LD r```    | (Reserved)               |
-| 10          | ```SU r```    | ```AN r``` | ```LD #i```   | ```JP [ABC]```, ```NP``` |
-| 11          | ```AD r```    | ```SA r``` | (Reserved)    | (Reservred)              |
+| bit 7-6<br>5-4 | 00         | 01         | 10                      | 11         |
+| -------------- | ---------- | ---------- | ----------------------- | ---------- |
+| 00             | ```SM```   | ```SC r``` | ```SU r```              | ```AD r``` |
+| 01             | ```XR r``` | ```OR r``` | ```AN r```              | ```SA r``` |
+| 10             | ```LM```   | ```LD r``` | ```LI #```              | (Reserved) |
+| 11             | (Reserved) | (Reserved) | ```JP flag```, ```NP``` | (Reserved) |
+
+## HC4<sub>E</sub>
+
+| bit 7-6<br>5-4 | 00         | 01         | 10                      | 11         |
+| -------------- | ---------- | ---------- | ----------------------- | ---------- |
+| 00             | (Reserved) | (Reserved) | (Reserved)              | ```AD r``` |
+| 01             | ```XR r``` | (Reserved) | (Reserved)              | ```SA r``` |
+| 10             | (Reserved) | ```LD r``` | ```LI #```              | (Reserved) |
+| 11             | (Reserved) | (Reserved) | ```JP flag```, ```NP``` | (Reserved) |
 
 ## HC8
 
-| bit 5-4\7-6 | 00            | 01         | 10            | 11                      |
-| ----------- | ------------- | ---------- | ------------- | ----------------------- |
-| 00          | ```SC [AB]``` | ```XR r``` | ```LD [AB]``` | ```LS #i```             |
-| 01          | ```SC r```    | ```OR r``` | ```LD r```    | (Reserved)              |
-| 10          | ```SU r```    | ```AN r``` | ```LD #i```   | ```JP [AB]```, ```NP``` |
-| 11          | ```AD r```    | ```SA r``` | (Reserved)    | ```JL [AB]```, ```LP``` |
+| bit 7-6<br>5-4 | 00         | 01         | 10                      | 11                      |
+| -------------- | ---------- | ---------- | ----------------------- | ----------------------- |
+| 00             | ```SM```   | ```SC r``` | ```SU r```              | ```AD r```              |
+| 01             | ```XR r``` | ```OR r``` | ```AN r```              | ```SA r```              |
+| 10             | ```LM```   | ```LD r``` | ```LI #```              | (Reserved)              |
+| 11             | ```LS #``` | (Reserved) | ```JP flag```, ```NP``` | ```JL flag```, ```LP``` |
 
 # Instruction List
 
@@ -54,33 +64,29 @@ As noted [README](https://github.com/nasu8151/HC4), instruction of these CPUs ar
 
 ## Register and memory access instructions
 
-| Name            | Opc  | Opr  | Flag changes |                            |
-| --------------- | ---- | ---- | ------------ | -------------------------- |
-| \*```SC [AB]``` | 0000 | 0000 | Z            | Store C in [AB]            |
-| ```SC r```      | 0001 | r    | Z            | Store C in r               |
-| ```SA r```      | 0111 | r    | Z            | Store A in r               |
-| \*```LD [AB]``` | 1000 | 0000 |              | LoaD from [AB]             |
-| ```LD r```      | 1001 | r    |              | LoaD form r                |
-| ```LD #i```     | 1010 | i    |              | LoaD immediate             |
-| \*\*```LS #i``` | 1100 | i    |              | Load immediate and Shift A |
+| Name          | Opc  | Opr  | Flag changes |                            |
+| ------------- | ---- | ---- | ------------ | -------------------------- |
+| ```SM```      | 0000 | 0000 | Z            | Store C in [AB]            |
+| ```SC r```    | 0001 | r    | Z            | Store C in r               |
+| ```SA r```    | 0111 | r    | Z            | Store A in r               |
+| ```LM```      | 1000 | 0000 |              | LoaD from [AB]             |
+| ```LD r```    | 1001 | r    |              | LoaD form r                |
+| ```LI #i```   | 1010 | i    |              | LoaD immediate             |
+| \*```LS #i``` | 1100 | i    |              | Load immediate and Shift A |
 
 Note:    
-\* Can be omitted addressing.   
-\*\* Only for HC8.
+\* Only for HC8.
 
 ## System control instructions
 
-| Name                | Opc  | Opr  |                               |
-| ------------------- | ---- | ---- | ----------------------------- |
-| \*```JP [ABC]```    | 1110 | 0000 | JumP [ABC]                    |
-| \*```JP C [ABC]```  | 1110 | 0010 | Jump if Carry flag is set     |
-| \*```JP NC [ABC]``` | 1110 | 0011 | Jump if Carry flag is Not set |
-| \*```JP Z [ABC]```  | 1110 | 0100 | Jump if Zero flag is set      |
-| \*```JP NZ [ABC]``` | 1110 | 0101 | Jump if Zero flag is Not set  |
-| ```NP```            | 1110 | 0001 | No oPlation                   |
-
-Note:    
-\* Can be omitted addressing.
+| Name        | Opc  | Opr  |                               |
+| ----------- | ---- | ---- | ----------------------------- |
+| ```JP```    | 1110 | 0000 | JumP [ABC]                    |
+| ```JP C```  | 1110 | 0010 | Jump if Carry flag is set     |
+| ```JP NC``` | 1110 | 0011 | Jump if Carry flag is Not set |
+| ```JP Z```  | 1110 | 0100 | Jump if Zero flag is set      |
+| ```JP NZ``` | 1110 | 0101 | Jump if Zero flag is Not set  |
+| ```NP```    | 1110 | 0001 | No oPlation                   |
 
 # Instruction manual
 ## Logical and alithmetic instructions

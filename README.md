@@ -30,7 +30,7 @@ Please refer to [here](https://github.com/nasu8151/HC4/blob/main/UsersManual_Sof
 
 # Software
 
-The assembler for this CPU can be found [here](https://github.com/nasu8151/HC4/blob/main/hc4_asm).
+The assembler for this CPU can be found [here](https://github.com/nasu8151/hcxasm).
 Please see the documents for syntax and other details.
 
 # List of files and folders
@@ -51,7 +51,10 @@ Please see the documents for syntax and other details.
 
 * [README.md](https://github.com/nasu8151/HC4) : This file.
 * [UsersManual_Software.md](https://github.com/nasu8151/HC4/blob/main/UsersManual_Software.md) : Instruction manual.
-* [hc4_asm/](https://github.com/nasu8151/HC4/blob/main/hc4_asm) : An assembler for the HC4 CPU.
+* [hc4_asm/](https://github.com/nasu8151/HC4/blob/main/hc4_asm) : [DEPRECATED] : [Use new assembler](https://github.com/nasu8151/hcxasm). An assembler for the HC4 CPU.
+* [HC4_KiCad](https://github.com/nasu8151/HC4/blob/main/HC4_KiCad) : Schematics and a board of the HC4.
+* [HC4_KiCad_EE](https://github.com/nasu8151/HC4/blob/main/HC4_KiCad_EE) : Schematics and a board of the HC4<sub>E</sub> (Used to be called "HC4 Education Edition").
+* [HC_MemoryBoard](https://github.com/nasu8151/HC4/blob/main/HC4_KiCad_EE) : A schematic and a board for SRAM and I/O.
 * verilog/
   * [verilog/HC4](https://github.com/nasu8151/HC4/blob/main/verilog/HC4) : Verilog simulation files of the HC4 CPU.
   * [verilog/HC8](https://github.com/nasu8151/blob/main/HC4/verilog/HC8) : Verilog simulation files of the HC8 CPU.
