@@ -1,5 +1,6 @@
-<span style="font-size: 110%">English version was excalibured.</span>
-
+> [!IMPORTANT]
+> The English version was EXCALIBURED. Wait until it has been repaired.
+# 本編
 ## 🎯 HC4 CPU Verilog 解説
 
 ## 📚 1. 概要
