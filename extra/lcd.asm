@@ -32,9 +32,6 @@ setup:
     li #12
     sa r0
 wait2:
-    ld r0
-    li #0x1
-    ad r0
     li #wait_1ms_ret1:2
     sa r15
     li #wait_1ms_ret1:1
@@ -46,6 +43,9 @@ wait2:
     li #wait_1ms:0
     jp
 wait_1ms_ret1:
+    ld r0
+    li #0x1
+    ad r0
     li #wait2:2
     li #wait2:1
     li #wait2:0
@@ -142,9 +142,6 @@ setup7:
     li #14
     sa r0
 wait8:
-    ld r0
-    li #0x1
-    ad r0
     li #wait_1ms_ret8:2
     sa r15
     li #wait_1ms_ret8:1
@@ -156,6 +153,9 @@ wait8:
     li #wait_1ms:0
     jp
 wait_1ms_ret8:
+    ld r0
+    li #0x1
+    ad r0
     li #wait8:2
     li #wait8:1
     li #wait8:0
@@ -171,18 +171,6 @@ setup8:
     li #0x2
     sm            ; Entry mode set: increment, no shift
 
-    li #data:2
-    sa r15
-    li #data:1
-    sa r14
-    li #data:0
-    sa r13
-    li #wait_264us:2
-    li #wait_264us:1
-    li #wait_264us:0
-    jp
-
-    
     li #setup9:2
     sa r15
     li #setup9:1
@@ -204,6 +192,16 @@ setup9:
     li #0x2
     sm            ; Display ON, cursor OFF, blink OFF
 
+    li #data:2
+    sa r15
+    li #data:1
+    sa r14
+    li #data:0
+    sa r13
+    li #wait_264us:2
+    li #wait_264us:1
+    li #wait_264us:0
+    jp
 
 data:
     li #0b1011
