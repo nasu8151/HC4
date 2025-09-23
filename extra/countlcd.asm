@@ -12,6 +12,10 @@
 
 start:
     np
+    li #0x0
+    li #0xF
+    li #0x0
+    sm          ; Clear output port at 0xF0
     li #setup:2
     sa r15
     li #setup:1
@@ -301,6 +305,11 @@ write1:
     li #0x3
     sm            ; Display ones digit
 
+    li #0x0
+    li #0xF
+    li #0x0
+    sm            ; Clear output port at 0xF0 (turn off buzzer)
+
 poll_release:
     li #0xF
     li #0x0
@@ -345,6 +354,10 @@ poll:
     jp nc         ; If not carry, skip reset
     li #0
     sa r5         ; Reset tens digit to 0
+    li #0xA
+    li #0xF
+    li #0x0
+    sm            ; Output 5V to buzzer at 0xF0
     li #1
     ld r6
     ad r6         ; Increment hundreds digit
@@ -357,6 +370,10 @@ poll:
     jp nc         ; If not carry, skip reset
     li #0
     sa r6         ; If carry, reset hundreds digit to 0
+    li #0x5
+    li #0xF
+    li #0x0
+    sm            ; Output 5V to buzzer at 0xF0
     li #main:2
     li #main:1
     li #main:0
