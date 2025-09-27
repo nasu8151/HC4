@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
 `include "ram.v"
 
 module hc4_tb;
@@ -37,7 +37,7 @@ module hc4_tb;
     );
 
     // クロック生成
-    always #5 clk = ~clk;
+    always #500 clk = ~clk;
 
     // テストシナリオ
     initial begin
@@ -53,12 +53,21 @@ module hc4_tb;
         #10 nReset = 1;
 
         // シミュレーション実行時間
-        #1860 $finish;
+        #200000000 $finish;
+    end
+
+    always @(*) begin
+        if (address_bus == 8'hF2 && nRAM_WR == 0) begin
+            $display("Time=%0t | PC=%d | levelA=%b | levelB=%b | levelC=%b | ADDR=%h | DATA_OUT=%h | nRAM_WR=%b | nRAM_RD=%b", $time, pc_out, level_A, level_B, level_C, address_bus, data_bus, nRAM_WR, nRAM_RD);
+        end
+        if (address_bus == 8'hF3 && nRAM_WR == 0) begin
+            $display("Time=%0t | PC=%d | levelA=%b | levelB=%b | levelC=%b | ADDR=%h | DATA_OUT=%h | nRAM_WR=%b | nRAM_RD=%b", $time, pc_out, level_A, level_B, level_C, address_bus, data_bus, nRAM_WR, nRAM_RD);
+        end
     end
 
     // テスト結果表示
-    always @(negedge clk) begin
-        $display("Time=%0t | PC=%d | levelA=%b | levelB=%b | levelC=%b", $time, pc_out, level_A, level_B, level_C);
-    end
+    // always @(negedge clk) begin
+    //     $display("Time=%0t | PC=%d | levelA=%b | levelB=%b | levelC=%b", $time, pc_out, level_A, level_B, level_C);
+    // end
 
 endmodule
