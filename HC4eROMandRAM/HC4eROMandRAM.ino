@@ -283,23 +283,29 @@ void setup() {
   // attachInterrupt(digitalPinToInterrupt(PIN_nWR), RAMWrite, RISING);
   // attachInterrupt(digitalPinToInterrupt(PIN_CLK), serviceROM, FALLING);
   PORTA.PIN6CTRL = PORT_ISC_FALLING_gc;
+
+  uint8_t prevnRD = 0;
+  uint8_t prevnWR = 0;
+
+  while(1) {
+    uint8_t curnRD = digitalReadFast(PIN_nRD);
+    if (curnRD != prevnRD) {
+      RAMRead();
+    }
+    prevnRD = curnRD;
+    uint8_t curnWR = digitalReadFast(PIN_nWR);
+    if (prevnWR == 0 && curnWR == 1) {
+      RAMWrite();
+    }
+    prevnWR = curnWR;
+    // programUART(); /* UART コマンド受付 */
+    serviceRAM();
+    delayMicroseconds(750);
+
+  }
 }
 
 
-uint8_t prevnRD = 0;
-uint8_t prevnWR = 0;
 void loop() {
-  uint8_t curnRD = digitalReadFast(PIN_nRD);
-  if (curnRD != prevnRD) {
-    RAMRead();
-  }
-  prevnRD = curnRD;
-  uint8_t curnWR = digitalReadFast(PIN_nWR);
-  if (prevnWR == 0 && curnWR == 1) {
-    RAMWrite();
-  }
-  prevnWR = curnWR;
-  // programUART(); /* UART コマンド受付 */
-  serviceRAM();
-  delayMicroseconds(100);
+
 }
