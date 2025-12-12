@@ -37,7 +37,7 @@
 #define PIN_CLK PIN_PA6
 
 /************* 4‑bit RAM/I‑O *********************/
-static uint8_t ram4[16] = { 0 }; /* 4‑bit ×16 word */
+uint8_t ram4[16] = { 0 }; /* 4‑bit ×16 word */
 
 
 /************* HEX 変換ユーティリティ *************/
@@ -168,10 +168,13 @@ static void programUART() {
 
 /************* serviceROM *************************/
 
-const uint8_t data[13] = { 0xe1, 0xa2, 0x70, 0x90, 0x7e, 0x7f, 0xa1, 0x30, 0x90, 0xa0, 0xa3, 0xe0, 0xe0 };
+const uint8_t data[] = { 0xe1, 0xa2, 0x71, 0xa1, 0x70, 0x91, 0x7e, 0x7f, 0xa1, 0x30, 0x90, 0xa0, 0xa3, 0xe0, 0xe0 
+};
 
-/**************** PA→EEPROM→PD (ROM 出力) **********/
+// クロック立ち上がり割り込み
+// ROM読み込み、PORTB制御
 ISR(PORTA_PORT_vect) {
+  VPORTA.OUT |= PIN4_bm;
   PORTA.INTFLAGS = PIN6_bm;
   uint8_t a = VPORTC.IN;
   VPORTD.OUT = data[a];
@@ -239,7 +242,7 @@ static void serviceRAM() {
   }
 }
 
-static void RAMRead() {
+void RAMRead() {
   if (digitalReadFast(PIN_nRD) == 0){ // もしnRDがアサートされていたなら
     uint8_t dataAddr = VPORTF.IN & 0x0F;
     VPORTE.DIR |= 0x0F;
@@ -250,15 +253,11 @@ static void RAMRead() {
   }
 }
 
-static void RAMWrite() {
-  if (digitalReadFast(PIN_nWR) == 1) {
-    uint8_t addr = VPORTF.IN & 0x0F;  // A0‑A3
-    uint8_t data;
-    digitalWriteFast(PIN_nPORTA_WE, HIGH);
-    digitalWriteFast(PIN_nPORTB_WE, HIGH);
-    data = VPORTE.IN & 0x0F;
-    ram4[addr] = data;
-  }
+void RAMWrite() {
+  VPORTA.OUT |= PIN3_bm;
+  uint8_t addr = VPORTF.IN & 0x0F;  // A0‑A3
+  uint8_t data = VPORTE.IN & 0x0F;
+  ram4[addr] = data;
 }
 /************* Arduino 標準関数 *******************/
 void setup() {
@@ -282,7 +281,7 @@ void setup() {
   // attachInterrupt(digitalPinToInterrupt(PIN_nRD), RAMRead, CHANGE);
   // attachInterrupt(digitalPinToInterrupt(PIN_nWR), RAMWrite, RISING);
   // attachInterrupt(digitalPinToInterrupt(PIN_CLK), serviceROM, FALLING);
-  PORTA.PIN6CTRL = PORT_ISC_FALLING_gc;
+  PORTA.PIN6CTRL = PORT_ISC_RISING_gc;
 
   uint8_t prevnRD = 0;
   uint8_t prevnWR = 0;
