@@ -70,19 +70,20 @@ static void putHex(uint8_t b) {
 }
 
 /************* Intel‑HEX ローダ *******************/
+/*
 static void intelhexLoad() {
-  char line[96];
-  uint32_t baseHigh = 0; /* type‑04 上位アドレス */
+  char line[600];
+  uint32_t baseHigh = 0; // type‑04 上位アドレス 
   uint16_t written = 0;
 
   while (true) {
-    /* ---------- 1 行受信 : CR 無視, LF で確定 ---------- */
+    // ---------- 1 行受信 : CR 無視, LF で確定 ---------- 
     uint8_t idx = 0;
     while (true) {
       while (!Serial.available()) {}
       char c = Serial.read();
-      if (c == '\r') continue; /* CR 無視 */
-      if (c == '\n') break;    /* LF で行確定 */
+      if (c == '\r') continue; // CR 無視 
+      if (c == '\n') break;    // LF で行確定 
       if (idx < sizeof(line) - 1) line[idx++] = c;
     }
     line[idx] = '\0';
@@ -92,14 +93,19 @@ static void intelhexLoad() {
       return;
     }
 
-    /* EOF */
+    // EOF 
     if (strcmp(line, ":00000001FF") == 0) {
       Serial.print(F("[OK] "));
       Serial.println(written);
+      for (uint8_t i = 0; i < 16; i++) {
+        putHex(EEPROM.read(i) & 0xFF);
+        if (i == 15) Serial.println();
+        else Serial.write(',');
+        }
       return;
     }
 
-    /* 基本フォーマット */
+    // 基本フォーマット 
     if (line[0] != ':') {
       Serial.println(F("[ERR] fmt"));
       return;
@@ -112,12 +118,12 @@ static void intelhexLoad() {
       return;
     }
 
-    /* 拡張線形アドレス */
+    // 拡張線形アドレス 
     if (rtype == 0x04 && len == 2) {
       baseHigh = (uint32_t)hex2(&line[9]) << 8 | hex2(&line[11]);
       continue;
     }
-    /* データレコード以外はスキップ */
+    // データレコード以外はスキップ 
     if (rtype != 0x00) continue;
 
     uint32_t fullAddr = (baseHigh << 16) | (uint16_t)addr;
@@ -126,7 +132,7 @@ static void intelhexLoad() {
       return;
     }
 
-    uint8_t buf[64];
+    uint8_t buf[256];
     if (readDataBytes(len, &line[9], buf) != 0) {
       Serial.println(F("[ERR] data"));
       return;
@@ -135,6 +141,96 @@ static void intelhexLoad() {
     written += len;
   }
 }
+*/
+
+#define IHEX_LINE_MAX 600
+
+void intelhexLoad() {
+  static char line[IHEX_LINE_MAX];
+  static uint8_t image[MEM_SIZE];
+
+  // まずRAMに展開（EEPROMには書かない）
+  for (uint16_t i = 0; i < MEM_SIZE; i++) image[i] = 0xFF;
+
+  uint32_t base = 0;      // type 04 用（通常0のままでOK）
+  uint16_t total = 0;
+
+  while (1) {
+    // --- 1) ':' まで同期してから 1行読む（fmt対策）
+    char c;
+    do {
+      while (!Serial.available()) {}
+      c = Serial.read();
+    } while (c != ':');
+
+    uint16_t idx = 0;
+    line[idx++] = ':';   // 先頭
+
+    while (1) {
+      while (!Serial.available()) {}
+      c = Serial.read();
+      if (c == '\r') continue;
+      if (c == '\n') break;
+
+      if (idx < IHEX_LINE_MAX - 1) line[idx++] = c;
+      else {
+        Serial.println(F("[ERR] line too long"));
+        return;
+      }
+    }
+    line[idx] = '\0';
+
+    // EOF
+    if (strcmp(line, ":00000001FF") == 0) break;
+
+    // --- 2) ヘッダ解析
+    if (line[0] != ':') { Serial.println(F("[ERR] fmt")); return; }
+
+    int len  = hex2(&line[1]);
+    int addr = hex4(&line[3]);
+    int type = hex2(&line[7]);
+    if (len < 0 || addr < 0 || type < 0) { Serial.println(F("[ERR] fmt")); return; }
+
+    // 行長チェック（最低 11 + 2*len 文字必要）
+    int need = 11 + 2 * len;
+    if ((int)strlen(line) < need) { Serial.println(F("[ERR] fmt")); return; }
+
+    // --- 3) レコード処理
+    if (type == 0x04) {
+      // Extended Linear Address
+      if (len != 2) { Serial.println(F("[ERR] fmt")); return; }
+      int hi = hex4(&line[9]);
+      if (hi < 0) { Serial.println(F("[ERR] fmt")); return; }
+      base = ((uint32_t)hi) << 16;
+      continue;
+    }
+
+    if (type == 0x00) {
+      // Data record
+      uint32_t fullAddr = base | (uint16_t)addr;
+      if (fullAddr + (uint32_t)len > MEM_SIZE) { Serial.println(F("[ERR] range")); return; }
+
+      for (int i = 0; i < len; i++) {
+        int v = hex2(&line[9 + i * 2]);
+        if (v < 0) { Serial.println(F("[ERR] data")); return; }
+        image[fullAddr + i] = (uint8_t)v;
+      }
+      total += (uint16_t)len;
+      continue;
+    }
+
+    // それ以外のtypeは無視（必要なら追加）
+  }
+
+  // --- 4) EOF後にまとめてEEPROMへ（受信と競合しない）
+  for (uint16_t i = 0; i < MEM_SIZE; i++) {
+    EEPROM.update(i, image[i]);   // updateの方が速くなることが多い
+  }
+
+  Serial.print(F("[OK] loaded "));
+  Serial.println(total);
+}
+
 
 /************* 4‑bit RAM ダンプ *******************/
 static void ramDump() {
@@ -168,8 +264,6 @@ static void programUART() {
 
 /************* serviceROM *************************/
 
-const uint8_t data[] = { 0xe1, 0xa2, 0x71, 0xa1, 0x70, 0x91, 0x7e, 0x7f, 0xa1, 0x30, 0x90, 0xa0, 0xa3, 0xe0, 0xe0 
-};
 
 // クロック立ち上がり割り込み
 // ROM読み込み、PORTB制御
@@ -177,7 +271,7 @@ ISR(PORTA_PORT_vect) {
   VPORTA.OUT |= PIN4_bm;
   PORTA.INTFLAGS = PIN6_bm;
   uint8_t a = VPORTC.IN;
-  VPORTD.OUT = data[a];
+  VPORTD.OUT = EEPROM.read(a);
 }
 
 /*static void checkEneble() {
@@ -254,6 +348,7 @@ void RAMRead() {
 }
 
 void RAMWrite() {
+  VPORTE.DIR &= ~0x0F; 
   VPORTA.OUT |= PIN3_bm;
   uint8_t addr = VPORTF.IN & 0x0F;  // A0‑A3
   uint8_t data = VPORTE.IN & 0x0F;
@@ -283,25 +378,40 @@ void setup() {
   // attachInterrupt(digitalPinToInterrupt(PIN_CLK), serviceROM, FALLING);
   PORTA.PIN6CTRL = PORT_ISC_RISING_gc;
 
-  uint8_t prevnRD = 0;
-  uint8_t prevnWR = 0;
+  // while(1) の前で初期化（重要）
+uint8_t prevnRD = digitalReadFast(PIN_nRD);
+uint8_t prevnWR = digitalReadFast(PIN_nWR);
 
-  while(1) {
-    uint8_t curnRD = digitalReadFast(PIN_nRD);
-    if (curnRD != prevnRD) {
-      RAMRead();
-    }
-    prevnRD = curnRD;
-    uint8_t curnWR = digitalReadFast(PIN_nWR);
-    if (prevnWR == 0 && curnWR == 1) {
-      RAMWrite();
-    }
-    prevnWR = curnWR;
-    // programUART(); /* UART コマンド受付 */
-    serviceRAM();
-    delayMicroseconds(750);
+static uint8_t latchedAddr = 0;
+static uint8_t latchedData = 0;
 
+while (1) {
+  // ---- RD処理（そのままでOK）
+  uint8_t curnRD = digitalReadFast(PIN_nRD);
+  if (curnRD != prevnRD) RAMRead();
+  prevnRD = curnRD;
+
+  // ---- WR処理（ここを強化）
+  uint8_t curnWR = digitalReadFast(PIN_nWR);
+
+  // /WRがLOWの間に常にラッチ（番地ズレ対策）
+  if (curnWR == 0) {
+    VPORTE.DIR &= ~0x0F;              // ★必ず入力（バス競合防止）
+    latchedAddr = VPORTF.IN & 0x0F;
+    latchedData = VPORTE.IN & 0x0F;
   }
+
+  // 立ち上がりで確定して書き込み
+  if (prevnWR == 0 && curnWR == 1) {
+    ram4[latchedAddr] = latchedData;
+  }
+  prevnWR = curnWR;
+
+  programUART();
+  serviceRAM();
+  delayMicroseconds(750);
+}
+
 }
 
 
