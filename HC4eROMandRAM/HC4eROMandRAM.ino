@@ -39,7 +39,12 @@
 #define PIN_RST PIN_PA5
 
 /************* 4‑bit RAM/I‑O *********************/
-uint8_t ram4[16] = { 0 }; /* 4‑bit ×16 word */
+volatile uint8_t ram4[16] = { 0 }; /* 4‑bit ×16 word */
+
+volatile uint8_t latchedAddr = 0;
+volatile uint8_t latchedData = 0;
+
+volatile uint8_t curnWR;
 
 // 256x8bit ROM for HC4e program
 volatile uint8_t rom8[MEM_SIZE];
@@ -254,13 +259,6 @@ void RAMRead() {
   }
 }
 
-void RAMWrite() {
-  VPORTE.DIR &= ~0x0F; 
-  VPORTA.OUT |= PIN3_bm;
-  uint8_t addr = VPORTF.IN & 0x0F;  // A0‑A3
-  uint8_t data = VPORTE.IN & 0x0F;
-  ram4[addr] = data;
-}
 /************* Arduino 標準関数 *******************/
 void setup() {
   Serial.begin(BAUD_RATE);
@@ -283,7 +281,7 @@ void setup() {
   // attachInterrupt(digitalPinToInterrupt(PIN_nRD), RAMRead, CHANGE);
   // attachInterrupt(digitalPinToInterrupt(PIN_nWR), RAMWrite, RISING);
   // attachInterrupt(digitalPinToInterrupt(PIN_CLK), serviceROM, FALLING);
-  PORTA.PIN6CTRL = PORT_ISC_RISING_gc;
+  PORTA.PIN6CTRL = PORT_ISC_RISING_gc; // clk
 
   Serial.println("\nHC4e ROM/RAM Monitor");
   Serial.print("> ");
@@ -294,10 +292,6 @@ void setup() {
 
   // while(1) の前で初期化（重要）
   uint8_t prevnRD = digitalReadFast(PIN_nRD);
-  uint8_t prevnWR = digitalReadFast(PIN_nWR);
-
-  static uint8_t latchedAddr = 0;
-  static uint8_t latchedData = 0;
 
   while (1) {
     // ---- RD処理（そのままでOK）
@@ -306,20 +300,14 @@ void setup() {
     prevnRD = curnRD;
 
     // ---- WR処理（ここを強化）
-    uint8_t curnWR = digitalReadFast(PIN_nWR);
+    curnWR = digitalReadFast(PIN_nWR);
 
     // /WRがLOWの間に常にラッチ（番地ズレ対策）
     if (curnWR == 0) {
-      VPORTE.DIR &= ~0x0F;              // ★必ず入力（バス競合防止）
+      VPORTE.DIR &= ~0x0F;              // 必ず入力（バス競合防止）
       latchedAddr = VPORTF.IN & 0x0F;
       latchedData = VPORTE.IN & 0x0F;
     }
-
-    // 立ち上がりで確定して書き込み
-    if (prevnWR == 0 && curnWR == 1) {
-      ram4[latchedAddr] = latchedData;
-    }
-    prevnWR = curnWR;
 
     if (digitalReadFast(PIN_RST) == 0) { //リセット時にもROM読み出し
       uint8_t ad = VPORTC.IN;
@@ -338,11 +326,14 @@ void loop() {
 }
 
 // クロック立ち上がり割り込み
-// ROM読み込み、PORTB制御
+// ROM読み込み, PORTA制御, RAM書込み
 ISR(PORTA_PORT_vect) {
   VPORTA.OUT |= PIN4_bm;
   PORTA.INTFLAGS = PIN6_bm;
   uint8_t a = VPORTC.IN;
   VPORTD.OUT = rom8[a];
   // VPORTD.OUT = EEPROM.read(a);
+  if (curnWR == 0) {   // curnWR は割り込み直前のnWRの状態なので...
+    ram4[latchedAddr] = latchedData;
+  }
 }
