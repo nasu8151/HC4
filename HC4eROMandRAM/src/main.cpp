@@ -47,6 +47,7 @@ volatile uint8_t latchedAddr = 0;
 volatile uint8_t latchedData = 0;
 
 volatile uint8_t curnWR;
+volatile uint8_t curnRD;
 
 volatile uint8_t onclkrise = 0;
 
@@ -155,41 +156,6 @@ static void programUART() {
   }
 }
 
-
-static void serviceRAM() {
-  uint8_t nRD = digitalReadFast(PIN_nRD);
-  uint8_t nWR = digitalReadFast(PIN_nWR);
-  uint8_t dataAddr = VPORTF.IN & 0x0F;
-  if (nWR == 0) {
-    if (dataAddr == 0x0E) {
-      digitalWriteFast(PIN_nPORTA_WE, LOW);
-    } else if (dataAddr == 0x0F) {
-      digitalWriteFast(PIN_nPORTB_WE, LOW);
-    } else {
-      VPORTE.DIR &= ~0x0F;
-    }
-  } else if (nRD == 0) { // nRDがアサートされていたら
-    if (dataAddr == 0x0E) {
-      VPORTE.DIR &= ~0x0F;
-      digitalWriteFast(PIN_nPORT_OE, LOW);
-    } else {
-      VPORTE.DIR |= 0x0F;
-      VPORTE.OUT = ram4[dataAddr];
-    }
-  }
-}
-
-void RAMRead() {
-  if (digitalReadFast(PIN_nRD) == 0){ // もしnRDがアサートされていたなら
-    uint8_t dataAddr = VPORTF.IN & 0x0F;
-    VPORTE.DIR |= 0x0F;
-    VPORTE.OUT = ram4[dataAddr];
-  } else {
-    digitalWriteFast(PIN_nPORT_OE, HIGH);
-    PORTE.DIR &= ~0x0F;  // バスを開放
-  }
-}
-
 /************* Arduino 標準関数 *******************/
 void setup() {
   Serial.begin(BAUD_RATE);
@@ -209,7 +175,12 @@ void setup() {
   PORTD.DIR = 0xFF;  // PD 出力 (データ)
   VPORTD.OUT = 0x00;
 
-  PORTA.PIN6CTRL = PORT_ISC_RISING_gc; // clk
+  TCB0.CTRLB = TCB_CNTMODE_INT_gc; // 割り込みモード
+  TCB0.INTCTRL = TCB_CAPT_bm;  // 周期的割り込み許可
+  TCB0.CCMP = (F_CPU / 8000);  // 8kHz
+  TCB0.CTRLA = TCB_CLKSEL_CLKDIV1_gc | TCB_ENABLE_bm;
+
+  PORTA.PIN6CTRL = PORT_ISC_RISING_gc; // clk 立ち上がり割り込み
 
   Serial.println("\nHC4e ROM/RAM Monitor");
   Serial.print("> ");
@@ -218,24 +189,8 @@ void setup() {
     rom8[i] = EEPROM.read(i);
   }
 
-  // while(1) の前で初期化（重要）
-  uint8_t prevnRD = digitalReadFast(PIN_nRD);
-
   while (1) {
     // ---- RD処理（そのままでOK）
-    uint8_t curnRD = digitalReadFast(PIN_nRD);
-    if (curnRD != prevnRD) RAMRead();
-    prevnRD = curnRD;
-
-    // ---- WR処理（ここを強化）
-    curnWR = digitalReadFast(PIN_nWR);
-
-    // /WRがLOWの間に常にラッチ（番地ズレ対策）
-    if (curnWR == 0) {
-      VPORTE.DIR &= ~0x0F;              // 必ず入力（バス競合防止）
-      latchedAddr = VPORTF.IN & 0x0F;
-      latchedData = VPORTE.IN & 0x0F;
-    }
 
     if (digitalReadFast(PIN_RST) == 0) { //リセット時にもROM読み出し
       uint8_t ad = VPORTC.IN;
@@ -246,8 +201,7 @@ void setup() {
     } else {
       trace();
     }
-    serviceRAM();
-    delayMicroseconds(750);
+    delay(10); /* CPU負荷軽減 */
   }
 }
 
@@ -259,7 +213,7 @@ void loop() {
 // クロック立ち上がり割り込み
 // ROM読み込み, PORTA制御, RAM書込み
 ISR(PORTA_PORT_vect) {
-  VPORTA.OUT |= PIN4_bm;
+  VPORTA.OUT |= PIN4_bm | PIN2_bm | PIN3_bm; // nPORT_OE, nPORTA_WE, nPORTB_WE デアサート
   PORTA.INTFLAGS = PIN6_bm;
   onclkrise = 1;
   uint8_t a = VPORTC.IN;
@@ -267,5 +221,39 @@ ISR(PORTA_PORT_vect) {
   // VPORTD.OUT = EEPROM.read(a);
   if (curnWR == 0) {   // curnWR は割り込み直前のnWRの状態なので...
     ram4[latchedAddr] = latchedData;
+  } else if (curnRD == 0) {
+    PORTE.DIR &= ~0x0F;  // バスを開放
+  }
+}
+
+ISR(TCB0_INT_vect) {
+  TCB0.INTFLAGS = TCB_CAPT_bm;
+  curnWR = digitalReadFast(PIN_nWR);
+  curnRD = digitalReadFast(PIN_nRD);
+  uint8_t dataAddr = VPORTF.IN & 0x0F;
+  // /WRがLOWの間に常にラッチ（番地ズレ対策）
+  if (curnWR == 0) {
+    VPORTE.DIR &= ~0x0F;              // 必ず入力（バス競合防止）
+    latchedAddr = VPORTF.IN & 0x0F;
+    latchedData = VPORTE.IN & 0x0F;
+    switch (dataAddr) {
+    case 0x0E:
+      VPORTA.OUT &= ~(1 << PA_AO);  // nPORTA_WE アサート
+      break;
+    case 0x0F:
+      VPORTA.OUT &= ~(1 << PA_BO);  // nPORTB_WE アサート
+      break;
+    default:
+      VPORTE.DIR &= ~0x0F;  // バスを開放
+      break;
+    }
+  } else if (curnRD == 0) { // nRDがアサートされていたら
+    if (dataAddr == 0x0E) {
+      VPORTE.DIR &= ~0x0F;  // バスを開放
+      VPORTA.OUT &= ~(1 << PA_AI);  // nPORT_OE アサート
+    } else {
+      VPORTE.DIR |= 0x0F;
+      VPORTE.OUT = ram4[dataAddr];
+    }
   }
 }
