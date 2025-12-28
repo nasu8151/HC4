@@ -48,33 +48,77 @@ volatile uint8_t latchedData = 0;
 
 volatile uint8_t curnWR;
 
+volatile uint8_t onclkrise = 0;
+
 // 256x8bit ROM for HC4e program
 volatile uint8_t rom8[MEM_SIZE];
 
+uint8_t ontrace = 0;
 
 /************* 4‑bit RAM ダンプ *******************/
-static void ramDump() {
-  Serial.println("r0  r1  r2  r3  r4  r5  r6  r7  r8  r9  r10 r11 r12 r13 r14 r15");
-  for (uint8_t i = 0; i < 16; i++) {
-    if (ram4[i] < 10) Serial.write(' ');
-    Serial.print(ram4[i]);
-    if (i == 15) {
-      Serial.println();
-      break;
-    } else {
+static void ramDump(char *args) {
+  if (*args == 'h' || *args == 'H') {
+    Serial.println("Usage: R");
+    Serial.println(" Dumps 16x4-bit RAM contents.");
+    return;
+  } else if (*args == 'c' || *args == 'C') {
+    for (uint8_t i = 0; i < 16; i++) {
+      Serial.print(ram4[i]);
       Serial.write(',');
     }
-    Serial.write(' ');
+    uint8_t pc = VPORTC.IN;
+    Serial.print(pc);
+    Serial.print(',');
+    Serial.println(rom8[pc]);
+  } else {
+    Serial.println("r0  r1  r2  r3  r4  r5  r6  r7  r8  r9  r10 r11 r12 r13 r14 r15");
+    for (uint8_t i = 0; i < 16; i++) {
+      if (ram4[i] < 10) Serial.write(' ');
+      Serial.print(ram4[i]);
+      if (i == 15) {
+        Serial.println();
+        break;
+      } else {
+        Serial.write(',');
+      }
+      Serial.write(' ');
+    }
+    uint8_t pc = VPORTC.IN;
+    Serial.print("PC=");
+    Serial.print(pc);
+    Serial.print(", Inst=");
+    Serial.print(rom8[pc], HEX);
+    Serial.print(" (");
+    Serial.print(disasm(rom8[pc]));
+    Serial.println(")");
   }
-  uint8_t pc = VPORTC.IN;
-  Serial.print("PC=");
-  Serial.print(pc);
-  Serial.printf(", Inst=%02X (%s)\n", rom8[pc], disasm(rom8[pc]));
+}
+
+static void trace() {
+  if (Serial.available()) {
+    char c = Serial.read();
+    if (c == 0x03) { // Ctrl-C
+      ontrace = 0;
+      Serial.print("Trace stopped.\n> ");
+      return;
+    }
+  }
+  if (onclkrise) {
+    onclkrise = 0;
+    ramDump("c");
+  }
+}
+
+static void startTrace() {
+  ontrace = 1;
+  Serial.println("Trace started. (Ctrl-C to stop)");
 }
 
 static void help() {
   Serial.println("r or R : Read HC4e RAM data");
   Serial.println("l or L : Load to HC4e ROM");
+  Serial.println("t or T : Trace execution (Ctrl-C to stop)");
+  Serial.println("         *make sure HC4e CPU is running and in low clock mode.");
   Serial.println("h or H : Help");
 }
 
@@ -89,15 +133,22 @@ static void programUART() {
     if (c == '\r') continue; /* CR 無視 */
     if (c == '\n') {
       Serial.write('\n');
-      if (idx == 0) { continue; } /* 連続改行は無視 */
+      if (idx == 0) { 
+        Serial.print("> "); 
+        continue; 
+      } /* 連続改行は無視 */
       buf[idx] = '\0';
       char cmd = buf[0];
-      if (cmd == 'l' || cmd == 'L') intelhexLoad();
-      else if (cmd == 'r' || cmd == 'R') ramDump();
+      char *args = &buf[1];
+      while (*args == ' ') args++; /* スペーススキップ */
+      if (cmd == 'l' || cmd == 'L') intelhexLoad(args);
+      else if (cmd == 'r' || cmd == 'R') ramDump(args);
+      else if (cmd == 't' || cmd == 'T') startTrace();
       else if (cmd == 'h' || cmd == 'H') help();
       else Serial.println("Unknown command. type 'h' for help.");
       idx = 0; /* バッファクリア */
-      Serial.print("> ");
+      if (ontrace == 0) Serial.print("> ");
+
     } else if (idx < sizeof(buf) - 1) {
       buf[idx++] = c;
     }
@@ -190,8 +241,11 @@ void setup() {
       uint8_t ad = VPORTC.IN;
       VPORTD.OUT = rom8[ad];
     }
-
-    programUART();
+    if (ontrace == 0) {
+      programUART();
+    } else {
+      trace();
+    }
     serviceRAM();
     delayMicroseconds(750);
   }
@@ -207,6 +261,7 @@ void loop() {
 ISR(PORTA_PORT_vect) {
   VPORTA.OUT |= PIN4_bm;
   PORTA.INTFLAGS = PIN6_bm;
+  onclkrise = 1;
   uint8_t a = VPORTC.IN;
   VPORTD.OUT = rom8[a];
   // VPORTD.OUT = EEPROM.read(a);

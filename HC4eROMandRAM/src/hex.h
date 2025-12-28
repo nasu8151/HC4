@@ -14,6 +14,6 @@ static int hex2(const char* p);
 static int hex4(const char* p);
 static int readDataBytes(int len, const char* p, uint8_t* dst);
 
-void intelhexLoad();
+void intelhexLoad(char *args);
 
 #endif /* __HEX_H__ */

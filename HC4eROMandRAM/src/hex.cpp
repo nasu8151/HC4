@@ -24,7 +24,12 @@ static int readDataBytes(int len, const char* p, uint8_t* dst) {
   return 0;
 }
 
-void intelhexLoad() {
+void intelhexLoad(char *args) {
+  if (*args == 'h' || *args == 'H') {
+    Serial.println("Usage: L");
+    Serial.println(" Loads Intel-HEX format data into HC4e ROM (EEPROM).");
+    return;
+  }
   static char line[IHEX_LINE_MAX];
   // static uint8_t rom8[MEM_SIZE];
 
