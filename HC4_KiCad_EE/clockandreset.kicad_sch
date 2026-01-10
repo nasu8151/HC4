@@ -4026,7 +4026,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "Schottky"
 			(at 31.75 64.77 0)
 			(effects
 				(font
