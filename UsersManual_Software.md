@@ -30,39 +30,30 @@ These instrucitons may not work correctly.
 
 ## HC4
 
-| bit 7-6<br>5-4 | 00         | 01         | 10                      | 11         |
-| -------------- | ---------- | ---------- | ----------------------- | ---------- |
-| 00             | ```SM```   | ```SC r``` | ```SU r```              | ```AD r``` |
-| 01             | ```XR r``` | ```OR r``` | ```AN r```              | ```SA r``` |
-| 10             | ```LM```   | ```LD r``` | ```LI #```              | (Reserved) |
-| 11             | (Reserved) | (Reserved) | ```JP flag```, ```NP``` | (Reserved) |
+| bit 5-4→<br>7-6↓ | 00         | 01         | 10                      | 11         |
+| ---------------- | ---------- | ---------- | ----------------------- | ---------- |
+| 00               | ```SM```   | ```SC r``` | ```SU r```              | ```AD r``` |
+| 01               | ```XR r``` | ```OR r``` | ```AN r```              | ```SA r``` |
+| 10               | ```LM```   | ```LD r``` | ```LI #```              | (Reserved) |
+| 11               | (Reserved) | (Reserved) | ```JP flag```, ```NP``` | (Reserved) |
 
 ## HC4<sub>E</sub>
 
-| bit 7-6<br>5-4 | 00         | 01         | 10                      | 11         |
-| -------------- | ---------- | ---------- | ----------------------- | ---------- |
-| 00             | (Reserved) | (Reserved) | (Reserved)              | ```AD r``` |
-| 01             | ```XR r``` | (Reserved) | (Reserved)              | ```SA r``` |
-| 10             | (Reserved) | ```LD r``` | ```LI #```              | (Reserved) |
-| 11             | (Reserved) | (Reserved) | ```JP flag```, ```NP``` | (Reserved) |
-
-## HC4<sub>E</sub>
-
-| bit 5-4\7-6 | 00         | 01         | 10          | 11                      |
-| ----------- | ---------- | ---------- | ----------- | ----------------------- |
-| 00          | (Reserved) | ```XR r``` | (Reserved)  | (Reserved)              |
-| 01          | (Reserved) | (Reserved) | ```LD r```  | (Reserved)              |
-| 10          | (Reserved) | (Reserved) | ```LD #i``` | ```JP [AB]```, ```NP``` |
-| 11          | ```AD r``` | ```SA r``` | (Reserved)  | (Reservred)             |
+| bit 5-4→<br>7-6↓ | 00         | 01         | 10                      | 11         |
+| ---------------- | ---------- | ---------- | ----------------------- | ---------- |
+| 00               | (Reserved) | (Reserved) | (Reserved)              | ```AD r``` |
+| 01               | ```XR r``` | (Reserved) | (Reserved)              | ```SA r``` |
+| 10               | (Reserved) | ```LD r``` | ```LI #```              | (Reserved) |
+| 11               | (Reserved) | (Reserved) | ```JP flag```, ```NP``` | (Reserved) |
 
 ## HC8
 
-| bit 7-6<br>5-4 | 00         | 01         | 10                      | 11                      |
-| -------------- | ---------- | ---------- | ----------------------- | ----------------------- |
-| 00             | ```SM```   | ```SC r``` | ```SU r```              | ```AD r```              |
-| 01             | ```XR r``` | ```OR r``` | ```AN r```              | ```SA r```              |
-| 10             | ```LM```   | ```LD r``` | ```LI #```              | (Reserved)              |
-| 11             | ```LS #``` | (Reserved) | ```JP flag```, ```NP``` | ```JL flag```, ```LP``` |
+| bit 5-4→<br>7-6↓ | 00         | 01         | 10                      | 11                      |
+| ---------------- | ---------- | ---------- | ----------------------- | ----------------------- |
+| 00               | ```SM```   | ```SC r``` | ```SU r```              | ```AD r```              |
+| 01               | ```XR r``` | ```OR r``` | ```AN r```              | ```SA r```              |
+| 10               | ```LM```   | ```LD r``` | ```LI #```              | (Reserved)              |
+| 11               | ```LS #``` | (Reserved) | ```JP flag```, ```NP``` | ```JL flag```, ```LP``` |
 
 # Instruction List
 
@@ -109,10 +100,10 @@ These instructions are executed for stack levels A and B, and store the results 
 
 ## Register and memory access instructions
 
-Store instructions store value of stack level A or C in registers or memory area. ```SA r``` instruction refers stack level A, and ```SC r``` and ```SC [AB]``` instructions refer stack level C.   
-Load instructions, ```LD```,  load stack level A from register or memory area. When a value is loaded into stack level A, the previous value of level A moves to level B, and the value of level B moves to level C. ```LD r``` refers register ```r```, ```LD #i``` loads immediate data and ```LD [AB]``` refers memory address specified level A and B.   
+Store instructions store value of stack level A or C in registers or memory area. ```SA r``` instruction refers stack level A, and ```SC r``` and ```SM``` instructions refer stack level C.   
+Load instructions, ```LD```,  load stack level A from register or memory area. When a value is loaded into stack level A, the previous value of level A moves to level B, and the value of level B moves to level C. ```LD r``` refers register ```r```, ```LI #i``` loads immediate data and ```LM``` refers memory address specified level A and B.   
 Load and shift instruction, ```LS #i```, used to load an 8-bit wide data onto the stack.
-For the ```LS #``` and ```LD #``` instructions, binary(```0b1010```) and hexadecimal(```0xA```) literals can be used.
+For the ```LS #``` and ```LI #``` instructions, binary(```0b1010```) and hexadecimal(```0xA```) literals can be used.
 
 ## System control instructions
 
@@ -122,5 +113,5 @@ For the ```LS #``` and ```LD #``` instructions, binary(```0b1010```) and hexadec
 ## HC4<sub>E</sub>
 
 In HC4<sub>E</sub>, only stack levels A and B are valid.
-It has 16 nibbles of address space and only register addressing mode(```r```).
+It has 16 nibbles of address space, only register addressing mode(```r```) and 8-bit wide program counter.
 I/O Registers are placed ```r14``` and ```r15```.

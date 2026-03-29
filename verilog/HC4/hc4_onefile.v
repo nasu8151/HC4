@@ -1,4 +1,4 @@
-module hc4_onefile (
+module hc4 (
     input wire clk,
     input wire rst_n,
     output wire [11:0]      pc_out,
@@ -7,8 +7,8 @@ module hc4_onefile (
     output wire [3:0]       stackC_out,
     output wire [7:0]       address_bus,
     inout  wire [3:0]       data_bus,
-    output wire             nRAM_RD,
-    output wire             nRAM_WR
+    output wire             rd_n,
+    output wire             wr_n
 
 );
     // Internal signals
@@ -43,12 +43,18 @@ module hc4_onefile (
     assign address_bus = (opcode == 4'b0000 || opcode == 4'b1000) ? {level_A, level_B} : {4'b0000, oprand};
     assign data_bus = (opcode[3] == 1'b0) ? alu_result : 4'bz; //write to data bus for ALU output or immediate data
 
-    assign nRAM_WR = !(!instruction[7] & !clk);
-    assign nRAM_RD = !(instruction[7] & !instruction[6] & !instruction[5] & !clk);
+    assign wr_n = !(!opcode[3] & !clk);
+    assign rd_n = !(opcode[3:1] == 3'b100 & !clk);
+
+    assign stack_op = (opcode[3] == 1'b0) ? 1'b1 : 1'b0; //stack operation if opcode[3] is 0, else memory operation
+    assign add_sub  = (opcode[3:1] == 3'b001) ? 1'b1 : 1'b0; //AD or SU if opcode == 0010 or 0011
+    assign lm_ld    = (opcode[3:1] == 3'b100) ? 1'b1 : 1'b0; //LM or LD if opcode[3:1] is 100
+    assign li       = (opcode[3:1] == 3'b101) ? 1'b1 : 1'b0; //LI if opcode[3:1] is 101
+    assign jp_np    = (opcode[3:1] == 3'b111) ? 1'b1 : 1'b0; //JP or NP if opcode[3:1] is 111
 
     // ALU module
     always @(*) begin
-        case (opcode)
+        casez (opcode)
             4'b000?: alu_result = level_C; //SM, SC
             4'b0010: {carry_out, alu_result} = level_A - level_B; //SU
             4'b0011: {carry_out, alu_result} = level_A + level_B; //AD
@@ -69,42 +75,36 @@ module hc4_onefile (
             carry_flg <= 1'b0;
             zero_flg <= 1'b0;
         end else begin
-            // Update flags
-            zero_flg <= (alu_result == 4'b0000) ? 1'b1 : 1'b0;
-
             // Execute instruction based on opcode
-            case (opcode)
-                4'b0???: begin // Stack operations
-                    zero_flg <= (alu_result == 4'b0000) ? 1'b1 : 1'b0;
-                    if (opcode == 4'b0010 || opcode == 4'b0011) begin
-                        carry_flg <= carry_out;
-                    end
-                    pc <= pc + 1;
+            if (stack_op) begin
+                zero_flg <= (data_bus == 4'b0000) ? 1'b1 : 1'b0;
+                if (opcode == 4'b0010 || opcode == 4'b0011) begin
+                    carry_flg <= carry_out;
                 end
-                4'b100?: begin // LM, LD
-                    level_A <= data_bus;
-                    level_B <= level_A;
-                    level_C <= level_B;
-                    pc <= pc + 1;
-                end
-                4'b101?: begin // LI
-                    level_A <= oprand;
-                    level_B <= level_A;
-                    level_C <= level_B;
-                    pc <= pc + 1;
-                end
-                4'b1110: begin //JP, NP
-                    case (instruction[2:0])
-                        3'b000: pc <= {level_C, level_B, level_A};              // JP
-                        3'b001: pc <= pc + 1;              // NP
-                        3'b010: pc <= (carry_flg == 1) ? {level_C, level_B, level_A} : pc + 1; // JP C
-                        3'b011: pc <= (carry_flg == 0) ? {level_C, level_B, level_A} : pc + 1; // JP NC
-                        3'b100: pc <= (zero_flg == 1) ? {level_C, level_B, level_A} : pc + 1;  // JP Z
-                        3'b101: pc <= (zero_flg == 0) ? {level_C, level_B, level_A} : pc + 1;  // JP NZ
-                        default: pc <= pc + 1;
-                    endcase
-                end
-            endcase
+            end
+            if (lm_ld) begin
+                level_A <= data_bus;
+                level_B <= level_A;
+                level_C <= level_B;
+            end
+            if (li) begin
+                level_A <= oprand;
+                level_B <= level_A;
+                level_C <= level_B;
+            end
+            if (jp_np) begin //JP, NP
+                case (instruction[2:0])
+                    3'b000: pc <= {level_C, level_B, level_A};              // JP
+                    3'b001: pc <= pc + 1;              // NP
+                    3'b010: pc <= (carry_flg == 1) ? {level_C, level_B, level_A} : pc + 1; // JP C
+                    3'b011: pc <= (carry_flg == 0) ? {level_C, level_B, level_A} : pc + 1; // JP NC
+                    3'b100: pc <= (zero_flg == 1) ? {level_C, level_B, level_A} : pc + 1;  // JP Z
+                    3'b101: pc <= (zero_flg == 0) ? {level_C, level_B, level_A} : pc + 1;  // JP NZ
+                    default: pc <= pc + 1;
+                endcase
+            end else begin
+                pc <= pc + 1;
+            end
         end
     end
 endmodule
