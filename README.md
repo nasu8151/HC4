@@ -14,6 +14,17 @@
 
 A 4- or 8-bit CPU made with 74-series logic ICs.
 
+# Manuals
+
+- Hardware manual (JP): [UsersManual_Hardware.md](./UsersManual_Hardware.md)
+- Software manual (EN): [UsersManual_Software.md](./UsersManual_Software.md)
+- Software manual (JP): [UsersManual_Software_JP.md](./UsersManual_Software_JP.md)
+
+Document roles:
+
+- Hardware manual (JP): block-level architecture, buses, control signals, model differences.
+- Software manual (EN/JP): instruction set reference, programming caveats, and LED blink tutorial.
+
 # Architecture
 ## Overview
 

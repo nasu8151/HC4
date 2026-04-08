@@ -12,6 +12,9 @@
   - [Register and memory access instructions](#register-and-memory-access-instructions-1)
   - [System control instructions](#system-control-instructions-1)
   - [HC4E](#hc4e-1)
+- [Instruction usage examples and caveats](#instruction-usage-examples-and-caveats)
+- [Tutorial: LED blink (lchika.asm)](#tutorial-led-blink-lchikaasm)
+- [Troubleshooting](#troubleshooting)
 
 
 # How to read these tables
@@ -115,3 +118,126 @@ For the ```LS #``` and ```LI #``` instructions, binary(```0b1010```) and hexadec
 In HC4<sub>E</sub>, only stack levels A and B are valid.
 It has 16 nibbles of address space, only register addressing mode(```r```) and 8-bit wide program counter.
 I/O Registers are placed ```r14``` and ```r15```.
+
+# Instruction usage examples and caveats
+
+## AD r / SU r
+
+Example:
+
+```asm
+ld #0x3
+ld #0x5
+ad r1
+```
+
+Caveats:
+
+- Operands are mainly stack A/B, and the result is written to register `r`.
+- C and Z flags are updated and may affect the next conditional jump.
+
+## XR r / OR r / AN r
+
+Example:
+
+```asm
+ld #0xA
+ld #0x3
+xr r2
+```
+
+Caveats:
+
+- Z flag update can be used for zero-check branching.
+- Do not confuse arithmetic carry behavior with logical operations.
+
+## SA r / SC r / SM
+
+Example:
+
+```asm
+ld #0x9
+sa r0
+```
+
+Caveats:
+
+- `SA r` stores A, while `SC r` and `SM` store C.
+- Depending on assembler dialect, store-to-[AB] may be written as `SM` or `SC [AB]`.
+
+## LD r / LI #i / LM
+
+Example:
+
+```asm
+li #0xF
+ld r1
+lm
+```
+
+Caveats:
+
+- Load pushes stack levels down (A <- new, B <- old A, C <- old B).
+- `LM` depends on `[AB]`, so prepare stack values before reading memory.
+
+## JP family / NP
+
+Example:
+
+```asm
+ld #0
+ld #0
+ld #0x4
+jp
+```
+
+Caveats:
+
+- Jump destination is made from stack levels; wrong loading order causes wrong branch.
+- `NP` is useful as a timing separator during debug.
+
+# Tutorial: LED blink (lchika.asm)
+
+Reference file: `extra/lchika.asm`
+
+```asm
+np
+ld #0xF
+ld #0xF
+ld #0
+sc [AB]
+ld #0
+ld #0xF
+ld #0
+sc [AB]
+ld #0
+ld #0
+ld #0x1
+jp
+```
+
+Line-by-line intent:
+
+1. `np`: initial NOP.
+2. `ld #0xF`: prepare address part.
+3. `ld #0xF`: prepare address part.
+4. `ld #0`: output data (for one LED state).
+5. `sc [AB]`: write to memory-mapped I/O.
+6. `ld #0`: prepare next write.
+7. `ld #0xF`: keep I/O range.
+8. `ld #0`: output data for another state.
+9. `sc [AB]`: write again.
+10. `ld #0`: prepare jump destination part.
+11. `ld #0`: prepare jump destination part.
+12. `ld #0x1`: prepare jump destination part.
+13. `jp`: loop back.
+
+# Troubleshooting
+
+- Avoid instructions marked as Reserved.
+- Verify I/O address decoding in hardware.
+- Verify stack content before `JP`.
+- Verify C/Z flag updates before conditional jump.
+- Verify stack push side effect after `LD` and `LI`.
+- On HC4E, avoid code that assumes stack level C.
+- Verify assembler dialect differences for `SM` and `SC [AB]`.
