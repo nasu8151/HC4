@@ -175,12 +175,12 @@ void setup() {
   PORTD.DIR = 0xFF;  // PD 出力 (データ)
   VPORTD.OUT = 0x00;
 
-  TCB0.CTRLB = TCB_CNTMODE_INT_gc; // 割り込みモード
-  TCB0.INTCTRL = TCB_CAPT_bm;  // 周期的割り込み許可
-  TCB0.CCMP = (F_CPU / 8000);  // 8kHz
-  TCB0.CTRLA = TCB_CLKSEL_CLKDIV1_gc | TCB_ENABLE_bm;
+  // TCB0.CTRLB = TCB_CNTMODE_INT_gc; // 割り込みモード
+  // TCB0.INTCTRL = TCB_CAPT_bm;  // 周期的割り込み許可
+  // TCB0.CCMP = (F_CPU / 1000);  // 3kHz
+  // TCB0.CTRLA = TCB_CLKSEL_CLKDIV1_gc | TCB_ENABLE_bm;
 
-  PORTA.PIN6CTRL = PORT_ISC_RISING_gc; // clk 立ち上がり割り込み
+  PORTA.PIN6CTRL = PORT_ISC_BOTHEDGES_gc; // clk 立ち上がり/立ち下がり割り込み
 
   Serial.println("\nHC4e ROM/RAM Monitor");
   Serial.print("> ");
@@ -210,50 +210,52 @@ void loop() {
 
 }
 
-// クロック立ち上がり割り込み
+// クロック立ち上がり/立ち下がり割り込み
 // ROM読み込み, PORTA制御, RAM書込み
 ISR(PORTA_PORT_vect) {
   VPORTA.OUT |= PIN4_bm | PIN2_bm | PIN3_bm; // nPORT_OE, nPORTA_WE, nPORTB_WE デアサート
   PORTA.INTFLAGS = PIN6_bm;
-  onclkrise = 1;
-  uint8_t a = VPORTC.IN;
-  VPORTD.OUT = rom8[a];
-  // VPORTD.OUT = EEPROM.read(a);
-  if (curnWR == 0) {   // curnWR は割り込み直前のnWRの状態なので...
-    ram4[latchedAddr] = latchedData;
-  } else if (curnRD == 0) {
-    PORTE.DIR &= ~0x0F;  // バスを開放
+  if (VPORTA.IN & PIN6_bm) { // 立ち上がりエッジ
+    onclkrise = 1;
+    uint8_t a = VPORTC.IN;
+    VPORTD.OUT = rom8[a];
+    // VPORTD.OUT = EEPROM.read(a);
+    if (curnWR == 0) {   // curnWR は割り込み直前のnWRの状態なので...
+      ram4[latchedAddr] = latchedData;
+      return;
+    }
+    if (curnRD == 0) {
+      PORTE.DIR &= ~0x0F;  // バスを開放
+      return;
+    }
+    return;
   }
-}
-
-ISR(TCB0_INT_vect) {
-  TCB0.INTFLAGS = TCB_CAPT_bm;
+  // 立ち下がりエッジ
   curnWR = digitalReadFast(PIN_nWR);
   curnRD = digitalReadFast(PIN_nRD);
-  uint8_t dataAddr = VPORTF.IN & 0x0F;
+  latchedAddr = VPORTF.IN & 0x0F;
+  latchedData = VPORTE.IN & 0x0F;
   // /WRがLOWの間に常にラッチ（番地ズレ対策）
   if (curnWR == 0) {
     VPORTE.DIR &= ~0x0F;              // 必ず入力（バス競合防止）
-    latchedAddr = VPORTF.IN & 0x0F;
-    latchedData = VPORTE.IN & 0x0F;
-    switch (dataAddr) {
+    switch (latchedAddr) {
     case 0x0E:
       VPORTA.OUT &= ~(1 << PA_AO);  // nPORTA_WE アサート
-      break;
+      return;
     case 0x0F:
       VPORTA.OUT &= ~(1 << PA_BO);  // nPORTB_WE アサート
-      break;
+      return;
     default:
       VPORTE.DIR &= ~0x0F;  // バスを開放
-      break;
+      return;
     }
   } else if (curnRD == 0) { // nRDがアサートされていたら
-    if (dataAddr == 0x0E) {
+    if (latchedAddr == 0x0E) {
       VPORTE.DIR &= ~0x0F;  // バスを開放
       VPORTA.OUT &= ~(1 << PA_AI);  // nPORT_OE アサート
     } else {
       VPORTE.DIR |= 0x0F;
-      VPORTE.OUT = ram4[dataAddr];
+      VPORTE.OUT = ram4[latchedAddr];
     }
   }
 }
