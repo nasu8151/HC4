@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "279d848c-da77-4068-ae23-49042e021989")
 	(paper "A4")
 	(title_block
@@ -14,8 +14,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "IC"
 				(at -8.89 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -24,6 +28,8 @@
 			)
 			(property "Value" "74HC161"
 				(at 8.89 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -32,74 +38,90 @@
 			)
 			(property "Footprint" ""
 				(at 0 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://toshiba.semicon-storage.com/info/TC74HC161AF_datasheet_ja_20140301.pdf?did=10806&prodName=TC74HC161AF"
 				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "CMOS 4bit presettable synchronous counter with asynchronous reset"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Library" "74hc.lib"
 				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Name" "74HC161"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Device" "SUBCKT"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Pins" "1=MR 2=CP 3=D0 4=D1 5=D2 6=D3 7=CEP 8=VGND 9=PE 10=CET 11=Q3 12=Q2 13=Q1 14=Q0 15=TC 16=VCC"
 				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "counter/register"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "74HC161_0_1"
@@ -139,60 +161,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input input_low
-					(at -10.16 7.62 0)
-					(length 2.54)
-					(name "/LOAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "ENT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "ENP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -290,17 +258,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 15.24 270)
+				(pin input line
+					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "VCC"
+					(name "ENP"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "16"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -326,17 +294,35 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 5.08 180)
+				(pin input input_low
+					(at -10.16 7.62 0)
 					(length 2.54)
-					(name "CO"
+					(name "/LOAD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "15"
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "ENT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -345,34 +331,16 @@
 					)
 				)
 				(pin output line
-					(at 10.16 -3.81 180)
+					(at 10.16 -11.43 180)
 					(length 2.54)
-					(name "QA"
+					(name "QD"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 -6.35 180)
-					(length 2.54)
-					(name "QB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -399,16 +367,70 @@
 					)
 				)
 				(pin output line
-					(at 10.16 -11.43 180)
+					(at 10.16 -6.35 180)
 					(length 2.54)
-					(name "QD"
+					(name "QB"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "11"
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -3.81 180)
+					(length 2.54)
+					(name "QA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "CO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -429,8 +451,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "CP"
 				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -440,6 +466,8 @@
 			)
 			(property "Value" "C_Byp"
 				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -449,47 +477,57 @@
 			)
 			(property "Footprint" ""
 				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Bypass Capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_Bypass_0_1"
@@ -522,7 +560,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -540,7 +578,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -562,8 +600,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "LD"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -572,6 +614,8 @@
 			)
 			(property "Value" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -580,29 +624,35 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "LED__0_1"
@@ -715,8 +765,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "RN"
 				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -725,6 +779,8 @@
 			)
 			(property "Value" "R_Pack04_Split"
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -733,47 +789,57 @@
 			)
 			(property "Footprint" ""
 				(at -2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "4 resistor network, parallel topology, split"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R network parallel topology isolated"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex* MSOP*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_Pack04_Split_0_1"
@@ -790,24 +856,6 @@
 				)
 			)
 			(symbol "R_Pack04_Split_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "R1.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
@@ -826,19 +874,17 @@
 						)
 					)
 				)
-			)
-			(symbol "R_Pack04_Split_2_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "R2.2"
+					(name "R1.2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -846,6 +892,8 @@
 						)
 					)
 				)
+			)
+			(symbol "R_Pack04_Split_2_1"
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
@@ -864,19 +912,17 @@
 						)
 					)
 				)
-			)
-			(symbol "R_Pack04_Split_3_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "R3.2"
+					(name "R2.2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -884,6 +930,8 @@
 						)
 					)
 				)
+			)
+			(symbol "R_Pack04_Split_3_1"
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
@@ -902,19 +950,17 @@
 						)
 					)
 				)
-			)
-			(symbol "R_Pack04_Split_4_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "R4.2"
+					(name "R3.2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -922,6 +968,8 @@
 						)
 					)
 				)
+			)
+			(symbol "R_Pack04_Split_4_1"
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
@@ -940,11 +988,29 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R4.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -955,17 +1021,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -974,38 +1046,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -1026,7 +1106,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1045,7 +1125,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1056,17 +1136,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "VCC"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1075,38 +1161,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"VCC\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "VCC_0_1"
@@ -1151,7 +1245,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2621,12 +2715,14 @@
 		(uuid "b1878118-e4e8-4f25-a66f-d873328b7f27")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.2067 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -2643,12 +2739,14 @@
 		(uuid "c378ce06-d622-4712-9dee-f7527f15eb22")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.5697 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -2665,12 +2763,14 @@
 		(uuid "e93f56f3-6754-47f7-b0ed-e001b8166bd5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.5697 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -2687,12 +2787,14 @@
 		(uuid "fb7166c1-4c30-4000-b2db-a5e194a5537f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 106.4767 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 	)
@@ -2756,14 +2858,18 @@
 		(at 157.48 166.37 0)
 		(mirror y)
 		(unit 2)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01f0c6ac-a904-4c86-b5b7-83b65e08dd53")
 		(property "Reference" "RN10"
 			(at 154.94 165.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2773,6 +2879,8 @@
 		)
 		(property "Value" "1k"
 			(at 154.94 167.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2782,29 +2890,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
 			(at 159.512 166.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 157.48 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2832,7 +2946,7 @@
 			(uuid "b46cda20-0bb8-4598-a55e-2381a7686983")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "RN10")
 					(unit 2)
@@ -2844,22 +2958,28 @@
 		(lib_id "power:GND")
 		(at 127 107.95 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ce5b5e6-a959-4036-ba2c-9ec12f7c23d3")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR035"
 			(at 127 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 130.81 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2868,38 +2988,44 @@
 		)
 		(property "Footprint" ""
 			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 127 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "19b2b4e3-0991-4b56-b18c-fe72e336fd03")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "#PWR038")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -2910,14 +3036,18 @@
 		(at 139.7 166.37 0)
 		(mirror y)
 		(unit 4)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1613d107-5869-4ba0-86a1-be34e53e733f")
 		(property "Reference" "RN10"
 			(at 137.16 165.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2927,6 +3057,8 @@
 		)
 		(property "Value" "1k"
 			(at 137.16 167.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2936,29 +3068,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
 			(at 141.732 166.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 139.7 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 139.7 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2986,7 +3124,7 @@
 			(uuid "b46cda20-0bb8-4598-a55e-2381a7686984")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "RN10")
 					(unit 4)
@@ -2998,14 +3136,18 @@
 		(lib_id "Device2:LED_")
 		(at 166.37 113.03 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "166e7f59-5859-47a1-ac2d-d1a4042f6f80")
-		(property "Reference" "LD29"
+		(property "Reference" "LD28"
 			(at 170.18 113.3474 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3015,6 +3157,8 @@
 		)
 		(property "Value" "LED"
 			(at 170.18 115.8874 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3024,29 +3168,35 @@
 		)
 		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 166.37 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 166.37 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Light emitting diode"
 			(at 166.37 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3056,9 +3206,9 @@
 			(uuid "ca407c98-3bf4-4667-b51c-d9a86d6138d0")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "LD29")
+					(reference "LD28")
 					(unit 1)
 				)
 			)
@@ -3068,23 +3218,29 @@
 		(lib_id "power:GND")
 		(at 142.24 170.18 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16cd2f50-c651-47ed-a351-d24ba26ca2cc")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR040"
 			(at 142.24 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 142.24 175.26 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3093,38 +3249,44 @@
 		)
 		(property "Footprint" ""
 			(at 142.24 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 142.24 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 142.24 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "1863842c-e178-48de-8883-0fc061fc6ef0")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "#PWR043")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -3134,14 +3296,18 @@
 		(lib_id "Device2:LED_")
 		(at 148.59 113.03 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fee02d7-6b3e-4d99-8a71-3c25affe6878")
-		(property "Reference" "LD25"
+		(property "Reference" "LD24"
 			(at 152.4 113.3474 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3151,6 +3317,8 @@
 		)
 		(property "Value" "LED"
 			(at 152.4 115.8874 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3160,29 +3328,35 @@
 		)
 		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 148.59 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 148.59 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Light emitting diode"
 			(at 148.59 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3192,9 +3366,9 @@
 			(uuid "a505448f-a772-4ba3-98ea-ccda05bb5e32")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "LD25")
+					(reference "LD24")
 					(unit 1)
 				)
 			)
@@ -3204,13 +3378,17 @@
 		(lib_id "Device2:C_Bypass")
 		(at 124.46 179.07 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f1cf91f-b7c5-4594-9eac-e574727f7e85")
 		(property "Reference" "CP10"
 			(at 122.428 189.992 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3220,6 +3398,8 @@
 		)
 		(property "Value" "0.1u"
 			(at 121.666 192.532 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3229,29 +3409,35 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 125.4252 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 124.46 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Bypass Capacitor"
 			(at 124.46 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3261,7 +3447,7 @@
 			(uuid "0c7bf9bf-f1c4-45e6-af0a-787c75f2fb57")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "CP10")
 					(unit 1)
@@ -3273,22 +3459,28 @@
 		(lib_id "power:VCC")
 		(at 127 74.93 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e844da3-834c-4141-b110-72efc7bc8d3a")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR034"
 			(at 127 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "VCC"
 			(at 124.46 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3297,38 +3489,44 @@
 		)
 		(property "Footprint" ""
 			(at 127 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 127 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 127 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "cd8be30e-c60e-498d-a2e0-d8673abe6827")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "#PWR037")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -3338,14 +3536,18 @@
 		(lib_id "Device2:LED_")
 		(at 157.48 113.03 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50cda2a7-9dce-4a7a-87a2-833f356bdbc0")
-		(property "Reference" "LD27"
+		(property "Reference" "LD26"
 			(at 161.29 113.3474 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3355,6 +3557,8 @@
 		)
 		(property "Value" "LED"
 			(at 161.29 115.8874 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3364,29 +3568,35 @@
 		)
 		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 157.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Light emitting diode"
 			(at 157.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3396,9 +3606,9 @@
 			(uuid "4abd3c7b-12c9-4c80-bdbe-2099b6c4492a")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "LD27")
+					(reference "LD26")
 					(unit 1)
 				)
 			)
@@ -3408,13 +3618,17 @@
 		(lib_id "Device:R_Pack04_Split")
 		(at 157.48 121.92 0)
 		(unit 2)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "569bf534-6ea1-4942-88ec-291185fd499c")
 		(property "Reference" "RN9"
 			(at 160.02 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3424,6 +3638,8 @@
 		)
 		(property "Value" "1k"
 			(at 160.02 123.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3433,29 +3649,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
 			(at 155.448 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 157.48 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3483,7 +3705,7 @@
 			(uuid "64eff475-b864-4866-9d82-24e09514865b")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "RN9")
 					(unit 2)
@@ -3495,13 +3717,17 @@
 		(lib_id "Device:R_Pack04_Split")
 		(at 139.7 121.92 0)
 		(unit 4)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "63e3ba49-0cb4-4fce-978e-829c8417f5c9")
 		(property "Reference" "RN9"
 			(at 142.24 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3511,6 +3737,8 @@
 		)
 		(property "Value" "1k"
 			(at 142.24 123.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3520,29 +3748,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
 			(at 137.668 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 139.7 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 139.7 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -3570,7 +3804,7 @@
 			(uuid "64eff475-b864-4866-9d82-24e09514865c")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "RN9")
 					(unit 4)
@@ -3582,13 +3816,17 @@
 		(lib_id "74xx_2:74HC161")
 		(at 127 91.44 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "63f9e5ae-bab7-4612-805c-e2b984235f43")
 		(property "Reference" "IC9"
 			(at 130.048 75.438 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3597,6 +3835,8 @@
 		)
 		(property "Value" "74HC161"
 			(at 132.08 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3605,65 +3845,79 @@
 		)
 		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 127 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://toshiba.semicon-storage.com/info/TC74HC161AF_datasheet_ja_20140301.pdf?did=10806&prodName=TC74HC161AF"
 			(at 127 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "CMOS 4bit presettable synchronous counter with asynchronous reset"
 			(at 127 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Library" "74hc.lib"
 			(at 127 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Name" "74HC161"
 			(at 129.1941 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
 			(at 127 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=MR 2=CP 3=D0 4=D1 5=D2 6=D3 7=CEP 8=VGND 9=PE 10=CET 11=Q3 12=Q2 13=Q1 14=Q0 15=TC 16=VCC"
 			(at 127 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "12"
@@ -3715,7 +3969,7 @@
 			(uuid "1bb4e9f2-ef8d-45bf-afda-3d2580dd21f2")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "IC9")
 					(unit 1)
@@ -3727,22 +3981,28 @@
 		(lib_id "power:VCC")
 		(at 127 118.11 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7bb7140b-64ca-451e-ab1a-4f5c0d6e7a08")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR036"
 			(at 127 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "VCC"
 			(at 124.46 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3751,38 +4011,44 @@
 		)
 		(property "Footprint" ""
 			(at 127 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 127 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 127 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "f5104479-d774-4b5b-9703-aef7f61b71e7")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "#PWR039")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -3792,14 +4058,18 @@
 		(lib_id "Device2:LED_")
 		(at 139.7 113.03 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e6f9aa4-0e67-46b4-9358-31dd762aba84")
-		(property "Reference" "LD23"
+		(property "Reference" "LD22"
 			(at 143.51 113.3474 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3809,6 +4079,8 @@
 		)
 		(property "Value" "LED"
 			(at 143.51 115.8874 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3818,29 +4090,35 @@
 		)
 		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 139.7 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 139.7 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Light emitting diode"
 			(at 139.7 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3850,9 +4128,9 @@
 			(uuid "48cc5d1f-3c06-4cbd-b592-1aef9625e9dc")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "LD23")
+					(reference "LD22")
 					(unit 1)
 				)
 			)
@@ -3862,13 +4140,17 @@
 		(lib_id "74xx_2:74HC161")
 		(at 127 135.89 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "82905aa0-c703-4f0b-bd58-12e7cd436ce4")
 		(property "Reference" "IC10"
 			(at 130.556 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,6 +4159,8 @@
 		)
 		(property "Value" "74HC161"
 			(at 132.588 121.666 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3885,65 +4169,79 @@
 		)
 		(property "Footprint" "Package_SO:SO-16_5.3x10.2mm_P1.27mm"
 			(at 127 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://toshiba.semicon-storage.com/info/TC74HC161AF_datasheet_ja_20140301.pdf?did=10806&prodName=TC74HC161AF"
 			(at 127 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "CMOS 4bit presettable synchronous counter with asynchronous reset"
 			(at 127 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Library" "74hc.lib"
 			(at 127 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Name" "74HC161"
 			(at 129.1941 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
 			(at 127 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=MR 2=CP 3=D0 4=D1 5=D2 6=D3 7=CEP 8=VGND 9=PE 10=CET 11=Q3 12=Q2 13=Q1 14=Q0 15=TC 16=VCC"
 			(at 127 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "12"
@@ -3995,7 +4293,7 @@
 			(uuid "9a257d3e-bdcb-41a2-825c-dfa593da130d")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "IC10")
 					(unit 1)
@@ -4008,14 +4306,18 @@
 		(at 166.37 166.37 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90380260-6811-4bb3-b186-34e72a317acf")
 		(property "Reference" "RN10"
 			(at 163.83 165.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4025,6 +4327,8 @@
 		)
 		(property "Value" "1k"
 			(at 163.83 167.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4034,29 +4338,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
 			(at 168.402 166.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 166.37 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 166.37 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4084,7 +4394,7 @@
 			(uuid "b46cda20-0bb8-4598-a55e-2381a7686985")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "RN10")
 					(unit 1)
@@ -4096,23 +4406,29 @@
 		(lib_id "power:GND")
 		(at 142.24 125.73 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90b2d759-904d-413f-91e4-0741a774ab15")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR039"
 			(at 142.24 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 142.24 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4121,38 +4437,44 @@
 		)
 		(property "Footprint" ""
 			(at 142.24 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 142.24 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 142.24 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "dd29f524-18b2-4c5a-bab7-484a37fc518b")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "#PWR042")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -4162,13 +4484,17 @@
 		(lib_id "Device:R_Pack04_Split")
 		(at 148.59 121.92 0)
 		(unit 3)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "92c48d32-fc65-42c0-8bd9-2682e2a64ba7")
 		(property "Reference" "RN9"
 			(at 151.13 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4178,6 +4504,8 @@
 		)
 		(property "Value" "1k"
 			(at 151.13 123.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4187,29 +4515,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
 			(at 146.558 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 148.59 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 148.59 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4237,7 +4571,7 @@
 			(uuid "64eff475-b864-4866-9d82-24e09514865d")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "RN9")
 					(unit 3)
@@ -4249,13 +4583,17 @@
 		(lib_id "Device:R_Pack04_Split")
 		(at 166.37 121.92 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "9c2303cc-56b4-42ed-b95b-7d08724b5dfe")
 		(property "Reference" "RN9"
 			(at 168.91 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,6 +4603,8 @@
 		)
 		(property "Value" "1k"
 			(at 168.91 123.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,29 +4614,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
 			(at 164.338 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 166.37 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 166.37 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4324,7 +4670,7 @@
 			(uuid "64eff475-b864-4866-9d82-24e09514865e")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "RN9")
 					(unit 1)
@@ -4336,23 +4682,29 @@
 		(lib_id "power:GND")
 		(at 127 152.4 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e870792-531d-4cf9-ace6-21b77884e8f0")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR037"
 			(at 127 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 127 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,38 +4713,44 @@
 		)
 		(property "Footprint" ""
 			(at 127 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 127 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 127 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "6b1ea128-402d-40b9-97f0-2b239258641d")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "#PWR040")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -4402,23 +4760,29 @@
 		(lib_id "power:VCC")
 		(at 124.46 172.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1f5778c-8942-4703-a1be-07bd0364de8b")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR033"
 			(at 124.46 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "VCC"
 			(at 124.46 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4427,38 +4791,44 @@
 		)
 		(property "Footprint" ""
 			(at 124.46 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 124.46 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
 			(at 124.46 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "c7ab5ef6-d899-4c51-8838-1dfee4b2aef3")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "#PWR036")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -4468,14 +4838,18 @@
 		(lib_id "Device2:LED_")
 		(at 157.48 157.48 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aecc74e4-b0db-48d8-be77-cd561deb4e3c")
-		(property "Reference" "LD28"
+		(property "Reference" "LD27"
 			(at 161.29 157.7974 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4485,6 +4859,8 @@
 		)
 		(property "Value" "LED"
 			(at 161.29 160.3374 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4494,29 +4870,35 @@
 		)
 		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 157.48 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 157.48 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Light emitting diode"
 			(at 157.48 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4526,9 +4908,9 @@
 			(uuid "09744b81-cb5b-4f31-894b-76b66a2ea974")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "LD28")
+					(reference "LD27")
 					(unit 1)
 				)
 			)
@@ -4538,14 +4920,18 @@
 		(lib_id "Device2:LED_")
 		(at 139.7 157.48 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5c18c15-b1b7-495e-8f44-e74d057eb605")
-		(property "Reference" "LD24"
+		(property "Reference" "LD23"
 			(at 143.51 157.7974 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4555,6 +4941,8 @@
 		)
 		(property "Value" "LED"
 			(at 143.51 160.3374 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4564,29 +4952,35 @@
 		)
 		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 139.7 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 139.7 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Light emitting diode"
 			(at 139.7 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4596,9 +4990,9 @@
 			(uuid "270c1c4c-1151-4c0c-8ef7-d0a8ad9e722d")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "LD24")
+					(reference "LD23")
 					(unit 1)
 				)
 			)
@@ -4608,14 +5002,18 @@
 		(lib_id "Device2:LED_")
 		(at 166.37 157.48 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "baf29466-fbf3-4b85-a947-5dd66255ad70")
-		(property "Reference" "LD30"
+		(property "Reference" "LD29"
 			(at 170.18 157.7974 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4625,6 +5023,8 @@
 		)
 		(property "Value" "LED"
 			(at 170.18 160.3374 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4634,29 +5034,35 @@
 		)
 		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 166.37 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 166.37 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Light emitting diode"
 			(at 166.37 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4666,9 +5072,9 @@
 			(uuid "2c861ba2-8925-4826-b6c7-efbbbd7ce994")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "LD30")
+					(reference "LD29")
 					(unit 1)
 				)
 			)
@@ -4678,13 +5084,17 @@
 		(lib_id "Device2:C_Bypass")
 		(at 118.11 179.07 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf3ce88f-94aa-4bec-901c-08ecc4eddac3")
 		(property "Reference" "CP9"
 			(at 116.078 189.992 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4694,6 +5104,8 @@
 		)
 		(property "Value" "0.1u"
 			(at 115.316 192.532 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4703,29 +5115,35 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 119.0752 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 118.11 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Bypass Capacitor"
 			(at 118.11 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4735,7 +5153,7 @@
 			(uuid "79f470d2-f193-445a-ac94-14d65b0d6b7d")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "CP9")
 					(unit 1)
@@ -4747,23 +5165,29 @@
 		(lib_id "power:GND")
 		(at 137.16 186.69 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1527f8c-9f76-4baa-a2de-8180f37bde71")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR038"
 			(at 137.16 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 137.16 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4772,38 +5196,44 @@
 		)
 		(property "Footprint" ""
 			(at 137.16 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 137.16 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 137.16 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "dd27d17f-8eaf-448f-bb34-27bb99e2206d")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "#PWR041")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -4814,14 +5244,18 @@
 		(at 148.59 166.37 0)
 		(mirror y)
 		(unit 3)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3115752-31f3-46f8-9d82-89aac97be4f6")
 		(property "Reference" "RN10"
 			(at 146.05 165.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4831,6 +5265,8 @@
 		)
 		(property "Value" "1k"
 			(at 146.05 167.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4840,29 +5276,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
 			(at 150.622 166.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 148.59 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 148.59 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4890,7 +5332,7 @@
 			(uuid "b46cda20-0bb8-4598-a55e-2381a7686986")
 		)
 		(instances
-			(project ""
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
 					(reference "RN10")
 					(unit 3)
@@ -4902,14 +5344,18 @@
 		(lib_id "Device2:LED_")
 		(at 148.59 157.48 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9480781-1a36-4b69-94c0-b8504a5ccadd")
-		(property "Reference" "LD26"
+		(property "Reference" "LD25"
 			(at 152.4 157.7974 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4919,6 +5365,8 @@
 		)
 		(property "Value" "LED"
 			(at 152.4 160.3374 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4928,29 +5376,35 @@
 		)
 		(property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm"
 			(at 148.59 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 148.59 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Light emitting diode"
 			(at 148.59 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4960,9 +5414,9 @@
 			(uuid "1f441d63-f7ee-4612-b7eb-7956ef33544d")
 		)
 		(instances
-			(project "HC4_KiCad"
+			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/7ee18210-5407-4798-af07-3cd6c855784b"
-					(reference "LD26")
+					(reference "LD25")
 					(unit 1)
 				)
 			)

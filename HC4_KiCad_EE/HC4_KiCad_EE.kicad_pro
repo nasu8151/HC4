@@ -241,7 +241,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "2.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -755,16 +755,16 @@
       {
         "filename": "HC4_KiCad_EE.kicad_sch",
         "name": "HC4_KiCad_EE",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "33731ded-38c0-4297-bdd8-92b082f46ff8"
       }
     ],
-    "used_designators": "",
+    "used_designators": "LD48-49",
     "variants": []
   },
   "sheets": [
     [
       "33731ded-38c0-4297-bdd8-92b082f46ff8",
-      "Root"
+      "HC4_KiCad_EE"
     ],
     [
       "51fb15b9-2319-4d69-a07a-a04158a23ae2",
