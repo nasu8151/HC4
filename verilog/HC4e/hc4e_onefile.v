@@ -1,4 +1,4 @@
-module hc4 (
+module hc4e (
     input wire clk,
     input wire rst_n,
     output wire [7:0]      pc_out,
@@ -54,12 +54,12 @@ module hc4 (
     always @(*) begin
         casez (opcode)
             // 4'b000?: alu_result = level_C; //SM, SC
-            4'b0010: {carry_out, alu_result} = level_A - level_B; //SU
+            // 4'b0010: {carry_out, alu_result} = level_A - level_B; //SU
             4'b0011: {carry_out, alu_result} = level_A + level_B; //AD
-            4'b0100: alu_result = level_A ^ level_B; //XR
-            4'b0101: alu_result = level_A | level_B; //OR
-            4'b0110: alu_result = level_A & level_B; //AN
-            4'b0111: alu_result = level_A;           //SA
+            4'b0100: alu_result = ~(level_A & level_B); //NAND instead of XR
+            // 4'b0101: alu_result = level_A | level_B; //OR
+            // 4'b0110: alu_result = level_A & level_B; //AN
+            // 4'b0111: alu_result = level_A;           //SA
             default: alu_result = 4'b0000;
         endcase
     end

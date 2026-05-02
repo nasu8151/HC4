@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #include <EEPROM.h>
 
-#define IHEX_LINE_MAX 600
+#define IHEX_LINE_MAX (255 * 2 + 2 * 3 + 4 + 1 + 2 + 1)
 #define MEM_SIZE 256u /* 内蔵 EEPROM = 256 バイト */
 
 extern volatile uint8_t rom8[MEM_SIZE];

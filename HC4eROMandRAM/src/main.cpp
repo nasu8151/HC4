@@ -215,6 +215,7 @@ void loop() {
 ISR(PORTA_PORT_vect) {
   VPORTA.OUT |= PIN4_bm | PIN2_bm | PIN3_bm; // nPORT_OE, nPORTA_WE, nPORTB_WE デアサート
   PORTA.INTFLAGS = PIN6_bm;
+  VPORTE.DIR &= ~0x0F;
   if (VPORTA.IN & PIN6_bm) { // 立ち上がりエッジ
     onclkrise = 1;
     uint8_t a = VPORTC.IN;
@@ -222,10 +223,6 @@ ISR(PORTA_PORT_vect) {
     // VPORTD.OUT = EEPROM.read(a);
     if (curnWR == 0) {   // curnWR は割り込み直前のnWRの状態なので...
       ram4[latchedAddr] = latchedData;
-      return;
-    }
-    if (curnRD == 0) {
-      PORTE.DIR &= ~0x0F;  // バスを開放
       return;
     }
     return;
