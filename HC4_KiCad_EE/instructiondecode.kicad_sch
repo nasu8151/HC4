@@ -6632,7 +6632,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 69.85 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -6873,7 +6873,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 185.42 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7506,7 +7506,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 261.62 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -7784,7 +7784,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 52.07 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -8018,7 +8018,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 102.87 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -8920,7 +8920,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 186.69 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -10958,7 +10958,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 135.89 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -11536,7 +11536,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 69.85 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11860,7 +11860,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 220.98 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -11976,7 +11976,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_5.3x10.2mm_P1.27mm"
 			(at 118.11 40.64 0)
 			(hide yes)
 			(show_name no)
