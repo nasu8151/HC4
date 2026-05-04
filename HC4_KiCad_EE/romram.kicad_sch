@@ -4640,6 +4640,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" "C14663"
+			(at 106.68 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0bcb39db-9af9-4382-9121-7942282268a5")
 		)
@@ -4800,6 +4811,17 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 52.07 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
 			(at 52.07 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -5159,6 +5181,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 161.29 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4fab47fc-35cf-484b-af27-5521b1c389a2")
 		)
@@ -5433,6 +5466,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" "C14663"
+			(at 119.38 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4e827f4d-ade1-4563-80d2-abc11e5f81fd")
 		)
@@ -5512,6 +5556,17 @@
 			)
 		)
 		(property "Description" "20MHz, 48kB Flash, 6kB SRAM, 256B EEPROM, TQFP-48"
+			(at 85.09 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C1340574"
 			(at 85.09 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5736,6 +5791,17 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 167.64 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
 			(at 167.64 137.16 0)
 			(hide yes)
 			(show_name no)

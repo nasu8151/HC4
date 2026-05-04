@@ -2501,6 +2501,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" "C20197"
+			(at 190.5 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "95f18428-205c-4562-ba84-a2efc8a3984f")
 		)
@@ -2678,6 +2689,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 180.34 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b4568043-dd18-4e44-bbcf-f9d469fce08f")
 		)
@@ -2759,6 +2781,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 190.5 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "57f2de32-847f-4ace-8581-0b83089160d9")
 		)
@@ -2831,6 +2864,17 @@
 			)
 		)
 		(property "Description" "8-bit Register"
+			(at 58.42 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
 			(at 58.42 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -3056,6 +3100,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" "C20197"
+			(at 154.94 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "d68d49c5-4323-4757-a621-b953fe538191")
 		)
@@ -3146,6 +3201,17 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 170.18 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
+			(at 170.18 143.51 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3313,6 +3379,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 175.26 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "364185b7-0f48-45f0-adc4-b6a217cc4a90")
 		)
@@ -3385,6 +3462,17 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
+			(at 175.26 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C20197"
 			(at 175.26 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -3485,6 +3573,17 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
+			(at 180.34 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C20197"
 			(at 180.34 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -3596,6 +3695,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" "C20197"
+			(at 165.1 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "d68d49c5-4323-4757-a621-b953fe538192")
 		)
@@ -3695,6 +3805,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 165.1 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8ac8eb0c-f9f9-4dfc-a2cb-9fd533cc0050")
 		)
@@ -3766,6 +3887,17 @@
 			)
 		)
 		(property "Description" "Bypass Capacitor"
+			(at 100.33 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C14663"
 			(at 100.33 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -3935,6 +4067,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 154.94 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7815e71b-16af-4bdb-aaad-6aced2ef1045")
 		)
@@ -4095,6 +4238,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" "C20197"
+			(at 185.42 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "95f18428-205c-4562-ba84-a2efc8a39852")
 		)
@@ -4186,6 +4340,17 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
+			(at 160.02 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C20197"
 			(at 160.02 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -4295,6 +4460,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 185.42 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d129b30f-4ad7-4342-8691-afe800532385")
 		)
@@ -4367,6 +4543,17 @@
 		)
 		(property "Description" "Light emitting diode"
 			(at 160.02 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
+			(at 160.02 143.51 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4449,6 +4636,17 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
+			(at 170.18 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C20197"
 			(at 170.18 154.94 0)
 			(hide yes)
 			(show_name no)

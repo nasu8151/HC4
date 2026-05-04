@@ -1874,6 +1874,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" "C21190"
+			(at 269.24 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "284879c2-fdfa-433f-905c-d2ae4d521595")
 		)
@@ -2114,6 +2125,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 229.87 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
@@ -2190,6 +2212,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 229.87 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
@@ -2256,6 +2289,17 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 59.69 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
 			(at 59.69 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -2426,6 +2470,17 @@
 				)
 			)
 		)
+		(property "LCSC PN" ""
+			(at 229.87 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "HC4_KiCad_EE"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8"
@@ -2493,6 +2548,17 @@
 		)
 		(property "Description" ""
 			(at 269.24 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
+			(at 269.24 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2730,6 +2796,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 229.87 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" ""
 			(at 229.87 101.6 0)
 			(hide yes)
 			(show_name no)
