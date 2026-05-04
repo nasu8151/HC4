@@ -23,15 +23,15 @@
 #define BAUD_RATE 115200
 
 /************* Port/F ビット定義 ******************/
-#define PF_nRD 4
-#define PF_nWR 5
+#define PF_nRD_bp 4
+#define PF_nWR_bp 5
 
 #define PIN_nRD PIN_PF4
 #define PIN_nWR PIN_PF5
 
-#define PA_AI 2
-#define PA_AO 3
-#define PA_BO 4
+#define PA_AIN_bp 2
+#define PA_AOUT_bp 3
+#define PA_BOUT_bp 4
 
 #define PIN_nPORT_OE  PIN_PA2
 #define PIN_nPORTA_WE PIN_PA3
@@ -162,13 +162,13 @@ void setup() {
 
   /* --- RAM/I/O バス設定 --- */
   PORTF.DIR &= ~0x0F;
-  PORTF.DIR &= ~((1 << PF_nRD) | (1 << PF_nWR));
+  PORTF.DIR &= ~((1 << PF_nRD_bp) | (1 << PF_nWR_bp));
   PORTE.DIR &= ~0x0F;  // PE0‑3 データ Hi‑Z
   PORTE.OUT &= ~0x0F;
 
-  PORTF.DIR &= ~((1 << PF_nRD) | (1 << PF_nWR));
-  PORTA.DIR |= (1 << PA_AI) | (1 << PA_AO) | (1 << PA_BO);
-  VPORTA.OUT |= (1 << PA_AI) | (1 << PA_AO) | (1 << PA_BO);  // disable (負論理)
+  PORTF.DIR &= ~((1 << PF_nRD_bp) | (1 << PF_nWR_bp));
+  PORTA.DIR |= (1 << PA_AIN_bp) | (1 << PA_AOUT_bp) | (1 << PA_BOUT_bp);
+  VPORTA.OUT |= (1 << PA_AIN_bp) | (1 << PA_AOUT_bp) | (1 << PA_BOUT_bp);  // disable (負論理)
 
   /* --- PA/PD (ROM 出力) --- */
   PORTC.DIR = 0x00;  // PC 入力 (アドレス)
@@ -180,7 +180,9 @@ void setup() {
   // TCB0.CCMP = (F_CPU / 1000);  // 3kHz
   // TCB0.CTRLA = TCB_CLKSEL_CLKDIV1_gc | TCB_ENABLE_bm;
 
-  PORTA.PIN6CTRL = PORT_ISC_BOTHEDGES_gc; // clk 立ち上がり/立ち下がり割り込み
+  PORTA.PIN6CTRL = PORT_ISC_RISING_gc;  // clk 立ち上がり
+  PORTF.PIN4CTRL = PORT_ISC_FALLING_gc; // nRD 立ち下がり
+  PORTF.PIN5CTRL = PORT_ISC_FALLING_gc; // nWR 立ち下がり
 
   Serial.println("\nHC4e ROM/RAM Monitor");
   Serial.print("> ");
@@ -210,46 +212,49 @@ void loop() {
 
 }
 
-// クロック立ち上がり/立ち下がり割り込み
+// クロック立ち上がりエッジ割り込み
 // ROM読み込み, PORTA制御, RAM書込み
 ISR(PORTA_PORT_vect) {
   VPORTA.OUT |= PIN4_bm | PIN2_bm | PIN3_bm; // nPORT_OE, nPORTA_WE, nPORTB_WE デアサート
   PORTA.INTFLAGS = PIN6_bm;
   VPORTE.DIR &= ~0x0F;
-  if (VPORTA.IN & PIN6_bm) { // 立ち上がりエッジ
-    onclkrise = 1;
-    uint8_t a = VPORTC.IN;
-    VPORTD.OUT = rom8[a];
-    // VPORTD.OUT = EEPROM.read(a);
-    if (curnWR == 0) {   // curnWR は割り込み直前のnWRの状態なので...
-      ram4[latchedAddr] = latchedData;
-      return;
-    }
+  onclkrise = 1;
+  uint8_t a = VPORTC.IN;
+  VPORTD.OUT = rom8[a];
+  // VPORTD.OUT = EEPROM.read(a);
+  if (curnWR == 0) {   // curnWR は割り込み直前のnWRの状態なので...
+    ram4[latchedAddr] = latchedData;
     return;
   }
-  // 立ち下がりエッジ
+  return;
+}
+
+// nRD/nWR立ち下がりエッジ
+ISR(PORTF_PORT_vect) {
   curnWR = digitalReadFast(PIN_nWR);
   curnRD = digitalReadFast(PIN_nRD);
+  VPORTE.DIR &= ~0x0F;
   latchedAddr = VPORTF.IN & 0x0F;
   latchedData = VPORTE.IN & 0x0F;
   // /WRがLOWの間に常にラッチ（番地ズレ対策）
   if (curnWR == 0) {
-    VPORTE.DIR &= ~0x0F;              // 必ず入力（バス競合防止）
+    VPORTF.INTFLAGS = (1 << PF_nWR_bp);
     switch (latchedAddr) {
     case 0x0E:
-      VPORTA.OUT &= ~(1 << PA_AO);  // nPORTA_WE アサート
-      return;
+      VPORTA.OUT &= ~(1 << PA_AOUT_bp);  // nPORTA_WE アサート
+      break;
     case 0x0F:
-      VPORTA.OUT &= ~(1 << PA_BO);  // nPORTB_WE アサート
-      return;
+      VPORTA.OUT &= ~(1 << PA_BOUT_bp);  // nPORTB_WE アサート
+      break;
     default:
-      VPORTE.DIR &= ~0x0F;  // バスを開放
-      return;
+      break;
     }
-  } else if (curnRD == 0) { // nRDがアサートされていたら
+  }
+  if (curnRD == 0) { // nRDがアサートされていたら
+    VPORTF.INTFLAGS = (1 << PF_nRD_bp);
     if (latchedAddr == 0x0E) {
       VPORTE.DIR &= ~0x0F;  // バスを開放
-      VPORTA.OUT &= ~(1 << PA_AI);  // nPORT_OE アサート
+      VPORTA.OUT &= ~(1 << PA_AIN_bp);  // nPORT_OE アサート
     } else {
       VPORTE.DIR |= 0x0F;
       VPORTE.OUT = ram4[latchedAddr];
