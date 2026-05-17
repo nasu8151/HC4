@@ -3682,7 +3682,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "015beaa9-a56e-4448-aacd-cebdc041f8dd")
-		(property "Reference" "LD14"
+		(property "Reference" "LD10"
 			(at 148.59 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3747,7 +3747,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD14")
+					(reference "LD10")
 					(unit 1)
 				)
 			)
@@ -4177,7 +4177,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "272bb0bb-e391-47d3-8b71-4f20bb7bce95")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR035"
 			(at 167.64 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -4237,7 +4237,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR038")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -4254,7 +4254,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2ae0657a-aab8-4d42-961f-5c4df0478800")
-		(property "Reference" "LD15"
+		(property "Reference" "LD11"
 			(at 153.67 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4319,7 +4319,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD15")
+					(reference "LD11")
 					(unit 1)
 				)
 			)
@@ -4336,7 +4336,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a603d92-2470-4b69-8c83-cf3aa8c261a8")
-		(property "Reference" "LD21"
+		(property "Reference" "LD17"
 			(at 184.15 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4400,7 +4400,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD21")
+					(reference "LD17")
 					(unit 1)
 				)
 			)
@@ -4417,7 +4417,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d39774d-4e76-4cad-89cd-52686b9661d9")
-		(property "Reference" "LD23"
+		(property "Reference" "LD19"
 			(at 194.31 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4481,7 +4481,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD23")
+					(reference "LD19")
 					(unit 1)
 				)
 			)
@@ -4499,7 +4499,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b2a0a05-3db6-47ec-b569-5faf786bf249")
-		(property "Reference" "IC11"
+		(property "Reference" "IC10"
 			(at 169.8341 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4617,7 +4617,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "IC11")
+					(reference "IC10")
 					(unit 1)
 				)
 			)
@@ -4635,7 +4635,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "592ad0ca-c32b-408d-9e3b-18bf6149409b")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR032"
 			(at 100.33 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -4695,7 +4695,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR035")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -4712,7 +4712,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f8aa931-5933-49db-88ce-5e0eacc321f0")
-		(property "Reference" "LD19"
+		(property "Reference" "LD15"
 			(at 173.99 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4776,7 +4776,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD19")
+					(reference "LD15")
 					(unit 1)
 				)
 			)
@@ -4793,7 +4793,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64d484b9-b861-4865-b98d-ae75162a2cbe")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR034"
 			(at 137.16 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -4853,7 +4853,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR037")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -4870,7 +4870,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6656141f-ef03-46f2-8ed8-8e0ac430d7ca")
-		(property "Reference" "LD12"
+		(property "Reference" "LD8"
 			(at 138.43 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4935,7 +4935,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD12")
+					(reference "LD8")
 					(unit 1)
 				)
 			)
@@ -4952,7 +4952,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6bd5641e-c13e-459a-8875-74fc2c2017e8")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR033"
 			(at 100.33 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -5012,7 +5012,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR036")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -5029,7 +5029,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "70ab0bcb-1b70-4b32-8c1f-7b5f651a5e0b")
-		(property "Reference" "LD20"
+		(property "Reference" "LD16"
 			(at 179.07 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5093,7 +5093,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD20")
+					(reference "LD16")
 					(unit 1)
 				)
 			)
@@ -5110,7 +5110,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "838a3e43-d46e-4bf4-ad51-5cf969b6f9d5")
-		(property "Reference" "LD18"
+		(property "Reference" "LD14"
 			(at 168.91 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5174,7 +5174,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD18")
+					(reference "LD14")
 					(unit 1)
 				)
 			)
@@ -5272,7 +5272,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96ed8824-0318-46b9-a499-6ce8ed74d672")
-		(property "Reference" "LD16"
+		(property "Reference" "LD12"
 			(at 158.75 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5336,7 +5336,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD16")
+					(reference "LD12")
 					(unit 1)
 				)
 			)
@@ -5744,7 +5744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5789fc3-1adf-46da-b778-49c88efc9d4d")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR036"
 			(at 167.64 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5804,7 +5804,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR039")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5924,7 +5924,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b328048d-2db8-4e34-ad94-8f8bbd9a4895")
-		(property "Reference" "LD13"
+		(property "Reference" "LD9"
 			(at 143.51 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5989,7 +5989,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD13")
+					(reference "LD9")
 					(unit 1)
 				)
 			)
@@ -6109,7 +6109,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2aff1f0-180c-4265-b105-1b6f00537c52")
-		(property "Reference" "IC10"
+		(property "Reference" "IC9"
 			(at 95.504 81.534 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6257,7 +6257,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "IC10")
+					(reference "IC9")
 					(unit 1)
 				)
 			)
@@ -6275,7 +6275,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c79703fa-1177-4d24-a4e7-b9684cccbdc9")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR030"
 			(at 92.71 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6335,7 +6335,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR033")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -6558,7 +6558,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e5337f0e-6e51-4b1b-bf2b-c23818400daa")
-		(property "Reference" "LD22"
+		(property "Reference" "LD18"
 			(at 189.23 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6622,7 +6622,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD22")
+					(reference "LD18")
 					(unit 1)
 				)
 			)
@@ -6639,7 +6639,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "edabf4e2-a2d3-427b-9ce7-7c3d2c320645")
-		(property "Reference" "LD17"
+		(property "Reference" "LD13"
 			(at 163.83 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6703,7 +6703,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "LD17")
+					(reference "LD13")
 					(unit 1)
 				)
 			)
@@ -6721,7 +6721,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f78beed7-37b5-4613-be99-9735693ef6c1")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR031"
 			(at 92.71 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -6781,7 +6781,7 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/27e10803-908c-4418-a733-f902d25b5ad6"
-					(reference "#PWR034")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
