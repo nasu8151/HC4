@@ -6,8 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "HC4e_CPU")
-		(date "2026-03-19")
+		(date "2026-05-23")
 		(rev "2.0")
+		(company "Dengiken")
 	)
 	(lib_symbols
 		(symbol "4xxx_IEEE:4511"
@@ -8488,7 +8489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm"
 			(at 156.21 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8635,7 +8636,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm"
 			(at 99.06 133.35 0)
 			(hide yes)
 			(show_name no)

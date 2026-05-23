@@ -6,8 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "HC4e_CPU")
-		(date "2026-03-19")
+		(date "2026-05-23")
 		(rev "2.0")
+		(company "Dengiken")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
@@ -6120,5 +6121,4 @@
 			(page "1")
 		)
 	)
-	(embedded_fonts no)
 )

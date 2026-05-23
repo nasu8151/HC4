@@ -6,8 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "HC4e_CPU")
-		(date "2026-03-19")
+		(date "2026-05-23")
 		(rev "2.0")
+		(company "Dengiken")
 	)
 	(lib_symbols
 		(symbol "74xx_2:74HC14"
@@ -5007,7 +5008,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "390"
+		(property "Value" "330"
 			(at 60.96 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7114,7 +7115,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "390k"
+		(property "Value" "330k"
 			(at 50.8 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)

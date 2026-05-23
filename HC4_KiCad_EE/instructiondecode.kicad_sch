@@ -6,8 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "HC4e_CPU")
-		(date "2026-03-19")
+		(date "2026-05-23")
 		(rev "2.0")
+		(company "Dengiken")
 	)
 	(lib_symbols
 		(symbol "74xx_2:74HC00"
@@ -4167,14 +4168,6 @@
 	(no_connect
 		(at 123.19 168.91)
 		(uuid "11475d35-53cc-40b5-bd22-51c873d430c7")
-	)
-	(no_connect
-		(at 256.54 92.71)
-		(uuid "2db124cc-3063-4814-8691-e5e1212d40a0")
-	)
-	(no_connect
-		(at 259.08 92.71)
-		(uuid "94cc8ce8-9a1b-4457-a855-5cea38b516de")
 	)
 	(bus_entry
 		(at 20.32 45.72)
