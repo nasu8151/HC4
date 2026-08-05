@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "HC4_CPU")
-		(date "2025-04-17")
+		(date "2026-08-05")
 		(rev "2.0")
 	)
 	(lib_symbols
@@ -3324,7 +3324,7 @@
 		(uuid "4eb4bd31-15bd-485e-90cb-cd35cf350979")
 	)
 	(label "Level_C3"
-		(at 189.23 106.68 180)
+		(at 189.23 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3354,7 +3354,7 @@
 		(uuid "60164eb0-3197-4c84-a1b1-3d62c2e86466")
 	)
 	(label "Level_C0"
-		(at 189.23 99.06 180)
+		(at 189.23 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3454,7 +3454,7 @@
 		(uuid "a3c7ea4b-94b8-4b1f-9df6-1428abe2fa22")
 	)
 	(label "Level_C2"
-		(at 189.23 104.14 180)
+		(at 189.23 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3504,7 +3504,7 @@
 		(uuid "d1df3908-5a58-4758-b8f4-e8eb80a3371d")
 	)
 	(label "Level_C1"
-		(at 189.23 101.6 180)
+		(at 189.23 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)

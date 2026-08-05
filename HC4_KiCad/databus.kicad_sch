@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "HC4_CPU")
-		(date "2025-04-17")
+		(date "2026-08-05")
 		(rev "2.0")
 	)
 	(lib_symbols
@@ -7561,19 +7561,19 @@
 			)
 		)
 		(pin "3"
-			(uuid "1e6e8905-cd54-4ab5-ada5-2506ca5559ac")
+			(uuid "1e6e8905-cd54-4ab5-ada5-2506ca5559ad")
 		)
 		(pin "2"
-			(uuid "a4ac1acb-22cb-4083-ac0a-e0f487b8e212")
+			(uuid "a4ac1acb-22cb-4083-ac0a-e0f487b8e213")
 		)
 		(pin "4"
-			(uuid "294b3627-7f87-4a24-a2a6-e28794a29c28")
+			(uuid "294b3627-7f87-4a24-a2a6-e28794a29c29")
 		)
 		(pin "5"
-			(uuid "195a7cf7-8e97-4828-a108-39efbe83e78b")
+			(uuid "195a7cf7-8e97-4828-a108-39efbe83e78c")
 		)
 		(pin "1"
-			(uuid "559bd1b0-9fff-4538-b103-47edb507271c")
+			(uuid "559bd1b0-9fff-4538-b103-47edb507271d")
 		)
 		(instances
 			(project "HC4_KiCad"
@@ -7812,19 +7812,19 @@
 			)
 		)
 		(pin "3"
-			(uuid "1e6e8905-cd54-4ab5-ada5-2506ca5559ac")
+			(uuid "1e6e8905-cd54-4ab5-ada5-2506ca5559ae")
 		)
 		(pin "2"
-			(uuid "a4ac1acb-22cb-4083-ac0a-e0f487b8e212")
+			(uuid "a4ac1acb-22cb-4083-ac0a-e0f487b8e214")
 		)
 		(pin "4"
-			(uuid "294b3627-7f87-4a24-a2a6-e28794a29c28")
+			(uuid "294b3627-7f87-4a24-a2a6-e28794a29c2a")
 		)
 		(pin "5"
-			(uuid "195a7cf7-8e97-4828-a108-39efbe83e78b")
+			(uuid "195a7cf7-8e97-4828-a108-39efbe83e78d")
 		)
 		(pin "1"
-			(uuid "559bd1b0-9fff-4538-b103-47edb507271c")
+			(uuid "559bd1b0-9fff-4538-b103-47edb507271e")
 		)
 		(instances
 			(project "HC4_KiCad"
@@ -7903,19 +7903,19 @@
 			)
 		)
 		(pin "3"
-			(uuid "1e6e8905-cd54-4ab5-ada5-2506ca5559ac")
+			(uuid "1e6e8905-cd54-4ab5-ada5-2506ca5559af")
 		)
 		(pin "2"
-			(uuid "a4ac1acb-22cb-4083-ac0a-e0f487b8e212")
+			(uuid "a4ac1acb-22cb-4083-ac0a-e0f487b8e215")
 		)
 		(pin "4"
-			(uuid "294b3627-7f87-4a24-a2a6-e28794a29c28")
+			(uuid "294b3627-7f87-4a24-a2a6-e28794a29c2b")
 		)
 		(pin "5"
-			(uuid "195a7cf7-8e97-4828-a108-39efbe83e78b")
+			(uuid "195a7cf7-8e97-4828-a108-39efbe83e78e")
 		)
 		(pin "1"
-			(uuid "559bd1b0-9fff-4538-b103-47edb507271c")
+			(uuid "559bd1b0-9fff-4538-b103-47edb507271f")
 		)
 		(instances
 			(project "HC4_KiCad"

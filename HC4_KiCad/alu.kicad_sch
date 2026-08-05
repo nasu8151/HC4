@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "HC4_CPU")
-		(date "2025-04-17")
+		(date "2026-08-05")
 		(rev "2.0")
 	)
 	(lib_symbols

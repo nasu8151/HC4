@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "HC4_CPU")
-		(date "2025-04-17")
+		(date "2026-08-05")
 		(rev "2.0")
 	)
 	(lib_symbols
@@ -5226,6 +5226,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "R_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_1_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -5610,12 +5750,6 @@
 		(uuid "0ad39891-5088-464c-84b6-550ba6ed6832")
 	)
 	(junction
-		(at 203.2 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0bdfa2e8-f401-43fb-87cf-6b57a7ef03f2")
-	)
-	(junction
 		(at 240.03 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5892,12 +6026,6 @@
 		(uuid "52ab54b8-c2fa-415a-b817-d959e26f72bd")
 	)
 	(junction
-		(at 203.2 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "578f01c8-a591-4dc9-a0ea-fd9642c9a2aa")
-	)
-	(junction
 		(at 170.18 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5914,6 +6042,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5bb5ac0e-dada-43a5-8390-c5ff2cf4c1ae")
+	)
+	(junction
+		(at 201.93 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c3f4a79-4437-4e6d-be01-b69e4a92aa19")
 	)
 	(junction
 		(at 191.77 63.5)
@@ -6028,6 +6162,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8561a89a-689c-4101-bc12-ebe93c761f35")
+	)
+	(junction
+		(at 201.93 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87ce8129-c36d-4ffd-b7a1-d7209f9a9530")
 	)
 	(junction
 		(at 148.59 76.2)
@@ -6240,12 +6380,6 @@
 		(uuid "c51324a9-0349-4c66-a1de-e505e19d41f3")
 	)
 	(junction
-		(at 38.1 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c6e0ab23-e1ab-4148-939f-b9d557386085")
-	)
-	(junction
 		(at 139.7 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6328,6 +6462,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f716ced3-8fdc-4e3d-8571-0a0247b91e0f")
+	)
+	(junction
+		(at 38.1 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8891c40-be08-4796-9f25-e3038f66c67e")
 	)
 	(junction
 		(at 224.79 76.2)
@@ -6728,16 +6868,6 @@
 			(type default)
 		)
 		(uuid "0ed4faf5-a174-4105-97a0-8400d8623dea")
-	)
-	(wire
-		(pts
-			(xy 203.2 135.89) (xy 222.25 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f24f71f-b46d-4e65-b48c-4a19e71f6d85")
 	)
 	(wire
 		(pts
@@ -7268,16 +7398,6 @@
 			(type default)
 		)
 		(uuid "31ea1bdb-01bd-40bc-a83b-5d1d5b6d106d")
-	)
-	(wire
-		(pts
-			(xy 203.2 161.29) (xy 222.25 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35594e04-4e86-4370-ac24-2e79bd47d5a5")
 	)
 	(bus
 		(pts
@@ -8131,7 +8251,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 161.29) (xy 203.2 161.29)
+			(xy 198.12 161.29) (xy 201.93 161.29)
 		)
 		(stroke
 			(width 0)
@@ -8228,6 +8348,16 @@
 			(type default)
 		)
 		(uuid "7cd2dc46-fc09-45cc-bbc6-801577b1f7a1")
+	)
+	(wire
+		(pts
+			(xy 201.93 135.89) (xy 222.25 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d241350-4080-4bcf-98a5-777287b0493e")
 	)
 	(wire
 		(pts
@@ -9231,6 +9361,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 161.29) (xy 222.25 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb145b00-b8c5-461b-97d1-efc930092e48")
+	)
+	(wire
+		(pts
 			(xy 237.49 105.41) (xy 241.3 105.41)
 		)
 		(stroke
@@ -9381,7 +9521,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 135.89) (xy 203.2 135.89)
+			(xy 193.04 135.89) (xy 201.93 135.89)
 		)
 		(stroke
 			(width 0)
@@ -10674,6 +10814,50 @@
 				)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 161.29 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9"
+			(at 161.29 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\r_array.lib"
+			(at 161.29 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "RES_ARRAY_BUSSED"
+			(at 161.29 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "2d73bcce-65d6-47fe-97bb-dc2a7f988189")
 		)
@@ -10704,6 +10888,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "RN7")
+					(unit 2)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "RN7")
 					(unit 2)
 				)
@@ -10825,7 +11015,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -11042,7 +11232,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -11318,7 +11508,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -11849,6 +12039,50 @@
 				)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 237.49 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9"
+			(at 237.49 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\r_array.lib"
+			(at 237.49 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "RES_ARRAY_BUSSED"
+			(at 237.49 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "2d73bcce-65d6-47fe-97bb-dc2a7f98818a")
 		)
@@ -11879,6 +12113,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "RN7")
+					(unit 8)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "RN7")
 					(unit 8)
 				)
@@ -11989,6 +12229,174 @@
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx_2:74HC32")
+		(at 40.64 92.71 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "162e48b9-805c-46c4-bddb-f13a239d5be2")
+		(property "Reference" "IC17"
+			(at 45.72 91.4399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC32"
+			(at 45.72 93.9799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 40.64 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+			(at 40.64 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad 2-input OR"
+			(at 40.64 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 40.64 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 40.64 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 40.64 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 40.64 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "d345a568-ffc9-4c33-8bf4-8c1edabb4438")
+		)
+		(pin "11"
+			(uuid "5f2c4483-c0a9-4901-90df-e0ecdb2db057")
+		)
+		(pin "13"
+			(uuid "b43f7b08-8768-4990-ade6-65ec53c748de")
+		)
+		(pin "8"
+			(uuid "19f177a5-d0bf-467e-975c-d883d15e65fc")
+		)
+		(pin "1"
+			(uuid "d9f318dd-fcc6-4e4b-ae52-50f620672fa8")
+		)
+		(pin "5"
+			(uuid "21515b39-88b7-4b0c-be4c-9219eaf76b6d")
+		)
+		(pin "3"
+			(uuid "4382e0d7-14be-4880-98b6-cabd37411ac4")
+		)
+		(pin "9"
+			(uuid "36c070de-dffc-4188-96a4-1e95f4aa5c70")
+		)
+		(pin "2"
+			(uuid "94ccc763-3b42-4df5-8608-d413a49c9c27")
+		)
+		(pin "10"
+			(uuid "a1c9fc4d-1cc4-42fb-9c84-f8f031e6ff48")
+		)
+		(pin "12"
+			(uuid "f4ed0e34-3b69-4a7c-ae6a-56fb16c41ca3")
+		)
+		(pin "4"
+			(uuid "8328ae95-f172-4cbf-89d4-7e2304279a43")
+		)
+		(pin "7"
+			(uuid "200b14a7-ed82-4110-b8bc-e1170eb5b942")
+		)
+		(pin "14"
+			(uuid "f6176f41-b649-423c-848f-31184f89b14e")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC17")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC3")
 					(unit 1)
 				)
 			)
@@ -12318,7 +12726,7 @@
 					(unit 6)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC4")
 					(unit 6)
@@ -12598,7 +13006,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR017")
 					(unit 1)
@@ -12612,7 +13020,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -12900,7 +13308,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR013")
 					(unit 1)
@@ -13108,7 +13516,7 @@
 					(unit 2)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC2")
 					(unit 2)
@@ -13209,7 +13617,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -13379,6 +13787,50 @@
 				)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 148.59 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9"
+			(at 148.59 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\r_array.lib"
+			(at 148.59 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "RES_ARRAY_BUSSED"
+			(at 148.59 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "2d73bcce-65d6-47fe-97bb-dc2a7f98818b")
 		)
@@ -13409,6 +13861,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "RN7")
+					(unit 1)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "RN7")
 					(unit 1)
 				)
@@ -13491,7 +13949,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR014")
 					(unit 1)
@@ -13819,7 +14277,7 @@
 					(unit 3)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC8")
 					(unit 3)
@@ -13832,7 +14290,7 @@
 		(at 144.78 95.25 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -14328,7 +14786,7 @@
 					(unit 3)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC2")
 					(unit 3)
@@ -14415,6 +14873,174 @@
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "TP21")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx_2:74HC32")
+		(at 243.84 115.57 270)
+		(unit 4)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3edba0ea-0004-4b13-93d4-aa7a07aaf47a")
+		(property "Reference" "IC17"
+			(at 248.92 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC32"
+			(at 248.92 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 243.84 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+			(at 243.84 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad 2-input OR"
+			(at 243.84 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 243.84 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 243.84 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 243.84 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 243.84 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "d345a568-ffc9-4c33-8bf4-8c1edabb443a")
+		)
+		(pin "11"
+			(uuid "5f2c4483-c0a9-4901-90df-e0ecdb2db059")
+		)
+		(pin "13"
+			(uuid "b43f7b08-8768-4990-ade6-65ec53c748e0")
+		)
+		(pin "8"
+			(uuid "19f177a5-d0bf-467e-975c-d883d15e65fe")
+		)
+		(pin "1"
+			(uuid "d9f318dd-fcc6-4e4b-ae52-50f620672faa")
+		)
+		(pin "5"
+			(uuid "21515b39-88b7-4b0c-be4c-9219eaf76b6f")
+		)
+		(pin "3"
+			(uuid "4382e0d7-14be-4880-98b6-cabd37411ac6")
+		)
+		(pin "9"
+			(uuid "36c070de-dffc-4188-96a4-1e95f4aa5c72")
+		)
+		(pin "2"
+			(uuid "94ccc763-3b42-4df5-8608-d413a49c9c29")
+		)
+		(pin "10"
+			(uuid "a1c9fc4d-1cc4-42fb-9c84-f8f031e6ff4a")
+		)
+		(pin "12"
+			(uuid "f4ed0e34-3b69-4a7c-ae6a-56fb16c41ca5")
+		)
+		(pin "4"
+			(uuid "8328ae95-f172-4cbf-89d4-7e2304279a45")
+		)
+		(pin "7"
+			(uuid "200b14a7-ed82-4110-b8bc-e1170eb5b944")
+		)
+		(pin "14"
+			(uuid "f6176f41-b649-423c-848f-31184f89b150")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC17")
+					(unit 4)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC3")
+					(unit 4)
 				)
 			)
 		)
@@ -14660,7 +15286,7 @@
 					(unit 2)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC4")
 					(unit 2)
@@ -14759,7 +15385,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -15321,10 +15947,178 @@
 					(unit 5)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC4")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx_2:74HC32")
+		(at 170.18 115.57 270)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5edddcd4-260f-447e-bec1-197bea16c026")
+		(property "Reference" "IC17"
+			(at 175.26 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC32"
+			(at 175.26 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 170.18 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+			(at 170.18 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad 2-input OR"
+			(at 170.18 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 170.18 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 170.18 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 170.18 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 170.18 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "d345a568-ffc9-4c33-8bf4-8c1edabb443b")
+		)
+		(pin "11"
+			(uuid "5f2c4483-c0a9-4901-90df-e0ecdb2db05a")
+		)
+		(pin "13"
+			(uuid "b43f7b08-8768-4990-ade6-65ec53c748e1")
+		)
+		(pin "8"
+			(uuid "787e5999-f784-478f-810d-ed5679b919e2")
+		)
+		(pin "1"
+			(uuid "d9f318dd-fcc6-4e4b-ae52-50f620672fab")
+		)
+		(pin "5"
+			(uuid "21515b39-88b7-4b0c-be4c-9219eaf76b70")
+		)
+		(pin "3"
+			(uuid "4382e0d7-14be-4880-98b6-cabd37411ac7")
+		)
+		(pin "9"
+			(uuid "bee10df9-02f0-48f2-8856-280262e1c2ba")
+		)
+		(pin "2"
+			(uuid "94ccc763-3b42-4df5-8608-d413a49c9c2a")
+		)
+		(pin "10"
+			(uuid "70398cd6-933b-48d0-bed6-4e38dc38ec20")
+		)
+		(pin "12"
+			(uuid "f4ed0e34-3b69-4a7c-ae6a-56fb16c41ca6")
+		)
+		(pin "4"
+			(uuid "8328ae95-f172-4cbf-89d4-7e2304279a46")
+		)
+		(pin "7"
+			(uuid "200b14a7-ed82-4110-b8bc-e1170eb5b945")
+		)
+		(pin "14"
+			(uuid "f6176f41-b649-423c-848f-31184f89b151")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC17")
+					(unit 2)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC3")
+					(unit 2)
 				)
 			)
 		)
@@ -15443,7 +16237,7 @@
 		(at 144.78 38.1 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -15668,7 +16462,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC7")
 					(unit 1)
@@ -15791,7 +16585,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC2")
 					(unit 1)
@@ -15880,174 +16674,6 @@
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "TP2")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx_2:74HC32")
-		(at 243.84 115.57 270)
-		(unit 4)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "76913eeb-c2f3-48d4-9e53-cb7ae5714232")
-		(property "Reference" "IC17"
-			(at 248.92 114.2999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HC32"
-			(at 248.92 116.8399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 243.84 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 243.84 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Quad 2-input OR"
-			(at 243.84 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "sim\\74hc_full.lib"
-			(at 243.84 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "74hc32a"
-			(at 243.84 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 243.84 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
-			(at 243.84 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "9be09d42-33c3-409d-89a7-f87441fe518b")
-		)
-		(pin "1"
-			(uuid "dfd7d001-66b3-4648-9edd-fbc7d07cb4ca")
-		)
-		(pin "3"
-			(uuid "3d4161ca-49e8-4f6e-b698-7b9909549e5a")
-		)
-		(pin "2"
-			(uuid "cc362029-d4bb-4495-969d-220cd7e95b62")
-		)
-		(pin "4"
-			(uuid "998933dd-cae8-4720-85b9-09ed3b754356")
-		)
-		(pin "6"
-			(uuid "637419ab-9c00-4b91-9030-8715f9c5cea4")
-		)
-		(pin "10"
-			(uuid "dd0e7b51-fa14-4772-81ad-5a2c1bf44374")
-		)
-		(pin "8"
-			(uuid "8b67b458-4a02-4bf8-ac00-1a6348d46338")
-		)
-		(pin "9"
-			(uuid "eb354ca6-f02c-430f-bf28-51391e6b3cf9")
-		)
-		(pin "11"
-			(uuid "891ff4db-ebec-45a4-b7f5-6975e77c86d3")
-		)
-		(pin "12"
-			(uuid "953042b6-3cb1-4bbc-823c-bfc5ec866121")
-		)
-		(pin "13"
-			(uuid "c85903fb-096d-434f-bc4d-b43aace5ade1")
-		)
-		(pin "14"
-			(uuid "99081948-327c-4c13-b57f-7c0296b82225")
-		)
-		(pin "7"
-			(uuid "86ffe656-930c-4f3e-b947-7db2e87e1f04")
-		)
-		(instances
-			(project "HC4_KiCad"
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC17")
-					(unit 4)
-				)
-			)
-			(project ""
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC3")
-					(unit 4)
 				)
 			)
 		)
@@ -16228,6 +16854,50 @@
 				)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 212.09 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9"
+			(at 212.09 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\r_array.lib"
+			(at 212.09 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "RES_ARRAY_BUSSED"
+			(at 212.09 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "2d73bcce-65d6-47fe-97bb-dc2a7f98818c")
 		)
@@ -16258,6 +16928,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "RN7")
+					(unit 6)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "RN7")
 					(unit 6)
 				)
@@ -16339,7 +17015,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR09")
 					(unit 1)
@@ -16414,6 +17090,50 @@
 				)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 224.79 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9"
+			(at 224.79 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\r_array.lib"
+			(at 224.79 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "RES_ARRAY_BUSSED"
+			(at 224.79 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "2d73bcce-65d6-47fe-97bb-dc2a7f98818d")
 		)
@@ -16444,6 +17164,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "RN7")
+					(unit 7)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "RN7")
 					(unit 7)
 				)
@@ -16565,7 +17291,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -17020,7 +17746,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR010")
 					(unit 1)
@@ -17252,7 +17978,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -17547,179 +18273,12 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx_2:74HC32")
-		(at 170.18 115.57 270)
-		(unit 2)
-		(body_style 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "94fc3fc9-e820-4048-8de7-666b687e03fb")
-		(property "Reference" "IC17"
-			(at 175.514 119.126 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HC32"
-			(at 175.514 121.158 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 170.18 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 170.18 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Quad 2-input OR"
-			(at 170.18 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "sim\\74hc_full.lib"
-			(at 170.18 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "74hc32a"
-			(at 170.18 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 170.18 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
-			(at 170.18 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "9be09d42-33c3-409d-89a7-f87441fe518c")
-		)
-		(pin "1"
-			(uuid "dfd7d001-66b3-4648-9edd-fbc7d07cb4cb")
-		)
-		(pin "3"
-			(uuid "3d4161ca-49e8-4f6e-b698-7b9909549e5b")
-		)
-		(pin "2"
-			(uuid "cc362029-d4bb-4495-969d-220cd7e95b63")
-		)
-		(pin "4"
-			(uuid "998933dd-cae8-4720-85b9-09ed3b754357")
-		)
-		(pin "6"
-			(uuid "637419ab-9c00-4b91-9030-8715f9c5cea5")
-		)
-		(pin "10"
-			(uuid "dd0e7b51-fa14-4772-81ad-5a2c1bf44375")
-		)
-		(pin "8"
-			(uuid "8b67b458-4a02-4bf8-ac00-1a6348d46339")
-		)
-		(pin "9"
-			(uuid "eb354ca6-f02c-430f-bf28-51391e6b3cfa")
-		)
-		(pin "11"
-			(uuid "891ff4db-ebec-45a4-b7f5-6975e77c86d4")
-		)
-		(pin "12"
-			(uuid "953042b6-3cb1-4bbc-823c-bfc5ec866122")
-		)
-		(pin "13"
-			(uuid "c85903fb-096d-434f-bc4d-b43aace5ade2")
-		)
-		(pin "14"
-			(uuid "99081948-327c-4c13-b57f-7c0296b82226")
-		)
-		(pin "7"
-			(uuid "86ffe656-930c-4f3e-b947-7db2e87e1f05")
-		)
-		(instances
-			(project "HC4_KiCad"
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC17")
-					(unit 2)
-				)
-			)
-			(project ""
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC3")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
 		(at 233.68 38.1 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -17980,7 +18539,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC4")
 					(unit 1)
@@ -17994,7 +18553,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -18092,174 +18651,6 @@
 			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx_2:74HC32")
-		(at 40.64 92.71 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9cdf8ddf-559b-4408-98e0-4f5bb9d7b82d")
-		(property "Reference" "IC17"
-			(at 45.72 91.4399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HC32"
-			(at 45.72 93.9799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 40.64 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 40.64 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Quad 2-input OR"
-			(at 40.64 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "sim\\74hc_full.lib"
-			(at 40.64 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "74hc32a"
-			(at 40.64 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 40.64 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
-			(at 40.64 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "9be09d42-33c3-409d-89a7-f87441fe518d")
-		)
-		(pin "1"
-			(uuid "dfd7d001-66b3-4648-9edd-fbc7d07cb4cc")
-		)
-		(pin "3"
-			(uuid "3d4161ca-49e8-4f6e-b698-7b9909549e5c")
-		)
-		(pin "2"
-			(uuid "cc362029-d4bb-4495-969d-220cd7e95b64")
-		)
-		(pin "4"
-			(uuid "998933dd-cae8-4720-85b9-09ed3b754358")
-		)
-		(pin "6"
-			(uuid "637419ab-9c00-4b91-9030-8715f9c5cea6")
-		)
-		(pin "10"
-			(uuid "7009a36f-9567-42c9-b337-2a75e8e68bd8")
-		)
-		(pin "8"
-			(uuid "39fc502b-7c68-4927-8859-a22ce496142e")
-		)
-		(pin "9"
-			(uuid "15839765-dc39-43b3-ba32-288a7fe88373")
-		)
-		(pin "11"
-			(uuid "891ff4db-ebec-45a4-b7f5-6975e77c86d5")
-		)
-		(pin "12"
-			(uuid "953042b6-3cb1-4bbc-823c-bfc5ec866123")
-		)
-		(pin "13"
-			(uuid "c85903fb-096d-434f-bc4d-b43aace5ade3")
-		)
-		(pin "14"
-			(uuid "99081948-327c-4c13-b57f-7c0296b82227")
-		)
-		(pin "7"
-			(uuid "86ffe656-930c-4f3e-b947-7db2e87e1f06")
-		)
-		(instances
-			(project "HC4_KiCad"
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC17")
-					(unit 1)
-				)
-			)
-			(project "HC4_KiCad_tb"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC3")
 					(unit 1)
 				)
 			)
@@ -18801,6 +19192,50 @@
 				)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 173.99 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9"
+			(at 173.99 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\r_array.lib"
+			(at 173.99 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "RES_ARRAY_BUSSED"
+			(at 173.99 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "2d73bcce-65d6-47fe-97bb-dc2a7f98818e")
 		)
@@ -18831,6 +19266,12 @@
 		(instances
 			(project "HC4_KiCad"
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "RN7")
+					(unit 3)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "RN7")
 					(unit 3)
 				)
@@ -19183,7 +19624,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR016")
 					(unit 1)
@@ -19410,174 +19851,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx_2:74HC32")
-		(at 227.33 115.57 270)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "afa37b7f-1691-4f66-b813-157d559f07d4")
-		(property "Reference" "IC17"
-			(at 232.41 114.2999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HC32"
-			(at 232.41 116.8399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 227.33 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 227.33 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Quad 2-input OR"
-			(at 227.33 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "sim\\74hc_full.lib"
-			(at 227.33 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "74hc32a"
-			(at 227.33 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 227.33 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
-			(at 227.33 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "9be09d42-33c3-409d-89a7-f87441fe518e")
-		)
-		(pin "1"
-			(uuid "dfd7d001-66b3-4648-9edd-fbc7d07cb4cd")
-		)
-		(pin "3"
-			(uuid "3d4161ca-49e8-4f6e-b698-7b9909549e5d")
-		)
-		(pin "2"
-			(uuid "cc362029-d4bb-4495-969d-220cd7e95b65")
-		)
-		(pin "4"
-			(uuid "998933dd-cae8-4720-85b9-09ed3b754359")
-		)
-		(pin "6"
-			(uuid "637419ab-9c00-4b91-9030-8715f9c5cea7")
-		)
-		(pin "10"
-			(uuid "dd0e7b51-fa14-4772-81ad-5a2c1bf44376")
-		)
-		(pin "8"
-			(uuid "8b67b458-4a02-4bf8-ac00-1a6348d4633a")
-		)
-		(pin "9"
-			(uuid "eb354ca6-f02c-430f-bf28-51391e6b3cfb")
-		)
-		(pin "11"
-			(uuid "891ff4db-ebec-45a4-b7f5-6975e77c86d6")
-		)
-		(pin "12"
-			(uuid "953042b6-3cb1-4bbc-823c-bfc5ec866124")
-		)
-		(pin "13"
-			(uuid "c85903fb-096d-434f-bc4d-b43aace5ade4")
-		)
-		(pin "14"
-			(uuid "99081948-327c-4c13-b57f-7c0296b82228")
-		)
-		(pin "7"
-			(uuid "86ffe656-930c-4f3e-b947-7db2e87e1f07")
-		)
-		(instances
-			(project "HC4_KiCad"
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC17")
-					(unit 3)
-				)
-			)
-			(project ""
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC3")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
 		(at 182.88 57.15 0)
 		(mirror x)
@@ -19753,6 +20026,50 @@
 				)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 186.69 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9"
+			(at 186.69 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\r_array.lib"
+			(at 186.69 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "RES_ARRAY_BUSSED"
+			(at 186.69 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "2d73bcce-65d6-47fe-97bb-dc2a7f98818f")
 		)
@@ -19785,6 +20102,180 @@
 				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
 					(reference "RN7")
 					(unit 4)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "RN7")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx_2:74HC32")
+		(at 227.33 115.57 270)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9995f31-2d3c-4aaf-98a8-13f6e9c720e7")
+		(property "Reference" "IC17"
+			(at 232.41 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC32"
+			(at 232.41 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 227.33 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+			(at 227.33 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad 2-input OR"
+			(at 227.33 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 227.33 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 227.33 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 227.33 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 227.33 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "d345a568-ffc9-4c33-8bf4-8c1edabb443c")
+		)
+		(pin "11"
+			(uuid "5f2c4483-c0a9-4901-90df-e0ecdb2db05b")
+		)
+		(pin "13"
+			(uuid "b43f7b08-8768-4990-ade6-65ec53c748e2")
+		)
+		(pin "8"
+			(uuid "19f177a5-d0bf-467e-975c-d883d15e65ff")
+		)
+		(pin "1"
+			(uuid "d9f318dd-fcc6-4e4b-ae52-50f620672fac")
+		)
+		(pin "5"
+			(uuid "21515b39-88b7-4b0c-be4c-9219eaf76b71")
+		)
+		(pin "3"
+			(uuid "4382e0d7-14be-4880-98b6-cabd37411ac8")
+		)
+		(pin "9"
+			(uuid "36c070de-dffc-4188-96a4-1e95f4aa5c73")
+		)
+		(pin "2"
+			(uuid "94ccc763-3b42-4df5-8608-d413a49c9c2b")
+		)
+		(pin "10"
+			(uuid "a1c9fc4d-1cc4-42fb-9c84-f8f031e6ff4b")
+		)
+		(pin "12"
+			(uuid "f4ed0e34-3b69-4a7c-ae6a-56fb16c41ca7")
+		)
+		(pin "4"
+			(uuid "8328ae95-f172-4cbf-89d4-7e2304279a47")
+		)
+		(pin "7"
+			(uuid "200b14a7-ed82-4110-b8bc-e1170eb5b946")
+		)
+		(pin "14"
+			(uuid "f6176f41-b649-423c-848f-31184f89b152")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC17")
+					(unit 3)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC3")
+					(unit 3)
 				)
 			)
 		)
@@ -19865,7 +20356,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR018")
 					(unit 1)
@@ -19993,7 +20484,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC6")
 					(unit 1)
@@ -20007,7 +20498,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -20106,6 +20597,168 @@
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "D27")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx_2:74HC04")
+		(at 158.75 115.57 90)
+		(mirror x)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c3a78223-62ea-41a0-bef7-985ccd949f71")
+		(property "Reference" "IC18"
+			(at 164.846 117.094 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC04"
+			(at 164.846 114.554 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 158.75 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf"
+			(at 158.75 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Hex Inverter"
+			(at 158.75 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 158.75 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "74hc04a"
+			(at 158.75 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 158.75 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=0 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
+			(at 158.75 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "f7294da0-88a8-49b7-8897-04302ba2a93e")
+		)
+		(pin "3"
+			(uuid "e67b5749-6db4-4b92-8b11-bce03470a3b0")
+		)
+		(pin "1"
+			(uuid "6d5ba6e1-5d7a-4aea-b858-6c2ace15e1c6")
+		)
+		(pin "5"
+			(uuid "fe4cca4a-2839-407a-ab5f-9f2675d3009e")
+		)
+		(pin "2"
+			(uuid "1048decb-f162-4898-badd-18175b415938")
+		)
+		(pin "8"
+			(uuid "274bb85d-fba9-4935-9817-0e7bdbc0fa0b")
+		)
+		(pin "9"
+			(uuid "a7458d99-5282-4228-a907-664a62354ef7")
+		)
+		(pin "10"
+			(uuid "f3bbc5ad-286f-47b1-92fb-c9d4d28e9a2e")
+		)
+		(pin "11"
+			(uuid "e7d64cb9-bfe0-4459-ada3-f27472dcec5a")
+		)
+		(pin "12"
+			(uuid "9e19414e-2bd5-4ad0-a4fa-f9cdd3c495a4")
+		)
+		(pin "14"
+			(uuid "647dbb12-300d-41e4-9a44-a475ad5efe21")
+		)
+		(pin "7"
+			(uuid "7885ee93-ae06-4f0c-92e0-559b0e8d5aca")
+		)
+		(pin "6"
+			(uuid "eb1ffa82-cce2-4a45-bd15-89ab162e1472")
+		)
+		(pin "13"
+			(uuid "74eebe03-1438-42bb-b4b9-fe652c8c6a45")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC18")
+					(unit 3)
 				)
 			)
 		)
@@ -20270,10 +20923,178 @@
 					(unit 7)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "IC4")
 					(unit 7)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx_2:74HC32")
+		(at 201.93 148.59 0)
+		(unit 5)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc192765-d7ea-491a-8712-019257a2d445")
+		(property "Reference" "IC17"
+			(at 208.28 147.3199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC32"
+			(at 208.28 149.8599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 201.93 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
+			(at 201.93 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad 2-input OR"
+			(at 201.93 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\74hc_full.lib"
+			(at 201.93 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "74hc32a"
+			(at 201.93 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 201.93 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
+			(at 201.93 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "d345a568-ffc9-4c33-8bf4-8c1edabb443d")
+		)
+		(pin "11"
+			(uuid "5f2c4483-c0a9-4901-90df-e0ecdb2db05c")
+		)
+		(pin "13"
+			(uuid "b43f7b08-8768-4990-ade6-65ec53c748e3")
+		)
+		(pin "8"
+			(uuid "19f177a5-d0bf-467e-975c-d883d15e6600")
+		)
+		(pin "1"
+			(uuid "d9f318dd-fcc6-4e4b-ae52-50f620672fad")
+		)
+		(pin "5"
+			(uuid "21515b39-88b7-4b0c-be4c-9219eaf76b72")
+		)
+		(pin "3"
+			(uuid "4382e0d7-14be-4880-98b6-cabd37411ac9")
+		)
+		(pin "9"
+			(uuid "36c070de-dffc-4188-96a4-1e95f4aa5c74")
+		)
+		(pin "2"
+			(uuid "94ccc763-3b42-4df5-8608-d413a49c9c2c")
+		)
+		(pin "10"
+			(uuid "a1c9fc4d-1cc4-42fb-9c84-f8f031e6ff4c")
+		)
+		(pin "12"
+			(uuid "f4ed0e34-3b69-4a7c-ae6a-56fb16c41ca8")
+		)
+		(pin "4"
+			(uuid "8328ae95-f172-4cbf-89d4-7e2304279a48")
+		)
+		(pin "7"
+			(uuid "200b14a7-ed82-4110-b8bc-e1170eb5b947")
+		)
+		(pin "14"
+			(uuid "f6176f41-b649-423c-848f-31184f89b153")
+		)
+		(instances
+			(project "HC4_KiCad"
+				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
+					(reference "IC17")
+					(unit 5)
+				)
+			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "IC3")
+					(unit 5)
 				)
 			)
 		)
@@ -20371,7 +21192,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -20550,7 +21371,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR07")
 					(unit 1)
@@ -20615,6 +21436,28 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 261.62 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 261.62 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
 			(at 261.62 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -20815,173 +21658,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx_2:74HC04")
-		(at 158.75 115.57 270)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dd116c17-9ead-498f-ad0e-f87c82a13972")
-		(property "Reference" "IC18"
-			(at 160.02 117.856 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HC04"
-			(at 160.02 120.142 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 158.75 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf"
-			(at 158.75 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at 158.75 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "sim\\74hc_full.lib"
-			(at 158.75 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "74hc04a"
-			(at 158.75 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 158.75 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=A0 2=Y0 3=A1 4=Y1 5=A2 6=Y2 7=0 8=Y3 9=A3 10=Y4 11=A4 12=Y5 13=A5 14=VCC"
-			(at 158.75 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "f7294da0-88a8-49b7-8897-04302ba2a93e")
-		)
-		(pin "3"
-			(uuid "e67b5749-6db4-4b92-8b11-bce03470a3b0")
-		)
-		(pin "1"
-			(uuid "6d5ba6e1-5d7a-4aea-b858-6c2ace15e1c6")
-		)
-		(pin "5"
-			(uuid "5cbb6c29-6fd7-44f0-8f05-00d1a9d76a0d")
-		)
-		(pin "2"
-			(uuid "1048decb-f162-4898-badd-18175b415938")
-		)
-		(pin "8"
-			(uuid "9d7e2c63-9762-4b99-b272-763dbad4beff")
-		)
-		(pin "9"
-			(uuid "687b05b3-1fda-4b20-a7bb-1a3a4a7a0f0a")
-		)
-		(pin "10"
-			(uuid "f3bbc5ad-286f-47b1-92fb-c9d4d28e9a2e")
-		)
-		(pin "11"
-			(uuid "e7d64cb9-bfe0-4459-ada3-f27472dcec5a")
-		)
-		(pin "12"
-			(uuid "9e19414e-2bd5-4ad0-a4fa-f9cdd3c495a4")
-		)
-		(pin "14"
-			(uuid "647dbb12-300d-41e4-9a44-a475ad5efe21")
-		)
-		(pin "7"
-			(uuid "7885ee93-ae06-4f0c-92e0-559b0e8d5aca")
-		)
-		(pin "6"
-			(uuid "3f0b6598-c800-4487-82b5-b47ac528659d")
-		)
-		(pin "13"
-			(uuid "74eebe03-1438-42bb-b4b9-fe652c8c6a45")
-		)
-		(instances
-			(project "HC4_KiCad"
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC18")
-					(unit 3)
-				)
-			)
-			(project "HC4_KiCad_tb"
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC4")
-					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
 		(at 220.98 95.25 0)
 		(mirror x)
@@ -21166,7 +21842,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR011")
 					(unit 1)
@@ -21707,174 +22383,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx_2:74HC32")
-		(at 203.2 148.59 0)
-		(unit 5)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ebbca261-d355-4d99-8282-891ac4053cd1")
-		(property "Reference" "IC17"
-			(at 209.55 147.3199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HC32"
-			(at 209.55 149.8599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 203.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 203.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Quad 2-input OR"
-			(at 203.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "sim\\74hc_full.lib"
-			(at 203.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "74hc32a"
-			(at 203.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 203.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=A0 2=B0 3=Y0 4=A1 5=B1 6=Y1 7=0 8=Y2 9=A2 10=B2 11=Y3 12=A3 13=B3 14=VCC"
-			(at 203.2 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "9be09d42-33c3-409d-89a7-f87441fe518f")
-		)
-		(pin "1"
-			(uuid "dfd7d001-66b3-4648-9edd-fbc7d07cb4ce")
-		)
-		(pin "3"
-			(uuid "3d4161ca-49e8-4f6e-b698-7b9909549e5e")
-		)
-		(pin "2"
-			(uuid "cc362029-d4bb-4495-969d-220cd7e95b66")
-		)
-		(pin "4"
-			(uuid "998933dd-cae8-4720-85b9-09ed3b75435a")
-		)
-		(pin "6"
-			(uuid "637419ab-9c00-4b91-9030-8715f9c5cea8")
-		)
-		(pin "10"
-			(uuid "dd0e7b51-fa14-4772-81ad-5a2c1bf44377")
-		)
-		(pin "8"
-			(uuid "8b67b458-4a02-4bf8-ac00-1a6348d4633b")
-		)
-		(pin "9"
-			(uuid "eb354ca6-f02c-430f-bf28-51391e6b3cfc")
-		)
-		(pin "11"
-			(uuid "891ff4db-ebec-45a4-b7f5-6975e77c86d7")
-		)
-		(pin "12"
-			(uuid "953042b6-3cb1-4bbc-823c-bfc5ec866125")
-		)
-		(pin "13"
-			(uuid "c85903fb-096d-434f-bc4d-b43aace5ade5")
-		)
-		(pin "14"
-			(uuid "99081948-327c-4c13-b57f-7c0296b82229")
-		)
-		(pin "7"
-			(uuid "86ffe656-930c-4f3e-b947-7db2e87e1f08")
-		)
-		(instances
-			(project "HC4_KiCad"
-				(path "/33731ded-38c0-4297-bdd8-92b082f46ff8/164b1f41-83dc-48ee-8dfe-457b556a7022"
-					(reference "IC17")
-					(unit 5)
-				)
-			)
-			(project ""
-				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
-					(reference "IC3")
-					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 67.31 85.09 0)
 		(unit 1)
@@ -22025,6 +22533,50 @@
 				)
 			)
 		)
+		(property "Sim.Device" "SUBCKT"
+			(at 199.39 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9"
+			(at 199.39 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "sim\\r_array.lib"
+			(at 199.39 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "RES_ARRAY_BUSSED"
+			(at 199.39 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "8"
 			(uuid "2d73bcce-65d6-47fe-97bb-dc2a7f988190")
 		)
@@ -22059,6 +22611,12 @@
 					(unit 5)
 				)
 			)
+			(project "HC4_KiCad_tb"
+				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
+					(reference "RN7")
+					(unit 5)
+				)
+			)
 		)
 	)
 	(symbol
@@ -22066,7 +22624,7 @@
 		(at 157.48 95.25 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -22245,7 +22803,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "HC4_KiCad_tb"
 				(path "/ac701ae9-c0d5-4247-9a0e-c458418535da/6e4dc021-c918-40cb-ba03-77c6a38cd702"
 					(reference "#PWR012")
 					(unit 1)
@@ -22362,6 +22920,7 @@
 		)
 	)
 	(symbol
+		(lib_name "R_1")
 		(lib_id "Device:R")
 		(at 247.65 20.32 0)
 		(unit 1)
@@ -22418,6 +22977,28 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 247.65 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 247.65 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
 			(at 247.65 20.32 0)
 			(hide yes)
 			(show_name no)
