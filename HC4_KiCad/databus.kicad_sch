@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "a0e994aa-1611-40d5-803a-ee2f2a1cc6b5")
-	(paper "A3")
+	(paper "A4")
 	(title_block
 		(title "HC4_CPU")
 		(date "2026-08-05")
