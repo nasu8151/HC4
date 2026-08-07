@@ -22,13 +22,13 @@
 (rule "Track width, outer layer (1oz copper)"
 	(layer outer)
 	(condition "A.Type == 'track'")
-	(constraint track_width (min 0.127mm))
+	(constraint track_width (min 0.15mm))
 )
 
 (rule "Track spacing, outer layer (1oz copper)"
 	(layer outer)
 	(condition "A.Type == 'track' && B.Type == A.Type")
-	(constraint clearance (min 0.127mm))
+	(constraint clearance (min 0.15mm))
 )
 
 (rule "Track width, inner layer"
@@ -121,13 +121,13 @@
 # TODO: try combining with rule "Clearance: PTH to track, different nets"
 (rule "Clearance: track to pad"
 	(condition "A.Type == 'pad' && B.Type == 'track' &&  A.Net != B.Net")
-	(constraint clearance (min 0.2mm))
+	(constraint clearance (min 0.15mm))
 )
 
 (rule "Clearance: pad/via to pad/via"
 	(layer outer)
 #	(condition "(A.Type == 'Pad' || A.Type == 'Via') && (B.Type == 'Pad' || B.Type == 'Via') && A.Net != B.Net")	
 	(condition "A.isPlated() && B.isPlated() && A.Net != B.Net")
-	(constraint clearance (min 0.127mm))
+	(constraint clearance (min 0.15mm))
 )
 
