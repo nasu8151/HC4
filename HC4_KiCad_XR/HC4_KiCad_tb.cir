@@ -1,0 +1,23 @@
+.title KiCad schematic
+.include "C:/Users/senas/Documents/shibaura/DGK/CPU/HC4_KiCad/sim/74hc.lib"
+.include "C:/Users/senas/Documents/shibaura/DGK/CPU/HC4_KiCad/sim/74hc_full.lib"
+.include "C:/Users/senas/Documents/shibaura/DGK/CPU/HC4_KiCad/sim/cd4000.lib"
+.param VCC=5 speed=1 tripdt=1n VDD={VCC}
+.tran 0 260u 0 250n
+V2 CLK 0 PULSE( 0 {VCC} 500n 2n 2n 500n 1u ) 
+V1 VCC 0 DC 5 
+XIC1 VCC VCC VCC VCC CLK unconnected-_IC1-A-Pad3_ unconnected-_IC1-B-Pad4_ unconnected-_IC1-C-Pad5_ unconnected-_IC1-D-Pad6_ /instruction_decoder/Instruction_4 /instruction_decoder/Instruction_5 /instruction_decoder/Instruction_6 /instruction_decoder/Instruction_7 unconnected-_IC1-CO-Pad15_ VCC 0 74HC161
+XIC10 /instruction_decoder/Instruction_4 /instruction_decoder/Instruction_5 /instruction_decoder/Instruction_6 0 0 VCC /instruction_decoder/_Y0 /instruction_decoder/_Y1 /instruction_decoder/_Y2 /instruction_decoder/_Y3 /instruction_decoder/_Y4 /instruction_decoder/_Y5 /instruction_decoder/_Y6 /instruction_decoder/_Y7 VCC 0 74HC138
+XIC7 /instruction_decoder/_Y3 /instruction_decoder/_Y6 /instruction_decoder/I1a /instruction_decoder/_X4 /instruction_decoder/_X5 /instruction_decoder/_READ 0 /instruction_decoder/I3a /instruction_decoder/_Y2 /instruction_decoder/_Y4 /instruction_decoder/I2a /instruction_decoder/_X3 /instruction_decoder/_Y2 VCC 74hc08a
+CP2 VCC 0 0.1u
+CP1 VCC 0 0.1u
+XIC4 /instruction_decoder/_READ CLK /instruction_decoder/_RAM_RD /instruction_decoder/Instruction_7 CLK /instruction_decoder/_RAM_WR 0 /instruction_decoder/_Jump_Hi /instruction_decoder/Instruction_3 /instruction_decoder/_Jump_Lo /instruction_decoder/_RCR /instruction_decoder/_X6 /instruction_decoder/_Y4 VCC 74hc32a
+XIC9 VCC VCC VCC VCC unconnected-_IC9-Pad1_ VCC 0 CD4002B
+XIC3 /instruction_decoder/_Y0 /instruction_decoder/_X4 /instruction_decoder/Memmode /instruction_decoder/Instruction_7 /instruction_decoder/Instruction_4 /instruction_decoder/_STACKBC_LE 0 /instruction_decoder/_STACKAD_LE /instruction_decoder/Instruction_7 /instruction_decoder/_X7 /instruction_decoder/I0a /instruction_decoder/_Y2 VCC VCC 74hc00a
+CP6 VCC 0 0.1u
+CP7 VCC 0 0.1u
+CP3 VCC 0 0.1u
+CP5 VCC 0 0.1u
+CP4 VCC 0 0.1u
+XIC6 /instruction_decoder/Instruction_5 /instruction_decoder/Instruction_6 /instruction_decoder/Instruction_7 0 0 VCC /instruction_decoder/_X0 /instruction_decoder/_Carry_EN /instruction_decoder/_X2 /instruction_decoder/_X3 /instruction_decoder/_X4 /instruction_decoder/_X5 /instruction_decoder/_X6 /instruction_decoder/_X7 VCC 0 74HC138
+.end
