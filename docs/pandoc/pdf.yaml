@@ -1,0 +1,39 @@
+# UsersManual_Software_JP.md → PDF のビルド設定
+#   (リポジトリのルートで実行すること。filters のパスは実行時のカレントからの相対)
+#   pandoc UsersManual_Software_JP.md -d docs/pandoc/pdf.yaml -o UsersManual_Software_JP.pdf
+# 必要環境: pandoc 3.x / TeX Live (LuaLaTeX, LuaTeX-ja, bxjscls) / 游明朝・游ゴシック
+
+from: markdown
+pdf-engine: lualatex
+standalone: true
+
+filters:
+  - docs/pandoc/fixups.lua
+
+variables:
+  documentclass: bxjsarticle
+  classoption:
+    - a4paper          # 用紙: A4
+    - lualatex         # エンジン指定 (LuaLaTeX)
+    - ja=standard      # 和文処理: LuaTeX-ja
+    - base=10.5pt      # 本文(欧文)基準サイズ
+    - scale=1          # 和文/欧文比 = 1 → 和文も 10.5pt
+  colorlinks: true
+  linkcolor: linknavy
+  urlcolor: linknavy
+  header-includes: |
+    % 和文フォント: 游明朝 (yumin.ttf / 游明朝 Demibold を太字に)
+    % 見出し・強調のゴシックには 游ゴシック を使用
+    \usepackage[yu-win10,deluxe]{luatexja-preset}
+    \definecolor{linknavy}{rgb}{0,0,0.5}
+    % 見出しレベル4 (####) を行内見出しから独立行の見出しに変更
+    \makeatletter
+    \renewcommand{\paragraph}{\@startsection{paragraph}{4}{\z@}%
+      {\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+      {.2\Cvs \@plus.2\Cdp}%
+      {\normalfont\normalsize\headfont\jsParagraphMark}}
+    \makeatother
+    % コードブロックの行送りを本文より詰める (コードが無い文書では fancyvrb 未ロード)
+    \makeatletter
+    \@ifpackageloaded{fancyvrb}{\fvset{baselinestretch=0.7}}{}
+    \makeatother

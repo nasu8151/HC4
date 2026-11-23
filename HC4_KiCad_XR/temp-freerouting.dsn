@@ -1,4 +1,4 @@
-(pcb "C:\Users\senas\Documents\shibaura\DGK\CPU\HC4_KiCad\temp-freerouting.dsn"
+(pcb "C:\Users\senas\Documents\shibaura\DGK\CPU\HC4\HC4_KiCad_XR\temp-freerouting.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -15,13 +15,13 @@
       )
     )
     (layer In1.Cu
-      (type signal)
+      (type power)
       (property
         (index 1)
       )
     )
     (layer In2.Cu
-      (type signal)
+      (type power)
       (property
         (index 2)
       )
@@ -50,23 +50,23 @@
     )
   )
   (placement
+    (component Resistor_THT:R_Array_SIP5
+      (place RN6 97790 -147320 front 0 (PN 1k))
+      (place RN1 59690 -110490 front 0 (PN 10k))
+    )
     (component Library:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm
-      (place TP14 104775 -132080 front 0 (PN TestPoint))
-      (place TP13 125095 -95250 front 0 (PN TestPoint))
-      (place TP10 130810 -95885 front 0 (PN TestPoint))
       (place TP3 125476 -123698 front 0 (PN TestPoint))
-      (place TP11 73660 -95890 front 0 (PN TestPoint))
-      (place TP12 62230 -95885 front 0 (PN TestPoint))
-      (place TP8 66040 -95885 front 0 (PN TestPoint))
+      (place TP10 132080 -95250 front 0 (PN TestPoint))
+      (place TP11 74930 -95890 front 0 (PN TestPoint))
+      (place TP12 63500 -95885 front 0 (PN TestPoint))
+      (place TP8 67310 -95885 front 0 (PN TestPoint))
       (place TP7 125476 -128270 front 0 (PN TestPoint))
       (place TP1 143510 -142240 front 0 (PN TestPoint))
       (place TP9 146050 -142240 front 0 (PN TestPoint))
       (place TP2 78105 -109855 front 0 (PN TestPoint))
-      (place TP6 78105 -116840 front 0 (PN TestPoint))
-    )
-    (component Resistor_THT:R_Array_SIP5
-      (place RN6 97790 -147320 front 0 (PN 1k))
-      (place RN1 59690 -110490 front 0 (PN 10k))
+      (place TP6 148590 -142240 front 0 (PN TestPoint))
+      (place TP14 104775 -132080 front 0 (PN TestPoint))
+      (place TP13 126365 -95250 front 0 (PN TestPoint))
     )
     (component LED_THT:LED_Rectangular_W5.0mm_H2.0mm
       (place LD22 131445 -55245 front -90 (PN LED))
@@ -103,33 +103,34 @@
       (place LD30 126365 -55245 front -90 (PN LED))
     )
     (component Capacitor_SMD:C_0603_1608Metric
-      (place CP2 61595 -78110 front -90 (PN 0.1u))
-      (place CP19 111125 -100965 front -90 (PN 0.1u))
-      (place CP15 61595 -102240 front -90 (PN 0.1u))
-      (place CP7 85090 -124460 front -90 (PN 0.1u))
-      (place CP23 132080 -113665 front -90 (PN 0.1u))
-      (place CP26 58420 -128905 front -90 (PN 0.1u))
-      (place CP10 83820 -101092 front -90 (PN 0.1u))
-      (place CP18 131064 -134625 front -90 (PN 0.1u))
-      (place CP1 61595 -66680 front -90 (PN 0.1u))
-      (place CP17 57150 -118623 front -90 (PN 0.1u))
-      (place CP3 97790 -78105 front -90 (PN 0.1u))
-      (place CP25 132080 -124460 front -90 (PN 0.1u))
-      (place CP4 97790 -66675 front -90 (PN 0.1u))
-      (place CP22 107315 -124460 front -90 (PN 0.1u))
-      (place CP20 128270 -144780 front -90 (PN 0.1u))
-      (place CP8 111252 -113030 front -90 (PN 0.1u))
-      (place CP16 61595 -89540 front -90 (PN 0.1u))
-      (place CP24 106045 -89535 front -90 (PN 0.1u))
-      (place CP6 83820 -89540 front -90 (PN 0.1u))
-      (place CP21 111125 -134620 front -90 (PN 0.1u))
-      (place CP9 83820 -112522 front -90 (PN 0.1u))
+      (place CP2 64135 -77465 front 0 (PN 0.1u))
+      (place CP19 113030 -100330 front 0 (PN 0.1u))
+      (place CP15 63500 -101600 front 0 (PN 0.1u))
+      (place CP7 85725 -125730 front 0 (PN 0.1u))
+      (place CP23 132715 -113030 front 0 (PN 0.1u))
+      (place CP26 59055 -128270 front 0 (PN 0.1u))
+      (place CP10 85725 -101600 front 0 (PN 0.1u))
+      (place CP18 132080 -133985 front 0 (PN 0.1u))
+      (place CP1 64135 -66035 front 0 (PN 0.1u))
+      (place CP17 62230 -117475 front 0 (PN 0.1u))
+      (place CP5 88392 -78740 front 0 (PN 0.1u))
+      (place CP3 99695 -77470 front 0 (PN 0.1u))
+      (place CP25 132715 -123825 front 0 (PN 0.1u))
+      (place CP4 99695 -66040 front 0 (PN 0.1u))
+      (place CP22 107950 -123825 front 0 (PN 0.1u))
+      (place CP20 128905 -144145 front 0 (PN 0.1u))
+      (place CP8 111760 -112395 front 0 (PN 0.1u))
+      (place CP16 63500 -88900 front 0 (PN 0.1u))
+      (place CP24 107950 -88900 front 0 (PN 0.1u))
+      (place CP6 85725 -88900 front 0 (PN 0.1u))
+      (place CP21 111760 -133985 front 0 (PN 0.1u))
+      (place CP9 84455 -113030 front 0 (PN 0.1u))
     )
     (component Capacitor_SMD:C_0603_1608Metric::1
-      (place CP14 134620 -67310 front 90 (PN 0.1u))
-      (place CP11 137160 -88900 front 90 (PN 0.1u))
-      (place CP12 134620 -78105 front 90 (PN 0.1u))
-      (place CP13 144780 -102870 front 90 (PN 0.1u))
+      (place CP14 135255 -67945 front 180 (PN 0.1u))
+      (place CP11 137795 -89535 front 180 (PN 0.1u))
+      (place CP12 135255 -78740 front 180 (PN 0.1u))
+      (place CP13 144145 -103505 front 180 (PN 0.1u))
     )
     (component LED_THT:LED_Rectangular_W5.0mm_H2.0mm::1
       (place LD36 98425 -144145 front 90 (PN LED))
@@ -139,27 +140,27 @@
       (place LD1 95250 -144145 front 90 (PN POWER_LED))
     )
     (component "Package_DIP:DIP-14_W7.62mm"
-      (place IC20 108585 -104775 front 90 (PN 74HC32))
+      (place IC20 109855 -104775 front 90 (PN 74HC32))
       (place IC19 125730 -148590 front 90 (PN 74HC00))
-      (place IC8 108712 -116840 front 90 (PN 74HC4002))
+      (place IC8 108585 -116840 front 90 (PN 74HC4002))
       (place IC26 55880 -132715 front 90 (PN 74HC14))
-      (place IC23 103505 -93345 front 90 (PN 74HC08))
+      (place IC23 104775 -93345 front 90 (PN 74HC08))
       (place IC18 108585 -138430 front 90 (PN 74HC74))
     )
     (component "Package_DIP:DIP-16_W7.62mm"
-      (place IC22 128524 -138430 front 90 (PN 74HC138))
-      (place IC17 54610 -122428 front 90 (PN 74HC257))
+      (place IC22 128905 -138430 front 90 (PN 74HC138))
+      (place IC17 59055 -121920 front 90 (PN 74HC257))
       (place IC25 129540 -128270 front 90 (PN 74HC138))
-      (place IC2 59055 -81920 front 90 (PN 74HC153))
-      (place IC7 82550 -128270 front 90 (PN 74HC257))
-      (place IC6 81280 -93345 front 90 (PN 74HC257))
-      (place IC16 59055 -93350 front 90 (PN 74HC257))
+      (place IC2 60960 -81915 front 90 (PN 74HC153))
+      (place IC7 82550 -130175 front 90 (PN 74HC257))
+      (place IC6 82550 -93345 front 90 (PN 74HC257))
+      (place IC16 60325 -93350 front 90 (PN 74HC257))
       (place IC21 104775 -128270 front 90 (PN 74HC4053))
-      (place IC1 59055 -70490 front 90 (PN 74HC153))
-      (place IC3 95250 -81915 front 90 (PN 74HC153))
-      (place IC15 59055 -106045 front 90 (PN 74HC257))
+      (place IC1 60960 -70485 front 90 (PN 74HC153))
+      (place IC3 96520 -81915 front 90 (PN 74HC153))
+      (place IC15 60325 -106045 front 90 (PN 74HC257))
       (place IC24 129540 -117475 front 90 (PN 74HC151))
-      (place IC4 95250 -70485 front 90 (PN 74HC153))
+      (place IC4 96520 -70485 front 90 (PN 74HC153))
     )
     (component Resistor_SMD:R_0603_1608Metric
       (place R3 103505 -134620 front -90 (PN 1k))
@@ -168,11 +169,11 @@
     )
     (component Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
       (place C2 94552.9 -135255 front 0 (PN 10u))
-      (place C3 85789.888 -135255 front 0 (PN 10u))
+      (place C3 85789.9 -135255 front 0 (PN 10u))
     )
     (component Library:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm::1
-      (place TP4 69850 -95885 front 90 (PN TestPoint))
-      (place TP5 135890 -95885 front 90 (PN TestPoint))
+      (place TP4 71120 -95885 front 90 (PN TestPoint))
+      (place TP5 137160 -95250 front 90 (PN TestPoint))
     )
     (component Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm
       (place C4 76200 -131445 front 90 (PN "10u(Socket)"))
@@ -191,10 +192,10 @@
       (place SW3 82895 -140820 front -90 (PN SW_Push))
     )
     (component "Package_DIP:DIP-16_W7.62mm::1"
-      (place IC12 139700 -85090 front -90 (PN 74HC161))
-      (place IC13 137160 -74295 front -90 (PN 74HC161))
+      (place IC12 140970 -85090 front -90 (PN 74HC161))
+      (place IC13 138430 -74295 front -90 (PN 74HC161))
       (place IC11 147320 -99060 front -90 (PN 74HC161))
-      (place IC14 137160 -63500 front -90 (PN 74HC161))
+      (place IC14 138430 -63500 front -90 (PN 74HC161))
     )
     (component MountingHole:MountingHole_3.2mm_M3
       (place H3 146500 -146500 front 0 (PN MountingHole))
@@ -206,10 +207,7 @@
       (place C1 67320 -142175.1 front 90 (PN 100u))
     )
     (component "Package_DIP:DIP-16_W7.62mm::2"
-      (place IC5 89535 -81280 front 180 (PN 74HC283))
-    )
-    (component Capacitor_SMD:C_0603_1608Metric::2
-      (place CP5 85730 -78740 front 0 (PN 0.1u))
+      (place IC5 92075 -81280 front 180 (PN 74HC283))
     )
     (component "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
       (place SW4 71755 -143510 front 90 (PN SW_SPDT))
@@ -223,7 +221,6 @@
     (component Resistor_SMD:R_0603_1608Metric::2
       (place R6 83185 -135890 front 90 (PN 100k))
       (place R8 80010 -135890 front 90 (PN 100))
-      (place R4 108585 -142748 front 90 (PN 10k))
       (place R5 92075 -135890 front 90 (PN 10k))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x14_P2.54mm_Vertical
@@ -232,9 +229,12 @@
     (component Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical
       (place J3 52070 -63500 front 0 (PN Expantion_Connector))
     )
+    (component Resistor_SMD:R_0603_1608Metric::3
+      (place R4 69850 -135890 front 180 (PN 10k))
+    )
     (component "Package_DIP:DIP-20_W7.62mm"
-      (place IC10 81280 -104897 front 90 (PN 74HC377))
-      (place IC9 81280 -116205 front 90 (PN 74HC377))
+      (place IC10 82550 -106045 front 90 (PN 74HC377))
+      (place IC9 81280 -117475 front 90 (PN 74HC377))
     )
     (component "Fuse:Fuse_Bourns_MF-RG400"
       (place F1 60325 -146685 front 0 (PN Polyfuse))
@@ -247,10 +247,6 @@
     )
   )
   (library
-    (image Library:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm
-      (outline (polygon signal 0  745 -745  -745 -745  -745 745  745 745))
-      (pin Rect[A]Pad_1000.000000x1000.000000_um 1 0 0)
-    )
     (image Resistor_THT:R_Array_SIP5
       (outline (polygon signal 0  11755 -1555  -1595 -1555  -1595 1555  11755 1555))
       (outline (path signal 120  1270 1310  1270 -1310))
@@ -262,6 +258,10 @@
       (pin Round[A]Pad_1600.000000_um 3 5080 0)
       (pin Round[A]Pad_1600.000000_um 4 7620 0)
       (pin Round[A]Pad_1600.000000_um 5 10160 0)
+    )
+    (image Library:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm
+      (outline (polygon signal 0  745 -745  -745 -745  -745 745  745 745))
+      (pin Rect[A]Pad_1000.000000x1000.000000_um 1 0 0)
     )
     (image LED_THT:LED_Rectangular_W5.0mm_H2.0mm
       (outline (polygon signal 0  4075 1305  4075 -1305  -1535 -1305  -1535 1305))
@@ -279,18 +279,18 @@
       (pin Round[A]Pad_1800.000000_um 2 2540 0)
     )
     (image Capacitor_SMD:C_0603_1608Metric
-      (outline (polygon signal 0  1475 725  1475 -725  -1475 -725  -1475 725))
-      (outline (path signal 120  -140.58 -510  140.58 -510))
+      (outline (polygon signal 0  1475 -725  -1475 -725  -1475 725  1475 725))
       (outline (path signal 120  -140.58 510  140.58 510))
-      (outline (path signal 100  -800 400  -800 -400  800 -400  800 400  -800 400))
+      (outline (path signal 120  -140.58 -510  140.58 -510))
+      (outline (path signal 100  -800 400  800 400  800 -400  -800 -400  -800 400))
       (pin RoundRect[T]Pad_900.000000x950.000000_225.856000_um_0.000000_0 1 -775 0)
       (pin RoundRect[T]Pad_900.000000x950.000000_225.856000_um_0.000000_0 2 775 0)
     )
     (image Capacitor_SMD:C_0603_1608Metric::1
-      (outline (polygon signal 0  -1475 -725  -1475 725  1475 725  1475 -725))
-      (outline (path signal 120  -140.58 510  140.58 510))
+      (outline (polygon signal 0  -1475 725  1475 725  1475 -725  -1475 -725))
       (outline (path signal 120  -140.58 -510  140.58 -510))
-      (outline (path signal 100  -800 400  -800 -400  800 -400  800 400  -800 400))
+      (outline (path signal 120  -140.58 510  140.58 510))
+      (outline (path signal 100  -800 400  800 400  800 -400  -800 -400  -800 400))
       (pin RoundRect[T]Pad_900.000000x950.000000_225.856000_um_0.000000_0 1 -775 0)
       (pin RoundRect[T]Pad_900.000000x950.000000_225.856000_um_0.000000_0 2 775 0)
     )
@@ -964,14 +964,6 @@
       (pin Round[A]Pad_1600.000000_um 15 7620 -2540)
       (pin Round[A]Pad_1600.000000_um 16 7620 0)
     )
-    (image Capacitor_SMD:C_0603_1608Metric::2
-      (outline (polygon signal 0  1475 -725  -1475 -725  -1475 725  1475 725))
-      (outline (path signal 120  -140.58 510  140.58 510))
-      (outline (path signal 120  -140.58 -510  140.58 -510))
-      (outline (path signal 100  -800 400  800 400  800 -400  -800 -400  -800 400))
-      (pin RoundRect[T]Pad_900.000000x950.000000_225.856000_um_0.000000_0 1 -775 0)
-      (pin RoundRect[T]Pad_900.000000x950.000000_225.856000_um_0.000000_0 2 775 0)
-    )
     (image "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
       (outline (polygon signal 0  -5245 -1495  -5245 1495  5245 1495  5245 -1495))
       (outline (path signal 120  -5110 1360  -5110 -1360  5110 -1360  5110 1360  -5110 1360))
@@ -1103,6 +1095,14 @@
       (pin Round[A]Pad_1700.000000_um 38 2540 -45720)
       (pin Round[A]Pad_1700.000000_um 39 0 -48260)
       (pin Round[A]Pad_1700.000000_um 40 2540 -48260)
+    )
+    (image Resistor_SMD:R_0603_1608Metric::3
+      (outline (polygon signal 0  -1475 725  1475 725  1475 -725  -1475 -725))
+      (outline (path signal 120  -237.258 -522.5  237.258 -522.5))
+      (outline (path signal 120  -237.258 522.5  237.258 522.5))
+      (outline (path signal 100  -800 412.5  800 412.5  800 -412.5  -800 -412.5  -800 412.5))
+      (pin RoundRect[T]Pad_800.000000x950.000000_200.761000_um_0.000000_0 1 -825 0)
+      (pin RoundRect[T]Pad_800.000000x950.000000_200.761000_um_0.000000_0 2 825 0)
     )
     (image "Package_DIP:DIP-20_W7.62mm"
       (outline (polygon signal 0  -1055 -24375  -1055 1515  8665 1515  8665 -24375))
@@ -1355,10 +1355,10 @@
         IC14-16 IC24-4 IC24-16 CP9-1 IC4-11 IC4-13 IC4-16)
     )
     (net "Net-(RN6A-R1.2)"
-      (pins RN6-2 SW2-2 SW2-2@1 R5-1)
+      (pins RN6-2 R6-1 SW3-2 SW3-2@1)
     )
     (net "Net-(RN6B-R2.2)"
-      (pins RN6-3 R6-1 SW3-2 SW3-2@1)
+      (pins RN6-3 SW2-2 SW2-2@1 R5-1)
     )
     (net "Net-(RN6C-R3.2)"
       (pins RN6-4 LD36-2)
@@ -1392,9 +1392,6 @@
     (net "/Data BUS/Level_C2"
       (pins LD9-2 IC12-5 IC6-14 IC10-15 IC9-14)
     )
-    (net "/Address BUS/Instruction_7"
-      (pins IC20-4 IC22-3 IC19-4 IC19-9 IC6-15 IC21-9 J2-17)
-    )
     (net "Net-(LD35-K)"
       (pins LD35-1 RN5-6)
     )
@@ -1405,20 +1402,20 @@
       (pins LD36-1 IC20-2 IC20-5 IC12-2 IC18-3 IC18-11 IC13-2 R9-2 J3-28 IC10-11 IC9-11
         IC11-2 IC14-2)
     )
-    (net "/Address BUS/Instruction_6"
-      (pins IC22-2 IC25-3 J2-18)
+    (net "/Instruction Decoder/~{Jump_Hi}"
+      (pins TP10-1 IC20-8 IC13-9 IC14-9)
     )
     (net "/Instruction Decoder/~{READ}"
-      (pins TP13-1 IC20-1 IC23-6)
+      (pins IC20-1 IC23-6 TP13-1)
     )
     (net "/Data BUS/~{RD}"
       (pins IC20-3 J3-1)
     )
+    (net "/Address BUS/Instruction_7"
+      (pins IC20-4 IC22-3 IC19-4 IC19-9 IC6-15 IC21-9 J2-17)
+    )
     (net "/Data BUS/~{WR}"
       (pins IC20-6 J3-2)
-    )
-    (net "/Instruction Decoder/~{Jump_Hi}"
-      (pins TP10-1 IC20-8 IC13-9 IC14-9)
     )
     (net "/Address BUS/Instruction_3"
       (pins IC20-9 IC17-3 IC7-10 IC16-2 J2-21)
@@ -1427,7 +1424,7 @@
       (pins IC20-10 IC12-9 TP5-1 IC11-9 IC24-6)
     )
     (net "/Instruction Decoder/~{RCR}"
-      (pins TP14-1 IC20-11 IC7-1 IC21-10)
+      (pins IC20-11 IC7-1 IC21-10 TP14-1)
     )
     (net "/Instruction Decoder/~{X6}"
       (pins IC20-12 IC22-9 IC7-15 TP7-1)
@@ -1437,6 +1434,9 @@
     )
     (net "/Address BUS/Instruction_5"
       (pins IC22-1 IC25-2 J2-19)
+    )
+    (net "/Address BUS/Instruction_6"
+      (pins IC22-2 IC25-3 J2-18)
     )
     (net "/Instruction Decoder/~{X5}"
       (pins IC22-10 IC23-5)
@@ -1552,6 +1552,9 @@
     (net /ALU/I3a
       (pins TP12-1 IC2-3 IC23-8 IC1-3 IC3-3 IC4-3)
     )
+    (net "/Data BUS/BUS_Zero"
+      (pins IC8-1 IC21-5)
+    )
     (net "/Data BUS/Databus3"
       (pins IC8-2 IC7-9 RN1-5 IC6-9 J3-6 IC9-8)
     )
@@ -1564,8 +1567,8 @@
     (net "/Data BUS/Databus0"
       (pins IC8-5 IC7-4 RN1-2 IC6-4 J3-3 IC9-3)
     )
-    (net "/Data BUS/BUS_Zero"
-      (pins IC8-1 IC21-5)
+    (net "unconnected-(IC8-Pad13)"
+      (pins IC8-13)
     )
     (net "Net-(LD19-K)"
       (pins LD19-1 RN3-9)
@@ -1918,9 +1921,6 @@
     (net "unconnected-(IC24-Z-Pad5)"
       (pins IC24-5)
     )
-    (net "unconnected-(IC8-Pad13)"
-      (pins IC8-13)
-    )
     (class kicad_default /ALU/ALU_OUT0 /ALU/ALU_OUT1 /ALU/ALU_OUT2 /ALU/ALU_OUT3
       /ALU/ALU_in_A0 /ALU/ALU_in_A1 /ALU/ALU_in_A2 /ALU/ALU_in_A3 /ALU/ALU_in_B0
       /ALU/ALU_in_B1 /ALU/ALU_in_B2 /ALU/ALU_in_B3 /ALU/Carry_OUT /ALU/I0a
@@ -1934,9 +1934,9 @@
       "/Address BUS/RAM_A5" "/Address BUS/RAM_A6" "/Address BUS/RAM_A7" "/Address BUS/RAM_A8"
       "/Address BUS/RAM_A9" "/Data BUS/BUS_Zero" "/Data BUS/Carry_Flg" "/Data BUS/Databus0"
       "/Data BUS/Databus1" "/Data BUS/Databus2" "/Data BUS/Databus3" "/Data BUS/Level_C0"
-      "/Data BUS/Level_C1" "/Data BUS/Level_C2" "/Data BUS/Level_C3" "/Data BUS/~{Immediate_OE}"
-      "/Data BUS/~{RD}" "/Data BUS/~{WR}" "/Instruction Decoder/Carry_Flg"
-      "/Instruction Decoder/Zero_Flg" "/Instruction Decoder/Zero_Flg_FB" "/Instruction Decoder/~{Carry_EN}"
+      "/Data BUS/Level_C1" "/Data BUS/Level_C2" "/Data BUS/Level_C3" "/Data BUS/~{RD}"
+      "/Data BUS/~{WR}" "/Instruction Decoder/Carry_Flg" "/Instruction Decoder/Zero_Flg"
+      "/Instruction Decoder/Zero_Flg_FB" "/Instruction Decoder/~{Carry_EN}"
       "/Instruction Decoder/~{Carry_Flg}" "/Instruction Decoder/~{Jump_Hi}"
       "/Instruction Decoder/~{Jump_Lo}" "/Instruction Decoder/~{RCR}" "/Instruction Decoder/~{READ}"
       "/Instruction Decoder/~{STACKAD_LE}" "/Instruction Decoder/~{STACKBC_LE}"
@@ -1945,24 +1945,23 @@
       "/Instruction Decoder/~{X7}" "/Instruction Decoder/~{Y0}" "/Instruction Decoder/~{Y1}"
       "/Instruction Decoder/~{Y2}" "/Instruction Decoder/~{Y3}" "/Instruction Decoder/~{Y4}"
       "/Instruction Decoder/~{Y5}" "/Instruction Decoder/~{Y6}" "/Instruction Decoder/~{Y7}"
-      "/Instruction Decoder/~{Zero_Flg}" "/Instruction Decoder/~{is_JP_inst}"
-      "/Program Counter/Level_D0" "/Program Counter/Level_D1" "/Program Counter/Level_D2"
-      "/Program Counter/Level_D3" "/Program Counter/PC_0" "/Program Counter/PC_1"
-      "/Program Counter/PC_10" "/Program Counter/PC_11" "/Program Counter/PC_12"
-      "/Program Counter/PC_13" "/Program Counter/PC_14" "/Program Counter/PC_15"
-      "/Program Counter/PC_2" "/Program Counter/PC_3" "/Program Counter/PC_4"
-      "/Program Counter/PC_5" "/Program Counter/PC_6" "/Program Counter/PC_7"
-      "/Program Counter/PC_8" "/Program Counter/PC_9" CLK2 "Net-(C2-Pad1)"
-      "Net-(C3-Pad1)" "Net-(D1-A)" "Net-(IC11-ENT)" "Net-(IC12-ENT)" "Net-(IC13-ENT)"
-      "Net-(IC15-OE)" "Net-(IC18B-D)" "Net-(IC21-X)" "Net-(IC26-Pad12)" "Net-(IC26-Pad2)"
-      "Net-(IC26-Pad6)" "Net-(LD1-K)" "Net-(LD10-K)" "Net-(LD11-K)" "Net-(LD12-K)"
-      "Net-(LD13-K)" "Net-(LD14-K)" "Net-(LD15-K)" "Net-(LD16-K)" "Net-(LD17-K)"
-      "Net-(LD18-K)" "Net-(LD19-K)" "Net-(LD2-Pad2)" "Net-(LD20-K)" "Net-(LD21-K)"
-      "Net-(LD22-K)" "Net-(LD23-K)" "Net-(LD24-K)" "Net-(LD25-K)" "Net-(LD26-K)"
-      "Net-(LD27-K)" "Net-(LD28-K)" "Net-(LD29-K)" "Net-(LD3-Pad2)" "Net-(LD30-K)"
-      "Net-(LD31-K)" "Net-(LD32-K)" "Net-(LD33-K)" "Net-(LD34-K)" "Net-(LD35-K)"
-      "Net-(LD4-K)" "Net-(LD5-K)" "Net-(LD6-K)" "Net-(LD7-K)" "Net-(LD8-K)"
-      "Net-(LD9-K)" "Net-(RN6A-R1.2)" "Net-(RN6B-R2.2)" "Net-(RN6C-R3.2)"
+      "/Instruction Decoder/~{Zero_Flg}" "/Program Counter/Level_D0" "/Program Counter/Level_D1"
+      "/Program Counter/Level_D2" "/Program Counter/Level_D3" "/Program Counter/PC_0"
+      "/Program Counter/PC_1" "/Program Counter/PC_10" "/Program Counter/PC_11"
+      "/Program Counter/PC_12" "/Program Counter/PC_13" "/Program Counter/PC_14"
+      "/Program Counter/PC_15" "/Program Counter/PC_2" "/Program Counter/PC_3"
+      "/Program Counter/PC_4" "/Program Counter/PC_5" "/Program Counter/PC_6"
+      "/Program Counter/PC_7" "/Program Counter/PC_8" "/Program Counter/PC_9"
+      CLK2 "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(D1-A)" "Net-(IC11-ENT)" "Net-(IC12-ENT)"
+      "Net-(IC13-ENT)" "Net-(IC15-OE)" "Net-(IC18B-D)" "Net-(IC21-X)" "Net-(IC26-Pad12)"
+      "Net-(IC26-Pad2)" "Net-(IC26-Pad6)" "Net-(LD1-K)" "Net-(LD10-K)" "Net-(LD11-K)"
+      "Net-(LD12-K)" "Net-(LD13-K)" "Net-(LD14-K)" "Net-(LD15-K)" "Net-(LD16-K)"
+      "Net-(LD17-K)" "Net-(LD18-K)" "Net-(LD19-K)" "Net-(LD2-Pad2)" "Net-(LD20-K)"
+      "Net-(LD21-K)" "Net-(LD22-K)" "Net-(LD23-K)" "Net-(LD24-K)" "Net-(LD25-K)"
+      "Net-(LD26-K)" "Net-(LD27-K)" "Net-(LD28-K)" "Net-(LD29-K)" "Net-(LD3-Pad2)"
+      "Net-(LD30-K)" "Net-(LD31-K)" "Net-(LD32-K)" "Net-(LD33-K)" "Net-(LD34-K)"
+      "Net-(LD35-K)" "Net-(LD4-K)" "Net-(LD5-K)" "Net-(LD6-K)" "Net-(LD7-K)"
+      "Net-(LD8-K)" "Net-(LD9-K)" "Net-(RN6A-R1.2)" "Net-(RN6B-R2.2)" "Net-(RN6C-R3.2)"
       "Net-(RN6D-R4.2)" "Net-(SW4-A)" "Net-(SW4-B)" "Net-(SW4-C)" "unconnected-(IC11-CO-Pad15)"
       "unconnected-(IC24-Z-Pad5)" "unconnected-(IC8-Pad13)" "unconnected-(J3-Pin_10-Pad10)"
       "unconnected-(J3-Pin_23-Pad23)" "unconnected-(J3-Pin_24-Pad24)" "unconnected-(J3-Pin_25-Pad25)"
@@ -2008,137 +2007,118 @@
     )
   )
   (wiring
-    (wire (path B.Cu 500  76270 -53270  77470 -52070)(net GND)(type route))
-    (wire (path B.Cu 500  54540 -53270  76270 -53270)(net GND)(type route))
-    (wire (path B.Cu 500  53340 -52070  54540 -53270)(net GND)(type route))
-    (wire (path F.Cu 500  84455 -78740  81915 -81280)(net VCC)(type route))
-    (wire (path F.Cu 500  61595 -88765  61595 -88270)(net VCC)(type route))
-    (wire (path F.Cu 500  85090 -123685  85090 -123190)(net VCC)(type route))
-    (wire (path F.Cu 500  61595 -88270  59055 -85730)(net VCC)(type route))
-    (wire (path F.Cu 500  57150 -117848  57150 -117348)(net VCC)(type route))
-    (wire (path F.Cu 500  111252 -111760  108712 -109220)(net VCC)(type route))
-    (wire (path F.Cu 500  97790 -65900  97790 -65405)(net VCC)(type route))
-    (wire (path F.Cu 500  61595 -76840  59055 -74300)(net VCC)(type route))
-    (wire (path F.Cu 500  111252 -112255  111252 -111760)(net VCC)(type route))
-    (wire (path F.Cu 500  61595 -65905  61595 -65410)(net VCC)(type route))
-    (wire (path F.Cu 500  134620 -78880  134620 -79375)(net VCC)(type route))
-    (wire (path F.Cu 500  97790 -65405  95250 -62865)(net VCC)(type route))
-    (wire (path F.Cu 500  61595 -77335  61595 -76840)(net VCC)(type route))
-    (wire (path F.Cu 500  85090 -123190  82550 -120650)(net VCC)(type route))
-    (wire (path F.Cu 500  132080 -123190  129540 -120650)(net VCC)(type route))
-    (wire (path F.Cu 500  58420 -127635  55880 -125095)(net VCC)(type route))
-    (wire (path F.Cu 500  61595 -100965  59055 -98425)(net VCC)(type route))
-    (wire (path F.Cu 500  137160 -90170  139700 -92710)(net VCC)(type route))
-    (wire (path F.Cu 500  111125 -133350  108585 -130810)(net VCC)(type route))
-    (wire (path F.Cu 500  137160 -89675  137160 -90170)(net VCC)(type route))
-    (wire (path F.Cu 500  57150 -117348  54610 -114808)(net VCC)(type route))
-    (wire (path F.Cu 500  97790 -77330  97790 -76835)(net VCC)(type route))
-    (wire (path F.Cu 500  111125 -100190  111125 -99695)(net VCC)(type route))
-    (wire (path F.Cu 500  58420 -128130  58420 -127635)(net VCC)(type route))
-    (wire (path F.Cu 500  111125 -133845  111125 -133350)(net VCC)(type route))
-    (wire (path F.Cu 500  131064 -133850  131064 -133350)(net VCC)(type route))
-    (wire (path F.Cu 500  132080 -112395  129540 -109855)(net VCC)(type route))
-    (wire (path F.Cu 500  61595 -101465  61595 -100965)(net VCC)(type route))
-    (wire (path F.Cu 500  61595 -65410  59055 -62870)(net VCC)(type route))
-    (wire (path F.Cu 500  128270 -144005  128270 -143510)(net VCC)(type route))
-    (wire (path F.Cu 500  144780 -104140  147320 -106680)(net VCC)(type route))
-    (wire (path F.Cu 500  128270 -143510  125730 -140970)(net VCC)(type route))
-    (wire (path F.Cu 500  134620 -68085  134620 -68580)(net VCC)(type route))
-    (wire (path F.Cu 500  83820 -111747  83820 -111252)(net VCC)(type route))
-    (wire (path F.Cu 500  132080 -123685  132080 -123190)(net VCC)(type route))
-    (wire (path F.Cu 500  83820 -111252  81280 -108712)(net VCC)(type route))
-    (wire (path F.Cu 500  83820 -99817  81280 -97277)(net VCC)(type route))
-    (wire (path F.Cu 500  144780 -103645  144780 -104140)(net VCC)(type route))
-    (wire (path F.Cu 500  83820 -88265  81280 -85725)(net VCC)(type route))
-    (wire (path F.Cu 500  134620 -79375  137160 -81915)(net VCC)(type route))
-    (wire (path F.Cu 500  83820 -100317  83820 -99817)(net VCC)(type route))
-    (wire (path F.Cu 500  134620 -68580  137160 -71120)(net VCC)(type route))
-    (wire (path F.Cu 500  97790 -76835  95250 -74295)(net VCC)(type route))
-    (wire (path F.Cu 500  132080 -112890  132080 -112395)(net VCC)(type route))
-    (wire (path F.Cu 500  106045 -88265  103505 -85725)(net VCC)(type route))
-    (wire (path F.Cu 500  107315 -123190  104775 -120650)(net VCC)(type route))
-    (wire (path F.Cu 500  107315 -123685  107315 -123190)(net VCC)(type route))
-    (wire (path F.Cu 500  111125 -99695  108585 -97155)(net VCC)(type route))
-    (wire (path F.Cu 500  131064 -133350  128524 -130810)(net VCC)(type route))
-    (wire (path F.Cu 500  106045 -88760  106045 -88265)(net VCC)(type route))
-    (wire (path F.Cu 500  83820 -88765  83820 -88265)(net VCC)(type route))
-    (wire (path F.Cu 500  84955 -78740  84455 -78740)(net VCC)(type route))
-    (wire (path F.Cu 500  60625 -78885  60500 -78760)(net GND)(type route))
-    (wire (path F.Cu 500  83820 -90315  83255 -90315)(net GND)(type route))
-    (wire (path F.Cu 500  131305 -125235  132080 -125235)(net GND)(type route))
-    (wire (path F.Cu 500  131010 -114440  131000 -114430)(net GND)(type route))
-    (wire (path F.Cu 500  106045 -90310  105550 -90310)(net GND)(type route))
-    (wire (path F.Cu 500  61595 -78885  60625 -78885)(net GND)(type route))
-    (wire (path F.Cu 500  145275 -102095  145415 -102235)(net GND)(type route))
-    (wire (path F.Cu 500  83050 -101867  83000 -101817)(net GND)(type route))
-    (wire (path F.Cu 500  57680 -129680  57500 -129500)(net GND)(type route))
-    (wire (path F.Cu 500  127775 -145555  127635 -145415)(net GND)(type route))
-    (wire (path F.Cu 500  86505 -78740  86505 -79690)(net GND)(type route))
-    (wire (path F.Cu 500  137160 -88125  138565 -88125)(net GND)(type route))
-    (wire (path F.Cu 500  83255 -90315  83000 -90060)(net GND)(type route))
-    (wire (path F.Cu 500  128270 -145555  127775 -145555)(net GND)(type route))
-    (wire (path F.Cu 500  135865 -66535  134620 -66535)(net GND)(type route))
-    (wire (path F.Cu 500  86505 -79690  86235 -79960)(net GND)(type route))
-    (wire (path F.Cu 500  83020 -113297  83000 -113317)(net GND)(type route))
-    (wire (path F.Cu 500  106045 -125235  107315 -125235)(net GND)(type route))
-    (wire (path F.Cu 500  110322 -113805  110302 -113825)(net GND)(type route))
-    (wire (path F.Cu 500  110630 -101740  110490 -101600)(net GND)(type route))
-    (wire (path F.Cu 500  94615 -147955  94805 -148145)(net GND)(type route))
-    (wire (path F.Cu 500  130384 -135400  130204 -135220)(net GND)(type route))
-    (wire (path F.Cu 500  110630 -135395  110490 -135255)(net GND)(type route))
-    (wire (path F.Cu 500  138565 -88125  138730 -87960)(net GND)(type route))
-    (wire (path F.Cu 500  83820 -113297  83020 -113297)(net GND)(type route))
-    (wire (path F.Cu 500  97041 -78880  97028 -78867)(net GND)(type route))
-    (wire (path F.Cu 500  94805 -148145  95250 -148145)(net GND)(type route))
-    (wire (path F.Cu 500  56105 -119398  56055 -119348)(net GND)(type route))
-    (wire (path F.Cu 500  111125 -135395  110630 -135395)(net GND)(type route))
-    (wire (path F.Cu 500  58420 -129680  57680 -129680)(net GND)(type route))
-    (wire (path F.Cu 500  97790 -78880  97041 -78880)(net GND)(type route))
-    (wire (path F.Cu 500  61595 -103015  60755 -103015)(net GND)(type route))
-    (wire (path F.Cu 500  84595 -125235  84455 -125095)(net GND)(type route))
-    (wire (path F.Cu 500  131064 -135400  130384 -135400)(net GND)(type route))
-    (wire (path F.Cu 500  111125 -101740  110630 -101740)(net GND)(type route))
-    (wire (path F.Cu 500  144780 -102095  145275 -102095)(net GND)(type route))
-    (wire (path F.Cu 500  105550 -90310  105410 -90170)(net GND)(type route))
-    (wire (path F.Cu 500  60805 -67455  60500 -67760)(net GND)(type route))
-    (wire (path F.Cu 500  97790 -67450  97041 -67450)(net GND)(type route))
-    (wire (path F.Cu 500  132080 -114440  131010 -114440)(net GND)(type route))
-    (wire (path F.Cu 500  57150 -119398  56105 -119398)(net GND)(type route))
-    (wire (path F.Cu 500  61595 -67455  60805 -67455)(net GND)(type route))
-    (wire (path F.Cu 500  111252 -113805  110322 -113805)(net GND)(type route))
-    (wire (path F.Cu 500  85090 -125235  84595 -125235)(net GND)(type route))
-    (wire (path F.Cu 500  135865 -77330  134620 -77330)(net GND)(type route))
-    (wire (path F.Cu 500  60755 -103015  60500 -102760)(net GND)(type route))
-    (wire (path F.Cu 500  60555 -90315  60500 -90260)(net GND)(type route))
-    (wire (path F.Cu 500  61595 -90315  60555 -90315)(net GND)(type route))
-    (wire (path F.Cu 500  83820 -101867  83050 -101867)(net GND)(type route))
-    (wire (path F.Cu 500  97041 -67450  97028 -67437)(net GND)(type route))
-    (via "Via[0-3]_600:300_um"  130204 -135220 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  145415 -102235 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  135865 -66535 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  110490 -135255 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  131305 -125235 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  135865 -77330 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  60500 -102760 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  57500 -129500 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  97028 -67437 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  56055 -119348 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  86235 -79960 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  94615 -147955 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  105410 -90170 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  138730 -87960 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  106045 -125235 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  127635 -145415 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  83000 -113317 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  84455 -125095 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  131000 -114430 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  83000 -101817 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  110302 -113825 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  60500 -78760 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  97028 -78867 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  60500 -90260 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  110490 -101600 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  83000 -90060 (net GND)(type route))
-    (via "Via[0-3]_600:300_um"  60500 -67760 (net GND)(type route))
+    (wire (path F.Cu 500  90424 -78740  89167 -78740)(net GND)(type route))
+    (wire (path F.Cu 500  86995 -78740  84455 -81280)(net VCC)(type route))
+    (wire (path F.Cu 500  87617 -78740  86995 -78740)(net VCC)(type route))
+    (wire (path F.Cu 500  62725 -88900  62725 -88130)(net VCC)(type route))
+    (wire (path F.Cu 500  63360 -65265  60960 -62865)(net VCC)(type route))
+    (wire (path F.Cu 500  110985 -111620  108585 -109220)(net VCC)(type route))
+    (wire (path F.Cu 500  131940 -112255  129540 -109855)(net VCC)(type route))
+    (wire (path F.Cu 500  84950 -101600  84950 -100825)(net VCC)(type route))
+    (wire (path F.Cu 500  131305 -133210  128905 -130810)(net VCC)(type route))
+    (wire (path F.Cu 500  98920 -77470  98920 -76695)(net VCC)(type route))
+    (wire (path F.Cu 500  128130 -143370  125730 -140970)(net VCC)(type route))
+    (wire (path F.Cu 500  84950 -88125  82550 -85725)(net VCC)(type route))
+    (wire (path F.Cu 500  136030 -78740  136030 -79515)(net VCC)(type route))
+    (wire (path F.Cu 500  98920 -66040  98920 -65265)(net VCC)(type route))
+    (wire (path F.Cu 500  110985 -133210  108585 -130810)(net VCC)(type route))
+    (wire (path F.Cu 500  110985 -133985  110985 -133210)(net VCC)(type route))
+    (wire (path F.Cu 500  84950 -88900  84950 -88125)(net VCC)(type route))
+    (wire (path F.Cu 500  131940 -123050  129540 -120650)(net VCC)(type route))
+    (wire (path F.Cu 500  107175 -88125  104775 -85725)(net VCC)(type route))
+    (wire (path F.Cu 500  128130 -144145  128130 -143370)(net VCC)(type route))
+    (wire (path F.Cu 500  138570 -89535  138570 -90310)(net VCC)(type route))
+    (wire (path F.Cu 500  84950 -100825  82550 -98425)(net VCC)(type route))
+    (wire (path F.Cu 500  112255 -100330  112255 -99555)(net VCC)(type route))
+    (wire (path F.Cu 500  110985 -112395  110985 -111620)(net VCC)(type route))
+    (wire (path F.Cu 500  131305 -133985  131305 -133210)(net VCC)(type route))
+    (wire (path F.Cu 500  83680 -113030  83680 -112255)(net VCC)(type route))
+    (wire (path F.Cu 500  98920 -65265  96520 -62865)(net VCC)(type route))
+    (wire (path F.Cu 500  136030 -79515  138430 -81915)(net VCC)(type route))
+    (wire (path F.Cu 500  112255 -99555  109855 -97155)(net VCC)(type route))
+    (wire (path F.Cu 500  131940 -113030  131940 -112255)(net VCC)(type route))
+    (wire (path F.Cu 500  62725 -100825  60325 -98425)(net VCC)(type route))
+    (wire (path F.Cu 500  138570 -90310  140970 -92710)(net VCC)(type route))
+    (wire (path F.Cu 500  63360 -76695  60960 -74295)(net VCC)(type route))
+    (wire (path F.Cu 500  62725 -88130  60325 -85730)(net VCC)(type route))
+    (wire (path F.Cu 500  147320 -106680  147320 -105905)(net VCC)(type route))
+    (wire (path F.Cu 500  61455 -117475  61455 -116700)(net VCC)(type route))
+    (wire (path F.Cu 500  84950 -125730  84950 -124955)(net VCC)(type route))
+    (wire (path F.Cu 500  107175 -88900  107175 -88125)(net VCC)(type route))
+    (wire (path F.Cu 500  131940 -123825  131940 -123050)(net VCC)(type route))
+    (wire (path F.Cu 500  98920 -76695  96520 -74295)(net VCC)(type route))
+    (wire (path F.Cu 500  84950 -124955  82550 -122555)(net VCC)(type route))
+    (wire (path F.Cu 500  83680 -112255  81280 -109855)(net VCC)(type route))
+    (wire (path F.Cu 500  107175 -123050  104775 -120650)(net VCC)(type route))
+    (wire (path F.Cu 500  63360 -77465  63360 -76695)(net VCC)(type route))
+    (wire (path F.Cu 500  136030 -68720  138430 -71120)(net VCC)(type route))
+    (wire (path F.Cu 500  147320 -105905  144920 -103505)(net VCC)(type route))
+    (wire (path F.Cu 500  63360 -66035  63360 -65265)(net VCC)(type route))
+    (wire (path F.Cu 500  62725 -101600  62725 -100825)(net VCC)(type route))
+    (wire (path F.Cu 500  58280 -128270  58280 -127495)(net VCC)(type route))
+    (wire (path F.Cu 500  61455 -116700  59055 -114300)(net VCC)(type route))
+    (wire (path F.Cu 500  107175 -123825  107175 -123050)(net VCC)(type route))
+    (wire (path F.Cu 500  136030 -67945  136030 -68720)(net VCC)(type route))
+    (wire (path F.Cu 500  58280 -127495  55880 -125095)(net VCC)(type route))
+    (wire (path F.Cu 500  137020 -89535  135890 -89535)(net GND)(type route))
+    (wire (path F.Cu 500  64275 -101600  65405 -101600)(net GND)(type route))
+    (wire (path F.Cu 500  112535 -112395  113665 -112395)(net GND)(type route))
+    (wire (path F.Cu 500  64910 -66035  66040 -66035)(net GND)(type route))
+    (wire (path F.Cu 500  64910 -77465  66040 -77465)(net GND)(type route))
+    (wire (path F.Cu 500  109855 -123825  108725 -123825)(net GND)(type route))
+    (wire (path F.Cu 500  69025 -134810  71120 -132715)(net GND)(type route))
+    (wire (path F.Cu 500  133490 -113030  134620 -113030)(net GND)(type route))
+    (wire (path F.Cu 500  85230 -113030  86360 -113030)(net GND)(type route))
+    (wire (path F.Cu 500  93980 -147955  94170 -148145)(net GND)(type route))
+    (wire (path F.Cu 500  112535 -133985  113665 -133985)(net GND)(type route))
+    (wire (path F.Cu 500  133490 -123825  134620 -123825)(net GND)(type route))
+    (wire (path F.Cu 500  86500 -88900  87630 -88900)(net GND)(type route))
+    (wire (path F.Cu 500  100470 -66040  101600 -66040)(net GND)(type route))
+    (wire (path F.Cu 500  134480 -67945  133350 -67945)(net GND)(type route))
+    (wire (path F.Cu 500  134480 -78740  133350 -78740)(net GND)(type route))
+    (wire (path F.Cu 500  69025 -135890  69025 -134810)(net GND)(type route))
+    (wire (path F.Cu 500  132855 -133985  133985 -133985)(net GND)(type route))
+    (wire (path F.Cu 500  129680 -144145  130810 -144145)(net GND)(type route))
+    (wire (path F.Cu 500  108725 -88900  109855 -88900)(net GND)(type route))
+    (wire (path F.Cu 500  94170 -148145  95250 -148145)(net GND)(type route))
+    (wire (path F.Cu 500  86500 -101600  87630 -101600)(net GND)(type route))
+    (wire (path F.Cu 500  64275 -88900  65405 -88900)(net GND)(type route))
+    (wire (path F.Cu 500  63005 -117475  64135 -117475)(net GND)(type route))
+    (wire (path F.Cu 500  143370 -103505  142240 -103505)(net GND)(type route))
+    (wire (path F.Cu 500  100470 -77470  101600 -77470)(net GND)(type route))
+    (wire (path F.Cu 500  59830 -128270  60960 -128270)(net GND)(type route))
+    (wire (path F.Cu 500  86500 -125730  87630 -125730)(net GND)(type route))
+    (wire (path F.Cu 500  113805 -100330  114935 -100330)(net GND)(type route))
+    (wire (path B.Cu 500  53340 -52070  54610 -53340)(net GND)(type route))
+    (wire (path B.Cu 500  76200 -53340  77470 -52070)(net GND)(type route))
+    (wire (path B.Cu 500  54610 -53340  76200 -53340)(net GND)(type route))
+    (wire (path F.Cu 200  95250 -144145  95250 -146495)(net "Net-(LD1-K)")(type route))
+    (via "Via[0-3]_600:300_um"  90424 -78740 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  109855 -88900 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  133985 -133985 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  86360 -113030 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  66040 -66035 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  87630 -88900 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  87630 -125730 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  60960 -128270 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  66040 -77465 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  114935 -100330 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  130810 -144145 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  133350 -67945 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  134620 -113030 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  109855 -123825 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  64135 -117475 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  142240 -103505 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  65405 -88900 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  101600 -66040 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  135890 -89535 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  113665 -133985 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  87630 -101600 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  65405 -101600 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  134620 -123825 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  93980 -147955 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  133350 -78740 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  101600 -77470 (net GND)(type route))
+    (via "Via[0-3]_600:300_um"  113665 -112395 (net GND)(type route))
   )
 )

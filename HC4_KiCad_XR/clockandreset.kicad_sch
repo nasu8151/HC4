@@ -3474,7 +3474,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network04_Split")
-		(at 38.1 146.05 0)
+		(at 38.1 87.63 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3485,7 +3485,7 @@
 		(fields_autoplaced yes)
 		(uuid "162129a8-0634-4ffe-a1de-07578429c780")
 		(property "Reference" "RN6"
-			(at 40.64 144.7799 0)
+			(at 40.64 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3496,7 +3496,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 40.64 147.3199 0)
+			(at 40.64 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3507,7 +3507,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP5"
-			(at 36.068 146.05 90)
+			(at 36.068 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3518,7 +3518,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 38.1 146.05 0)
+			(at 38.1 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3529,7 +3529,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, star topology, bussed resistors, split"
-			(at 38.1 146.05 0)
+			(at 38.1 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5190,7 +5190,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Network04_Split")
-		(at 38.1 87.63 0)
+		(at 38.1 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5201,7 +5201,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba70215e-988f-46d6-bcf0-00fbbad77013")
 		(property "Reference" "RN6"
-			(at 40.64 86.3599 0)
+			(at 40.64 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5212,7 +5212,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 40.64 88.8999 0)
+			(at 40.64 147.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5223,7 +5223,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Array_SIP5"
-			(at 36.068 87.63 90)
+			(at 36.068 146.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5234,7 +5234,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
-			(at 38.1 87.63 0)
+			(at 38.1 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5245,7 +5245,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, star topology, bussed resistors, split"
-			(at 38.1 87.63 0)
+			(at 38.1 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

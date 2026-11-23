@@ -37,11 +37,11 @@ module hc4 (
     assign opcode = instruction[7:4];
     assign oprand = instruction[3:0];
 
-    assign stackA_out = level_A;
-    assign stackB_out = level_B;
-    assign stackC_out = level_C;
-    assign address_bus = (opcode == 4'b0000 || opcode == 4'b1000) ? {level_A, level_B} : {4'b0000, oprand};
-    assign data_bus = (opcode[3] == 1'b0) ? alu_result : 4'bz; //write to data bus for ALU output or immediate data
+    assign stackA_out  = level_A;
+    assign stackB_out  = level_B;
+    assign stackC_out  = level_C;
+    assign address_bus = (opcode == 4'b0000 || opcode == 4'b1000) ? {level_B, level_A} : {4'b0000, oprand};
+    assign data_bus    = (opcode[3] == 1'b0) ? alu_result : 4'bz; //write to data bus for ALU output or immediate data
 
     assign wr_n = !(!opcode[3] & !clk);
     assign rd_n = !(opcode[3:1] == 3'b100 & !clk);

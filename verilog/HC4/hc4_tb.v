@@ -57,7 +57,7 @@ module hc4_tb;
     end
 
     always @(*) begin
-        if (address_bus == 8'hF2 && wr_n == 1) begin
+        if (address_bus == 8'hF2 && wr_n == 0) begin
             $display("Time=%0t | PC=%d | levelA=%b | levelB=%b | levelC=%b | ADDR=%h | DATA_OUT=%h | wr_n=%b | rd_n=%b", $time, pc_out, level_A, level_B, level_C, address_bus, data_bus, wr_n, rd_n);
         end
         if (address_bus == 8'hF3 && wr_n == 0) begin
