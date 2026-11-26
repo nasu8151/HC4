@@ -542,120 +542,181 @@ wait_1ms_ret:
 
 opening_message:
     li #0b0100
-    li #0xF
-    li #0x3
+    li #0x8
+    li #0x0
     sm
-    li #0b1000
-    li #0xF
-    li #0x3
-    sm            ; Display "H"
-    li #msg1:2
-    sa r15
-    li #msg1:1
-    sa r14
-    li #msg1:0
-    sa r13
-    li #wait_264us:2
-    li #wait_264us:1
-    li #wait_264us:0
-    jp            ; Wait for HD44780 to finish
-msg1:
+    li #0b1000 ;H
+    li #0x8
+    li #0x1
+    sm
+
     li #0b0110
-    li #0xF
+    li #0x8
+    li #0x2
+    sm
+    li #0b0101 ;e
+    li #0x8
     li #0x3
     sm
-    li #0b0101
-    li #0xF
-    li #0x3
-    sm            ; Display "e"
-    li #msg2:2
-    sa r15
-    li #msg2:1
-    sa r14
-    li #msg2:0
-    sa r13
-    li #wait_264us:2
-    li #wait_264us:1
-    li #wait_264us:0
-    jp            ; Wait for HD44780 to finish
-msg2:
+
     li #0b0110
-    li #0xF
-    li #0x3
+    li #0x8
+    li #0x4
     sm
-    li #0b1100
-    li #0xF
-    li #0x3
-    sm            ; Display "l"
-    li #msg3:2
-    sa r15
-    li #msg3:1
-    sa r14
-    li #msg3:0
-    sa r13
-    li #wait_264us:2
-    li #wait_264us:1
-    li #wait_264us:0
-    jp            ; Wait for HD44780 to finish
-msg3:
+    li #0b1100 ; l
+    li #0x8
+    li #0x5
+    sm
+
     li #0b0110
-    li #0xF
-    li #0x3
+    li #0x8
+    li #0x6
     sm
-    li #0b1100
-    li #0xF
-    li #0x3
-    sm            ; Display "l"
-    li #msg4:2
-    sa r15
-    li #msg4:1
-    sa r14
-    li #msg4:0
-    sa r13
-    li #wait_264us:2
-    li #wait_264us:1
-    li #wait_264us:0
-    jp            ; Wait for HD44780 to finish
-msg4:
+    li #0b1100 ; l
+    li #0x8
+    li #0x7
+    sm
+
     li #0b0110
-    li #0xF
-    li #0x3
+    li #0x8
+    li #0x8
     sm
-    li #0b1111
-    li #0xF
-    li #0x3
-    sm            ; Display "o"
-    li #msg5:2
-    sa r15
-    li #msg5:1
-    sa r14
-    li #msg5:0
-    sa r13
-    li #wait_264us:2
-    li #wait_264us:1
-    li #wait_264us:0
-    jp            ; Wait for HD44780 to finish
-msg5:
+    li #0b1111 ; o
+    li #0x8
+    li #0x9
+    sm
+
     li #0b0010
+    li #0x8
+    li #0xA
+    sm
+    li #0b0000 ; (space)
+    li #0x8
+    li #0xB
+    sm
+
+    li #0b0101
+    li #0x8
+    li #0xC
+    sm
+    li #0b0111 ; W
+    li #0x8
+    li #0xD
+    sm
+
+    li #0b0110
+    li #0x8
+    li #0xE
+    sm
+    li #0b1111 ; o
+    li #0x8
     li #0xF
+    sm
+
+    li #0b0111
+    li #0x9
+    li #0x0
+    sm
+    li #0b0010 ; r
+    li #0x9
+    li #0x1
+    sm
+
+    li #0b0110
+    li #0x9
+    li #0x2
+    sm
+    li #0b1100 ; l
+    li #0x9
     li #0x3
     sm
-    li #0b0001
-    li #0xF
-    li #0x3
-    sm            ; Display "!"
-    li #msg6:2
-    sa r15
-    li #msg6:1
-    sa r14
-    li #msg6:0
-    sa r13
-    li #wait_264us:2
-    li #wait_264us:1
-    li #wait_264us:0
-    jp            ; Wait for HD44780 to finish
-msg6:
+
+    li #0b0110
+    li #0x9
+    li #0x4
+    sm
+    li #0b0100 ; d
+    li #0x9
+    li #0x5
+    sm
+
+    li #0b0010
+    li #0x9
+    li #0x6
+    sm
+    li #0b0001 ; !
+    li #0x9
+    li #0x7
+    sm
+
+    li #0
+    li #0x9
+    li #0x8
+    sm
+    li #0 ; (NULL)
+    li #0x9
+    li #0x9
+    sm
+
+; pointer : r0,r1 (Big endian)
+
+    li #8
+    sa r0
+    li #0
+    sa r1
+
+send_loop:
+    ld r0
+    ld r1
+    lm
+    sa r2
+
     li #main:2
     li #main:1
     li #main:0
+    jp z
+
+    ld r2
+    li #0xF
+    li #0x3
+    sm
+
+    ld r1
+    li #1
+    ad r1
+
+    ld r0
+    ld r1
+    lm
+    sa r2
+    li #0xF
+    li #0x3
+    sm
+
+    li #send_loop3:2
+    sa r15
+    li #send_loop3:1
+    sa r14
+    li #send_loop3:0
+    sa r13
+    li #wait_264us:2
+    li #wait_264us:1
+    li #wait_264us:0
+    jp            ; Wait for HD44780 to finish
+
+send_loop3:
+
+    ld r1
+    li #1
+    ad r1
+    li #send_loop:2
+    li #send_loop:1
+    li #send_loop:0
+    jp nc
+    ld r0
+    li #1
+    ad r0
+    li #send_loop:2
+    li #send_loop:1
+    li #send_loop:0
     jp

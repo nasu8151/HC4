@@ -4023,6 +4023,16 @@
 		)
 		(uuid "d05590ae-2860-4b14-81bf-609f37c76968")
 	)
+	(wire
+		(pts
+			(xy 241.3 39.37) (xy 241.3 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d82263ed-e9bb-4d39-8501-c337d35f2e1e")
+	)
 	(bus
 		(pts
 			(xy 105.41 39.37) (xy 105.41 49.53)
